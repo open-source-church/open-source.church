@@ -827,6 +827,9 @@ link:focus,
 .overlay::before {
   background: #212227; }
 
+a.text-secondary, a.text-secondary:hover {
+  color: #d700d7 !important; }
+
 .navigation {
   background: transparent;
   padding: 10px 0; }
@@ -850,8 +853,10 @@ link:focus,
   @media (max-width: 991px) {
     .navbar-dark .navbar-nav {
       background: #ffd400; }
-      .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:hover {
-        color: #212227; } }
+      .navbar-dark .navbar-nav .nav-link {
+        color: #212227; }
+      .navbar-dark .navbar-nav .nav-link:hover {
+        color: #d700d7; } }
   .navbar-dark .navbar-nav .nav-item::before {
     background: #ffd400; }
   .navbar-dark .navbar-nav .dropdown-menu {

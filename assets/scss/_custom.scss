@@ -2,6 +2,7 @@
 
 .bg-body {background: $body-color;}
 .overlay::before {background: $darkgray;}
+a.text-secondary, a.text-secondary:hover { color: $majenta !important; }
 
 // Navbar
 .navigation {
@@ -26,9 +27,8 @@
   }
   @include desktop {
     background: $primary-color;
-    .nav-link, .nav-link:hover {
-      color:$darkgray;
-    }
+    .nav-link {color:$darkgray;}
+    .nav-link:hover {color: $majenta;}
   }
   .nav-item::before {
     background:$primary-color;

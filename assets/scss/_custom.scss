@@ -1,0 +1,54 @@
+// Tweaks
+
+.bg-body {background: $body-color;}
+.overlay::before {background: $darkgray;}
+
+// Navbar
+.navigation {
+  background: transparent;
+  padding: 10px 0;
+  .navbar-toggler { 
+    border-color: $primary-color;
+    i { font-size: 25px; color: $primary-color;}
+  };
+  .small{ display:none; }
+  .large{ display:block; }
+}
+
+.navbar-collapse {
+  background: transparent;
+}
+
+.navbar-dark .navbar-nav { 
+  background: transparent;
+  .nav-link, .nav-link:hover {
+    color: $primary-color;
+  }
+  @include desktop {
+    background: $primary-color;
+    .nav-link, .nav-link:hover {
+      color:$darkgray;
+    }
+  }
+  .nav-item::before {
+    background:$primary-color;
+  }
+  .dropdown-menu {
+    top: inherit;
+  }
+}
+
+.navigation.nav-bg {
+  background: $darkgray;
+  padding: 3px 0;
+  .small{ display:block; }
+  .large{ display:none; }
+  .nav-link {
+    padding: 15px 0;
+  }
+}
+
+.hero-slider {
+  .nextArrow, .prevArrow { color: $secondary-color; }
+  .slick-dots li button { background: $gray; }
+}

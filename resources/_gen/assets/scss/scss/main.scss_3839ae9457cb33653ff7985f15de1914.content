@@ -877,3 +877,16 @@ a.text-secondary, a.text-secondary:hover {
 
 .hero-slider .slick-dots li button {
   background: #4b4c58; }
+
+.pagination .page-link {
+  border: none;
+  color: #212227;
+  background: transparent; }
+
+.pagination .page-link:hover {
+  background: #d700d7;
+  color: #212227; }
+
+.pagination .page-item.disabled .page-link {
+  background: transparent;
+  color: #4b4c58; }

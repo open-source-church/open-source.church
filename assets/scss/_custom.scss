@@ -52,3 +52,20 @@ a.text-secondary, a.text-secondary:hover { color: $majenta !important; }
   .nextArrow, .prevArrow { color: $secondary-color; }
   .slick-dots li button { background: $gray; }
 }
+
+// Pagination
+.pagination{
+  .page-link{
+    border: none;
+    color: $darkgray;
+    background: transparent;
+  }
+  .page-link:hover{
+    background: $majenta;
+    color: $darkgray;
+  }
+  .page-item.disabled .page-link{
+    background: transparent;
+    color: $gray;
+  }
+}

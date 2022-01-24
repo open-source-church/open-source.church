@@ -2,7 +2,8 @@
 title: « Nous sommes la première génération des derniers humains » (G.Anders) Et si on parlait un peu d'Apocalypse?
 author: Benoît Ischer
 date: 2020-09-30T19:22:56+00:00
-url: /nous-sommes-la-premiere-generation-des-derniers-humains-g-anders-et-si-on-parlait-un-peu-dapocalypse/
+aliases:
+  - /nous-sommes-la-premiere-generation-des-derniers-humains-g-anders-et-si-on-parlait-un-peu-dapocalypse/
 image: /blog/2020/photo-1566979347480-1690bbeea018.jpg
 categories:
   - Articles

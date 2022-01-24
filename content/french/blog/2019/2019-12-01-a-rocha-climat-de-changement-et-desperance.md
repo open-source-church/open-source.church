@@ -2,7 +2,8 @@
 title: A Rocha – Climat de changement et d'espérance !
 author: Benoît Ischer
 date: 2019-12-01T19:48:18+00:00
-url: /a-rocha-climat-de-changement-et-desperance/
+aliases:
+  - /a-rocha-climat-de-changement-et-desperance/
 image: /blog/2019/logo-ch.jpg
 categories:
   - Media

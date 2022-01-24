@@ -2,7 +2,8 @@
 title: C’est parfois tellement le bordel dans ma tête qu’on dirait une coloc d’étudiants. Voyez plutôt…
 author: Noémie Emery
 date: 2020-02-05T11:48:37+00:00
-url: /cest-parfois-tellement-le-bordel-dans-ma-tete-quon-dirait-une-coloc-detudiants-voyez-plutot/
+aliases:
+  - /cest-parfois-tellement-le-bordel-dans-ma-tete-quon-dirait-une-coloc-detudiants-voyez-plutot/
 image: blog/2020/mind.jpg
 categories:
   - Articles

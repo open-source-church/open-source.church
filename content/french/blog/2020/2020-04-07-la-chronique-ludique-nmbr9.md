@@ -2,7 +2,8 @@
 title: "La Chronique ludique: NMBR9 !"
 author: admin
 date: 2020-04-07T14:39:18+00:00
-url: /la-chronique-ludique-nmbr9/
+aliases:
+  - /la-chronique-ludique-nmbr9/
 image: blog/2020/Nmbr9-Version-Francaise.jpg
 categories:
   - Articles

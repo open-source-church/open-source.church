@@ -2,7 +2,8 @@
 title: "Hadès : balade inspirante le long des Enfers"
 author: Noémie Emery
 date: 2020-10-20T14:30:41+00:00
-url: /hades-balade-inspirante-le-long-des-enfers/
+aliases:
+  - /hades-balade-inspirante-le-long-des-enfers/
 categories:
   - Articles
 type: post

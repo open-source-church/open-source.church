@@ -2,7 +2,8 @@
 title: « Ayez foi en la Lumière, et tout sera possible » — pourquoi j'ai toujours aimé jouer paladin
 author: Benoît Ischer
 date: 2020-09-09T16:09:51+00:00
-url: /ayez-foi-en-la-lumiere-et-tout-sera-possible-pourquoi-jai-toujours-aime-jouer-paladin/
+aliases:
+  - /ayez-foi-en-la-lumiere-et-tout-sera-possible-pourquoi-jai-toujours-aime-jouer-paladin/
 image: blog/2020/61CC24dDSYL._AC_SY679_.jpg
 categories:
   - Articles

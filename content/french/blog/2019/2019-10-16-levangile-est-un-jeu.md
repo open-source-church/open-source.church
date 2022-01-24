@@ -2,7 +2,8 @@
 title: L'Evangile est un jeu!
 author: Noémie Emery
 date: 2019-10-16T09:11:05+00:00
-url: /levangile-est-un-jeu/
+aliases:
+  - /levangile-est-un-jeu/
 categories:
   - Articles
 image: blog/2019/No.png

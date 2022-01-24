@@ -2,7 +2,8 @@
 title: RTS Religion « Des Eglises au chevet du Climat »
 author: Benoît Ischer
 date: 2019-09-30T16:59:01+00:00
-url: /rts-religion-des-eglises-au-chevet-du-climat-hautes-frequences-emission-du-29-09-2019/
+aliases:
+  - /rts-religion-des-eglises-au-chevet-du-climat-hautes-frequences-emission-du-29-09-2019/
 image: blog/2019/624.jpg
 categories:
   - Media

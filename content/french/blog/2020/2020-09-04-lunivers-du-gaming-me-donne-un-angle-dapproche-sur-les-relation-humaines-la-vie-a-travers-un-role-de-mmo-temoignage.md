@@ -2,7 +2,8 @@
 title: "La vie à travers un rôle de MMO — témoignages"
 author: Benoît Ischer
 date: 2020-09-04T14:56:43+00:00
-url: /lunivers-du-gaming-me-donne-un-angle-dapproche-sur-les-relation-humaines-la-vie-a-travers-un-role-de-mmo-temoignage/
+aliases:
+  - /lunivers-du-gaming-me-donne-un-angle-dapproche-sur-les-relation-humaines-la-vie-a-travers-un-role-de-mmo-temoignage/
 image: http://www.open-source.church/wp-content/uploads/2020/04/roles.jpg
 categories:
   - Articles

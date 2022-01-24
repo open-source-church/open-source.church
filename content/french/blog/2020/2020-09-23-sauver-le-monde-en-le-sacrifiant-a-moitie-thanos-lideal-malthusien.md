@@ -2,7 +2,8 @@
 title: "Sauver le monde en le sacrifiant à moitié ? Thanos : l'idéal malthusien !"
 author: Benoît Ischer
 date: 2020-09-23T16:59:34+00:00
-url: /sauver-le-monde-en-le-sacrifiant-a-moitie-thanos-lideal-malthusien/
+aliases:
+  - /sauver-le-monde-en-le-sacrifiant-a-moitie-thanos-lideal-malthusien/
 image: blog/2020/4704-e1600880214165.jpg
 categories:
   - Articles

@@ -2,7 +2,8 @@
 title: "World of Warcraft, Battle for Azeroth : une extension écologiste !"
 author: Benoît Ischer
 date: 2020-08-26T15:21:26+00:00
-url: /quelle-honte-faire-passer-sa-propre-cupidite-avant-la-sante-de-la-planete-dazeroth-world-of-warcraft-battle-for-azeroth-une-extension-ecologiste/
+aliases:
+  - /quelle-honte-faire-passer-sa-propre-cupidite-avant-la-sante-de-la-planete-dazeroth-world-of-warcraft-battle-for-azeroth-une-extension-ecologiste/
 image: blog/2020/14459-the-game-theorists-the-science-of-world-of-warcraft-e1598455131466.jpg
 categories:
   - Articles

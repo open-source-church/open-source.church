@@ -2,7 +2,8 @@
 title: Dragon-Age Inquisition … répondre à un appel !
 author: Benoît Ischer
 date: 2019-10-16T13:29:30+00:00
-url: /dragon-age-inquisition-repondre-a-un-appel/
+aliases:
+  - /dragon-age-inquisition-repondre-a-un-appel/
 image: blog/2019/Be.jpg
 categories:
   - Articles

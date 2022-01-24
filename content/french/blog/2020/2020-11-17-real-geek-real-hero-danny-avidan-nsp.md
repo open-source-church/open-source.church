@@ -2,7 +2,8 @@
 title: "Real Geek Real Hero: Danny Avidan (NSP)"
 author: Noémie Emery
 date: 2020-11-17T09:21:00+00:00
-url: /real-geek-real-hero-danny-avidan-nsp/
+aliases:
+  - /real-geek-real-hero-danny-avidan-nsp/
 image: /blog/2020/tenor-1.gif
 type: post
 categories:

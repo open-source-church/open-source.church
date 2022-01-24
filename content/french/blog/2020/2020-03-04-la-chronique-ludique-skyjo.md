@@ -2,7 +2,8 @@
 title: "La chronique ludique : Skyjo !"
 author: William Bernard
 date: 2020-03-04T15:52:07+00:00
-url: /la-chronique-ludique-skyjo/
+aliases:
+  - /la-chronique-ludique-skyjo/
 image: blog/2020/31249.png
 categories:
   - Articles

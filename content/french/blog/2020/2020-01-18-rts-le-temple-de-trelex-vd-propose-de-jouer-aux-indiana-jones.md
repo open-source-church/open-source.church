@@ -2,7 +2,8 @@
 title: "RTS : « Le temple de Trélex (VD) propose de jouer aux Indiana Jones »"
 author: admin
 date: 2020-01-18T13:33:33+00:00
-url: /rts-le-temple-de-trelex-vd-propose-de-jouer-aux-indiana-jones/
+aliases:
+  - /rts-le-temple-de-trelex-vd-propose-de-jouer-aux-indiana-jones/
 image: blog/2020/topelement-1.jpg
 categories:
   - Media

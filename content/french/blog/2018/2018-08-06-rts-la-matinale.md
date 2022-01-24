@@ -4,7 +4,8 @@ author: admin
 date: 2018-08-06T18:12:40+00:00
 type: post
 image: blog/2018/624-1.jpg
-url: /rts-la-matinale/
+aliases:
+  - /rts-la-matinale/
 description: 
 categories:
   - Media

@@ -2,7 +2,8 @@
 title: "24 heures : « Au pied du «sapin solidaire», des cadeaux simples et nécessaires »"
 author: admin
 date: 2019-12-23T14:12:48+00:00
-url: /24-heures-au-pied-du-sapin-solidaire-des-cadeaux-simples-et-necessaires/
+aliases:
+  - /24-heures-au-pied-du-sapin-solidaire-des-cadeaux-simples-et-necessaires/
 image: blog/2019/topelement.jpg
 categories:
   - Media

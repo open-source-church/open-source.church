@@ -2,7 +2,8 @@
 title: "La Chronique ludique: La Quête Du Bonheur"
 author: William Bernard
 date: 2020-06-10T12:08:35+00:00
-url: /la-chronique-ludique-la-quete-du-bonheur/
+aliases:
+  - /la-chronique-ludique-la-quete-du-bonheur/
 categories:
   - Articles
 image: blog/2020/641c5863fb01d4af4779581880662593bc163ebd446f055ce8c35d1faf39.jpeg

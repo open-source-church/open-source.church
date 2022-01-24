@@ -2,7 +2,8 @@
 title: Fruits Basket, ce manga qui me redonne la foi
 author: Noémie Emery
 date: 2020-08-18T17:15:55+00:00
-url: /fruits-basket-ce-manga-qui-me-redonne-la-foi/
+aliases:
+  - /fruits-basket-ce-manga-qui-me-redonne-la-foi/
 categories:
   - Articles
 type: post

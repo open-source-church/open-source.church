@@ -2,7 +2,8 @@
 title: "Réformés.ch : « Les Réformés à la manif pour le climat »"
 author: Benoît Ischer
 date: 2019-09-30T17:22:00+00:00
-url: /reformes-ch-les-reformes-a-la-manif-pour-le-climat/
+aliases:
+  - /reformes-ch-les-reformes-a-la-manif-pour-le-climat/
 image: authors/bischer.jpg
 categories:
   - Media

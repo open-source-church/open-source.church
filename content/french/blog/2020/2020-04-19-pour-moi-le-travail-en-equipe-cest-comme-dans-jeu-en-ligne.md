@@ -2,7 +2,8 @@
 title: Pour moi, le travail en équipe, c’est comme dans les jeux en ligne …
 author: Benoît Ischer
 date: 2020-04-19T22:21:22+00:00
-url: /pour-moi-le-travail-en-equipe-cest-comme-dans-jeu-en-ligne/
+aliases:
+  - /pour-moi-le-travail-en-equipe-cest-comme-dans-jeu-en-ligne/
 image: blog/2020/roles.jpg
 categories:
   - Articles

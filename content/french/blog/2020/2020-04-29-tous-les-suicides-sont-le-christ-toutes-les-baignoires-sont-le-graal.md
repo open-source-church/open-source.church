@@ -2,7 +2,8 @@
 title: Tous les suicidés sont le Christ, toutes les baignoires sont le Graal
 author: Noémie Emery
 date: 2020-04-29T13:54:57+00:00
-url: /tous-les-suicides-sont-le-christ-toutes-les-baignoires-sont-le-graal/
+aliases:
+  - /tous-les-suicides-sont-le-christ-toutes-les-baignoires-sont-le-graal/
 image: blog/2020/Kaamelott-e1588190117462.jpg
 categories:
   - Articles

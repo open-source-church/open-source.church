@@ -2,7 +2,8 @@
 title: "Zevent : quand la communauté du gaming déploie sa force !"
 author: Benoît Ischer
 date: 2020-10-23T17:17:38+00:00
-url: /zevent-quand-la-communaute-du-gaming-deploie-sa-force/
+aliases:
+  - /zevent-quand-la-communaute-du-gaming-deploie-sa-force/
 categories:
   - Articles
 type: post

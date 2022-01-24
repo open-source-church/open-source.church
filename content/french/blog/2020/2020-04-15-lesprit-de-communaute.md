@@ -2,7 +2,8 @@
 title: L'Esprit de Communauté
 author: Noémie Emery
 date: 2020-04-15T14:14:40+00:00
-url: /lesprit-de-communaute/
+aliases:
+  - /lesprit-de-communaute/
 categories:
   - Articles
 type: post

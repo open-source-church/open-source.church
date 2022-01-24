@@ -2,7 +2,8 @@
 title: "ENSEMBLE – n°39 : Une paroisse pour « geeks »"
 author: admin
 date: 2019-06-02T17:32:05+00:00
-url: /ensemble-n39-une-paroisse-pour-geeks/
+aliases:
+  - /ensemble-n39-une-paroisse-pour-geeks/
 image: blog/2019/screenshot_20191222_192702.png
 categories:
   - Media

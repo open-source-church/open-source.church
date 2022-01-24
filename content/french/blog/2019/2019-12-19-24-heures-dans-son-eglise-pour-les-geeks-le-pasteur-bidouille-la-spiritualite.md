@@ -3,7 +3,8 @@ title: "24 heures: «Dans son église « pour les geeks », le pasteur bidouil
 author: admin
 date: 2019-12-19T15:37:42+00:00
 excerpt: "À Lausanne, un jeune ministre et son équipe marient religion, jeux et pop culture depuis un an, sur mandat de l’Église réformée.…"
-url: /24-heures-dans-son-eglise-pour-les-geeks-le-pasteur-bidouille-la-spiritualite/
+aliases:
+  - /24-heures-dans-son-eglise-pour-les-geeks-le-pasteur-bidouille-la-spiritualite/
 image: /blog/2019/2019-12-19-24h-photo.jpg
 categories:
   - Media

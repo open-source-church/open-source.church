@@ -2,7 +2,8 @@
 title: "La Chronique ludique : Punto !"
 author: William Bernard
 date: 2020-03-11T13:30:23+00:00
-url: /la-chronique-ludique-punto/
+aliases:
+  - /la-chronique-ludique-punto/
 image: blog/2020/646214_b.jpg
 categories:
   - Articles

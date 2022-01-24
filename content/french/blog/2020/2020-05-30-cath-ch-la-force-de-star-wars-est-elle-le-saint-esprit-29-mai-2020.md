@@ -2,7 +2,8 @@
 title: La Force de 'Star Wars' est-elle le Saint-Esprit?
 author: admin
 date: 2020-05-30T16:00:38+00:00
-url: /cath-ch-la-force-de-star-wars-est-elle-le-saint-esprit-29-mai-2020/
+aliases:
+  - /cath-ch-la-force-de-star-wars-est-elle-le-saint-esprit-29-mai-2020/
 image: blog/2020/tobias-cornille-dV9ZfzLxaQ4-unsplash-e1590854358971.jpg
 categories:
   - Media

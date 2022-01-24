@@ -20,13 +20,13 @@
   translation: Nous joindre
 
 - id: latest_article
-  translation: Dernier article
+  translation: Derniers articles
 
 - id: categories
   translation: Catégories
 
 - id: tags
-  translation: Étiquettes
+  translation: Tags
 
 - id: see_all
   translation: Tout voir
@@ -108,3 +108,6 @@
 
 - id: download
   translation: Télécharger
+
+- id: table_of_contents
+  translation: Table des matières

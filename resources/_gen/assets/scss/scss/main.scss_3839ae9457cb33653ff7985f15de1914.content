@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
 
@@ -890,3 +891,43 @@ a.text-secondary, a.text-secondary:hover {
 .pagination .page-item.disabled .page-link {
   background: transparent;
   color: #4b4c58; }
+
+.content blockquote p {
+  margin-bottom: 0;
+  color: #ddd;
+  margin-left: 3em; }
+
+.content a {
+  color: #ffd400;
+  text-decoration: none; }
+
+.content a:hover {
+  color: #00ffdd; }
+
+.content a.btn-primary {
+  color: #212227; }
+
+.content hr {
+  border: 1px dotted green; }
+
+.content hr {
+  display: block;
+  clear: both;
+  height: 0;
+  margin: 20px 0 60px;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  font-size: 24px; }
+
+.content hr:after {
+  content: "⚂⚀⚁⚂⚃⚄⚅";
+  height: 0;
+  letter-spacing: 1em;
+  color: #d700d7; }
+
+.content ol {
+  list-style-type: auto; }
+
+.content figcaption p {
+  font-size: smaller; }

@@ -36,15 +36,17 @@
 <section class="bg-gray overflow-md-hidden">
   <div class="container-fluid p-0">
     <div class="row no-gutters">
+      <!-- Image -->
       <div class="col-xl-4 col-lg-5 align-self-center text-center">
         <img class="img-fluid w-50" src="{{ .image | absURL }}" alt="banner-feature">
       </div>
+      <!-- Features -->
       <div class="col-xl-8 col-lg-7">
         <div class="row feature-blocks bg-gray justify-content-between">
           {{ range .feature_item }}
-          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
-            <i class="{{ .icon }} mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-            <h3 class="mb-xl-4 mb-lg-3 mb-4">{{ .name | markdownify }}</h3>
+          <div class="col-sm-4 col-xl-4 mb-xl-5 mb-lg-3 mb-4 text-center">
+            <img src="{{ .image }}" class="mb-xl-4 mb-lg-3 mb-4" width="111px" />
+            <h3 class="mb-xl-4 mb-lg-3 mb-4" style="color:{{.color}};">{{ .name | markdownify }}</h3>
             <p>{{ .content | markdownify }}</p>
           </div>
           {{ end }}
@@ -141,6 +143,31 @@
 {{ end }}
 {{ end }}
 <!-- /cta -->
+
+<!-- where to fin us -->
+{{ if $data.homepage.wtfu.enable }}
+{{ with $data.homepage.wtfu }}
+<section class="section bg-background">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title text-white">{{ .title | markdownify }}</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      {{ range .buttons }}
+      <div class="col text-center bg-majenta">
+        <h3>{{ .name }}</h3>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /where to fin us -->
 
 <!-- success story -->
 {{ if $data.homepage.success_story.enable }}

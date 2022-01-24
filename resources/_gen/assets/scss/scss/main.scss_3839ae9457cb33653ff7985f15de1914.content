@@ -21,6 +21,15 @@ VERSION:	Versoin Number
 .text-darkgray {
   color: #212227; }
 
+.bg-majenta {
+  background: #d700d7; }
+
+.bg-yellow {
+  background: #ffd400; }
+
+.bg-darkgray {
+  background: #212227; }
+
 @font-face {
   font-family: 'VCR OSD Mono';
   src: url("../fonts/VCR_OSD_MONO_1.001.ttf") format("ttf");
@@ -943,3 +952,20 @@ a.text-secondary, a.text-secondary:hover {
 
 .content figcaption p {
   font-size: smaller; }
+
+.bg-footer {
+  background-color: #4b4c58; }
+
+.footer {
+  border-color: #ffd400 !important;
+  padding-top: 275px;
+  color: #ddd; }
+  .footer a {
+    color: #ccc;
+    text-transform: capitalize; }
+    .footer a:hover {
+      text-decoration: none;
+      color: #ffd400; }
+
+.copyright p {
+  text-transform: none; }

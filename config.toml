@@ -5,7 +5,7 @@ theme = "educenter-hugo"
 # post pagination
 paginate = "10"
 # post excerpt
-summaryLength = "50"
+summaryLength = "10"
 # disqus short name
 disqusShortname = "" # get your shortname form here : https://disqus.com
 # disable language
@@ -53,8 +53,8 @@ link = "plugins/google-map/gmap.js"
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
-logo_small = "images/logo-oneline.png" # when navbar is small
+logo = "images/logo/logo.png"
+logo_small = "images/logo/logo-oneline.png" # when navbar is small
 # Meta data
 description = "Open Source Church — une église en développement, par des geeks, pour des geeks."
 author = "Open Source Church"
@@ -95,31 +95,41 @@ enable = false
 expire_days = 2
   
 ############################# social site ########################
+
 [[params.social]]
-title = "facebook"
-icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
+title = "discord"
+icon = "ti-github" # themify icon : https://themify.me/themify-icons
+link = "http://discord.open-source.church/"
+
+[[params.social]]
+title = "twitch"
+image = "/images/icons/github-iconx64.png" # themify icon : https://themify.me/themify-icons
+link = "https://www.twitch.tv/opensourcechurch"
 
 [[params.social]]
 title = "twitter"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://twitter.com/Opnsourcechurch"
 
 [[params.social]]
 title = "instagram"
 icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.instagram.com/opensource.church"
 
 [[params.social]]
 title = "github"
 icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://github.com/open-source-church"
 
 [[params.social]]
-title = "linkedin"
-icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
+title = "youtube"
+icon = "ti-youtube" # themify icon : https://themify.me/themify-icons
+link = "https://www.youtube.com/channel/UCNgeAmWZx4yWXK1TIp_PjqQ  "
 
+[[params.social]]
+title = "facebook"
+icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
+link = "https://facebook.com/opensourcechurch"
 
 ################################### English language #####################################
 [Languages.en]
@@ -219,7 +229,7 @@ contentDir = "content/french"
 weight = 1
 home = "Accueil"
 # copyright
-copyright = "Copyright &copy; 2021 a hugo theme by [Themefisher](https://themefisher.com/hugo-themes/)"
+copyright = "Powered by [Hugo](https://gohugo.io/) · thème basé sur [educenter](https://github.com/themefisher/educenter-hugo) par [Themefisher](https://themefisher.com/hugo-themes/)"
 
 
 

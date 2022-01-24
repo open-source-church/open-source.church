@@ -45,33 +45,42 @@ banner_feature:
     # feature item loop
     - name : "Jeux"
       icon : "ti-game" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+      image: "images/logo/logo-game-no-text.png"
+      color: "#ffd400"
+      content : "Jeux de société, jeux vidéo, jeux de rôles, gamification…
+
+
+Le jeu nous met en relation les uns avec les autres et nous permets d'expérimenter de nouvelles perspectives sur la réalité."
 
     # feature item loop
     - name : "Imaginaire"
       icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+      image: "images/logo/logo-fantasy-no-text.png"
+      color: "#00ffdd"
+      content : "Science-fiction, fantasy, contes & légendes, …
+      
+
+Les univers de fictions sur des portes d'accès infinies pour penser le monde et notre place."
 
     # feature item loop
     - name : "Sciences & technologies"
       icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+      image: "images/logo/logo-tech-no-text.png"
+      color: "#d700d7"
+      content : "La technologie ouvre des nouvelles fenêtres de relations aux autres... et à Dieu.
 
-    # feature item loop
-    - name : "Spiritualité"
-      icon : "ti-book" # icon pack : https://themify.me/themify-icons
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
 
+Open Source Church c'est aussi une réflexion critique sur l'usage de la technologie, ses bienfaits et ses abus."
 
 ############################## about ##################################
 about:
   enable : true
-  title : "À propos d'Open Source Church"
+  title : "Un projet d'innovation"
   image : "images/theme/about/about-us.jpg"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  pariatur. Excepteur sint occaecat
+  content : "Open Source Church se base donc logiquement sur cette affirmation d’Olivier pour son projet d’église : assumer nos passions et intérêts partagés et les mettre au cœur de nos activités et idées pour la communauté. 
+  
 
-
-  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem "
+  Ces passions s’articulent principalement – mais pas exclusivement – autour de trois domaines : le jeu, la fiction, les sciences/technologies."
   button:
     enable : true
     label : "En savoir plus"
@@ -80,24 +89,36 @@ about:
 
 ############################# Course ################################
 course:
-  enable : true
+  enable : false
   title : "Notre cours"
   # course item comes from "content/**/course" folder.
 
 ########################## Call to action ############################
 cta:
-  enable : true
+  enable : false
   subtitle : "Cliquez pour vous joindre à l’atelier avancé"
-  title : "Apprentissage en réseautique avancée"
+  title : "Rejoindre la communauté sur Discord"
   button:
     enable : true
-    label : "Se joindre"
+    label : "Rejoindre"
     link : "contact"
 
+########################## Where to find us ############################
+
+wtfu:
+  enable: false
+  title: "Où nous trouver"
+  buttons:
+    - name: "Discord"
+      icon: ""
+      url: ""
+    - name: "Twitch"
+      icon: ""
+      url: ""
 
 ######################## Success story #############################
 success_story:
-  enable : true
+  enable : false
   bg_image : "images/backgrounds/success-story.jpg"
   title : "Histoires de réussites"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat pariatur. Excepteur sint occaecat.
@@ -143,5 +164,5 @@ funfacts:
 ############################# blog ################################
 blog:
   enable : true
-  title : "DERNIÈRES NOUVELLES"
+  title : "Derniers articles"
   # blog item comes from "content/**/blog" folder.

@@ -104,3 +104,22 @@ a.text-secondary, a.text-secondary:hover { color: $majenta !important; }
   ol { list-style-type: auto;  }
   figcaption p { font-size: smaller; }
 }
+
+// Footer
+.bg-footer {
+  background-color: #4b4c58;
+}
+.footer {
+  border-color: $yellow !important;
+  padding-top: 275px;
+  color: #ddd;
+  a {
+    color: #ccc;
+    text-transform: capitalize;
+    &:hover {
+      text-decoration: none;
+      color: $yellow;
+    }
+  }
+}
+.copyright p {text-transform: none;}

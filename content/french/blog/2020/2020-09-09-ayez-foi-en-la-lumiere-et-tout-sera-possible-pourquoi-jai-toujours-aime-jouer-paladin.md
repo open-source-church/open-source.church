@@ -6,12 +6,12 @@ url: /ayez-foi-en-la-lumiere-et-tout-sera-possible-pourquoi-jai-toujours-aime-jo
 image: blog/2020/61CC24dDSYL._AC_SY679_.jpg
 categories:
   - Articles
-tags: ["Chrétien", "Foi", "Gaming", "Geek", "Inspiration", "Jeu", "Jeux vidéo", "Quête", "Vocation", "Warcraft"]
+tags: ["Chrétien", "Foi", "Gaming", "Geek", "Inspiration", "Jeu", "Jeu vidéo", "Quête", "Vocation", "Warcraft"]
 ---
 
 ## Du paladin au théologien
 
-_Fun fact_ : avant de pouvoir me payer un abonnement sur [World of Warcraft][1] (ci-après : WoW), j'ai enchaîné les comptes d'essais gratuits. Et c'était frustrant car lesdits comptes ne duraient que 10 jours. Pour une raison qui m'échappe encore, je créais **systématiquement** des prêtres. Puis, quand j'ai eu mon vrai compte, j'ai créé [Kalecos][2] &#8211; allez le voir, il est si beau. Kalec' est un paladin âgé de bientôt 12 ans et sur lequel j'ai aujourd'hui 94 jours de jeu (avec combien de personne avez-vous passé 94&#215;24 heures dans votre vie?). Bref, le point commun entre un prêtre et un paladin c'est qu'il s'agit de deux classes dont la force et l'énergie se base sur leur foi en la Lumière (j'y reviendrai). Et dans la vrai vie, enfin : j'ai fait de la théologie. Coïncidence ? Sans doute. Des points communs ? Certainement ! 
+_Fun fact_ : avant de pouvoir me payer un abonnement sur [World of Warcraft][1] (ci-après : WoW), j'ai enchaîné les comptes d'essais gratuits. Et c'était frustrant car lesdits comptes ne duraient que 10 jours. Pour une raison qui m'échappe encore, je créais **systématiquement** des prêtres. Puis, quand j'ai eu mon vrai compte, j'ai créé [Kalecos][2] — allez le voir, il est si beau. Kalec' est un paladin âgé de bientôt 12 ans et sur lequel j'ai aujourd'hui 94 jours de jeu (avec combien de personne avez-vous passé 94&#215;24 heures dans votre vie?). Bref, le point commun entre un prêtre et un paladin c'est qu'il s'agit de deux classes dont la force et l'énergie se base sur leur foi en la Lumière (j'y reviendrai). Et dans la vrai vie, enfin : j'ai fait de la théologie. Coïncidence ? Sans doute. Des points communs ? Certainement ! 
 
 
 {{<figure src="/blog/2020/02cca815041d6ea53a0ac1d18dba1dd0.jpg" class="text-center" caption="Paladin Soignant">}}
@@ -72,17 +72,17 @@ Les paladins de WoW, leur vie de foi ainsi que leurs valeurs ont toujours trouv�
 
 Dans le jeu, alors que vous n'êtes pas très avancé dans ce dernier, vous êtes accompagnés un petit moment par un paladin nommé Jorgenson ! Ce dernier vous avoue, soudainement, quelque-chose qui m'a toujours parlé : 
 
-> Être un paladin est dur. La Lumière se comporte de façon si erratique (changeante). Certains jours, je me réveille et j’ai l’impression que tous mes pouvoirs ont été affaiblis&#8230;
+> Être un paladin est dur. La Lumière se comporte de façon si erratique (changeante). Certains jours, je me réveille et j’ai l’impression que tous mes pouvoirs ont été affaiblis…
 >
 > — <a href="https://wow.gamepedia.com/Jorgensen#Quotes">Jorgensen</a>
 
-Certes, cette petite phrase fait sans doute allusion à la force des paladins &#8211; au sens du gameplay &#8211; mais elle me parle. La vie de foi n'est pas un long fleuve tranquille. Comme Jorgensen, il y a des matins où ma relation à Dieu s'accompagne d'un vrai doute voire de désespoir. Dans ces moments, affirmer que ses _**pouvoirs**_ sont affaiblis n'est que trop vrai. Mais le doute n'a pas a être élément de honte : même si nous vivons dans un temps où la certitude ainsi que l'assurance personnelle sont si valorisées, savoir prendre le temps d'écouter son découragement est nécessaire. Éprouver le doute c'est donner sens au mot _**foi**_. Et Dieu ne nous abandonne pas dans ces moments de fragilité. Dixit le psalmiste : « L'Éternel est près de ceux qui ont le cœur brisé, Et il sauve ceux qui ont l'esprit dans l'abattement.(Psaume 34,18). 
+Certes, cette petite phrase fait sans doute allusion à la force des paladins — au sens du gameplay — mais elle me parle. La vie de foi n'est pas un long fleuve tranquille. Comme Jorgensen, il y a des matins où ma relation à Dieu s'accompagne d'un vrai doute voire de désespoir. Dans ces moments, affirmer que ses _**pouvoirs**_ sont affaiblis n'est que trop vrai. Mais le doute n'a pas a être élément de honte : même si nous vivons dans un temps où la certitude ainsi que l'assurance personnelle sont si valorisées, savoir prendre le temps d'écouter son découragement est nécessaire. Éprouver le doute c'est donner sens au mot _**foi**_. Et Dieu ne nous abandonne pas dans ces moments de fragilité. Dixit le psalmiste : « L'Éternel est près de ceux qui ont le cœur brisé, Et il sauve ceux qui ont l'esprit dans l'abattement.(Psaume 34,18). 
 
 ### La passion de la Justice ! 
 
-Je suis passionné par la justice sociale et environnementale. Je dirais même que c'est le centre de ma vocation tant académique, associative que militante. Comme le paladin, inspiré et poussé par ma foi, je cherche à débusquer le « _mal_ » &#8211; je laisse libre cours à votre propre définition et compréhension de ce terme &#8211; qui crée l'injustice, qu'il soit caché ou explicite, pour lui résister et, si possible, diminuer son influence. Alors certes, ce n'est pas aussi sensationnel que d'affronter une horde de mort-vivants à grand coup d'épée lumineuses, mais la quête intérieur est similaire. Les risques de cette dernière aussi d'ailleurs. Car la poursuite de la justice n'est pas sans dérives possibles. Ainsi, quand la colère monte en moi , je me rappelle la phrase d'un grand paladin de l'histoire de WoW : 
+Je suis passionné par la justice sociale et environnementale. Je dirais même que c'est le centre de ma vocation tant académique, associative que militante. Comme le paladin, inspiré et poussé par ma foi, je cherche à débusquer le « _mal_ » — je laisse libre cours à votre propre définition et compréhension de ce terme — qui crée l'injustice, qu'il soit caché ou explicite, pour lui résister et, si possible, diminuer son influence. Alors certes, ce n'est pas aussi sensationnel que d'affronter une horde de mort-vivants à grand coup d'épée lumineuses, mais la quête intérieur est similaire. Les risques de cette dernière aussi d'ailleurs. Car la poursuite de la justice n'est pas sans dérives possibles. Ainsi, quand la colère monte en moi , je me rappelle la phrase d'un grand paladin de l'histoire de WoW : 
 
-> Souvenez-vous Arthas, nous sommes des paladins, notre idéal exclut la vengeance. Si la passion éveille en nous le goût du sang, nous nous ravalerons nous-même au rang des orcs&#8230;
+> Souvenez-vous Arthas, nous sommes des paladins, notre idéal exclut la vengeance. Si la passion éveille en nous le goût du sang, nous nous ravalerons nous-même au rang des orcs…
 >
 > —<a href="https://wowwiki.fandom.com/fr/wiki/Uther_le_Porteur_de_Lumi%C3%A8re#:~:text=Citations,m%C3%AAmes%20au%20rang%20des%20orcs.">Uther, le Porteur de Lumière</a>
 
@@ -96,7 +96,7 @@ Jésus Christ a dit :
 
 > « **Tout est possible à celui qui croit** » (Marc 9,23).
 
-[Tirion Fordring][13] &#8211; un autre important paladin de WoW &#8211; nous encourage toujours en disant :
+[Tirion Fordring][13] — un autre important paladin de WoW — nous encourage toujours en disant :
 
 > « **Ayez foi en la Lumière et tout sera possible !** ».
 

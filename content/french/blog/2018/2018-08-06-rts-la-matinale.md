@@ -2,8 +2,7 @@
 title: RTS – La Matinale
 author: admin
 date: 2018-08-06T18:12:40+00:00
-image: blog/2019/624-1.jpg
-bg_image: 
+image: blog/2018/624-1.jpg
 url: /rts-la-matinale/
 description: 
 categories:

@@ -6,7 +6,7 @@ url: /levangile-est-un-jeu/
 categories:
   - Articles
 image: blog/2019/No.png
-tags: ["évangile", "jeux"]
+tags: ["évangile", "jeu"]
 
 ---
 Puis-je, en temps que théologienne déjà bachelorisée et bientôt (si Dieu le veut) masterisée, vous affirmer ceci sans sourcilier : « L'Evangile est un jeu » ? Absolument, et c'est très sérieux – si l'on entend par là que la chose est non pas austère et exempte de toute fantaisie, mais plutôt pleine d'une importance vitale, d'une vérité plus profonde qu'il n'y parait.

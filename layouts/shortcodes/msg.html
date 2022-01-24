@@ -1,0 +1,12 @@
+
+
+{{ $cls := cond (eq (len (.Get 1)) 0) "text-left d-inline-block float-left" "text-right float-right" }}
+{{ $cls2 := cond (eq (len (.Get 1)) 0) "" "" }}
+
+
+<div class=" bg-gray rounded-lg p-1 px-2 {{$cls}}" style="max-width: 80%;">
+    <span class="{{$cls2}}  p-0 text-white">
+        {{ .Get 0 | markdownify }}
+    </span>
+</div>
+<div class="w-100 float-left m-0"></div>

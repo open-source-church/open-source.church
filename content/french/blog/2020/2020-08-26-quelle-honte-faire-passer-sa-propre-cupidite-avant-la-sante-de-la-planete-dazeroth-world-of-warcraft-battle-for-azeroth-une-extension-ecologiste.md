@@ -29,13 +29,13 @@ Résumons les points clés de la pensée dite environnementale :
 
 Et c'est là que le 14 août 2018, Blizzard sort la septième extension de son éternel MMO-RPG World of Warcraft : _Battle for Azeroth_ (que je nommerai WoW / BFA ci-après). Alors, le pitch de cette extension en quelques phrases : 
 
-A la fin de l'extension précédente, le Titan Sargeras (comprenez : le big méchant), plante, , juste avant d'être vaincu, son épée dans la planète (nommée Azeroth) sur laquelle les joueur.se.s évoluent &#8211; je ne peux m&#8217;empêcher de souligner la belle allégorie de la corruption par le pouvoir du « masculin » que représente cette **immense** épée &#8211; et il est exilé à l'autre bout de l'univers. Résultat : les factions qui s'étaient alliées pour combattre ledit Titan se retrouvent sur une planète salement amochée et mourante. 
+A la fin de l'extension précédente, le Titan Sargeras (comprenez : le big méchant), plante, , juste avant d'être vaincu, son épée dans la planète (nommée Azeroth) sur laquelle les joueur.se.s évoluent — je ne peux m&#8217;empêcher de souligner la belle allégorie de la corruption par le pouvoir du « masculin » que représente cette **immense** épée — et il est exilé à l'autre bout de l'univers. Résultat : les factions qui s'étaient alliées pour combattre ledit Titan se retrouvent sur une planète salement amochée et mourante. 
 
 {{<figure src="/blog/2020/14459-the-game-theorists-the-science-of-world-of-warcraft-1024x574.jpg" width="100%" class="text-center">}}
 
 {{<figure src="/blog/2020/maxresdefault-1-1024x576.jpg" width="100%" class="text-center">}}
 
-La planète est si mal en point qu'elle se met à déverser son « sang » (nommé logiquement « azérite ») qui coule en gisement à la surface. Dès lors, la situation est critique et chaotique pour tout ce qui vit sur cette planète. Et, d'après-vous, que font les deux factions &#8211; La Horde et l'Alliance &#8211; qui se partagent Azeroth ? Je vous le donne en mille : elles transforment l'azérite en arme, se lancent dans une course à l'armement pour se taper dessus !
+La planète est si mal en point qu'elle se met à déverser son « sang » (nommé logiquement « azérite ») qui coule en gisement à la surface. Dès lors, la situation est critique et chaotique pour tout ce qui vit sur cette planète. Et, d'après-vous, que font les deux factions — La Horde et l'Alliance — qui se partagent Azeroth ? Je vous le donne en mille : elles transforment l'azérite en arme, se lancent dans une course à l'armement pour se taper dessus !
 
 {{<figure src="/blog/2020/giphy.gif" class="text-center">}}
 
@@ -44,7 +44,7 @@ La planète est si mal en point qu'elle se met à déverser son « sang » (no
 
 Inutile de creuser à grands coups d'interprétation pour comprendre ce à quoi fait référence le scénario de cette extension. Cependant, là où WoW / BFA m'intéresse particulièrement, c'est que la narration fait évoluer le.la joueur.se. sur l'absurdité de ce combat au fil de l'extension. En effet, si au début de l'histoire de BFA ([la cinématique][2] en est la preuve) la focalisation est sur le combat frontale de la Horde contre l'Alliance ; petit à petit l'absurdité de ce combat apparaît en pleine en lumière ! Et c'est là que se déploie le rôle essentiel des « éveilleur.se.s de consciences » : à savoir des personnes qui viennent défendre les valeurs environnementales que j'ai résumé plus haut face à l'attitude des dirigeants de la Horde/Alliance.
 
-#### Magni Barbe-de-Bronze &#8211; l'Orateur d'Azeroth : le lanceur d'alerte! 
+#### Magni Barbe-de-Bronze — l'Orateur d'Azeroth : le lanceur d'alerte! 
 
 Le premier d'entre-iels est Magni Barbe-de-Bronze : la version nanesque de Greta Thunberg. Voici un résumé de ses citations : 
 
@@ -67,7 +67,7 @@ Baine est très inspirant pour notre génération. Refusant de poursuivre une gu
   * Je ne peux pas supporter cela.&nbsp;Chaque fois que je pense que Sylvanas est allé trop loin, elle trouve une nouvelle ligne à franchir.&nbsp;Je l’ai vue commettre un acte déshonorant après l’autre.  
     Elle profane plus que la mémoire d’un ennemi déchu.&nbsp;Elle profane la Horde elle-même.  
     Cela ne peut pas durer.&nbsp;Il faut faire quelque chose.&nbsp;Et bientôt. 
-  * La Horde est rongée par le mal, **nous sommes en guerre alors que la Terre-Mère se meurt, nous avons perdu de vue l'essentiel et mon cœur ne peut plus le tolérer** (&#8230;) à quoi bon être en vie s'il on doit renoncer à ses principes.
+  * La Horde est rongée par le mal, **nous sommes en guerre alors que la Terre-Mère se meurt, nous avons perdu de vue l'essentiel et mon cœur ne peut plus le tolérer** (…) à quoi bon être en vie s'il on doit renoncer à ses principes.
 
 {{<figure src="/blog/2020/687012-baine-sabot-de-sang.jpg" width="100%" class="text-center" >}}
 

@@ -5,5 +5,4 @@ draft: false
 bg_image: "images/theme/backgrounds/page-title.jpg"
 # meta description
 description : "Nos derniers articles. Certains sont biens."
-type: "post"
 ---

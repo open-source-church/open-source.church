@@ -19,7 +19,7 @@ Grâce à [l'Alliance Climatique suisse][1], nous avons pu nous exprimer à Bern
     En tant qu'institution, c'est-à-dire en tant que conseil de paroisse, on voulait montrer qu'on rejoint les 80 autres associations qui sont dans l'Alliance climatique Suisse parce qu'on mène le même combat.
   </p>
   
-  <cite>Benoît Ischer &#8211; Vice-président du conseil de paroisse de Saint-François-Saint-Jacques</cite>
+  <cite>Benoît Ischer — Vice-président du conseil de paroisse de Saint-François-Saint-Jacques</cite>
 </blockquote>
 
 <blockquote class="wp-block-quote is-style-large">
@@ -27,7 +27,7 @@ Grâce à [l'Alliance Climatique suisse][1], nous avons pu nous exprimer à Bern
     Pour moi, c'est important parce que c'est un combat qui a des enjeux énormes. C'est important qu'on puisse rejoindre d'autres qui partagent les mêmes valeurs.
   </p>
   
-  <cite>Olivier Keshavjee &#8211; pasteur suffragant de la paroisse de Saint-François-Saint-Jacques </cite>
+  <cite>Olivier Keshavjee — pasteur suffragant de la paroisse de Saint-François-Saint-Jacques </cite>
 </blockquote>
 
 ­—[Regarder le reportage de Réformés.ch !][2]

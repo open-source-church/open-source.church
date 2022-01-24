@@ -3,312 +3,246 @@ title: "Ecriture : bref florilège & ressources"
 author: Noémie Emery
 date: 2020-12-10T16:10:03+00:00
 url: /ecriture-bref-florilege-ressources/
+image: https://pixabay.com/get/g985cbf23d5e1b760fbfada6b8c78b0fa68ebf5b476b3b715bbc2914751f4fe18461059435cea09647353c177f007afe7_1280.jpg
 categories:
   - Articles
-
+  - Ressources
+tags: ["Atelier", "Créativité", "Écriture", "Jeudregeek", "Ressource"]
 ---
 Juste pour le plaisir des mots, quelques extraits tirés de nos ateliers d'écriture, vécus dans le cadre des JeudreGeeks.
 
 En fin d'article : quelques ressources pour se (re)mettre à l'écriture.
 
-<div class="wp-block-image">
-  <figure class="alignright is-resized"><img src="https://www.open-source.church/wp-content/uploads/2020/12/monde-secret.jpg" alt="" class="wp-image-30064" width="230" height="445" srcset="https://www.open-source.church/wp-content/uploads/2020/12/monde-secret.jpg 460w, https://www.open-source.church/wp-content/uploads/2020/12/monde-secret-155x300.jpg 155w" sizes="(max-width: 230px) 100vw, 230px" /></figure>
+## Extraits
+
+### Écriture automatique
+
+
+<div class="row justify-content-center">
+<div class="col-12 col-sm-8">
+
+> « Il n'existe pas dans le corps de l'âme qui vit, ni fable ni chant. Je suis si néant, si force, si faiblesse que l'arbre de mon être n'est pas de chêne mais de cri. Jamais le souffle ne me porte car jamais Dieu ne murmure dans le vent ni dans les rues. Que toujours je sois porté au rythme du son, au chant du repos, à l'arbre des possibles, à l'angoisse de la mort : je suis chant, je suis sang, je suis volcan. Que l'aigle qui me porte jamais ne se lasse, que la pierre qui me bâtit s'assume dans ce Dieu affirme. Les hommes n'aiment que le pouvoir et le sang, la domination et la richesse, l'orgueil et la volonté, le désir mais pas la responsabilité, la magie mais pas le sens, que soit à jamais l'absolu du silence si nous désirons tant posséder, tant gagner … »
+>
+> — Benoît
+
+</div>
+<div class="col-8 col-sm-4">
+{{<figure src="https://www.gamaniak.com/media/gal/vrac-58/paradis-puits.jpg" class="text-center" width="100%">}}
+</div>
 </div>
 
-<blockquote class="wp-block-quote">
-  <p>
-    « Il n'existe pas dans le corps de l'âme qui vit, ni fable ni chant. Je suis si néant, si force, si faiblesse que l'arbre de mon être n'est pas de chêne mais de cri. Jamais le souffle ne me porte car jamais Dieu ne murmure dans le vent ni dans les rues. Que toujours je sois porté au rythme du son, au chant du repos, à l'arbre des possibles, à l'angoisse de la mort : je suis chant, je suis sang, je suis volcan. Que l'aigle qui me porte jamais ne se lasse, que la pierre qui me bâtit s'assume dans ce Dieu affirme. Les hommes n'aiment que le pouvoir et le sang, la domination et la richesse, l'orgueil et la volonté, le désir mais pas la responsabilité, la magie mais pas le sens, que soit à jamais l'absolu du silence si nous désirons tant posséder, tant gagner &#8230; »
-  </p>
-  
-  <cite>[Benoît, écriture automatique.]</cite>
-</blockquote>
 
+### Premiers rendez-vous
 
-<blockquote style="text-align:center" class="wp-block-quote">
-  <p>
-    Et c’est ainsi que j’ai tendrement agressé ce philatéliste anarchique !
-  </p>
-  
-  <p>
-    ***<br /> Les serpents duveteux sont bien connus pour mordre carré…
-  </p>
-  
-  <p>
-    ***<br /> Le calme frénétique qui règne autour de nous me pousse dans une agonie novatrice.
-  </p>
-  
-  <cite><em> [Valentin, premiers rendez-vous</em>.]</cite>
-</blockquote>
+> – *Et c’est ainsi que j’ai tendrement agressé ce philatéliste anarchique !*
+>
+> – *Les serpents duveteux sont bien connus pour mordre carré…*
+>
+> – *Le calme frénétique qui règne autour de nous me pousse dans une agonie novatrice.*
+>
+> — Valentin
 
-<div class="wp-block-image">
-  <figure class="aligncenter is-resized"><img src="https://www.open-source.church/wp-content/uploads/2020/12/imagine.jpg" alt="" class="wp-image-30063" width="345" height="368" srcset="https://www.open-source.church/wp-content/uploads/2020/12/imagine.jpg 460w, https://www.open-source.church/wp-content/uploads/2020/12/imagine-282x300.jpg 282w" sizes="(max-width: 345px) 100vw, 345px" /></figure>
-</div>
+{{<figure src="https://img-9gag-fun.9cache.com/photo/4516165_700bwp_v1.webp"  width="50%" class="text-center" caption="Dans ma tête...">}}
+
 
 ### Nota Bene. Courte fiction par messages.
 
-Salut&nbsp;!
+<div class="row justify-content-center">
+<div class="col-9">
+{{% msg "Salut&nbsp;!" %}}
+{{% msg "Salut : )" "right" %}}
 
-<p style="text-align:right">
-  Salut : )
-</p>
+{{% msg "J'ai vu ton profil et j'ai tout de suite flashé." %}}
+{{% msg "J'avoue que c'est pas ton genre de fille qui m'attire d'habitude… Mais là, je sais pas. Ya un truc ^^" %}}
 
-J'ai vu ton profil et j'ai tout de suite flashé.
+{{% msg "Alors… autant te prévenir tout de suite&nbsp;: je ne suis pas une fille" "right" %}}
 
-J'avoue que c'est pas ton genre de fille qui m'attire d'habitude&#8230; Mais là, je sais pas. Ya un truc ^^
 
-<p style="text-align:right">
-  Alors&#8230; autant te prévenir tout de suite&nbsp;: je ne suis pas une fille
-</p>
+{{% msg "Ni une femme d'ailleurs" "right" %}}
 
-<p style="text-align:right">
-  Ni une femme d'ailleurs
-</p>
+{{% msg "Euuh… t'as pas l'air d'un mec, pourtant ^^'" %}}
 
-Euuh&#8230; t'as pas l'air d'un mec, pourtant ^^'
+{{% msg "J'en suis pas un non plus. T'as pas lu ma description&nbsp;?" "right" %}}
 
-<p style="text-align:right">
-  J'en suis pas un non plus. T'as pas lu ma description&nbsp;?
-</p>
+{{% msg "Si, pourtant:) J'ai vu que t'aimes le cinéma noir-blanc et les chats." %}}
 
-Si, pourtant:) J'ai vu que t'aimes le cinéma noir-blanc et les chats.
+{{% msg "Pas faux. Mais ya aussi mentionné&nbsp;: NB." "right" %}}
 
-<p style="text-align:right">
-  Pas faux. Mais ya aussi mentionné&nbsp;: NB.
-</p>
+{{% msg "Nota Bene&nbsp;?" %}}
 
-Nota Bene&nbsp;?
+{{% msg "Non binaire" "right" %}}
 
-<p style="text-align:right">
-  Non binaire
-</p>
+{{% msg "Oh…" %}}
 
-Oh&#8230;
+---
 
-<p style="text-align:center">
-  ***
-</p>
+{{% msg "Désolé d'avoir interrompu brusquement la conversation ^^' Petit contretemps." %}}
 
-Désolé d'avoir interrompu brusquement la conversation ^^' Petit contretemps.
+{{% msg "Ah, je suis surpris·e. Je pensais pas que tu reprendrais contact." "right" %}}
 
-<p style="text-align:right">
-  Ah, je suis surpris·e. Je pensais pas que tu reprendrais contact.
-</p>
+{{% msg "Je t'ai dit, j'ai pas réussi à te cerner mais t'as un truc." %}}
 
-Je t'ai dit, j'ai pas réussi à te cerner mais t'as un truc.
+{{% msg "Un truc qui me plait : )" %}}
 
-Un truc qui me plait : )
+{{% msg "T'es marrant." "right" %}}
 
-<p style="text-align:right">
-  T'es marrant.
-</p>
+{{% msg "Ça va me prendre plus de temps pour savoir si tu me plais." "right" %}}
 
-<p style="text-align:right">
-  Ça va me prendre plus de temps pour savoir si tu me plais.
-</p>
+{{% msg "Je suis patient ^^" %}}
 
-Je suis patient ^^
+{{% msg "T'as d'autres conversations de ce type pour patienter&nbsp;?" "right" %}}
 
-<p style="text-align:right">
-  T'as d'autres conversations de ce type pour patienter&nbsp;?
-</p>
+{{% msg "Non, je suis juste très occupé." %}}
 
-Non, je suis juste très occupé.
+{{% msg "Tu fais quoi dans la vie&nbsp;?" "right" %}}
 
-<p style="text-align:right">
-  Tu fais quoi dans la vie&nbsp;?
-</p>
+{{% msg "Papa." %}}
 
-Papa.
+{{% msg "Ce qui fait que je suis très occupé : D" %}}
 
-Ce qui fait que je suis très occupé : D
+{{% msg "Sinon chômeur." %}}
 
-Sinon chômeur.
+{{% msg "Et toi&nbsp;?" %}}
 
-Et toi&nbsp;?
+{{% msg "Responsable RH dans une entreprise d'événementiel." "right" %}}
 
-<p style="text-align:right">
-  Responsable RH dans une entreprise d'événementiel.
-</p>
+{{% msg "Et je prends des cours de danse." "right" %}}
 
-<p style="text-align:right">
-  Et je prends des cours de danse.
-</p>
+{{% msg "Chouette ^^" %}}
 
-Chouette ^^
+{{% msg "Quelle genre de danse&nbsp;?" %}}
 
-Quelle genre de danse&nbsp;?
+{{% msg "Salsa." "right" %}}
 
-<p style="text-align:right">
-  Salsa.
-</p>
+{{% msg "Sexy ! : P" %}}
 
-Sexy ! : P
+{{% msg "Si on veut." "right" %}}
 
-<p style="text-align:right">
-  Si on veut.
-</p>
+{{% msg "^^" "right" %}}
 
-<p style="text-align:right">
-  ^^
-</p>
+{{% msg "Je peux te poser une question&nbsp;?" %}}
 
-Je peux te poser une question&nbsp;?
+{{% msg "Vas-y." "right" %}}
 
-<p style="text-align:right">
-  Vas-y.
-</p>
+{{% msg "Tu as le rôle de l'homme ou de la femme, quand tu danses, du coup&nbsp;?" %}}
 
-Tu as le rôle de l'homme ou de la femme, quand tu danses, du coup&nbsp;?
+{{% msg "…" "right" %}}
 
-<p style="text-align:right">
-  &#8230;
-</p>
+{{% msg "Désolé, je voulais pas te vexer ! : ) C'est jusque que je ne connais pas cette réalité." %}}
 
-Désolé, je voulais pas te vexer ! : ) C'est jusque que je ne connais pas cette réalité.
+{{% msg "Bon t'es pardonné." "right" %}}
 
-<p style="text-align:right">
-  Bon t'es pardonné.
-</p>
+{{% msg "J'aime bien ta franchise." "right" %}}
 
-<p style="text-align:right">
-  J'aime bien ta franchise.
-</p>
+{{% msg "Du coup&nbsp;?" %}}
 
-Du coup&nbsp;?
+{{% msg "C'est une école de danse inclusive, ya pas de rôle préétabli." "right" %}}
 
-<p style="text-align:right">
-  C'est une école de danse inclusive, ya pas de rôle préétabli.
-</p>
+{{% msg "J'aimerais bien voir à quoi ça ressemble, du coup : )" %}}
 
-J'aimerais bien voir à quoi ça ressemble, du coup : )
+{{% msg "Excuse, c'est moi qui dois te laisser, cette fois." "right" %}}
 
-<p style="text-align:right">
-  Excuse, c'est moi qui dois te laisser, cette fois.
-</p>
+{{% msg "A+" "right" %}}
 
-<p style="text-align:right">
-  A+
-</p>
+{{% msg "A bientôt ^^" %}}
 
-A bientôt ^^
+---
 
-<p style="text-align:center">
-  ***
-</p>
+{{% msg "Alors, ce spectacle de danse ? Prête ? : )" %}}
 
-Alors, ce spectacle de danse ? Prête ? : )
+{{% msg "N'oublie pas à qui tu parles." "right" %}}
 
-<p style="text-align:right">
-  N'oublie pas à qui tu parles.
-</p>
+{{% msg "; )" "right" %}}
 
-<p style="text-align:right">
-  ; )
-</p>
+{{% msg "Excuse ^^'" %}}
 
-Excuse ^^'
+{{% msg "Prêt·e&nbsp;?" %}}
 
-Prêt·e&nbsp;?
+{{% msg "(Heureusement que tu m'as dit où ce trouve ce point, là : D)" %}}
 
-(Heureusement que tu m'as dit où ce trouve ce point, là : D)
+{{% msg "J'ai le trac, mais je crois que ça va le faire." "right" %}}
 
-<p style="text-align:right">
-  J'ai le trac, mais je crois que ça va le faire.
-</p>
+{{% msg "Est-ce que…" %}}
 
-Est-ce que&#8230;
+{{% msg "?" "right" %}}
 
-<p style="text-align:right">
-  ?
-</p>
+{{% msg "Tu serais d'accord de me dire où et quand c'est ? J'aimerais bien venir : )" %}}
 
-Tu serais d'accord de me dire où et quand c'est ? J'aimerais bien venir : )
+{{% msg "Euh…" "right" %}}
 
-<p style="text-align:right">
-  Euh&#8230;
-</p>
+{{% msg "J'aurais trop le trac de savoir que tu es là." "right" %}}
 
-<p style="text-align:right">
-  J'aurais trop le trac de savoir que tu es là.
-</p>
+{{% msg "Ah oui&nbsp;?" %}}
 
-Ah oui&nbsp;?
+{{% msg "Flatté de te faire cet effet : D" %}}
 
-Flatté de te faire cet effet : D
+{{% msg "Prends pas la grosse tête, Lucas." "right" %}}
 
-<p style="text-align:right">
-  Prends pas la grosse tête, Lucas.
-</p>
+{{% msg "Héhé ^^" %}}
 
-Héhé ^^
+{{% msg "Tu as eu le temps de savoir si je te plais&nbsp;?" %}}
 
-Tu as eu le temps de savoir si je te plais&nbsp;?
+{{% msg "Ça fait bientôt deux mois qu'on discute" %}}
 
-Ça fait bientôt deux mois qu'on discute
+{{% msg "Presque tous les jours ^^" %}}
 
-Presque tous les jours ^^
+{{% msg "Je dois te laisser." "right" %}}
 
-<p style="text-align:right">
-  Je dois te laisser.
-</p>
+{{% msg "Je t'envoie deux entrées par mail." "right" %}}
 
-<p style="text-align:right">
-  Je t'envoie deux entrées par mail.
-</p>
+{{% msg "Embrasse Tatiana." "right" %}}
 
-<p style="text-align:right">
-  Embrasse Tatiana.
-</p>
+{{% msg "Je lui parle souvent de toi, elle t'aime déjà&nbsp;!" %}}
 
-Je lui parle souvent de toi, elle t'aime déjà&nbsp;!
+{{% msg "Merci pour les entrées ! : D" %}}
 
-Merci pour les entrées ! : D
+{{% msg "On se réjouit." %}}
 
-On se réjouit.
+{{% msg "T'es un chouette mec, Lucas" "right" %}}
 
-<p style="text-align:right">
-  T'es un chouette mec, Lucas
-</p>
+{{% msg "A+" "right" %}}
 
-<p style="text-align:right">
-  A+
-</p>
+{{% msg "J'allais écrire&nbsp;«&nbsp;T'es une chouette fille, Dom'&nbsp;»" %}}
 
-J'allais écrire&nbsp;«&nbsp;T'es une chouette fille, Dom'&nbsp;»
+{{% msg "Les vieux réflexes ont la dent dure ^^'" %}}
 
-Les vieux réflexes ont la dent dure ^^'
+{{% msg "Du coup, t'es une chouette personne, Dom'." %}}
 
-Du coup, t'es une chouette personne, Dom'.
-
-<div class="wp-block-image">
-  <figure class="alignleft"><img src="https://www.open-source.church/wp-content/uploads/2020/12/tenor.gif" alt="" class="wp-image-30065" /></figure>
+</div>
 </div>
 
-<p style="text-align:right">
-  [Noémie, écriture libre (avec contraintes choisies)]
-</p>
 
-### Quelques ressources :
+> Noémie, écriture libre (avec contraintes choisies)
 
-#### Trois exercices :
+## Quelques ressources
 
-  * Premiers rendez-vous : faire se rencontrer des mots qui ne se sont encore jamais rencontrés, en associant verbe & adverbe, verbe & adjectif, nom & adjectif, puis créer des phrases à partir de ces duos improbables.
-  * Epuiser un lieu : durant un temps donné, décrire sans s'arrêter ce que l'on voit autour de nous.
-  * Ecriture automatique : simplement écrire, écrire ce qui nous passe par la tête, sans juger, sans chercher à faire sens, même si ce sont des mots sans suite, laisser sortir ce qui vient.
+### Trois exercices
+
+#### A. Premiers rendez-vous
+
+Faire se rencontrer des mots qui ne se sont encore jamais rencontrés, en associant verbe & adverbe, verbe & adjectif, nom & adjectif, puis créer des phrases à partir de ces duos improbables.
 
 Les premiers rendez-vous sont un bon moyen de sortir de ses tics de langage, de stimuler sa créativité et sa réflexion, de réfléchir aux mots.
 
+#### B. Epuiser un lieu
+
+Durant un temps donné, décrire sans s'arrêter ce que l'on voit autour de nous.
+
 Epuiser un lieu permet de travailler son sens de l'observation, de la perception, de la description.
+
+#### C. Ecriture automatique
+
+Simplement écrire, écrire ce qui nous passe par la tête, sans juger, sans chercher à faire sens, même si ce sont des mots sans suite, laisser sortir ce qui vient.
 
 L'écriture automatique est THE exercice incontournable pour contrer l'angoisse de la page blanche, et mettre en route le processus d'écriture. On a toujours quelque chose en tête, quelque chose à mettre par écrit. Plus qu'à laisser couler. Un bel exercice, tant pour le lâcher-prise que pour l'effet cathartique (qui libère les émotions).
 
-#### Contraintes
+### Contraintes
 
 Se doter de contraintes, qu'elles soient thématiques ou stylistiques est une bonne idée ; comme le dit Monica dans Friends : « Rules help control the fun » (les règles aident à contrôler le plaisir). Cela donne une direction à la créativité.
 
 Voici quelques exemples de contraintes (jouées au dé !) proposées dans le cadre des ateliers d'écriture du JeudreGeek :
 
-D'abord stylistiques/formelles :
+#### D'abord stylistiques/formelles
 
   * mot(s) aléatoire(s) à placer dans le texte 
   * poésie 
@@ -318,9 +252,9 @@ D'abord stylistiques/formelles :
   * série de haïku 
   * Choisissez la personne qui vous attribuera une contrainte
   * le personnage principal (ou cellui qui écrit la lettre) est d'un autre sexe que le vôtre
-  * &#8230; 
+  * … 
 
-Puis thématiques :
+#### Puis thématiques
 
   * Votre pire ennemi vous écrit 
   * la rencontre de deux personnages de fiction (univers différents) 
@@ -328,27 +262,26 @@ Puis thématiques :
   * vous parlez de ce en quoi vous croyez à un perso du dernier film vu/jeu joué 
   * Dieu (vous) raconte ses plan pour la fin des temps 
   * Racontez un passage biblique du point de vue d'un personnage, soit existant soit que vous créez
-  * &#8230;
+  * …
 
-#### Ambiances sonores :
+### Ambiances sonores
 
 Tout à fait arbitrairement, voici deux artistes pour des ambiances sonores de toute beauté. N'hésitez pas à partager vos recommandations en commentaire !
 
   * [Adrian von Ziegler][1] : compositeur suisse, instrumental, entre musique celtique, métal et relaxation.
   * [Michael Ghelfi][2] : compositeur suisse, sons d'ambiance, atmosphères fantastiques.
 
-Et encore : un site pour [composer vous-mêmes vos propres ambiances sonores][3].<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+Et encore : un site pour [composer vous-mêmes vos propres ambiances sonores][3].
 
-<div class="wp-block-embed__wrapper">
-</div><figcaption>Relaxing Nordic/Viking Music &#8211; Ótroðinn. Une des nombreuses compositions d'Adrian von Ziegler.</figcaption></figure> 
+{{< youtube GmvM6syadl0 >}}
 
-<blockquote style="text-align:center" class="wp-block-quote">
-  <p>
-    « Insérer ici une citation inspirante sur l'usage de l'écriture »
-  </p>
-  
-  <cite>Une personnalité sympathique</cite>
-</blockquote>
+> Relaxing Nordic/Viking Music — Ótroðinn. Une des nombreuses compositions d'Adrian von Ziegler.
+
+---
+
+> « Insérer ici une citation inspirante sur l'usage de l'écriture »
+>
+> — *Une personnalité sympathique*
 
  [1]: https://www.youtube.com/user/AdrianvonZiegler
  [2]: https://www.youtube.com/user/MichaelGhelfi

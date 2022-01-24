@@ -3,10 +3,10 @@ title: "La vie à travers un rôle de MMO — témoignages"
 author: Benoît Ischer
 date: 2020-09-04T14:56:43+00:00
 url: /lunivers-du-gaming-me-donne-un-angle-dapproche-sur-les-relation-humaines-la-vie-a-travers-un-role-de-mmo-temoignage/
-featured_image: http://www.open-source.church/wp-content/uploads/2020/04/roles.jpg
+image: http://www.open-source.church/wp-content/uploads/2020/04/roles.jpg
 categories:
   - Articles
-test: ["Gaming", "Jeux", "Jeux vidéo", "Management", "Relation", "Warcraft"]
+tags: ["Gaming", "Jeu", "Jeu vidéo", "Management", "Relation", "Warcraft"]
 
 ---
 
@@ -14,7 +14,7 @@ test: ["Gaming", "Jeux", "Jeux vidéo", "Management", "Relation", "Warcraft"]
 
 ## Témoignages de gamer.se.s !
 
-Il y a quelques mois, j'avais écris un article : [« Pour moi, le travail en équipe, c'est comme dans les jeux en ligne&#8230; »][1] J'avançais le lien entre les rôles de Tank, Heal et DPS et leurs dimensions suggestives pour nos relations humaines. Et comme je me lasse **jamais** de parler de MMO, poursuivons l'expérience ! Cependant, cette fois, nous allons passer par des témoignages de joueur.se.s (ou ex-joueur.se.s) que j'ai recueillis. Aujourd'hui nous en découvrons deux : **Elio** et **Kyran** !
+Il y a quelques mois, j'avais écris un article : [« Pour moi, le travail en équipe, c'est comme dans les jeux en ligne… »][1] J'avançais le lien entre les rôles de Tank, Heal et DPS et leurs dimensions suggestives pour nos relations humaines. Et comme je me lasse **jamais** de parler de MMO, poursuivons l'expérience ! Cependant, cette fois, nous allons passer par des témoignages de joueur.se.s (ou ex-joueur.se.s) que j'ai recueillis. Aujourd'hui nous en découvrons deux : **Elio** et **Kyran** !
 
 
 ## **De Heal à Tank : la vision d'Elio** 
@@ -56,7 +56,7 @@ Tout d'abord, le témoignage de Kyran me parle profondément car iel souligne co
 
 Enfin, je souligne, dans l'article d'Elio, les intérêts théologiques qu'il souligne :  » Personne n’est appelé à tout faire dans le Royaume et dans l’annonce de celui-ci. » Les jeux en ligne de type MMO encourage la réussite en communauté. Il faut, dès lors, travailler et avancer avec les compétences propres à chacun.e et ne pas chercher à assumer toutes les fonctions. C'est l'exemple de la vie bouillonnante d'une guilde, comme en parle Elio, ou du soutien mutuel et solide qu'évoque Kyran. Sans les idéaliser, les MMO apprennent, en somme, la force profonde de [l'esprit de communauté.](/lesprit-de-communaute/)
 
-Réflexion à suivre &#8230; 
+Réflexion à suivre … 
 
 Benoît Ischer
 

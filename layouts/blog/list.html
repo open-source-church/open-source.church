@@ -29,8 +29,27 @@
                   </li>
                 </ul>
                 <h4 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                <p class="card-text">{{ .Summary | truncate 100 }}</p>
+                <p class="card-text">{{ .Summary  }}</p>
                 <a href="{{ .Permalink }}" class="btn btn-primary btn-sm">{{ i18n "read_more" }}</a>
+                <div class="row mt-4">
+                  <div class="col-1"><span class="ti-folder"></span></div>
+                  <div class="col-10">
+                    {{ range (.GetTerms "categories") }}
+                      <a href="{{ .Permalink }}" class="badge badge-secondary" style="font-weight: 500">{{ .LinkTitle }}</a>
+                    {{ end }}
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-1"><span class="ti-tag"></span></div>
+                  <div class="col-10">
+                    {{ range (.GetTerms "tags") }}
+                      <a href="{{ .Permalink }}" class="badge badge-secondary" style="font-weight: 500">{{ .LinkTitle }} {{.Description}}</a>
+                    {{ end }}
+                  </div>
+                </div>
+                <p>
+                  
+                  </p>
               </div>
             </article>
           </div>

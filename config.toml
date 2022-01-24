@@ -5,7 +5,7 @@ theme = "educenter-hugo"
 # post pagination
 paginate = "10"
 # post excerpt
-summaryLength = "100"
+summaryLength = "30"
 # disqus short name
 disqusShortname = "" # get your shortname form here : https://disqus.com
 # disable language

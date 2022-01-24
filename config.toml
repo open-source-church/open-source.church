@@ -11,8 +11,9 @@ disqusShortname = "" # get your shortname form here : https://disqus.com
 # disable language
 disableLanguages = ["En"] # desable language from here
 defaultContentLanguage = 'fr'
-
-markup.goldmark.renderer.unsafe = true
+[taxonomies]
+  tag = "tags"
+  category = "categories"
 
 ############################# Plugins ##############################
 

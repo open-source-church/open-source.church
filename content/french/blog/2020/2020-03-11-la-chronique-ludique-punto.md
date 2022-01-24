@@ -6,6 +6,7 @@ url: /la-chronique-ludique-punto/
 image: blog/2020/646214_b.jpg
 categories:
   - Articles
+type: post
 tags: ["Avis", "Carte", "Chronique", "Jeu de société", "Test"]
 
 ---

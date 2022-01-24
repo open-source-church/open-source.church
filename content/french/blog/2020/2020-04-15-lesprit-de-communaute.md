@@ -5,6 +5,7 @@ date: 2020-04-15T14:14:40+00:00
 url: /lesprit-de-communaute/
 categories:
   - Articles
+type: post
 tags: ["Communauté", "Esprit", "Relation", "Virtuel"]
 image: /blog/2020/téléchargement.png
 ---

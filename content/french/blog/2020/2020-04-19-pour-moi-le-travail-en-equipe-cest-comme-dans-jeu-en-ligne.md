@@ -6,6 +6,7 @@ url: /pour-moi-le-travail-en-equipe-cest-comme-dans-jeu-en-ligne/
 image: blog/2020/roles.jpg
 categories:
   - Articles
+type: post
 tags: ["Gaming", "Jeu vidéo", "Management", "Teambuilding", "Warcraft"]
 
 ---

@@ -6,6 +6,7 @@ url: /la-chronique-ludique-skyjo/
 image: blog/2020/31249.png
 categories:
   - Articles
+type: post
 tags: ["Avis", "Carte", "Chronique", "Jeu de société", "Test"]
 
 ---

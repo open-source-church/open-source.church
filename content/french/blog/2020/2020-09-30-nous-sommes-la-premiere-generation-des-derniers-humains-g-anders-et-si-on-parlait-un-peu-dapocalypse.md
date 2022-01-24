@@ -6,6 +6,7 @@ url: /nous-sommes-la-premiere-generation-des-derniers-humains-g-anders-et-si-on-
 image: /blog/2020/photo-1566979347480-1690bbeea018.jpg
 categories:
   - Articles
+type: post
 tags: ["Apocalypse", "Écologie", "Gaming", "Jeu", "Jeu vidéo", "Militantisme", "Fallout"]
 ---
 

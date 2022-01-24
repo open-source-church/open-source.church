@@ -6,6 +6,7 @@ url: /quelle-honte-faire-passer-sa-propre-cupidite-avant-la-sante-de-la-planete-
 image: blog/2020/14459-the-game-theorists-the-science-of-world-of-warcraft-e1598455131466.jpg
 categories:
   - Articles
+type: post
 tags: ["Écologie", "Gaming", "Jeu vidéo", "Warcraft"]
 
 ---

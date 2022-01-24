@@ -6,6 +6,7 @@ url: /la-chronique-ludique-nmbr9/
 image: blog/2020/Nmbr9-Version-Francaise.jpg
 categories:
   - Articles
+type: post
 tags: ["Avis", "Chiffres", "Chronique", "Jeu de société", "Test"]
 
 ---

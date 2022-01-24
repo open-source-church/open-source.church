@@ -6,6 +6,7 @@ url: /rts-le-temple-de-trelex-vd-propose-de-jouer-aux-indiana-jones/
 image: blog/2020/topelement-1.jpg
 categories:
   - Media
+type: post
 ---
 ### Quand un lien d'église devient un espace de jeu, un escape-game
 

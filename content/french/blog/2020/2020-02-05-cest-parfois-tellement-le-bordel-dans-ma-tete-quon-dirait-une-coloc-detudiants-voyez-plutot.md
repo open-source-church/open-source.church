@@ -6,6 +6,7 @@ url: /cest-parfois-tellement-le-bordel-dans-ma-tete-quon-dirait-une-coloc-detudi
 image: blog/2020/mind.jpg
 categories:
   - Articles
+type: post
 tags: ["Chrétien", "écriture inclusive", "féminisme", "geek"]
 
 ---

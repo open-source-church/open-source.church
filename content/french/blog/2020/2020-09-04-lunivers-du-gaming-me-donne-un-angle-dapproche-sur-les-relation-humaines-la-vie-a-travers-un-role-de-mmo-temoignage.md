@@ -6,6 +6,7 @@ url: /lunivers-du-gaming-me-donne-un-angle-dapproche-sur-les-relation-humaines-l
 image: http://www.open-source.church/wp-content/uploads/2020/04/roles.jpg
 categories:
   - Articles
+type: post
 tags: ["Gaming", "Jeu", "Jeu vidéo", "Management", "Relation", "Warcraft"]
 
 ---

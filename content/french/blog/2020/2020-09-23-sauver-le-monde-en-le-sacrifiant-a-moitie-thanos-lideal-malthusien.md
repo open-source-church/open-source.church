@@ -6,6 +6,7 @@ url: /sauver-le-monde-en-le-sacrifiant-a-moitie-thanos-lideal-malthusien/
 image: blog/2020/4704-e1600880214165.jpg
 categories:
   - Articles
+type: post
 tags: ["Chrétien", "Communauté", "Écologie", "Foi", "Marvel", "Militantisme"]
 ---
 

@@ -5,7 +5,7 @@ theme = "educenter-hugo"
 # post pagination
 paginate = "10"
 # post excerpt
-summaryLength = "30"
+summaryLength = "50"
 # disqus short name
 disqusShortname = "" # get your shortname form here : https://disqus.com
 # disable language
@@ -14,6 +14,13 @@ defaultContentLanguage = 'fr'
 [taxonomies]
   tag = "tags"
   category = "categories"
+[permalinks]
+  blog = '/:year/:month/:slug/'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 ############################# Plugins ##############################
 
@@ -84,7 +91,7 @@ map_marker = "images/marker.png" # marker size 37*55 px
 
 # cookies
 [params.cookies]
-enable = true
+enable = false
 expire_days = 2
   
 ############################# social site ########################

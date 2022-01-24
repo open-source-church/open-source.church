@@ -6,6 +6,7 @@ url: /reformes-ch-les-reformes-a-la-manif-pour-le-climat/
 image: authors/bischer.jpg
 categories:
   - Media
+type: post
 
 ---
 ### Plusieurs paroisses réformées ont rejoint la manifestation pour le climat qui s’est déroulée samedi 28 septembre à Berne: nous y étions !

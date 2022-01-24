@@ -18,7 +18,7 @@
             {{ template "_internal/pagination.html" . }}
           </div>
           <!-- blog post -->
-          {{ $paginator := .Paginate ( where .Data.Pages "Type" "blog") }}
+          {{ $paginator := .Paginate ( where .Data.Pages "Type" "post") }}
           {{ range $paginator.Pages }}
           <div class="col-sm-6 mb-5">
             {{ .Render "author" }}

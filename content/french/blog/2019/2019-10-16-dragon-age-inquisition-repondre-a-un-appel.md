@@ -6,6 +6,7 @@ url: /dragon-age-inquisition-repondre-a-un-appel/
 image: blog/2019/Be.jpg
 categories:
   - Articles
+type: post
 tags: ["Appel", "Dragon Age", "jeu vidéo", "vocation"]
 ---
 ## Plus qu’un·e héros/héroïne … un·e messie !

@@ -5,6 +5,7 @@ date: 2020-10-23T17:17:38+00:00
 url: /zevent-quand-la-communaute-du-gaming-deploie-sa-force/
 categories:
   - Articles
+type: post
 image: /blog/2020/z-event-2019-marathon-stream-caritatif-institut-pasteur-e1603473580152.jpg
 tags: ["Chrétien", "Communauté", "Espérance", "Gaming", "Geek", "Inspiration", "Jeu", "Jeu vidéo", "Relation", "Zevent"]
 ---

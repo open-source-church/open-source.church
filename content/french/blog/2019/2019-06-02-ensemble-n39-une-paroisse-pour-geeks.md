@@ -6,6 +6,7 @@ url: /ensemble-n39-une-paroisse-pour-geeks/
 image: blog/2019/screenshot_20191222_192702.png
 categories:
   - Media
+type: post
 ---
 
 ### Un ministre d’un genre nouveau est à la tête de la paroisse de St-Jacques à Lausanne: Olivier Keshavjee est un «pasteur geek».

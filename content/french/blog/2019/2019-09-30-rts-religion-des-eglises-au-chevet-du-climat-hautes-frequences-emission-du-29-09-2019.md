@@ -6,6 +6,7 @@ url: /rts-religion-des-eglises-au-chevet-du-climat-hautes-frequences-emission-du
 image: blog/2019/624.jpg
 categories:
   - Media
+type: post
 ---
 
 ### De nombreuses organisations chrétiennes sont impliquées dans la manifestation pour le climat du samedi 28 septembre à Berne. C'était également le cas de notre paroisse ! Nous avons eu la chance de pouvoir expliquer notre démarche au micro de RTS-Religion.

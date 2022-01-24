@@ -6,6 +6,7 @@ url: /cath-ch-la-force-de-star-wars-est-elle-le-saint-esprit-29-mai-2020/
 image: blog/2020/tobias-cornille-dV9ZfzLxaQ4-unsplash-e1590854358971.jpg
 categories:
   - Media
+type: post
 
 ---
 

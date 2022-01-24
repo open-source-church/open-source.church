@@ -7,6 +7,7 @@ url: /24-heures-dans-son-eglise-pour-les-geeks-le-pasteur-bidouille-la-spiritual
 image: /blog/2019/2019-12-19-24h-photo.jpg
 categories:
   - Media
+type: post
 
 ---
 ### À Lausanne, un jeune ministre et son équipe marient religion, jeux et pop culture depuis un an, sur mandat de l’Église réformée.

@@ -5,6 +5,7 @@ date: 2020-08-18T17:15:55+00:00
 url: /fruits-basket-ce-manga-qui-me-redonne-la-foi/
 categories:
   - Articles
+type: post
 tags: ["Altruisme", "Christ", "Compassion", "Foi", "Fruits Basket", "Inspiration", "Jésus", "Liberté", "Manga", "Modèle", "Tohru", "In Fabula Veritas"]
 image: https://media.giphy.com/media/5gZWipp7wbfP6LFsvs/giphy.gif
 ---

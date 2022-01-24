@@ -7,6 +7,7 @@ image: /blog/2019/logo-ch.jpg
 categories:
   - Media
 tags: ["climat", "manifestation"]
+type: post
 ---
 #### Extrait du journal d'A Rocha Suisse — 12 / 2019 — en référence à la manifestation à Berne du 28.09.2019 !
 

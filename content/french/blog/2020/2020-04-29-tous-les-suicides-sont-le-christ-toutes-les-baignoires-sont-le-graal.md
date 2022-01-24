@@ -6,6 +6,7 @@ url: /tous-les-suicides-sont-le-christ-toutes-les-baignoires-sont-le-graal/
 image: blog/2020/Kaamelott-e1588190117462.jpg
 categories:
   - Articles
+type: post
 tags: ["Graal", "Kaamelott", "Métaphore", "Quête", "Série", "Souffrance", "Suicide"]
 ---
 <p class="has-drop-cap">

@@ -5,6 +5,7 @@ date: 2020-10-20T14:30:41+00:00
 url: /hades-balade-inspirante-le-long-des-enfers/
 categories:
   - Articles
+type: post
 image: /blog/2020/1545129111-7363-jaquette-avant.png
 tags: ["Espérance", "Jeu", "Jeu vidéo", "Hadès", "Persévérance", "Résurrection", "Zagreus"]
 ---

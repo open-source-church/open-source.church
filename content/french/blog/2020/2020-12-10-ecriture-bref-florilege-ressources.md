@@ -1,8 +1,10 @@
 ---
-title: "Ecriture : bref florilège & ressources"
+title: "Ecriture: bref florilège & ressources"
 author: Noémie Emery
 date: 2020-12-10T16:10:03+00:00
-url: /ecriture-bref-florilege-ressources/
+aliases:
+  - /ecriture-bref-florilege-ressources/
+type: post
 image: blog/2020/2020-12-writing.jpg
 categories:
   - Articles

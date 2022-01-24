@@ -6,6 +6,7 @@ url: /24-heures-au-pied-du-sapin-solidaire-des-cadeaux-simples-et-necessaires/
 image: blog/2019/topelement.jpg
 categories:
   - Media
+type: post
 
 ---
 ### Une centaine de personnes en situation de précarité ont reçu un cadeau mercredi 18 décembre lors du «sapin solidaire» organisé au Temple St-Jacques par le pasteur suffragant Olivier Keshavjee et son équipe.

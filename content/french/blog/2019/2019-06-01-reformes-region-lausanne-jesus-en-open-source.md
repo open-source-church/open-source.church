@@ -6,7 +6,8 @@ url: /reformes-region-lausanne-jesus-en-open-source/
 image: blog/2019/Ref-19-05-VD-RE4_page29_celebration_OpenSource_wp.jpg
 categories:
   - Media
-summary: 
+summary:
+type: post
 tags: ["célebration"]
 
 ---

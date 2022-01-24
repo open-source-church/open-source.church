@@ -7,6 +7,7 @@ categories:
   - Articles
 image: blog/2020/641c5863fb01d4af4779581880662593bc163ebd446f055ce8c35d1faf39.jpeg
 tags: ["Avis", "Bonheur", "Choix", "Chronique", "Jeu de société", "Ludique", "Quête", "Vie"]
+type: post
 ---
 
 > _« Bonjour, je me nomme Kenji, j’ai 17 ans, bientôt la majorité. Le seul parent proche que j’ai en plus de mes parents est cousin Jim. Il adore collectionner les objets de valeurs comme les voitures. Peut-être qu’un jour j’hériterai de sa collection ?_

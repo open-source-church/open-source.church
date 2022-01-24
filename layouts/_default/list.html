@@ -17,11 +17,11 @@
             {{ template "_internal/pagination.html" . }}
           </div>
           <!-- blog post -->
-          <!-- $paginator := .Paginate ( where .Data.Pages "Type" "blog")
+          <!-- $paginator := .Paginate ( where .Data.Pages "Type" "post")
           range $paginator.Pages -->
           {{ range .Paginator.Pages }}
           <div class="col-sm-6 mb-5">
-            {{ .Render "blog" }}
+            {{ .Render "post" }}
           </div>
           {{ end }}
           <div class="col-12 mt-4">

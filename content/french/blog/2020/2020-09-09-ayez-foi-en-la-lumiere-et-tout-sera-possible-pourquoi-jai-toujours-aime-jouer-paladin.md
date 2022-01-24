@@ -6,6 +6,7 @@ url: /ayez-foi-en-la-lumiere-et-tout-sera-possible-pourquoi-jai-toujours-aime-jo
 image: blog/2020/61CC24dDSYL._AC_SY679_.jpg
 categories:
   - Articles
+type: post
 tags: ["Chrétien", "Foi", "Gaming", "Geek", "Inspiration", "Jeu", "Jeu vidéo", "Quête", "Vocation", "Warcraft"]
 ---
 

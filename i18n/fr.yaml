@@ -58,9 +58,6 @@
 - id: fee
   translation: frais
 
-- id: teacher
-  translation: enseignant·e
-
 - id: location
   translation: emplacement
 
@@ -84,9 +81,6 @@
 
 - id: links
   translation: liens
-
-- id: new_notice
-  translation: nouvelle notice
 
 - id: call
   translation: appeler

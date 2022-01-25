@@ -162,23 +162,8 @@ hasChildren = true
 
   [[Languages.en.menu.main]]
   parent = "Pages"
-  name = "teacher"
-  url = "teacher"
-
-  [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "notice"
-  url = "notice"
-
-  [[Languages.en.menu.main]]
-  parent = "Pages"
   name = "event"
   url = "event"
-
-  [[Languages.en.menu.main]]
-  parent = "Pages"
-  name = "research"
-  url = "research"
   
 [[Languages.en.menu.main]]
 name = "blog"
@@ -194,22 +179,8 @@ weight = 5
 # footer menu
 
 [[Languages.en.menu.footer]]
-name = "teacher"
-url = "teacher"
-
-[[Languages.en.menu.footer]]
-name = "notice"
-url = "notice"
-
-[[Languages.en.menu.footer]]
 name = "event"
 url = "event"
-
-[[Languages.en.menu.footer]]
-name = "research"
-url = "research"
-
-
 
 ################################### French language #####################################
 [Languages.fr]
@@ -238,23 +209,8 @@ hasChildren = true
 
   [[Languages.fr.menu.main]]
   parent = "Pages"
-  name = "teacher"
-  url = "teacher"
-
-  [[Languages.fr.menu.main]]
-  parent = "Pages"
-  name = "notice"
-  url = "notice"
-
-  [[Languages.fr.menu.main]]
-  parent = "Pages"
   name = "Évènement"
   url = "event"
-
-  [[Languages.fr.menu.main]]
-  parent = "Pages"
-  name = "Recherche"
-  url = "research"
   
 [[Languages.fr.menu.main]]
 name = "blog"
@@ -270,17 +226,5 @@ weight = 5
 # footer menu
 
 [[Languages.fr.menu.footer]]
-name = "teacher"
-url = "teacher"
-
-[[Languages.fr.menu.footer]]
-name = "notice"
-url = "notice"
-
-[[Languages.fr.menu.footer]]
 name = "event"
 url = "event"
-
-[[Languages.fr.menu.footer]]
-name = "research"
-url = "research"

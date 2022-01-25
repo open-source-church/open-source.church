@@ -11,3 +11,4 @@ public
 DS_Store
 resources/_gen/
 .hugo_build.lock
+themes/educenter-hugo

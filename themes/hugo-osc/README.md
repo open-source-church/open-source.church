@@ -11,7 +11,7 @@ Designed by [OSC](https://www.open-source.church), based on [EduCenter](https://
 ## Special Thanks
 - [Bootstrap](https://getbootstrap.com)
 - [Jquery](https://jquery.com)
-- [Themify Icons](https://themify.me/themify-icons)
+- [Teeny Icons](https://teenyicons.com/)
 - [Slick Slider](https://kenwheeler.github.io/slick/)
 - [Venobox](https://veno.es/venobox/)
 - [Filterizr](https://yiotis.net/filterizr/)

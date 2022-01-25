@@ -59,11 +59,11 @@
             {{ end }}
           </ul>
         </div>
-        <!-- support -->
+        <!-- Articles -->
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-lg-0">
-          <h4 class="text-white mb-5 text-uppercase">{{ i18n "courses" }}</h4>
+          <h4 class="text-white mb-5 text-uppercase">{{ i18n "article" }}</h4>
           <ul class="list-unstyled">
-            {{ range first 5 (where site.RegularPages "Type" "course")}}
+            {{ range first 3 (where site.RegularPages "Type" "post")}}
             <li class="mb-3"><a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a></li>
             {{ end }}
           </ul>

@@ -19,6 +19,9 @@
 - id: contact_us
   translation: Nous joindre
 
+- id: article
+  translation: Articles
+
 - id: latest_article
   translation: Derniers articles
 
@@ -45,9 +48,6 @@
 
 - id: category
   translation: Catégorie
-
-- id: related_course
-  translation: Cours lié
 
 - id: duration
   translation: durée
@@ -85,9 +85,6 @@
 - id: links
   translation: liens
 
-- id: courses
-  translation: Cours
-
 - id: new_notice
   translation: nouvelle notice
 
@@ -102,9 +99,6 @@
 
 - id: interest
   translation: RÉSUMÉ DES ACTIVITÉS/INTÉRÊTS
-
-- id: our_teachers
-  translation: Nos enseignants
 
 - id: download
   translation: Télécharger

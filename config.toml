@@ -156,11 +156,6 @@ url = "about"
 weight = 1
 
 [[Languages.en.menu.main]]
-name = "course"
-url = "course"
-weight = 2
-
-[[Languages.en.menu.main]]
 weight = 3
 name = "Pages"
 hasChildren = true
@@ -235,11 +230,6 @@ copyright = "Powered by [Hugo](https://gohugo.io/) · thème basé sur [educente
 name = "À propos"
 url = "about"
 weight = 1
-
-[[Languages.fr.menu.main]]
-name = "Cours"
-url = "course"
-weight = 2
 
 [[Languages.fr.menu.main]]
 weight = 3

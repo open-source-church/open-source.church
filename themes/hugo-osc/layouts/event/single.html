@@ -18,7 +18,7 @@
         <ul class="list-inline">
           <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
             <div class="d-flex align-items-center">
-              <i class="ti-location-pin text-primary icon-md mr-2"></i>
+              {{ partial "ti" "location o" }}
               <div class="text-left">
                 <h6 class="mb-0">{{ i18n "location" | upper}}</h6>
                 <p class="mb-0">{{ .Params.Location | markdownify }}</p>
@@ -27,7 +27,7 @@
           </li>
           <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
             <div class="d-flex align-items-center">
-              <i class="ti-calendar text-primary icon-md mr-2"></i>
+              {{ partial "ti" "calendar o" }}
               <div class="text-left">
                 <h6 class="mb-0">{{ i18n "date" | upper}}</h6>
                 <p class="mb-0">{{ .Date.Format "02 Jan, 2006"}}</p>
@@ -36,7 +36,7 @@
           </li>
           <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
             <div class="d-flex align-items-center">
-              <i class="ti-time text-primary icon-md mr-2"></i>
+              {{ partial "ti" "clock o" }}
               <div class="text-left">
                 <h6 class="mb-0">{{ i18n "time" | upper }}</h6>
                 <p class="mb-0">{{ .Date.Format "15:04 MST"}}</p>
@@ -45,7 +45,7 @@
           </li>
           <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
             <div class="d-flex align-items-center">
-              <i class="ti-wallet text-primary icon-md mr-2"></i>
+              {{ partial "ti" "dollar" }}
               <div class="text-left">
                 <h6 class="mb-0">{{ i18n "entry_fee" | upper }}</h6>
                 <p class="mb-0">{{ .Params.Fee | markdownify }}</p>

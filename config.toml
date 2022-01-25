@@ -98,37 +98,37 @@ expire_days = 2
 
 [[params.social]]
 title = "discord"
-icon = "ti-github" # themify icon : https://themify.me/themify-icons
+icon = "discord" # teenyicons https://teenyicons.com/
 link = "http://discord.open-source.church/"
 
 [[params.social]]
 title = "twitch"
-image = "/images/icons/github-iconx64.png" # themify icon : https://themify.me/themify-icons
+icon = "twitch" # teenyicons
 link = "https://www.twitch.tv/opensourcechurch"
 
 [[params.social]]
 title = "twitter"
-icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+icon = "twitter" # teenyicons
 link = "https://twitter.com/Opnsourcechurch"
 
 [[params.social]]
 title = "instagram"
-icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
+icon = "instagram" # teenyicons
 link = "https://www.instagram.com/opensource.church"
 
 [[params.social]]
 title = "github"
-icon = "ti-github" # themify icon : https://themify.me/themify-icons
+icon = "github" # teenyicons
 link = "https://github.com/open-source-church"
 
 [[params.social]]
 title = "youtube"
-icon = "ti-youtube" # themify icon : https://themify.me/themify-icons
+icon = "youtube" # teenyicons
 link = "https://www.youtube.com/channel/UCNgeAmWZx4yWXK1TIp_PjqQ  "
 
 [[params.social]]
 title = "facebook"
-icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
+icon = "facebook" # teenyicons
 link = "https://facebook.com/opensourcechurch"
 
 ################################### English language #####################################

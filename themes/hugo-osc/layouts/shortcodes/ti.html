@@ -1,0 +1,14 @@
+<!-- teenyicons -->
+<!-- https://teenyicons.com/ -->
+{{- $s := (split (.Get 0) " ") -}}
+{{- $type := cond (eq (index $s 1) "o") "outline" "solid" -}}
+{{- $name := index $s 0 -}}
+{{- $path := print "/themes/hugo-osc/teenyicons/" $type "/" $name ".svg" -}}
+{{- if fileExists $path -}}
+<span class="inline-svg" >
+{{- $svg := readFile $path -}}
+{{- $svg := replace $svg "fill=\"black\"" "fill=\"currentColor\"" -}}
+{{- $svg := replace $svg "stroke=\"black\"" "stroke=\"currentColor\"" -}}
+{{ $svg | safeHTML }}
+</span>
+{{- end -}}

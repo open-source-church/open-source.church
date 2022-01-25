@@ -10,6 +10,7 @@ a.text-secondary, a.text-secondary:hover { color: $majenta !important; }
   padding: 10px 0;
   .navbar-toggler { 
     border-color: $primary-color;
+    color: $primary-color;
     i { font-size: 25px; color: $primary-color;}
   };
   .small{ display:none; }
@@ -123,3 +124,12 @@ a.text-secondary, a.text-secondary:hover { color: $majenta !important; }
   }
 }
 .copyright p {text-transform: none;}
+
+// Icons
+.inline-svg svg {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  top: 0em;
+  position: relative;
+}

@@ -19,7 +19,7 @@
         <ul class="list-inline text-xl-center">
           <li class="list-inline-item mr-4 mb-3 mb-sm-0">
             <div class="d-flex align-items-center">
-              <i class="ti-calendar text-primary icon-md mr-2"></i>
+              {{ partial "ti" "calendar" }}
               <div class="text-left">
                 <h6 class="mb-0">{{ i18n "duration" | upper }}</h6>
                 <p class="mb-0">{{ .Params.Duration }}</p>
@@ -28,7 +28,7 @@
           </li>
           <li class="list-inline-item mr-4 mb-3 mb-sm-0">
             <div class="d-flex align-items-center">
-              <i class="ti-timer text-primary icon-md mr-2"></i>
+              {{ partial "ti" "timer" }}
               <div class="text-left">
                 <h6 class="mb-0">{{ i18n "weekly" | upper }}</h6>
                 <p class="mb-0">{{ .Params.Weekly }}</p>
@@ -37,7 +37,7 @@
           </li>
           <li class="list-inline-item mr-4 mb-3 mb-sm-0">
             <div class="d-flex align-items-center">
-              <i class="ti-wallet text-primary icon-md mr-2"></i>
+              {{ partial "ti" "wallet" }}
               <div class="text-left">
                 <h6 class="mb-0">{{ i18n "fee" | upper }}</h6>
                 <p class="mb-0">{{ .Params.Fee }}</p>

@@ -30,6 +30,9 @@
         <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
           <!-- logo -->
           <a class="logo-footer" href="{{ site.BaseURL | relLangURL }}"><img class="img-fluid mb-4" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}"></a>
+          {{ with site.Params.logo2 }}
+          <a class="logo-footer" href="{{ .link }}" target="_blank"><img class="img-fluid mb-4" src="{{ .path | absURL }}" alt="{{ site.Title }}"></a>
+          {{ end }}
           <ul class="list-unstyled">
             <li class="mb-4">{{ site.Params.address | markdownify }}</li>
             <li class="mb-4">{{ site.Params.email | markdownify }}</li>
@@ -37,7 +40,7 @@
           </ul>
         </div>
         <!-- company -->
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-lg-0">
           <h4 class="text-white mb-5 text-uppercase">{{ i18n "company" }}</h4>
           <ul class="list-unstyled">
             {{ range site.Menus.main }}
@@ -48,7 +51,7 @@
           </ul>
         </div>
         <!-- links -->
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-lg-0">
           <h4 class="text-white mb-5 text-uppercase">{{ i18n "links" }}</h4>
           <ul class="list-unstyled">
             {{ range site.Menus.footer }}
@@ -57,7 +60,7 @@
           </ul>
         </div>
         <!-- support -->
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-lg-0">
           <h4 class="text-white mb-5 text-uppercase">{{ i18n "courses" }}</h4>
           <ul class="list-unstyled">
             {{ range first 5 (where site.RegularPages "Type" "course")}}
@@ -66,7 +69,7 @@
           </ul>
         </div>
         <!-- support -->
-        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-md-0">
+        <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-lg-0">
           <h4 class="text-white mb-5 text-uppercase">{{ i18n "new_notice" }}</h4>
           <ul class="list-unstyled">
             {{ range first 3 (where site.RegularPages "Type" "notice")}}

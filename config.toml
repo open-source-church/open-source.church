@@ -68,6 +68,10 @@ contact_form_action = "#" # contact form works with https://formspree.io
 google_analitycs_id = "" # your id
 # top header
 top_header = false
+# A second logo in the footer
+[params.logo2]
+path = "images/logo/logo_eerv.png"
+link = "https://www.eerv.ch"
 
 # Preloader
 [params.preloader]

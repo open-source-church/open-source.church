@@ -4,25 +4,24 @@
 <section class="section dark">
   <div class="container">
     <div class="col-12 mb-3">
-      layouts/authors/list.html // content type: {{ .Type }} ({{ .Kind }})
       <h1 class="text-primary">{{.Title}}</h1>
     </div>
-    <div class="row content">  <ul>
-      {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-        <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>: {{ range $key, $value := $taxonomy }} {{ $key }} ({{.Count}}){{ end }}</li>
-      {{ end }}
-    </ul>
+    <div class="row">
       <div class="col-lg-8 order-2 order-lg-1">
         <div class="row">
+          {{ if gt .Paginator.TotalPages 1 }}
           <div class="col-12 mt-4 mb-3">
             {{ template "_internal/pagination.html" . }}
           </div>
+          {{ end }}
           <!-- blog post -->
-          {{ $paginator := .Paginate ( where .Data.Pages "Type" "post") }}
+          {{ $paginator := .Paginate ( where .Data.Pages "Params.description"  "Écothéologien." ) }}
           {{ range $paginator.Pages }}
+          {{ if ne .Params.hide "true" }}
           <div class="col-sm-6 mb-5">
             {{ .Render "author" }}
           </div>
+          {{ end }}
           {{ end }}
           <div class="col-12 mt-4">
             {{ template "_internal/pagination.html" . }}

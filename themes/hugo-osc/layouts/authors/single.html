@@ -1,12 +1,11 @@
 {{ define "main" }}
 
-<section class="section bg-light">
+<section class="section bg-dark">
 	<div class="container">
 		<div class="row">
-			layouts/authors/single.html
 			<div class="col-lg-10 mx-auto">
 				<div class="text-center">
-					<figure>
+					<figure class="author">
 						{{ if .Params.image }}
 						<img class="rounded-circle img-fluid mb-4" src="{{.Params.image | relURL }}">
 						{{else if .Params.Email}}
@@ -18,9 +17,9 @@
 							</h4>
 						</figcaption>
 					</figure>
-					<hr>
+					<hr class="border-primary">
 					{{ .Content }}
-					<hr>
+					<hr class="border-primary">
 					<ul class="list-inline">
 						{{ range .Params.Social }}
 						<li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
@@ -40,7 +39,10 @@
 					<h2 class="section-title">{{ i18n "posted_by" }} {{ .Title }}</h2>
 				</div>
 			</div>
-			{{ range where site.RegularPages "Params.author" (.Title | title) }}
+			{{ $p1 := where .Site.Pages "Params.author" (.Title | title) }}
+			{{ $slug := index (split .File.LogicalName ".") 0 }}
+			{{ $p2 := where .Site.Pages "Params.author" $slug }}
+			{{ range union $p1 $p2}}
 			<div class="col-lg-4 col-sm-6 mb-4">
 				{{ .Render "post" }}
 			</div>

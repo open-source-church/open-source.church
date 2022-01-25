@@ -6,7 +6,7 @@ bg_image: "images/backgrounds/page-title.jpg"
 description : "Écothéologien."
 # email: "email2@example.org"
 # portrait
-photo: ""
+image: "/authors/bischer.jpg"
 social:
   - icon : "ti-facebook" # themify icon pack : https://themify.me/themify-icons
     link : "#"

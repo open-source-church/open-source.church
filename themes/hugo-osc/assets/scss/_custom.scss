@@ -133,3 +133,9 @@ a.text-secondary, a.text-secondary:hover { color: $majenta !important; }
   top: 0em;
   position: relative;
 }
+
+// Author
+figure.author img {
+  max-width: 50%;
+  @include mobile { max-width: 80%; }
+}

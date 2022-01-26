@@ -40,7 +40,7 @@ slider:
 ############################### Banner feature ###############################
 banner_feature:
   enable : true
-  image : "images/illustration/jesus-console.jpg"
+  image : "images/illustration/how-i-saved-the-world.png"
   feature_item:
     # feature item loop
     - name : "Jeux"
@@ -75,12 +75,9 @@ Open Source Church c'est aussi une réflexion critique sur l'usage de la technol
 ############################## about ##################################
 about:
   enable : true
-  title : "Un projet d'innovation"
-  image : "images/theme/about/about-us.jpg"
-  content : "Open Source Church se base donc logiquement sur cette affirmation d’Olivier pour son projet d’église : assumer nos passions et intérêts partagés et les mettre au cœur de nos activités et idées pour la communauté. 
-  
-
-  Ces passions s’articulent principalement – mais pas exclusivement – autour de trois domaines : le jeu, la fiction, les sciences/technologies."
+  title : "Une communauté en développement"
+  image : "images/illustration/study-group.jpg"
+  content : ""
   button:
     enable : true
     label : "En savoir plus"

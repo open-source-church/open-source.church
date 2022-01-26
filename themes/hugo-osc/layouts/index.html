@@ -33,12 +33,12 @@
 <!-- banner-feature -->
 {{ if $data.homepage.banner_feature.enable }}
 {{ with $data.homepage.banner_feature }}
-<section class="bg-gray overflow-md-hidden">
+<section class="bg-gray overflow-md-hidden banner">
   <div class="container-fluid p-0">
     <div class="row no-gutters">
       <!-- Image -->
-      <div class="col-xl-4 col-lg-5 align-self-center text-center">
-        <img class="img-fluid w-50" src="{{ .image | absURL }}" alt="banner-feature">
+      <div class="col-xl-4 col-lg-5 align-self-center text-center mt-4 img">
+        <a href="{{ .image | absURL }}" class="venobox"><img class="img-fluid" src="{{ .image | absURL }}" alt="banner-feature"></a>
       </div>
       <!-- Features -->
       <div class="col-xl-8 col-lg-7">
@@ -76,7 +76,7 @@
       </div>
       {{ with .image }}
       <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-        <img class="img-fluid w-100" src="{{ . | absURL }}" alt="about image">
+        <a href="{{ . | absURL }}" class="venobox"><img class="img-fluid w-100" src="{{ . | absURL }}" alt="it's dangerous to go alone" style="mix-blend-mode: screen;"></a>
       </div>
       {{ end }}
     </div>

@@ -1,9 +1,4 @@
 /* banner feature */
-.feature-icon {
-  font-size: 50px;
-  color: $primary-color;
-  display: inline-block;
-}
 
 .feature-blocks {
   margin-top: -100px;
@@ -33,6 +28,13 @@
       font-size: 25px;
     }
   }
+}
+.banner .img img {
+  width: 80%;
+  @include desktop-lg {width: 70%;}
+  @include desktop {width: 40%;}
+  @include tablet {width: 60%;}
+  @include mobile {width: 90%;}
 }
 
 /* /banner feature */

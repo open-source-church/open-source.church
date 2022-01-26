@@ -2,18 +2,15 @@
 title: "Noémie Emery"
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
-# meta description
-description : "Noémie, c'est Noémie."
-email: "email2@example.org"
 # portrait
-photo: ""
+image: "/authors/nemery.jpg"
 social:
-  - icon : "ti-facebook" # themify icon pack : https://themify.me/themify-icons
-    link : "#"
-  - icon : "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
-    link : "#"
-  - icon : "ti-github" # themify icon pack : https://themify.me/themify-icons
-    link : "#"
+  - icon : "instagram" # https://teenyicons.com/
+    link : "https://www.instagram.com/nonodotheo/"
+  - icon : "globe-africa"
+    link : "http://pelerine-au-chocolat.blogspot.com/"
+  - icon : "twitter"
+    link : "https://twitter.com/EmeryNomie1"
 ---
 
-Une description plus longue de Noémie.
+Théologienne, pasteure stagiaire, féministe, inclusive, conteuse, amoureuse, musicienne, écrivaine, magicienne, queer, self-loveuse, ...

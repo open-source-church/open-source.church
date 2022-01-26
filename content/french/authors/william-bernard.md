@@ -6,7 +6,7 @@ bg_image: "images/backgrounds/page-title.jpg"
 description : "Joueur."
 # email: "email2@example.org"
 # portrait
-photo: ""
+image: ""
 social:
   - icon : "ti-facebook" # themify icon pack : https://themify.me/themify-icons
     link : "#"

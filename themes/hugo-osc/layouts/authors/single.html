@@ -22,7 +22,7 @@
 					<hr class="border-primary">
 					<ul class="list-inline">
 						{{ range .Params.Social }}
-						<li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+						<li class="list-inline-item"><a href="{{ .link | safeURL }}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">{{ partial "ti" .icon }}</a></li>
 						{{ end }}
 					</ul>
 				</div>

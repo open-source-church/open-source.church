@@ -8,12 +8,12 @@ description : "Écothéologien."
 # portrait
 image: "/authors/bischer.jpg"
 social:
-  - icon : "ti-facebook" # themify icon pack : https://themify.me/themify-icons
-    link : "#"
-  - icon : "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
-    link : "#"
-  - icon : "ti-github" # themify icon pack : https://themify.me/themify-icons
-    link : "#"
+  - icon : "instagram" # https://teenyicons.com/
+    link : "https://www.instagram.com/kalecos1/"
+  - icon : "twitter"
+    link : "https://twitter.com/IscherBenoit"
+  - icon : "twitch" 
+    link : "https://www.twitch.tv/kalecos7"
 ---
 
 Une description plus longue de Benoît.

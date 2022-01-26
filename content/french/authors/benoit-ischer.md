@@ -1,7 +1,5 @@
 ---
 title: "Benoît Ischer"
-# page title background image
-bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 description : "Écothéologien."
 # email: "email2@example.org"

@@ -1,7 +1,5 @@
 ---
 title: "admin"
-# page title background image
-bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 description : "Au commencement était l'Admin."
 email: "email2@example.org"

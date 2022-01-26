@@ -14,6 +14,5 @@ Designed by [OSC](https://www.open-source.church), based on [EduCenter](https://
 - [Teeny Icons](https://teenyicons.com/)
 - [Slick Slider](https://kenwheeler.github.io/slick/)
 - [Venobox](https://veno.es/venobox/)
-- [Filterizr](https://yiotis.net/filterizr/)
 - [Google Fonts](https://fonts.google.com/)
 - [All Contributors](https://github.com/themefisher/educenter-hugo/graphs/contributors)

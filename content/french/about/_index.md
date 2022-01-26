@@ -1,6 +1,7 @@
 ---
 title: "À propos d'Open Source Church'"
 draft: false
+hide_header: true
 domaines: 
 - name : "Jeux"
   image: "/images/logo/logo-game-no-text.png"

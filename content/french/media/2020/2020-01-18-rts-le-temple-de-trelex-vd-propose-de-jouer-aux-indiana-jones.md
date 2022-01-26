@@ -2,7 +2,7 @@
 title: "Le temple de Trélex (VD) propose de jouer aux Indiana Jones"
 author: admin
 date: 2020-01-18T13:33:33+00:00
-image: blog/2020/topelement-1.jpg
+image: media/2020/topelement-1.jpg
 media: RTS Info
 link: https://www.rts.ch/info/regions/vaud/11011925-le-temple-de-trelex-vd-propose-de-jouer-aux-indiana-jones.html
 ---

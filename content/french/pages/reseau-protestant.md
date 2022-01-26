@@ -1,6 +1,6 @@
 ---
 title: "Réseau protestant"
-description: Une proposition pragmatique pour entretenir la solidarité entre les différents sites du web protestant de Suisse romande. C’est en créant un réseau que nous sommes plus forts!
+hide_header: true
 ---
 
 > « Une proposition pragmatique pour entretenir la solidarité entre les différents sites du web protestant[^ref] de Suisse romande. C’est en créant un réseau que nous sommes plus forts! » 

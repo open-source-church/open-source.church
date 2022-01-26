@@ -1,7 +1,6 @@
 ---
 title: "Noémie Emery"
 # page title background image
-bg_image: "images/backgrounds/page-title.jpg"
 # portrait
 image: "/authors/nemery.jpg"
 social:

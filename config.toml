@@ -167,7 +167,7 @@ contentDir = "content/french"
 weight = 1
 home = "Accueil"
 # copyright
-copyright = "Powered by [Hugo](https://gohugo.io/) · thème basé sur [educenter](https://github.com/themefisher/educenter-hugo) par [Themefisher](https://themefisher.com/hugo-themes/)"
+copyright = "Powered by [Hugo](https://gohugo.io/) · thème [hugo-osc](https://github.com/open-source-church/open-source.church/tree/main/themes/hugo-osc) basé sur [educenter](https://github.com/themefisher/educenter-hugo) par [Themefisher](https://themefisher.com/hugo-themes/)"
 
 ################### French navigation ####################
 

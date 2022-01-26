@@ -22,13 +22,13 @@ $secondary-font: 'futura-bold';
 //$secondary-font: 'VCR OSD Mono';
 // $icon-font: 'themify';
 
-.text-cyan {color: $cyan;}
-.text-majenta {color: $majenta;}
-.text-yellow {color: $yellow;}
-.text-darkgray {color: $darkgray;}
-.bg-majenta {background: $majenta;}
-.bg-yellow {background: $yellow;}
-.bg-darkgray {background: $darkgray;}
+.text-cyan {color: $cyan !important;}
+.text-majenta {color: $majenta !important;}
+.text-yellow {color: $yellow !important;}
+.text-darkgray {color: $darkgray !important;}
+.bg-majenta {background: $majenta !important;}
+.bg-yellow {background: $yellow !important;}
+.bg-darkgray {background: $darkgray !important;}
 
 // Custom fonts
 @font-face {

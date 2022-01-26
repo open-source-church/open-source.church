@@ -378,4 +378,13 @@ textarea.form-control{
     padding: 10px 20px;
     background: $light;
   }
+
+  .text-small {
+    font-size: small;
+  }
+
+  .media-list {
+    blockquote p { font-size: small; }
+  }
+
 }

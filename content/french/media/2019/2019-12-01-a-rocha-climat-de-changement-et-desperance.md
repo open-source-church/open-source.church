@@ -1,16 +1,12 @@
 ---
-title: A Rocha – Climat de changement et d'espérance !
+title: Climat de changement et d'espérance !
 author: Benoît Ischer
 date: 2019-12-01T19:48:18+00:00
-aliases:
-  - /a-rocha-climat-de-changement-et-desperance/
 image: /blog/2019/logo-ch.jpg
-categories:
-  - Media
-tags: ["climat", "manifestation"]
-type: post
+media: A Rocha
+link: /media/2019/2019-12_A_Rocha_web.pdf
 ---
-#### Extrait du journal d'A Rocha Suisse — 12 / 2019 — en référence à la manifestation à Berne du 28.09.2019 !
+Extrait du journal d'A Rocha Suisse — 12 / 2019 — en référence à la manifestation à Berne du 28.09.2019 !
 
 
 <blockquote class="wp-block-quote">
@@ -21,10 +17,4 @@ type: post
   <cite>Journal A Rocha Suisse — 12/2019 — p.4 </cite>
 </blockquote>
 
-### A lire ici:
-
-<a href="/blog/2019/2019-12_A_Rocha_web.pdf" class="btn btn-primary">Télécharger</a>
-
-### L'entier du discours_ prononcé par Benoît Ischer le 28.09.2019: 
-
-<a href="/blog/2019/Berne_discours_B.ischer.pdf" class="btn btn-primary">Berne — 28/09/2019 — discours B.Ischer</a>
+L'entier du discours_ prononcé par Benoît Ischer le 28.09.2019: <a href="/media/2019/Berne_discours_B.ischer.pdf">Berne — 28/09/2019 — discours B.Ischer</a>

@@ -32,7 +32,7 @@ link = "plugins/slick/slick.css"
 [[params.plugins.css]]
 link = "plugins/animate/animate.css"
 [[params.plugins.css]]
-link = "plugins/venobox/venobox.css"
+link = "plugins/venobox/venobox.min.css"
 # [[params.plugins.css]]
 # link = "plugins/themify-icons/themify-icons.css"
 
@@ -180,16 +180,25 @@ weight = 1
   parent = "À propos"
   name = "Open Source Church"
   url = "about"
+  weight = 1
 
   [[Languages.fr.menu.main]]
   parent = "À propos"
   name = "Vision"
   url = "about"
+  weight = 2
 
   [[Languages.fr.menu.main]]
   parent = "À propos"
   name = "Valeurs"
   url = "about"
+  weight = 3
+
+  [[Languages.fr.menu.main]]
+  parent = "À propos"
+  name = "Media"
+  url = "media"
+  weight = 4
 
 [[Languages.fr.menu.main]]
 name = "Évènements"

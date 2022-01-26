@@ -1,18 +1,12 @@
 ---
-title: "Réformés.ch : « Les Réformés à la manif pour le climat »"
+title: "Les Réformés à la manif pour le climat"
 author: Benoît Ischer
 date: 2019-09-30T17:22:00+00:00
-aliases:
-  - /reformes-ch-les-reformes-a-la-manif-pour-le-climat/
 image: authors/bischer.jpg
-categories:
-  - Media
-type: post
-
+media: Réformés.ch
+link: https://www.reformes.ch/eglises/2019/09/les-reformes-la-manif-pour-le-climat-politique-video-ch-jube-vd-carte-postale
 ---
-### Plusieurs paroisses réformées ont rejoint la manifestation pour le climat qui s’est déroulée samedi 28 septembre à Berne: nous y étions !
-
-<!--more Lire la suite-->
+Plusieurs paroisses réformées ont rejoint la manifestation pour le climat qui s’est déroulée samedi 28 septembre à Berne: nous y étions !
 
 Grâce à [l'Alliance Climatique suisse][1], nous avons pu nous exprimer à Berne le 29.09.2019 ! Et nous n'étions pas les seuls réformés sur place ! Réformés.ch était sur place pou couvrir l'événement et nous a demandé d'expliciter notre démarche. 
 
@@ -32,7 +26,4 @@ Grâce à [l'Alliance Climatique suisse][1], nous avons pu nous exprimer à Bern
   <cite>Olivier Keshavjee — pasteur suffragant de la paroisse de Saint-François-Saint-Jacques </cite>
 </blockquote>
 
-­—[Regarder le reportage de Réformés.ch !][2]
-
  [1]: http://www.alliance-climatique.ch/
- [2]: https://www.reformes.ch/eglises/2019/09/les-reformes-la-manif-pour-le-climat-politique-video-ch-jube-vd-carte-postale

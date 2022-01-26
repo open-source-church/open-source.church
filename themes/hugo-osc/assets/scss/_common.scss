@@ -23,12 +23,6 @@ body {
   justify-content: center;
 }
 
-ol,
-ul {
-  list-style-type: none;
-  margin: 0px;
-}
-
 img {
   vertical-align: middle;
   border: 0;
@@ -236,45 +230,7 @@ a h4{
   padding: 200px 0 80px;
 }
 
-.custom-breadcrumb {
-  li {
-    &.nasted {
-      position: relative;
-      padding-left: 25px;
-
-      &::before {
-        position: absolute;
-        font-family: $icon-font;
-        content: "\e649";
-        font-size: 20px;
-        top: 50%;
-        left: -5px;
-        color: $white;
-        transform: translateY(-50%);
-      }
-    }
-  }
-}
-
 /* /page title */
-
-.list-styled{
-  padding-left: 25px;
-  li{
-    position: relative;
-    margin-bottom: 15px;
-    &::before{
-      position: absolute;
-      content: "";
-      height: 10px;
-      width: 10px;
-      border-radius: 50%;
-      background: $primary-color;
-      left: -25px;
-      top: 5px;
-    }
-  }
-}
 
 textarea.form-control{
   height: 200px;
@@ -284,8 +240,6 @@ textarea.form-control{
 #map_canvas{
   height: 500px;
 }
-
-
 
 .post-thumb-sm {
   max-width: 100px;
@@ -319,12 +273,19 @@ textarea.form-control{
 
 
 .content {
-  * {
+  p, li {
     margin-bottom: 20px;
   }
 
-  a {
-    text-decoration: underline;
+  a { 
+    color: $primary-color;
+    text-decoration: none;
+    &:hover{
+      color: $secondary-color;
+    }
+    .btn-primary{
+      color: $darkgray;
+    }
   }
 
   h1,
@@ -333,33 +294,53 @@ textarea.form-control{
   h4,
   h5,
   h6 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   ol {
     padding-left: 20px;
   }
-
   ul {
-    padding-left: 0;
-
-    li {
-      position: relative;
-      padding-left: 20px;
-      margin-bottom: 10px;
-      list-style-type: none;
-
-      &::before {
-        position: absolute;
-        content: "\e65d";
-        font-family: $icon-font;
-        font-size: 14px;
-        left: 0;
-        top: 1px;
-        color: $primary-color;
-        transition: .3s ease;
-      }
+    list-style: none;
+    padding-left: 2em;
+    li::before {
+      content: "»";
+      color: $majenta;
+      font-weight: bold;
+      display: inline-block;
+      width: 1.5em;
+      margin-left: -1.5em;
     }
+  }
+
+  blockquote {
+    p {
+      color: $text-color;
+      margin-left: 3em;
+    }
+  }
+
+  hr {border: 1px dotted green;}
+  hr {
+    display: block;
+    clear: both;
+    height: 0;
+    margin: 20px 0 60px;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+  hr:after {
+    content: "⚂⚀⚁⚂⚃⚄⚅";
+    height: 0;			
+    letter-spacing: 1em;
+    color: $majenta;
+  }
+  ol { list-style-type: auto;  }
+  figcaption p {
+    font-size: smaller;
+    padding-top: .5em;
   }
 
   table {
@@ -389,15 +370,9 @@ textarea.form-control{
     }
   }
 
-
-  blockquote {
-    p {
-      margin-bottom: 0;
-      color: $text-color;
-      font-style: italic !important;
-    }
+  .footnote-ref, .footnote-backref {
+    padding: .5em;
   }
-
 
   pre {
     padding: 10px 20px;

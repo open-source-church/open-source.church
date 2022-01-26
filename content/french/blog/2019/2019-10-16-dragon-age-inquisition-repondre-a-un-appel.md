@@ -1,5 +1,5 @@
 ---
-title: Dragon-Age Inquisition … répondre à un appel !
+title: Dragon-Age Inquisition … répondre à un appel!
 author: Benoît Ischer
 date: 2019-10-16T13:29:30+00:00
 aliases:
@@ -32,7 +32,7 @@ Critique sous-jacente ou simple trait de fiction, l’univers de DA apprécie mo
 
 De tous les opus de la saga, DAI est celui qui porte au plus loin cette centralité de la religion et de la spiritualité dans son histoire en obligeant le·a joueur·se à se positionner sur des croyances, comme la messianité[^4] ou l’espérance, qui sont focalisées sur son avatar. En effet, après à peine une petite heure de jeu, à la question : _que pensez-vous du titre de Messager d’Andrasté_ (comprenez : que pensez-vous du fait qu’on vous considère comme un _messie_ ?), voici vos choix de réponses :<figure>
 
-![](/blog/2019/Be1.png)
+{{< figure src="/blog/2019/Be1.png" class="text-center" >}}
 
 Le choix n’est et ne sera jamais simple. Car au même titre que votre avatar, le·la joueur·se ne peut savoir si iel est _vraiment_ un·e envoyé·e du Créateur, ou si, simplement, ce sont ses actes héroïques qui le·la font être vu·e ainsi.  Et cette question sera sans-cesse reposée au joueur·se tout au long de son exploration du vaste univers de DAI et que ce soit en choix de dialogue ou en acte, il faudra sans cesse se positionner par rapport à cette attente entre le scepticisme de certain·e·s et l’espérance des autres ainsi que vos propres doutes ou même convictions. De manière subtile, DAI nous propose de réfléchir et de choisir **comment _répondre à un appel_.**
 
@@ -50,7 +50,7 @@ Imaginons, par exemple, cela pour le prophète Jonas[^5]:
 
 **Choix de réponse de Jonas :**
 
-![](/blog/2019/image-3.png)
+{{< figure src="/blog/2019/image-3.png" class="text-center" >}}
 
 Il est n’est guère difficile d’imaginer que ce cercle de choix est venu à l’esprit de Jonas lorsqu’il a entendu l’appel et la tâche que lui confiait Dieu : et il a fait son choix. Alors bien entendu, l’histoire l’a rattrapé (#grospoisson), et d’ailleurs, c’est souvent le cas. Même si DAI nous laisse également une grande marge de manœuvre quant à nos réactions, cela ne signifie pas que l’histoire n’opposera pas son lot de résistance (#TempliersVSmages). Cependant, cela n’enlève rien à l’importance de l’éventail de choix qui se déploie face à nous.
 
@@ -72,7 +72,6 @@ Alors bien sûr nous ne sommes pas souvent appelés à relever les défis d’un
 
 Benoît Ischer
 
-* * *
 
 [^1]: Ci-après DAI.
 

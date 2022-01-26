@@ -71,41 +71,6 @@ a.text-secondary, a.text-secondary:hover { color: $majenta !important; }
   }
 }
 
-.content{
-
-  // Typography
-  blockquote {
-    p {
-      margin-bottom: 0;
-      color: $text-color;
-      margin-left: 3em;
-    }
-  }
-
-  a{ color: $primary-color; text-decoration: none; }
-  a:hover{ color: $secondary-color; }
-  a.btn-primary{ color: $darkgray; }
-  hr {border: 1px dotted green;}
-  hr {
-    display: block;
-    clear: both;
-    height: 0;
-    margin: 20px 0 60px;
-    padding: 0;
-    border: 0;
-    text-align: center;
-    font-size: 24px;
-  }
-  hr:after {
-    content: "⚂⚀⚁⚂⚃⚄⚅";
-    height: 0;			
-    letter-spacing: 1em;
-    color: $majenta;
-  }
-  ol { list-style-type: auto;  }
-  figcaption p { font-size: smaller; }
-}
-
 // Footer
 .bg-footer {
   background-color: #4b4c58;

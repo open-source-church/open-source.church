@@ -12,15 +12,15 @@ body {
   line-height: 1.2;
   font-family: $primary-font;
   -webkit-font-smoothing: antialiased;
-  font-size: 15px;
+  font-size: 16px;
   color: $text-color;
 }
 
-p, .paragraph {
+p, .paragraph, li {
   font-weight: 400;
   color: $text-color;
-  font-size: 15px;
-  line-height: 1.9;
+  font-size: 16px;
+  line-height: 1.5;
   font-family: $primary-font;
 }
 

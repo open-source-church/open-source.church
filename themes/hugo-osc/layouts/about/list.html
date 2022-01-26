@@ -4,9 +4,10 @@
 
 <!-- about -->
 <section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
+  <div class="container content">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-9">
+        <h1>{{ .Title }}</h1>
         {{ with .Params.image }}
         <img class="img-fluid w-100 mb-4" src="{{ . | relURL }}" alt="about image">
         {{ end }}
@@ -17,30 +18,44 @@
 </section>
 <!-- /about -->
 
-<!-- funfacts -->
-{{ if $data.homepage.funfacts.enable }}
-{{ with $data.homepage.funfacts }}
-<section class="section-sm bg-primary">
-  <div class="container">
-    <div class="row">
-      <!-- funfacts item -->
-      {{ range .funfact_item }}
-      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
-        <div class="text-center">
-          <h2 class="count text-white" data-count="{{ .count }}">0</h2>
-          <h5 class="text-white">{{ .name }}</h5>
+<!-- domaines-->
+<section class="section bg-gray">
+  <div class="container content bg-gray mt-5">
+      {{ with .Params.domaines }}
+        {{ range . }}
+        <div class="row justify-content-center">
+          <div class="col-3 text-center">
+            <img src="{{ .image }}" class="mb-xl-4 mb-lg-3 mb-4 w-100" width="111px" />
+          </div>
+          <div class="col-9 col-md-6 mb-5">
+            <h3 class="mb-0" style="color:{{.color}};">{{ .name | markdownify }}</h3>
+            <p>{{ .content | markdownify }}</p>
+          </div>
+        </div>
+        {{ end }}
+      {{ end }}
+      <div class="accordion w-100 px-4" id="accordionExample">
+        <div class="card bg-dark">
+          <div class="card-header p-0" id="headingOne">
+            <h2 class="mb-0" >
+              <button class="btn btn-link btn-sm btn-block text-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                {{partial "ti" "plus-circle"}} Plus de détails
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              {{ .Params.domaines_more | markdownify }}
+            </div>
+          </div>
         </div>
       </div>
-      {{ end }}
-    </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
-<!-- /funfacts -->
+<!-- /domaines -->
 
-<!-- success story -->
-{{ partial "success-story.html" . }}
-<!-- /success story -->
+<section class="section ">
+</section>
 
 {{ end }}

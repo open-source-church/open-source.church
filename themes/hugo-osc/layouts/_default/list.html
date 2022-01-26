@@ -4,9 +4,9 @@
 <section class="section dark">
   <div class="container">
     <div class="col-12 mb-3">
-      {{ $i := cond (eq .Type "tags") "ti-tag" "ti-folder" }}
+      {{ $i := cond (eq .Type "tags") "tag" "folder" }}
       {{ $txt := cond (eq .Type "tags") "Tag" "Catégorie" }}
-      <h3 class="text-majenta"><span class="{{ $i }}"></span> {{$txt}}</h3>
+      <h3 class="text-majenta">{{ partial "ti" $i }}</span> {{$txt}}</h3>
       <h1 class="text-primary">{{.Title}}</h1>
     </div>
     <div class="row">
@@ -20,17 +20,11 @@
           range $paginator.Pages -->
           {{ range .Paginator.Pages }}
           <div class="col-sm-6 mb-5">
-            <article
-              class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-              {{ if .Params.image }}
-                <img class="card-img-top rounded-0" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
-              {{ end }}
-              <div class="card-body">
-                <h4 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                <p class="card-text">{{ .Summary  }}</p>
-                <a href="{{ .Permalink }}" class="btn btn-primary btn-sm">{{ i18n "read_more" }}</a>
-              </div>
-            </article>
+            {{ if eq .Type "post" }}
+            {{ .Render "post" }}
+            {{ else }}
+            {{ .Render "generic" }}
+            {{ end }}
           </div>
           {{ end }}
           <div class="col-12 mt-4">

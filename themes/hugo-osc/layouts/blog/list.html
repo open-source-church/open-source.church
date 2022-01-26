@@ -4,6 +4,11 @@
 <section class="section dark">
   <div class="container">
     <div class="row">
+      {{ if not .Params.Bg_image }}
+      <div class="col-12 mb-3">
+        <h1>{{.Title}}</h1>
+      </div>
+      {{ end }}
       <div class="col-lg-8 order-2 order-lg-1">
         <div class="row">
           <div class="col-12 mt-0 mb-3">

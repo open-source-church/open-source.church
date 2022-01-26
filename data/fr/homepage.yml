@@ -45,7 +45,7 @@ banner_feature:
     # feature item loop
     - name : "Jeux"
       icon : "ti-game" # icon pack : https://themify.me/themify-icons
-      image: "images/logo/logo-game-no-text.png"
+      image: "/images/logo/logo-game-no-text.png"
       color: "#ffd400"
       content : "Jeux de société, jeux vidéo, jeux de rôles, gamification…
 
@@ -55,7 +55,7 @@ Le jeu nous met en relation les uns avec les autres et nous permets d'expérimen
     # feature item loop
     - name : "Imaginaire"
       icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
-      image: "images/logo/logo-fantasy-no-text.png"
+      image: "/images/logo/logo-fantasy-no-text.png"
       color: "#00ffdd"
       content : "Science-fiction, fantasy, contes & légendes, …
       
@@ -65,7 +65,7 @@ Les univers de fictions sur des portes d'accès infinies pour penser le monde et
     # feature item loop
     - name : "Sciences & technologies"
       icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
-      image: "images/logo/logo-tech-no-text.png"
+      image: "/images/logo/logo-tech-no-text.png"
       color: "#d700d7"
       content : "La technologie ouvre des nouvelles fenêtres de relations aux autres... et à Dieu.
 
@@ -77,7 +77,10 @@ about:
   enable : true
   title : "Une communauté en développement"
   image : "images/illustration/study-group.jpg"
-  content : ""
+  content : "Le cheminement de foi d’un·e chrétien·ne est sans l’ombre d’un doute un tortueux et fastidieux donjon.
+  
+
+  Et qui donjon dit … un groupe d’ami·e·s, d’aventurier·ère·s et autres joueur·se·s prêts à planifier des strat’s (et ne pas les appliquer après coup), équilibrer leurs forces et faiblesses en fonction des boss et profiter gaiement ensemble du loot (=butin) obtenu !"
   button:
     enable : true
     label : "En savoir plus"
@@ -86,8 +89,8 @@ about:
 ########################## Call to action ############################
 cta:
   enable : true
-  subtitle : "Cliquez pour vous joindre à l’atelier avancé"
-  title : "Rejoindre la communauté sur Discord"
+  subtitle : "Rejoindre la communauté"
+  title : "Sur Discord"
   button:
     enable : true
     label : "Rejoindre"
@@ -129,7 +132,7 @@ event:
   
 ########################### funfacts ############################
 funfacts:
-  enable : true
+  enable : false
   funfact_item:
     # funfact item loop
     - name : "ENSEIGNANTS"

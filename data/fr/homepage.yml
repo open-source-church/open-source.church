@@ -88,7 +88,7 @@ about:
 
 ########################## Call to action ############################
 cta:
-  enable : true
+  enable : false
   subtitle : "Rejoindre la communauté"
   title : "Sur Discord"
   button:
@@ -99,15 +99,11 @@ cta:
 ########################## Where to find us ############################
 
 wtfu:
-  enable: false
-  title: "Où nous trouver"
-  buttons:
-    - name: "Discord"
-      icon: ""
-      url: ""
-    - name: "Twitch"
-      icon: ""
-      url: ""
+  enable: true
+  subtitle: "Tu as quelque chose à contribuer !"
+  title: "Retrouve-nous"
+  buttons: ["discord", "twitch"]  # From config.toml [[params.social]]
+  display_others: true
 
 ######################## Success story #############################
 success_story:

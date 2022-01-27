@@ -61,6 +61,26 @@ a.text-light:hover {
   color: $primary-color!important;
 }
 
+// Links on primary background (dark)
+
+a.dark, a.dark p {
+  color: #fff !important;
+}
+
+a:hover.dark, a:hover.dark p {
+  color: $darkgray !important;
+}
+
+a.dark span.hidden {
+  color: $primary-color !important;
+}
+
+a:hover.dark span.hidden {
+  color: $darkgray !important;
+}
+
+// Links
+
 h4{
   transition: .2s ease;
 }

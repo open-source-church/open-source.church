@@ -111,21 +111,36 @@
 <!-- where to fin us -->
 {{ if $data.homepage.wtfu.enable }}
 {{ with $data.homepage.wtfu }}
-<section class="section bg-background">
+<section class="section bg-primary">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
+        <h6 class="text-white font-secondary mb-0">{{ .subtitle | markdownify }}</h6>
         <h2 class="section-title text-white">{{ .title | markdownify }}</h2>
+        <div class="row">
+          {{ range .buttons }}
+            {{ $b := index ( where site.Params.social "title" .) 0 }}
+            <a href="{{ $b.link | absLangURL }}" class="col mx-3 dark" target="_blank" >
+              <p class="h2 mb-2">
+                {{ partial "ti" $b.icon }}
+              </p>
+              <span class="hidden">{{ $b.title }}</span>
+            </a>
+          {{ end }}
+        </div>
+        {{ if .display_others }}
+          <div class="row mt-5">
+            {{ $b := where site.Params.social "title" "not in" .buttons }}
+            {{ range $b }}
+                <a class="col p-2 dark" href="{{ .link | safeURL }}" target="_blank" >
+                  {{ with .icon }} {{ partial "ti" . }} {{end}}
+                  {{ with .image }} <img src="{{ . }}" width="16" /> {{end}}
+                  <br /><span class="hidden">{{ .title }}</span>
+                </a>
+            {{ end }}
+          </div>
+        {{ end }}
       </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      {{ range .buttons }}
-      <div class="col text-center bg-majenta">
-        <h3>{{ .name }}</h3>
-      </div>
-      {{ end }}
     </div>
   </div>
 </section>

@@ -133,6 +133,11 @@ title = "facebook"
 icon = "facebook" # teenyicons
 link = "https://facebook.com/opensourcechurch"
 
+[[params.social]]
+title = "newsletter"
+icon = "at" # teenyicons
+link = ""
+
 ################################### English language #####################################
 [Languages.en]
 languageName = "En"

@@ -9,19 +9,28 @@
   <div class="container">
     <div class="hero-slider">
       <!-- slider item -->
-      {{ range .slider_item }}
-      <div class="hero-slider-item">
-        <div class="row">
-          <div class="col-md-8">
-            <h1 class="text-white" data-animation-out="fadeOut{{.animation_out | title }}" data-delay-out="5" data-duration-in=".3"
-              data-animation-in="fadeIn{{.animation_in | title }}" data-delay-in=".1">{{ .title | markdownify }}</h1>
-            <p class="text-muted mb-4" data-animation-out="fadeOut{{.animation_out | title }}" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeIn{{.animation_in | title }}" data-delay-in=".4">{{ .content | markdownify }}</p>
-            {{ if .button.enable }}
-            <a href="{{ .button.link | absLangURL }}" class="btn btn-primary" data-animation-out="fadeOut{{.animation_out | title }}" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeIn{{.animation_in | title }}" data-delay-in=".7">{{ .button.label }}</a>
-            {{ end }}
-          </div>
-        </div>
-      </div>
+      <!--
+      title : "Votre brillant avenir est notre mission"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exer"
+      animation_in : "left"
+      animation_out : "right"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "Postuler maintenant"
+        link : "contact"
+        -->
+      {{ $items := .slider_item }}
+      <!-- Add last posts -->
+      {{ range first .last_posts (where site.RegularPages "Type" "post") }}
+        {{ $items = $items | append (dict "title" .Title "content" .Summary "button" (dict "enable" true "label" "lire la suite" "link" .Permalink)) }}
+      {{ end }}
+      <!-- Add last articles -->
+      {{ range first .last_events (where site.RegularPages "Type" "event") }}
+        {{ $items = $items | append (dict "title" .Title "content" .Summary "button" (dict "enable" true "label" "info" "link" .Permalink)) }}
+      {{ end }}
+      {{ range $items }}
+        {{ partial "slider_item" . }}
       {{ end }}
     </div>
   </div>

@@ -3,11 +3,11 @@ title: "Conférence sur les médias sociaux et l’économie béhaviorale"
 date: 2019-07-06T15:27:17+06:00
 draft: false
 # page title background image
-bg_image: "images/theme/backgrounds/page-title.jpg"
+bg_image: ""
 # meta description
 description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
 # Event image
-image: "images/theme/events/event-1.jpg"
+image: "https://via.placeholder.com/600x300.png?text=placeholder"
 # location
 location: "Dhanmondi, Dhaka"
 # entry fee
@@ -18,22 +18,22 @@ apply_url : "#"
 speaker:
   # speaker loop
   - name : "Jack Mastio"
-    image : "images/event-speakers/speaker-1.jpg"
+    image : "https://via.placeholder.com/300x300.png"
     designation : "Enseignant"
 
   # speaker loop
   - name : "John Doe"
-    image : "images/event-speakers/speaker-2.jpg"
+    image : "https://via.placeholder.com/300x300.png"
     designation : "Enseignant"
 
   # speaker loop
   - name : "Randy Luis"
-    image : "images/event-speakers/speaker-3.jpg"
+    image : "https://via.placeholder.com/100x100.png"
     designation : "Enseignant"
 
   # speaker loop
   - name : "Alfred Jin"
-    image : "images/event-speakers/speaker-4.jpg"
+    image : "https://via.placeholder.com/200x200.png"
     designation : "Enseignant"
 
 # type

@@ -5,33 +5,39 @@
 <!-- hero slider -->
 {{ if $data.homepage.slider.enable }}
 {{ with $data.homepage.slider }}
-<section class="hero-section overlay bg-cover" data-background="{{ .bg_image | absURL }}">
-  <div class="container">
-    <div class="hero-slider">
-      <!-- slider item -->
-      <!--
-      title : "Votre brillant avenir est notre mission"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Ut enim ad minim veniam, quis nostrud exer"
-      animation_in : "left"
-      animation_out : "right"
-      # available animation : left, right, up, down
-      button:
-        enable : true
-        label : "Postuler maintenant"
-        link : "contact"
-        -->
-      {{ $items := .slider_item }}
-      <!-- Add last posts -->
-      {{ range first .last_posts (where site.RegularPages "Type" "post") }}
-        {{ $items = $items | append (dict "title" .Title "content" .Summary "button" (dict "enable" true "label" "lire la suite" "link" .Permalink)) }}
-      {{ end }}
-      <!-- Add last articles -->
-      {{ range first .last_events (where site.RegularPages "Type" "event") }}
-        {{ $items = $items | append (dict "title" .Title "content" .Summary "button" (dict "enable" true "label" "info" "link" .Permalink)) }}
-      {{ end }}
-      {{ range $items }}
-        {{ partial "slider_item" . }}
-      {{ end }}
+    <!-- slider item -->
+  {{ $items := .slider_item }}
+  <!-- Add last posts -->
+  {{ range first .last_posts (where site.RegularPages "Type" "post") }}
+    {{ $items = $items | append (dict "title" .Title "content" .Summary "image" .Params.image "bg_image" .Params.bg_image "type" "post" "button" (dict "enable" true "label" "lire la suite du post" "link" .Permalink)) }}
+  {{ end }}
+  <!-- Add last articles -->
+  {{ range first .last_events (where site.RegularPages "Type" "event") }}
+    {{ $items = $items | append (dict "title" .Title "content" .Summary "image" .Params.image "bg_image" .Params.bg_image "type" "event" "button" (dict "enable" true "label" "info sur l'évènement" "link" .Permalink)) }}
+  {{ end }}
+<section class="overlay bg-cover" data-background="{{ .bg_image | absURL }}">
+  <div class="container-fluid p-0">
+    <div id="carousel" class="carousel slide hero-slides" data-ride="carousel" data-interval="7000">
+      <ol class="carousel-indicators">
+        {{ range $index, $item := $items }}
+          {{ $active := cond (eq $index 0) "active" "" }}
+          <li class="{{ $active }}" data-target="#carousel" data-slide-to="{{ $index }}"></li>
+        {{ end }}
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        {{ range $index, $item := $items }}
+          {{ $item := merge $item ( dict "active" ( cond (eq $index 0) "active" "" ) "index" $index) }}
+          {{ partial "carousel_item" $item }}
+        {{ end }}
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="h3">{{ partial "ti" "left o"}}</span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="h3">{{ partial "ti" "right o"}}</span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
 </section>
@@ -50,12 +56,15 @@
         <a href="{{ .image | absURL }}" class="venobox"><img class="img-fluid" src="{{ .image | absURL }}" alt="banner-feature"></a>
       </div>
       <!-- Features -->
-      <div class="col-xl-8 col-lg-7">
+      <div class="col-xl-8 col-lg-7 text-center">
         <div class="row feature-blocks bg-gray justify-content-between">
+          <h6 class="col-12 text-majenta mt-3 mb-2 font-osd">{{ .subtitle | markdownify }}</h6>
+          <h2 class="col-12 text-yellow mt-2 mb-3">{{ .title | markdownify }}</h2>
+          <h6 class="col-12 text-white mb-5">{{ .text | markdownify }}</h6>
           {{ range .feature_item }}
           <div class="col-sm-4 col-xl-4 mb-xl-5 mb-lg-3 mb-4 text-center">
             <img src="{{ .image }}" class="mb-xl-4 mb-lg-3 mb-4" width="111px" />
-            <h3 class="mb-xl-4 mb-lg-3 mb-4" style="color:{{.color}};">{{ .name | markdownify }}</h3>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4 font-osd" style="color:{{.color}};">{{ .name | markdownify }}</h3>
             <p>{{ .content | markdownify }}</p>
           </div>
           {{ end }}

@@ -28,8 +28,6 @@ defaultContentLanguage = 'fr'
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
-link = "plugins/slick/slick.css"
-[[params.plugins.css]]
 link = "plugins/animate/animate.css"
 [[params.plugins.css]]
 link = "plugins/venobox/venobox.min.css"
@@ -41,8 +39,6 @@ link = "plugins/venobox/venobox.min.css"
 link = "plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]
 link = "plugins/bootstrap/bootstrap.min.js"
-[[params.plugins.js]]
-link = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
 link = "plugins/venobox/venobox.min.js"
 [[params.plugins.js]]
@@ -133,10 +129,10 @@ title = "facebook"
 icon = "facebook" # teenyicons
 link = "https://facebook.com/opensourcechurch"
 
-[[params.social]]
-title = "newsletter"
-icon = "at" # teenyicons
-link = ""
+# [[params.social]]
+# title = "newsletter"
+# icon = "at" # teenyicons
+# link = ""
 
 ################################### English language #####################################
 [Languages.en]

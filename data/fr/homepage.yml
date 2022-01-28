@@ -3,7 +3,7 @@ slider:
   enable : true
   bg_image : "images/banner/banner-osc.png"
   last_posts: 2
-  last_events: 1
+  last_events: 2
   slider_item:
     # slider item loop
     # - title : "Votre brillant avenir est notre mission"
@@ -20,13 +20,16 @@ slider:
 banner_feature:
   enable : true
   image : "images/illustration/how-i-saved-the-world.png"
+  subtitle: "Open Source Church"
+  title: "Une Église par des geeks et pour des geeks"
+  text: "à travers"
   feature_item:
     # feature item loop
     - name : "Jeux"
       icon : "ti-game" # icon pack : https://themify.me/themify-icons
       image: "/images/logo/logo-game-no-text.png"
       color: "#ffd400"
-      content : "Jeux de société, jeux vidéo, jeux de rôles, gamification…
+      content : "*Jeux de société, jeux vidéo, jeux de rôles, gamification, …*
 
 
 Le jeu nous met en relation les uns avec les autres et nous permets d'expérimenter de nouvelles perspectives sur la réalité."
@@ -36,7 +39,7 @@ Le jeu nous met en relation les uns avec les autres et nous permets d'expérimen
       icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
       image: "/images/logo/logo-fantasy-no-text.png"
       color: "#00ffdd"
-      content : "Science-fiction, fantasy, contes & légendes, …
+      content : "*Science-fiction, fantasy, contes & légendes, …*
       
 
 Les univers de fictions sur des portes d'accès infinies pour penser le monde et notre place."
@@ -46,7 +49,7 @@ Les univers de fictions sur des portes d'accès infinies pour penser le monde et
       icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
       image: "/images/logo/logo-tech-no-text.png"
       color: "#d700d7"
-      content : "La technologie ouvre des nouvelles fenêtres de relations aux autres... et à Dieu.
+      content : "*La technologie ouvre des nouvelles fenêtres de relations aux autres... et à Dieu.*
 
 
 Open Source Church c'est aussi une réflexion critique sur l'usage de la technologie, ses bienfaits et ses abus."

@@ -4,56 +4,6 @@
 .overlay::before {background: $darkgray;}
 a.text-secondary, a.text-secondary:hover { color: $majenta !important; }
 
-// Navbar
-.navigation {
-  background: transparent;
-  padding: 10px 0;
-  .navbar-toggler { 
-    border-color: $primary-color;
-    color: $primary-color;
-    i { font-size: 25px; color: $primary-color;}
-  };
-  .small{ display:none; }
-  .large{ display:block; }
-}
-
-.navbar-collapse {
-  background: transparent;
-}
-
-.navbar-dark .navbar-nav { 
-  background: transparent;
-  .nav-link, .nav-link:hover {
-    color: $primary-color;
-  }
-  @include desktop {
-    background: $primary-color;
-    .nav-link {color:$darkgray;}
-    .nav-link:hover {color: $majenta;}
-  }
-  .nav-item::before {
-    background:$primary-color;
-  }
-  .dropdown-menu {
-    top: inherit;
-  }
-}
-
-.navigation.nav-bg {
-  background: $darkgray;
-  padding: 3px 0;
-  .small{ display:block; }
-  .large{ display:none; }
-  .nav-link {
-    padding: 15px 0;
-  }
-}
-
-.hero-slider {
-  .nextArrow, .prevArrow { color: $secondary-color; }
-  .slick-dots li button { background: $gray; }
-}
-
 // Pagination
 .pagination{
   .page-link{

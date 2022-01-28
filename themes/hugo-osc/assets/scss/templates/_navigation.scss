@@ -11,42 +11,57 @@
 }
 
 .navigation {
-  background: linear-gradient(to right, transparent 50%, $primary-color 50%);
+  // background: linear-gradient(to right, transparent 35%, $gray 35%);
+  background: #4b4c5866;
   transition: .2s ease;
 
   @include desktop {
-    background: $secondary-color;
-
     .navbar-brand {
       padding: 12px 0;
     }
   }
+  .navbar-toggler { 
+    border-color: $primary-color;
+    color: $primary-color;
+    i { font-size: 25px; color: $primary-color;}
+  };
+  .small{ display:none; }
+  .large{ display:block; }
 }
 
 .navbar-collapse{
-  @include desktop {
-    background: $secondary-color;
-  }
+  // @include desktop {
+  //   background: $secondary-color;
+  // }
+  background: transparent;
 }
 
 .navbar-nav {
   padding-left: 50px;
-  background: $primary-color;
+  // background: $primary-color;
+  // background: $gray;
+  background: transparent;
+
+  .nav-link {color:$primary-color;}
+  .nav-link:hover {color: $majenta;}
 
   @include desktop {
     padding-left: 0;
-    background: $secondary-color;
-  }
-}
+    background: $primary-color;
 
-.nav-bg {
-  background-color: $secondary-color;
+    .nav-link {color:$darkgray;}
+    .nav-link:hover {color: $majenta;}
+  }
 }
 
 .nav-item {
   .nav-link {
     text-transform: uppercase;
     font-weight: 600;
+    padding: 40px 0px;
+    @include desktop {
+      padding: 20px;
+    }
   }
 
   margin: 0 15px;
@@ -59,7 +74,7 @@
     height: 6px;
     width: 100%;
     content: "";
-    background: $white;
+    background:$primary-color;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform .3s ease;
@@ -74,27 +89,13 @@
   }
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: $white;
-}
-
-link:focus,
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: $white;
-}
-
-.navbar-dark .navbar-nav .active>.nav-link,
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show>.nav-link {
-  color: $white;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 40px 0px;
-
-  @include desktop {
-    padding: 20px;
+.nav-bg { // Collapsed
+  // background-color: $secondary-color;
+  background: $gray;
+  .small{ display:block; }
+  .large{ display:none; }
+  .nav-link {
+    padding: 15px 0;
   }
 }
 
@@ -113,7 +114,7 @@ link:focus,
       .dropdown-menu {
         visibility: visible;
         opacity: 1;
-        transform: translateY(0)
+        transform: translateY(0);
       }
     }
 
@@ -121,7 +122,8 @@ link:focus,
       box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
       border-bottom: 5px solid $primary-color;
       padding: 15px;
-      top: 96px;
+      // top: 96px;
+      margin: 0;
       border-radius: 0;
       display: block;
       visibility: hidden;
@@ -170,3 +172,5 @@ link:focus,
     }
   }
 }
+
+

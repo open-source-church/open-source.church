@@ -1,0 +1,15 @@
+<div class="carousel-item bg-cover {{ .active }}" data-background="{{ .image }}">
+    <div class="container h-100 d-md-block">
+        <div class="row align-items-center h-100">
+            <div class="col-12 col-md-9 col-lg-9 col-xl-8">
+                <div class="caption animated fadeIn">
+                    <h2 class="animated fadeInLeft"><a href="{{ .button.link | absLangURL }}">{{ .title | markdownify }}</a></h2>
+                    <p class="animated fadeInRight">{{ .content | markdownify }}</p>
+                    {{ if .button.enable }}
+                        <a class="animated fadeInUp btn btn-primary text-uppercase" href="{{ .button.link | absLangURL }}">{{ .button.label | markdownify }}</a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

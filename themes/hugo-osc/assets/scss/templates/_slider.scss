@@ -2,63 +2,52 @@
   padding: 250px 0 290px;
 }
 
-.hero-slider {
+#carousel {
 
-  .prevArrow,
-  .nextArrow {
-    position: absolute;
-    bottom: -123px;
-    z-index: 9;
-    padding: 15px;
-    color: rgba($color: $white, $alpha: .5);
-    border: 0;
-    font-size: 30px;
-    transition: all linear .2s;
-    background: transparent;
-
-    &:focus {
-      outline: 0;
-    }
-
-    &:hover {
-      color: $primary-color;
-    }
+  .carousel-item{
+    height: 700px;
+    width:100%;
+    min-height:80vh;
+  }
+  .carousel-inner .carousel-item{
+    transition:-webkit-transform 1s ease;
+    transition:transform 1s ease;
+    transition:transform 1s ease, -webkit-transform 1s ease;
+  }
+  .carousel-item .caption{
+    background:rgba(0,0,0,0.5);
+    padding:40px;
+    color:white;
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+  .caption h2{
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+  .caption p{
+    animation-duration: 1s;
+    animation-delay: 1.2s;
   }
 
-  .prevArrow {
-    right: 60px;
+  .caption a{
+    animation-duration: 1s;
+    animation-delay: 1.4s;
   }
-
-  .nextArrow {
-    right: 0;
+  .carousel-control-next, .carousel-control-prev {
+    align-items: end;
+    margin-bottom: 130px;
+    @include desktop { margin-bottom: 20px; }
   }
+  .carousel-control-prev { right: 100px; left: auto; }
+  .carousel-control-next span, .carousel-control-prev span { color: $secondary-color; }
 
-  .slick-dots {
-    position: absolute;
-    left: 0;
-    bottom: -100px;
-    padding-left: 0;
-
+  .carousel-indicators {
+    right: auto;
     li {
-      display: inline-block;
-      margin: 0 6px;
-
-      &.slick-active {
-        button {
-          background: $primary-color;
-        }
-      }
-
-      button {
-        color: transparent;
-        padding: 0;
-        overflow: hidden;
-        height: 10px;
-        width: 10px;
-        background: rgba($color: $white, $alpha: .5);
-        border: 0;
-        outline: 0;
-      }
+      width: 12px;
+      height: 12px;
+      &.active { background-color: $primary-color; }
     }
   }
 }

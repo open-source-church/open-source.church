@@ -29,33 +29,6 @@
     });
   });
 
-  //Hero Slider
-  $('.hero-slider').slick({
-    autoplay: true,
-    autoplaySpeed: 4000,
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    infinite: true,
-    arrows: true,
-    fade: true,
-    prevArrow: `<button type=\'button\' class=\'prevArrow\'>
-        <span class="inline-scg">
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 14L3 7.5L10 1" stroke="currentColor" stroke-linecap="square"/>
-          </svg>
-        </span>
-      </button>`,
-    nextArrow: `<button type=\'button\' class=\'nextArrow\'>
-        <span class="inline-scg">
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 14L12 7.5L5 1" stroke="currentColor" stroke-linecap="square"/>
-          </svg>
-        </span>
-      </button>`,
-    dots: true
-  });
-  $('.hero-slider').slickAnimation();
-
   // venobox popup
   $(document).ready(function () {
     $('.venobox').venobox();

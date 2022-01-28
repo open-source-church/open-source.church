@@ -15,28 +15,38 @@
         <div class="col-12 col-sm-9">
         {{ .Content }}
       </div>
+      <hr />
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-2"><a class="btn text-yellow border-yellow" href="#vision">Vision</a></div>
+      <div class="col-2"><a class="btn text-cyan border-cyan" href="#valeurs">Valeurs</a></div>
+      <div class="col-2"><a class="btn text-majenta border-majenta" href="#modes">Modes de jeu</a></div>
     </div>
   </div>
 </section>
 <!-- /about -->
 
-<!-- domaines-->
-<section class="section bg-gray">
-  <div class="container content bg-gray mt-5">
-      {{ with .Params.domaines }}
+<!-- Vision-->
+<section class="section bg-gray" id="vision">
+  <div class="container content bg-gray mt-5 text-center">
+    <h1 class="text-center mb-5">Vision</h1>
+    <img src="{{ .Params.vision_image }}" class="text-center w-25 mb-5" />
+    <p class="text-center h3 font-weight-normal font-italic">{{ .Params.vision | markdownify }}</p>
+      <p class="text-center h5 font-weight-normal mb-5">{{ .Params.vision_description | markdownify }}</p>
+      {{ with .Params.vision_liste }}
         {{ range . }}
         <div class="row justify-content-center">
-          <div class="col-3 text-center">
+          <div class="col-3 col-sm-2 text-center">
             <img src="{{ .image }}" class="mb-xl-4 mb-lg-3 mb-4 w-100" width="111px" />
           </div>
-          <div class="col-9 col-md-6 mb-5">
+          <div class="col-10 col-md-6 mb-5 text-left">
             <h3 class="mb-0" style="color:{{.color}};">{{ .name | markdownify }}</h3>
             <p>{{ .content | markdownify }}</p>
           </div>
         </div>
         {{ end }}
       {{ end }}
-      <div class="accordion w-100 px-4" id="accordionExample">
+      <div class="accordion w-100 px-4 mt-3" id="accordionExample">
         <div class="card bg-dark">
           <div class="card-header p-0" id="headingOne">
             <h2 class="mb-0" >
@@ -47,15 +57,97 @@
           </div>
       
           <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body">
-              {{ .Params.domaines_more | markdownify }}
+            <div class="card-body text-left">
+              {{ .Params.vision_more | markdownify }}
             </div>
           </div>
         </div>
       </div>
   </div>
 </section>
-<!-- /domaines -->
+<!-- /Vision -->
+
+<!-- Valeurs-->
+<section class="section" id="valeurs">
+  <div class="container content mt-5 text-center">
+    <h1 class="text-center mb-5">Valeurs</h1>
+    <img src="{{ .Params.valeurs_image }}" class="text-center w-25 mb-5" />
+    <p class="text-center h3 font-weight-normal font-italic">{{ .Params.valeurs | markdownify }}</p>
+      <p class="text-center h5 font-weight-normal mb-5">{{ .Params.valeurs_description | markdownify }}</p>
+      {{ with .Params.valeurs_liste }}
+        {{ range . }}
+        <div class="row justify-content-center">
+          <div class="col-3 col-sm-2 text-center">
+            <img src="{{ .image }}" class="mb-xl-4 mb-lg-3 mb-4 w-100" width="111px" />
+          </div>
+          <div class="col-9 col-md-6 mb-5 text-left align-self-center">
+            <h3 class="mb-0" style="color:{{.color}};">{{ .name | markdownify }}</h3>
+            <p>{{ .content | markdownify }}</p>
+          </div><div class="col-12"></div>
+        </div>
+        {{ end }}
+      {{ end }}
+      <div class="accordion w-100 px-4 mt-3" id="accordionExample">
+        <div class="card bg-dark">
+          <div class="card-header p-0" id="headingOne">
+            <h2 class="mb-0" >
+              <button class="btn btn-link btn-sm btn-block text-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                {{partial "ti" "plus-circle"}} Plus de détails
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body text-left">
+              {{ .Params.valeurs_more | markdownify }}
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- /Valeurs -->
+
+<!-- Valeurs-->
+<section class="section bg-gray" id="modes">
+  <div class="container content mt-5 text-center">
+    <h1 class="text-center mb-5">Modes de jeu</h1>
+    <img src="{{ .Params.modes_image }}" class="text-center w-25 mb-5" />
+    <p class="text-center h3 font-weight-normal font-italic">{{ .Params.modes | markdownify }}</p>
+      <p class="text-center h5 font-weight-normal mb-5">{{ .Params.modes_description | markdownify }}</p>
+      {{ with .Params.modes_liste }}
+        {{ range . }}
+        <div class="row justify-content-center">
+          <div class="col-3 col-sm-2 text-center">
+            <img src="{{ .image }}" class="mb-xl-4 mb-lg-3 mb-4 w-100" width="111px" />
+          </div>
+          <div class="col-9 col-md-6 mb-5 text-left align-self-center">
+            <h3 class="mb-0" style="color:{{.color}};">{{ .name | markdownify }}</h3>
+            <p>{{ .content | markdownify }}</p>
+          </div><div class="col-12"></div>
+        </div>
+        {{ end }}
+      {{ end }}
+      <div class="accordion w-100 px-4 mt-3" id="accordionExample">
+        <div class="card bg-dark">
+          <div class="card-header p-0" id="headingOne">
+            <h2 class="mb-0" >
+              <button class="btn btn-link btn-sm btn-block text-primary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                {{partial "ti" "plus-circle"}} Plus de détails
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body text-left">
+              {{ .Params.modes_more | markdownify }}
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- /Valeurs -->
 
 <section class="section ">
 </section>

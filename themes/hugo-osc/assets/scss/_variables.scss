@@ -29,6 +29,9 @@ $secondary-font: 'futura-bold';
 .bg-majenta {background: $majenta !important;}
 .bg-yellow {background: $yellow !important;}
 .bg-darkgray {background: $darkgray !important;}
+.border-cyan {border: 1px solid $cyan !important; }
+.border-majenta {border: 1px solid $majenta !important; }
+.border-yellow {border: 1px solid $yellow !important; }
 
 // Custom fonts
 @font-face {

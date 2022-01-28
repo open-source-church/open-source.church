@@ -23,7 +23,7 @@
   translation: Articles
 
 - id: latest_article
-  translation: Derniers articles
+  translation: Articles récents
 
 - id: categories
   translation: Catégories

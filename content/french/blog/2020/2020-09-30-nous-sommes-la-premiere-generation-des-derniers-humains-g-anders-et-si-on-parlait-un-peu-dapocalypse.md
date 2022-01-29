@@ -20,7 +20,7 @@ Comme je le disais [dans un précédent article][1], les univers de fictions, l'
 
 Tout d'abord, lire et réfléchir sur la fin du monde — quels qu'en soient les causes — est un sujet sensible et délicat. On parle, tout de même, d'imaginer la destruction de notre société et de notre monde. Il y a de quoi angoisser. Aussi, si vous sentez que cette lecture — ou celle des autres articles à ce sujet qui suivront — vous emmène vers quelque-chose de trop lourd à lire : n'hésitez-pas à changer de lecture, [il y a de quoi lire ici !][2] Respectez-vous dans votre sensibilité 🙂 
 
-{{<figure src="/blog/2020/giphywar.gif" width="80%" caption="Src: GIPHY" class="text-center">}}
+{{<figure src="/blog/2020/giphywar.webp" width="80%" caption="Src: GIPHY" class="text-center">}}
 
 
 Pourquoi parler de fin du monde ? Tant qu'elle arrive pas, dans le fond, elle n'existe pas. D'ailleurs, là y réside son paradoxe. La catastrophe n'est pas crédible tant qu'elle n'a pas eu lieu. Pourtant, elle fascine. Elle inspire tant la philosophie que la fiction. Les exemples sont infinis : des séries de type [« The Walking Dead »][3] aux jeux-vidéos dit [« post-Apo »][4] jusqu'à la Collapsologie (étude de l'effondrement des sociétés), l'idée de la fin de notre monde (tel que nous le connaissons) suscite créativité et production ! 
@@ -35,7 +35,7 @@ Certes, l'humain a fantasmé sur sa fin depuis longtemps. En effet, comme le ré
 
 En réalité, parler de la fin qui survient dans le futur, c'est surtout vouloir parler du présent **en danger** ou **dangereux**. En conséquence, la fiction devient un outil privilégié pour réfléchir sur la _fin_. Elle permet d'explorer une réalité souvent nommée _apocalyptique_ ou _post-apocalyptique_, pour annoncer comme dénoncer le futur de notre présent. Et c'est précisément la raison qui me fait m'y intéresser. Qu'elle soit fictionnelle, philosophique ou théologique, l'histoire de notre _**fin**_ veut nous parler pour aujourd'hui, pas pour demain. Prenons deux exemples : **le philosophe Günter Anders** et **le RPG Fallout 4**. 
 
-{{<figure src="/blog/2020/giphynuc.gif" width="100%" caption="Le péril atomique © GIPHY" class="text-center">}}
+{{<figure src="/blog/2020/giphynuc.webp" width="100%" caption="Le péril atomique © GIPHY" class="text-center">}}
 
 
 ### Günter Anders : un philosophe qui pense la fin 
@@ -110,7 +110,7 @@ Deux compagnies, dans le jeu, représentent le monde scientifique. D'une part Va
 
   * **[Vault-Tec][13]** : Les abris sont réservés de manière élitiste et méritocratique. Seul.e.s celleux considéré.e.s comme « dignes », par leur service auprès des USA, ont le droit à une place. Le but secret — mandaté par le gouvernement — étant l'expérimentation sur des sujets humains. Les autres doivent mourir, tout simplement. Même le représentant de Vault-Tec que vous rencontrez au début du jeu n'a pas le droit, ironiquement, à une place dans un abris. En somme, cette compagnie incarne l'hypocrise cynique d'une pseudo-agence au service de la population mue par des objectifs secrets et immoraux. Le tout, en préservant le voile du déni auprès de la population avec un discours de type « en route pour l'avenir post-apocalyptique, youhou! » Des abris pour l'élite ? [Voilà qui me rappelle quelque-chose…][14] 
 
-{{<figure src="/blog/2020/giphyvault.gif" width="50%" caption="Le Vault-Boy, mascotte de Vault-Tec © GIPHY" class="text-center">}}
+{{<figure src="/blog/2020/giphyvault.webp" width="50%" caption="Le Vault-Boy, mascotte de Vault-Tec © GIPHY" class="text-center">}}
 
   * **[L'institut][15]** [:][15] Iels cherchent à fabriquer des humains synthétiques, aussi vrai que nature. L'institut, pour ses recherches n'hésitent pas à remplacer des humains par des doubles synthétiques, pour prendre le contrôle des populations. Leur but profond se résume en un mot : l[e transhumanisme !][16] Et, bien entendu, l'institut méprise profondément « ceux de la surface » — puisque l'Institut est caché — n'hésitant pas à les éliminer.
 

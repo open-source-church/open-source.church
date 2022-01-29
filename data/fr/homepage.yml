@@ -1,7 +1,7 @@
 ################################# Slider #####################################
 slider:
   enable : true
-  bg_image : "images/banner/banner-osc.png"
+  bg_image : "images/banner/banner-osc.webp"
   last_posts: 2
   last_events: 2
   slider_item:
@@ -19,7 +19,7 @@ slider:
 ############################### Banner feature ###############################
 banner_feature:
   enable : true
-  image : "images/illustration/how-i-saved-the-world.png"
+  image : "images/illustration/how-i-saved-the-world.webp"
   subtitle: "Open Source Church"
   title: "Une Église par des geeks et pour des geeks"
   text: "à travers"
@@ -27,7 +27,7 @@ banner_feature:
     # feature item loop
     - name : "Jeux"
       icon : "ti-game" # icon pack : https://themify.me/themify-icons
-      image: "/images/logo/logo-game-no-text.png"
+      image: "/images/logo/logo-game-no-text.webp"
       color: "#ffd400"
       content : "*Jeux de société, jeux vidéo, jeux de rôles, gamification, …*
 
@@ -37,7 +37,7 @@ Le jeu nous met en relation les uns avec les autres et nous permets d'expérimen
     # feature item loop
     - name : "Imaginaire"
       icon : "ti-blackboard" # icon pack : https://themify.me/themify-icons
-      image: "/images/logo/logo-fantasy-no-text.png"
+      image: "/images/logo/logo-fantasy-no-text.webp"
       color: "#00ffdd"
       content : "*Science-fiction, fantasy, contes & légendes, …*
       
@@ -47,7 +47,7 @@ Les univers de fictions sur des portes d'accès infinies pour penser le monde et
     # feature item loop
     - name : "Sciences & technologies"
       icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
-      image: "/images/logo/logo-tech-no-text.png"
+      image: "/images/logo/logo-tech-no-text.webp"
       color: "#d700d7"
       content : "*La technologie ouvre des nouvelles fenêtres de relations aux autres... et à Dieu.*
 

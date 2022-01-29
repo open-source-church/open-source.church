@@ -4,7 +4,7 @@ author: Noémie Emery
 date: 2020-11-17T09:21:00+00:00
 aliases:
   - /real-geek-real-hero-danny-avidan-nsp/
-image: /blog/2020/tenor-1.gif
+image: /blog/2020/tenor-1.webp
 type: post
 categories:
   - Articles
@@ -15,7 +15,7 @@ Aujourd'hui, pas de jeu-vidéo ni de manga, mais une personne bien réelle&nbsp;
 
 Chanteur, compositeur, gameur, comédien, que vous pouvez retrouver principalement dans le groupe (pop-rock-électro-humoristique?) [Ninja Sex Party][1], dans lequel il incarne Danny Sexbang, un super-héros un peu looser, très porté sur le sexe, et inlassablement enthousiaste. Il est également membre du trio musical [Starbomb][2] (chansons parodiques des univers vidéo-ludiques), et de la chaîne YouTube de gaming _[Game Grumps][3]_. 
 
-{{<figure src="/blog/2020/tenor-1.gif" width="50%" caption="Extrait du clip *« It's bedtime »*, de NSP." class="text-center" >}}
+{{<figure src="/blog/2020/tenor-1.webp" width="50%" caption="Extrait du clip *« It's bedtime »*, de NSP." class="text-center" >}}
 
 
 
@@ -29,7 +29,7 @@ Alors, heureusement, il existe des oeuvres qui mettent en avant des personnages 
 
 Je l'ai déjà dit dans de [précédents articles](/fruits-basket-ce-manga-qui-me-redonne-la-foi/) et je le redis&nbsp;: les _role models_ et la représentation de certaines catégories de population, surtout les moins visibles et/ou les moins valorisées, c'est vraiment important pour se construire en tant qu'individu fier·e de ce qu'on est.
 
-{{<figure src="/blog/2020/tenor-2.gif" width="60%" caption="Danny Sexbang & Ninja Brian, NSP." class="text-center">}}
+{{<figure src="/blog/2020/tenor-2.wepb" width="60%" caption="Danny Sexbang & Ninja Brian, NSP." class="text-center">}}
 
 
 Bref, revenons-en à notre ami Danny Avidan, aussi cool que Neo, aussi drôle que Scott Pilgrim, et qui porte encore mieux que Spiderman la combinaison moulante. Parce que lui, c'est un vrai geek _de la vrai vie_, entre gaming et références pop, lectures et synthé eighties.
@@ -66,7 +66,7 @@ Un commentaire sous cette même vidéo (ci-dessus : la cover de _Take on me_) am
 {{<figure src="/blog/2020/Capture-d’écran-2020-11-19-à-11.40.40.png" width="100%" caption="« Ce à quoi les gens ne pensent pas, c'est que puisque Danny est Juif, il y a une mince possibilité que Jésus lui ait totalement ressemblé. »" class="text-center">}}
 
 
-{{<figure src="/blog/2020/tenor.gif" width="100%" caption="Danny. Ou Jésus ? Je sais plus." class="text-center float-left mr-3">}}
+{{<figure src="/blog/2020/tenor.webp" width="100%" caption="Danny. Ou Jésus ? Je sais plus." class="text-center float-left mr-3">}}
 
 Comment ça, c'est pas un apport théologique suffisant&nbsp;?
 

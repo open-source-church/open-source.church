@@ -20,7 +20,7 @@ J'ai, en résumé, trois passions dans la vie. Dieu, l'écologie et les univers 
 
 Alors, commençons par présenter très rapidement Thanos et son projet pour régler les problèmes de la galaxie ! Pour faire simple, Thanos est le _big boss_ de la saga Marvel jusqu'à présent. C'est celui contre lequel les Avengers (_les good-guys_) doivent lutter directement ou indirectement dans la plupart des films de la saga. 
 
-{{<figure src="/blog/2020/giphythanos.gif" width="100%" caption="Thanos : « Je suis … inévitable »" class="text-center">}}
+{{<figure src="/blog/2020/giphythanos.webp" width="100%" caption="Thanos : « Je suis … inévitable »" class="text-center">}}
 
 Voici la description de Thanos selon le site officiel des studios Marvel :
 
@@ -44,7 +44,7 @@ Pour commencer, le nom « malthusianisme » vient d'un chercheur britannique :
 
 Donc, exactement comme l'affirme Thanos, si on laisse les êtres vivants continuer de croître, ça mène obligatoirement à l'épuisement des ressources. Même si la courbe de la population prend plus de temps à grimper, elle finit **à l'absolu** par dépasser celle des ressources selon Malthus. En bref, ça mène à l'autodestruction du monde. Petite précision : pour Malthus, l&#8217;emballement démographique, c'est l&#8217;emballement **des populations pauvres** — je vais y revenir. Or, dès la fin de la Seconde Guerre Mondiale, la pensée de Malthus va être reprise par une partie de l'écologie politique (Osborn ; Vogt ; Erlich ; Hardin ; etc.), qui va réduire, en gros, tous les problèmes écolo à cette question de la démographie. C'est **la cause** de tout pour cette pensée malthusienne. Ainsi, mon titre se justifie : Thanos est l'idéal malthusien !
 
-{{<figure src="/blog/2020/giphyth.gif" width="100%" caption="Thanos satisfait après avoir « réglé » la question démographie. © GIPHY" class="text-center">}}
+{{<figure src="/blog/2020/giphyth.webp" width="100%" caption="Thanos satisfait après avoir « réglé » la question démographie. © GIPHY" class="text-center">}}
 
 
 ### Les soucis du courant malthusien (et de Thanos du coup). 
@@ -67,7 +67,7 @@ Et, bigre, c'est un argument que j'entends encore aujourd'hui. Certain.e.s de me
 
 Ensuite, plutôt que de juger gratuitement des pays qui tentent d'améliorer leur niveau de vie, essayons de proposer un partage équitable des moyens de production et de consommation ! Certes, suivre le modèle que nos pays ont pris — donc le développement industriels massif — n'est pas un bon plan, mais alors proposons des alternatives. Car, non on ne résoudra rien par la négation d'autres êtres, encore moins d'un simple claquement de doigts (désolé Thanos). 
 
-{{<figure src="/blog/2020/giphyth2.gif" width="100%" caption="Allégorie de la critique du malthusianisme. © GIPHY " class="text-center">}}
+{{<figure src="/blog/2020/giphyth2.webp" width="100%" caption="Allégorie de la critique du malthusianisme. © GIPHY " class="text-center">}}
 
 
 ## Conclusion théologique : vers une prospérité juste. 

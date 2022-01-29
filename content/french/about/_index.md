@@ -7,10 +7,10 @@ hide_header: true
 vision: "**Open Source Church** est un lieu d’église en développement qui vit et annonce **l’Évangile** au sein de la « **culture geek** »,
       de manière pertinente, en étant axé radicalement sur les **non-églisé·e·s/distancié·e·s**."
 vision_description: "La « culture geek » est composée de ces trois éléments:<br/>le jeu, l’imaginaire et les sciences & technologies"
-vision_image: "/images/symbols/symbol-geek-croix.png"
+vision_image: "/images/symbols/symbol-geek-croix.webp"
 vision_liste: 
 - name : "Jeux"
-  image: "/images/symbols/symbol-jeux.png"
+  image: "/images/symbols/symbol-jeux.webp"
   color: "#d700d7"
   content : "Nous sommes convaincus qu'à travers les temps de jeu (société, rôle, vidéo, etc.), les sessions de JDR's, le vécu in-game, nous sommes sollicités intérieurement.
 
@@ -18,7 +18,7 @@ vision_liste:
 La dynamique propre au milieu du game permet d'ouvrir ainsi de nouveaux points d'accès et perspectives pour entrer en relation."
 
 - name : "Imaginaire"
-  image: "/images/symbols/symbol-imaginaire.png"
+  image: "/images/symbols/symbol-imaginaire.webp"
   color: "#00ffdd"
   content : "Les univers de fictions sont des portes d'accès infinies pour penser notre monde, notre rapport à celui-ci et nos valeurs... alors pourquoi pas également la spiritualité ?
 
@@ -26,7 +26,7 @@ La dynamique propre au milieu du game permet d'ouvrir ainsi de nouveaux points d
 Ce qui est vécu au travers de la fiction est riche de sens et nous interpelle : d'où la passion des membres d'Open Source Church pour la pop culture, les classiques (ou non) de la fiction, les JDR's, etc."
 
 - name : "Sciences & technologies"
-  image: "/images/symbols/symbol-tech.png"
+  image: "/images/symbols/symbol-tech.webp"
   color: "#ffd400"
   content : "Un paroisse sur Twitch ? Du gaming dans l'église ? Un web-série sur les instants ordinaires de la vie de Christ ? Du podcast théologico-fantastique ? On en rêve !
 
@@ -56,21 +56,21 @@ Open Source Church est un projet pionnier de l’[EERV](https://www.eerv.ch)."
 
 # Valeurs
 valeurs: "Pour ne pas perdre le nord, nous suivons ce CAP."
-valeurs_image: "/images/symbols/symbol-cap.png"
+valeurs_image: "/images/symbols/symbol-cap.webp"
 valeurs_description: "Après avoir défini *ce que* nous voulons vivre, <br />ces trois valeurs nous aident à savoir *comment* nous voulons le vivre."
 valeurs_liste: 
 - name : "Christocentrisme"
-  image: "/images/symbols/symbol-cap-croix.png"
+  image: "/images/symbols/symbol-cap-croix.webp"
   color: "#d700d7"
   content : "Nous faisons du Christ le fondement et le but de tout ce qui est vécu, la focale de nos explorations spirituelles."
 
 - name : "Activation"
-  image: "/images/symbols/symbol-cap-active.png"
+  image: "/images/symbols/symbol-cap-active.webp"
   color: "#00ffdd"
   content : "Nous encourageons et équipons chacun·e pour trouver la place qui correspons à son appel, ses passions et ses dons, et à prendre un rôle actif."
 
 - name : "Pluralité"
-  image: "/images/symbols/symbol-cap-diverse.png"
+  image: "/images/symbols/symbol-cap-diverse.webp"
   color: "#ffd400"
   content : "Unis en Christ, nous acueillons comme un trésor une pluralité d'expressions, de croyances ou de pratiques."
 
@@ -96,21 +96,21 @@ D’autres valeurs qui nous portent et nous nourrissent : innovation, prise de r
 
 # Modes
 modes: "À Open Source Church, on peut appartenir avant de croire. Ou sans croire. Ou en croyant différement. Et c’est ok."
-modes_image: "/images/symbols/symbol-mod-levels.png"
+modes_image: "/images/symbols/symbol-mod-levels.webp"
 modes_description: "Comment vivre notre pluralité interne comme une richesse, dans le respect de la liberté de chacun·e? Comment témoigner de l’Évangile à des gens qui se méfient des institutions religieuses et du prosélytisme? Nous avons développé une stratégie simple pour garantir la liberté et le respect des participants, en explicitant différentes \"modes de jeu\"."
 modes_liste: 
 - name : "0 · Communauté"
-  image: "/images/symbols/symbol-mod-l0-communaute.png"
+  image: "/images/symbols/symbol-mod-l0-communaute.webp"
   color: "#d700d7"
   content : "Se rassembler autour d'intérêts partagés, créer des liens d'amitiés et de confiance. Éviter les sujets qui divisent pour se concentrer sur ce qui rassemble."
 
 - name : "1 · Découverte"
-  image: "/images/symbols/symbol-mod-l1-decouverte.png"
+  image: "/images/symbols/symbol-mod-l1-decouverte.webp"
   color: "#00ffdd"
   content : "Espace de partage, de proposition, d'expérimentation. Clarifier les modalités des désaccords et de discussion. Offrir la possibilité de découvrir l'Évangile d'une manière audible."
 
 - name : "2 · Enracinement"
-  image: "/images/symbols/symbol-mod-l2-enracinement.png"
+  image: "/images/symbols/symbol-mod-l2-enracinement.webp"
   color: "#ffd400"
   content : "Affirmer joyeusement et clairement nos convictions. Vivre l'Évangile, le laisser prendre racine en nous et nous transformer."
 
@@ -144,7 +144,7 @@ je dois reconnaître que je suis un geek,
 et l’assumer dans mon ministère. »
 > 
 
-<img src="/images/avatar/okeshavjee.png" width="48px" class="rounded-circle float-right ml-3" >
+<img src="/images/avatar/okeshavjee.webp" width="48px" class="rounded-circle float-right ml-3" >
 
 [Olivier Keshavjee](https://www.theologeek.ch/2018/12/12/ma-metamorphose-un-ministere-nourri-par-mes-passions-et-mes-besoins/)  
 Pasteur

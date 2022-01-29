@@ -39,7 +39,7 @@ A la fin de l'extension précédente, le Titan Sargeras (comprenez : le big méc
 
 La planète est si mal en point qu'elle se met à déverser son « sang » (nommé logiquement « azérite ») qui coule en gisement à la surface. Dès lors, la situation est critique et chaotique pour tout ce qui vit sur cette planète. Et, d'après-vous, que font les deux factions — La Horde et l'Alliance — qui se partagent Azeroth ? Je vous le donne en mille : elles transforment l'azérite en arme, se lancent dans une course à l'armement pour se taper dessus !
 
-{{<figure src="/blog/2020/giphy.gif" class="text-center">}}
+{{<figure src="/blog/2020/giphy.webp" class="text-center">}}
 
 
 ### Des résistant.e.s antisystèmes !

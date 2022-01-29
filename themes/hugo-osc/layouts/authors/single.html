@@ -44,7 +44,7 @@
 			{{ $p2 := where .Site.Pages "Params.author" $slug }}
 			{{ range union $p1 $p2}}
 			<div class="col-lg-4 col-sm-6 mb-4">
-				{{ .Render "post" }}
+				{{ .Render "card" }}
 			</div>
 			{{ end }}
 		</div>

@@ -219,7 +219,7 @@
       <!-- blog post -->
       {{ range first 3 (where site.RegularPages "Type" "post")}}
       <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-        {{ .Render "post" }}
+        {{ .Render "card" }}
       </article>
       {{ end }}
     </div>

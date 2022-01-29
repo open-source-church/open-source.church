@@ -18,7 +18,7 @@
           {{ $paginator := .Paginate ( where .Data.Pages "Type" "post") }}
           {{ range $paginator.Pages }}
           <div class="col-sm-6 mb-5">
-            {{ .Render "post" }}
+            {{ .Render "card" }}
           </div>
           {{ end }}
           <div class="col-12 mt-4">

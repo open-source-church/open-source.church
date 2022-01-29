@@ -21,7 +21,7 @@
           {{ range .Paginator.Pages }}
           <div class="col-sm-6 mb-5">
             {{ if eq .Type "post" }}
-            {{ .Render "post" }}
+            {{ .Render "card" }}
             {{ else }}
             {{ .Render "generic" }}
             {{ end }}

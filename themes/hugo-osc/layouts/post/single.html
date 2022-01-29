@@ -12,8 +12,17 @@
       <div class="col-lg-8 order-2 order-lg-1">
         <div class="row">
           <!-- Image -->
+          {{ $image := .Resources.GetMatch .Params.image }}
+          {{ if $image }}
+          {{ if and ( gt $image.Width 800 ) ( not .Params.dont_resize_image ) }}
+            {{ $image = $image.Resize "800x q75" }}
+          {{ end }}
+            {{ $image = $image.RelPermalink }}
+          {{ else }}
+            {{ $image = .Params.image | relURL }}
+          {{ end }}
           <div class="col-12 mb-4">
-            <img src="{{ .Params.image | relURL }}" alt="blog-thumb" class="img-fluid w-100">
+            <img src="{{ $image }}" alt="blog-thumb" class="img-fluid w-100">
           </div>
           <!-- Meta -->
           <div class="col-12">

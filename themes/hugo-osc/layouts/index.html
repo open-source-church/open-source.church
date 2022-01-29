@@ -9,7 +9,17 @@
   {{ $items := .slider_item }}
   <!-- Add last posts -->
   {{ range first .last_posts (where site.RegularPages "Type" "post") }}
-    {{ $items = $items | append (dict "title" .Title "content" .Summary "image" .Params.image "bg_image" .Params.bg_image "type" "post" "button" (dict "enable" true "label" "lire la suite du post" "link" .Permalink)) }}
+    {{ $image := ( .Resources.GetMatch .Params.image ).RelPermalink }}
+    {{ if not .Params.dont_resize_image}}
+      {{ $image = (( .Resources.GetMatch .Params.image ).Filter (images.GaussianBlur 2)  ).RelPermalink }}
+    {{ end }}
+    {{ $items = $items | append (dict
+      "title" .Title
+      "content" .Summary
+      "image" $image
+      "bg_image" .Params.bg_image
+      "type" "post"
+      "button" (dict "enable" true "label" "lire la suite du post" "link" .Permalink)) }}
   {{ end }}
   <!-- Add last articles -->
   {{ range first .last_events (where site.RegularPages "Type" "event") }}

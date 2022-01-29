@@ -1,0 +1,90 @@
+{{ define "main" }}
+
+<!-- event single -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">{{ .Title }}</h2>
+      </div>
+      <!-- event image -->
+      {{ if .Params.image }}
+        {{ $image := .Resources.GetMatch .Params.image }}
+        {{ $image = $image.Resize "1000x q75" }}
+        <div class="col-12 mb-4">
+          <img style="height: 500px;width: 100%;object-fit: cover;" src="{{ $image.RelPermalink }}" alt="{{ .Title }}" class="img-fluid w-100">
+        </div>
+      {{ end }}
+    </div>
+    <!-- event info -->
+    <div class="row align-items-center mb-5">
+      <div class="col-auto">
+        <ul class="list-inline">
+          <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
+            <div class="d-flex align-items-center">
+              {{ partial "ti" "location o" }}
+              <div class="text-left ml-3">
+                <h6 class="mb-0">{{ i18n "location" | upper}}</h6>
+                <p class="mb-0">{{ .Params.Location | markdownify }}</p>
+              </div>
+            </div>
+          </li>
+          {{ if .Params.jour }}
+            <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
+              <div class="d-flex align-items-center">
+                {{ partial "ti" "calendar o" }}
+                <div class="text-left ml-3">
+                  <h6 class="mb-0">{{ i18n "date" | upper }}</h6>
+                  <p class="mb-0">{{ .Params.jour | markdownify }}</p>
+                </div>
+              </div>
+            </li>
+          {{ end }}
+          {{ if .Params.time }}
+            <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
+              <div class="d-flex align-items-center">
+                {{ partial "ti" "clock o" }}
+                <div class="text-left ml-3">
+                  <h6 class="mb-0">{{ i18n "time" | upper }}</h6>
+                  <p class="mb-0">{{ .Params.time | markdownify }}</p>
+                </div>
+              </div>
+            </li>
+          {{ end }}
+          {{ if .Params.cout }}
+            <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
+              <div class="d-flex align-items-center">
+                {{ partial "ti" "dollar" }}
+                <div class="text-left ml-3">
+                  <h6 class="mb-0">{{ i18n "entry_fee" | upper }}</h6>
+                  <p class="mb-0">{{ .Params.cout | markdownify }}</p>
+                </div>
+              </div>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="col text-lg-right text-left">
+        {{ range .Params.buttons }}
+          {{ $title := cond ( isset . "link_title" ) .link_title "Lien"}}
+          <a href="{{ .link | safeURL }}" class="btn btn-primary">
+            {{ with .icon }}{{ partial "ti" . }}{{end}} 
+            {{ $title }}</a>
+        {{ end }}
+      </div>
+      <!-- border -->
+      <div class="col-12 mt-4 order-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
+    </div>
+    <!-- event details -->
+    <div class="row">
+      <div class="col-12 mb-50 content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /event single -->
+
+{{ end }}

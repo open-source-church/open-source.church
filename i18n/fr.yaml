@@ -62,7 +62,7 @@
   translation: emplacement
 
 - id: entry_fee
-  translation: frais d’entrée
+  translation: coût
 
 - id: event_speaker
   translation: Présentateur·trice·s

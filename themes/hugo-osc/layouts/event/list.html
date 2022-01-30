@@ -8,11 +8,22 @@
         <h1 class="">{{.Title}}</h1>
       </div>
       <!-- event -->
-      {{ range sort .Data.Pages ".Params.start" }}
+      {{ $p := sort .Data.Pages ".Params.start" }}
+      {{ $paginator := .Paginate ($p.GroupByDate "2006-01" "asc") }}
       <div class="col-12">
-        {{ .Render "li" }}
+        {{ template "_internal/pagination.html" . }}
       </div>
+      {{ range $paginator.PageGroups }}
+        <h2 class="col-12 text-majenta my-5">{{ (time (printf "%s-01" .Key)) | time.Format "January" | title }}</h2>
+        {{ range .Pages }}
+          <div class="col-12">
+            {{ .Render "li" }}
+          </div>
+        {{ end }}
       {{ end }}
+      <div class="col-12">
+        {{ template "_internal/pagination.html" . }}
+      </div>
     </div>
   </div>
 </section>

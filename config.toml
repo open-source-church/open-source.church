@@ -168,7 +168,7 @@ url = "event"
 
 ################################### French language #####################################
 [Languages.fr]
-languageName = "Fr"
+languageName = "Français"
 languageCode = "fr-fr"
 contentDir = "content/french"
 weight = 1

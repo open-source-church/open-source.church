@@ -207,9 +207,9 @@
     </div>
     <div class="row justify-content-center">
       <!-- event -->
-      {{ range first 3 (where site.RegularPages "Type" "event")}}
-      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-        {{ .Render "event" }}
+      {{ range first 2 ( sort (where (where site.RegularPages "Type" "event") "Params.start-unix" "gt" now.Unix) "Params.start")}}
+      <div class="col-12 col-lg-6 mb-lg-0">
+        {{ .Render "li" }}
       </div>
       {{ end }}
     </div>

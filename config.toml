@@ -22,6 +22,11 @@ defaultContentLanguage = 'fr'
     [markup.goldmark.renderer]
       unsafe = true
 
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = "application/rss+xml"
+    baseName = "feed"
+
 ############################# Plugins ##############################
 
 # CSS Plugins

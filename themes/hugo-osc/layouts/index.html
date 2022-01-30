@@ -82,7 +82,7 @@
           {{ range .feature_item }}
           <div class="col-sm-4 col-xl-4 mb-xl-5 mb-lg-3 mb-4 text-center">
             <img src="{{ .image }}" class="mb-xl-4 mb-lg-3 mb-4" width="111px" />
-            <h3 class="mb-xl-4 mb-lg-3 mb-4 font-osd" style="color:{{.color}};">{{ .name | markdownify }}</h3>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4" style="color:{{.color}};">{{ .name | markdownify }}</h3>
             <p>{{ .content | markdownify }}</p>
           </div>
           {{ end }}

@@ -1,6 +1,6 @@
 ---
 title: "La Chronique ludique: NMBR9 !"
-author: admin
+author: William Bernard
 date: 2020-04-07T14:39:18+00:00
 aliases:
   - /la-chronique-ludique-nmbr9/

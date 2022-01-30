@@ -40,7 +40,7 @@
 				</div>
 			</div>
 			{{ $p1 := where .Site.Pages "Params.author" (.Title | title) }}
-			{{ $slug := index (split .File.LogicalName ".") 0 }}
+			{{ $slug := .File.BaseFileName }}
 			{{ $p2 := where .Site.Pages "Params.author" $slug }}
 			{{ range union $p1 $p2}}
 			<div class="col-lg-4 col-sm-6 mb-4">

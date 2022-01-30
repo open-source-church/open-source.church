@@ -4,7 +4,7 @@ title: "Benoît Ischer"
 description : "Écothéologien."
 # email: "email2@example.org"
 # portrait
-image: "/authors/bischer.jpg"
+image: "bischer.jpg"
 social:
   - icon : "instagram" # https://teenyicons.com/
     link : "https://www.instagram.com/kalecos1/"

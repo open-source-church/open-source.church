@@ -15,11 +15,11 @@
           </div>
           {{ end }}
           <!-- blog post -->
-          {{ $paginator := .Paginate ( where .Data.Pages "Params.description"  "Écothéologien." ) }}
+          {{ $paginator := .Paginate .Data.Pages }}
           {{ range $paginator.Pages }}
           {{ if ne .Params.hide "true" }}
           <div class="col-sm-6 mb-5">
-            {{ .Render "author" }}
+            {{ .Render "card" }}
           </div>
           {{ end }}
           {{ end }}

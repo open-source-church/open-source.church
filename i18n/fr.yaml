@@ -64,8 +64,8 @@
 - id: entry_fee
   translation: coût
 
-- id: event_speaker
-  translation: Présentateur·trice·s
+- id: with
+  translation: Avec
 
 - id: more_event
   translation: Plus d’événements

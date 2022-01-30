@@ -7,6 +7,7 @@ time: 12h-14h
 cout: gratuit
 buttons:
 weight: 10
+slug: jeudijeux
 ---
 
 Une pause jeux de société au milieu de la journée. Amène ton repas, et rejoins nous pour faire des jeux pendant la pause de midi.

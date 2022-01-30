@@ -2,7 +2,7 @@
 title: "Noémie Emery"
 # page title background image
 # portrait
-image: "/authors/nemery.jpg"
+image: "nemery.jpg"
 social:
   - icon : "instagram" # https://teenyicons.com/
     link : "https://www.instagram.com/nonodotheo/"

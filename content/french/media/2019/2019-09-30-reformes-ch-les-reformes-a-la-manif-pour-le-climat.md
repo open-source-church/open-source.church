@@ -2,7 +2,7 @@
 title: "Les Réformés à la manif pour le climat"
 author: Benoît Ischer
 date: 2019-09-30T17:22:00+00:00
-image: authors/bischer.jpg
+image: media/2019/bischer.jpg
 media: Réformés.ch
 link: https://www.reformes.ch/eglises/2019/09/les-reformes-la-manif-pour-le-climat-politique-video-ch-jube-vd-carte-postale
 ---

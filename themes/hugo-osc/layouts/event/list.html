@@ -4,10 +4,13 @@
 <section class="section">
   <div class="container">
     <div class="row">
+      <div class="col-12 mb-4">
+        <h1 class="">{{.Title}}</h1>
+      </div>
       <!-- event -->
-      {{ range .Data.Pages }}
-      <div class="col-lg-4 col-sm-6 mb-5">
-        {{ .Render "event" }}
+      {{ range sort .Data.Pages ".Params.start" }}
+      <div class="col-12">
+        {{ .Render "li" }}
       </div>
       {{ end }}
     </div>

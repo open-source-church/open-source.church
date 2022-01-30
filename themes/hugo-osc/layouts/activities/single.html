@@ -80,12 +80,26 @@
         <div class="border-bottom border-primary"></div>
       </div>
     </div>
-    <!-- event details -->
+    <!-- activity details -->
     <div class="row">
       <div class="col-12 mb-5 content">
         {{ .Content }}
       </div>
     </div>
+    <!-- linked events -->
+    {{ $p1 := where .Site.Pages "Params.activity" (.Title | title) }}
+    {{ $p2 := where .Site.Pages "Params.activity" .Slug }}
+    {{ $pages := union $p1 $p2}}
+    {{ if $pages }}
+      <div class="row">
+        <div class="col-12 mb-5 content">
+          <h3>Prochaines dates</h3>
+          {{ range $pages }}
+          {{ .Render "li" }}
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
     <!-- Feed -->
     {{ if .Params.feed }}
       <div class="row">

@@ -5,9 +5,9 @@
 		<div class="row">
 			<div class="col-lg-10 mx-auto">
 				<div class="text-center">
-					<figure class="author">
+					<figure class="team">
 						{{ if .Params.image }}
-						<img class="rounded-circle img-fluid mb-4" src="{{.Params.image | relURL }}">
+						<img class="rounded-circle img-fluid mb-4" src="{{ partial "img_resize" (dict "ctx" $ "path" .Params.image "param" "500x") }}">
 						{{else if .Params.Email}}
 						<img class="rounded-circle img-fluid mb-4" src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon">
 						{{ end }}
@@ -39,10 +39,8 @@
 					<h2 class="section-title">{{ i18n "posted_by" }} {{ .Title }}</h2>
 				</div>
 			</div>
-			{{ $p1 := where .Site.Pages "Params.author" (.Title | title) }}
-			{{ $slug := .File.BaseFileName }}
-			{{ $p2 := where .Site.Pages "Params.author" $slug }}
-			{{ range union $p1 $p2}}
+			{{ $p := where (where site.Pages "Type" "post") "Params.Author" "in" (slice .Title .Slug) }}
+  			{{ range $p }}
 			<div class="col-lg-4 col-sm-6 mb-4">
 				{{ .Render "card" }}
 			</div>

@@ -118,14 +118,11 @@
 
 /* events */
 .card-date {
-  position: absolute;
   background: $primary-color;
   font-family: $secondary-font;
   text-align: center;
   padding: 10px;
   color: $white;
-  top: 0;
-  left: 0;
   text-transform: uppercase;
 
   span {

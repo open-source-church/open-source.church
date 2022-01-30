@@ -11,8 +11,16 @@ class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-l
   <h4 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
   <p class="card-text">{{ or .Description .Summary   }}</p>
   {{ $p := where (where site.Pages "Type" "post") "Params.Author" "in" (slice .Title .Slug) }}
-  {{ if $p }}
-  <p><span class="badge badge-light">{{ len $p }} articles</span></p>
+  {{ $e  := where (where site.Pages "Type" "event") "Params.with" "intersect" (slice .Title .Slug) }}
+  {{ if or $p $e }}
+  <p>
+    {{ with $p }}
+      <span class="badge badge-light">{{ len $p }} articles</span>
+    {{ end }}
+    {{ with $e }}
+      <span class="badge badge-light">{{ len $e }} événements</span>
+    {{ end }}
+  </p>
   {{ end }}
 </div>
 </article>

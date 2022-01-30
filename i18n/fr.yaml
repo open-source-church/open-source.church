@@ -59,7 +59,7 @@
   translation: frais
 
 - id: location
-  translation: emplacement
+  translation: lieu
 
 - id: entry_fee
   translation: coût
@@ -99,3 +99,9 @@
 
 - id: table_of_contents
   translation: Table des matières
+
+- id: registration
+  translation: Inscription
+
+- id: when
+  translation: quand

@@ -1,5 +1,6 @@
 {{ define "main" }}
 
+{{ $activity := site.GetPage .Params.activity }}
 <!-- event single -->
 <section class="section-sm">
   <div class="container">
@@ -8,23 +9,37 @@
         <h2 class="section-title">{{ .Title }}</h2>
       </div>
       <!-- event image -->
+      {{ $image := "" }}
+      {{ if .Params.image }}
+        {{ $image = .Params.image | relURL }}
+      {{ else if $activity }}
+        {{ $image = $activity.Resources.GetMatch $activity.Params.image }}
+        {{ if gt $image.Width 1000 }}
+          {{ $image = $image.Resize "1000x q75" }}
+        {{ end }}
+        {{ $image = $image.RelPermalink }}
+      {{ end }}
+      {{ if $image }}
       <div class="col-12 mb-4">
-        <img style="height: 500px;width: 100%;object-fit: cover;" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="img-fluid w-100">
+        <img style="height: 500px;width: 100%;object-fit: cover;" src="{{ $image }}" alt="{{ .Title }}" class="img-fluid w-100">
       </div>
+      {{ end }}
     </div>
     <!-- event info -->
     <div class="row align-items-center mb-5">
-      <div class="col-lg-9">
+      <div class="col-auto">
         <ul class="list-inline">
+          <!-- Lieu -->
           <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
             <div class="d-flex align-items-center">
               {{ partial "ti" "location o" }}
               <div class="text-left ml-3">
                 <h6 class="mb-0">{{ i18n "location" | upper}}</h6>
-                <p class="mb-0">{{ .Params.Location | markdownify }}</p>
+                <p class="mb-0">{{ partial "location" (dict "location" .Params.location "address" .Params.address ) }}</p>
               </div>
             </div>
           </li>
+          <!-- Date -->
           <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
             <div class="d-flex align-items-center">
               {{ partial "ti" "calendar o" }}
@@ -34,28 +49,37 @@
               </div>
             </div>
           </li>
+          <!-- Heure -->
           <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
             <div class="d-flex align-items-center">
               {{ partial "ti" "clock o" }}
               <div class="text-left ml-3">
                 <h6 class="mb-0">{{ i18n "time" | upper }}</h6>
-                <p class="mb-0">{{ .Date.Format "15:04 MST"}}</p>
+                <p class="mb-0">{{ (time .Params.start).Format "15:04" }} – {{ (time .Params.end).Format "15:04" }}</p>
               </div>
             </div>
           </li>
-          <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
-            <div class="d-flex align-items-center">
-              {{ partial "ti" "dollar" }}
-              <div class="text-left ml-3">
-                <h6 class="mb-0">{{ i18n "entry_fee" | upper }}</h6>
-                <p class="mb-0">{{ .Params.Fee | markdownify }}</p>
+          <!-- Inscription -->
+          {{ if .Params.inscription }}
+            <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
+              <div class="d-flex align-items-center">
+                {{ partial "ti" "signin" }}
+                <div class="text-left ml-3">
+                  <h6 class="mb-0">{{ i18n "registration" | upper }}</h6>
+                  <p class="mb-0">{{ .Params.inscription | markdownify }}</p>
+                </div>
               </div>
-            </div>
-          </li>
+              </li>
+          {{ end }}
         </ul>
       </div>
-      <div class="col-lg-3 text-lg-right text-left">
-        <a href="{{ .Params.Apply_url | safeURL }}" class="btn btn-primary">{{ i18n "apply_now" }}</a>
+      <div class="col text-lg-right text-left">
+        {{ range .Params.buttons }}
+          {{ $title := cond ( isset . "link_title" ) .link_title "Lien"}}
+          <a href="{{ .link | safeURL }}" class="btn btn-primary">
+            {{ with .icon }}{{ partial "ti" . }}{{end}} 
+            {{ $title }}</a>
+        {{ end }}
       </div>
       <!-- border -->
       <div class="col-12 mt-4 order-4">
@@ -65,21 +89,29 @@
     <!-- event details -->
     <div class="row">
       <div class="col-12 mb-50 content">
+        {{ $activity.Content }}
+        {{ if .Content }}
+          <hr />
+        {{ end }}
         {{ .Content }}
       </div>
     </div>
-    <!-- event speakers -->
     <div class="row">
-      <div class="col-12">
-        <h3 class="mb-4">{{ i18n "with"}}</h3>
-      </div>
-      <!-- speakers -->
-      {{ range .Params.with }}
-      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-        {{ . }}
-         $team := where site.RegularPages "Type" "team" 
-         $team 
-      </div>
+      <!-- event speakers -->
+      {{ if .Params.with }}
+        <div class="col-12">
+          <h3 class="mb-4 text-majenta">{{ i18n "with"}}</h3>
+        </div>
+        {{ range .Params.with }}
+        <div class="col-lg-4 col-12 col-sm-6 mb-4 mb-lg-0">
+          {{ $name := . }}
+          {{ range where site.RegularPages "Type" "team" }}
+            {{ if in (slice .Slug .Title) $name }}
+              {{ .Render "li" }}
+            {{ end }}
+          {{ end }}
+        </div>
+        {{ end }}
       {{ end }}
       <!-- border -->
       <div class="col-12 mt-4 order-4">

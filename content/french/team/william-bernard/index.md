@@ -4,7 +4,7 @@ title: "William Bernard"
 description : "Joueur."
 # email: "email2@example.org"
 # portrait
-image: ""
+image: "wbernard.webp"
 social:
   - icon : "ti-facebook" # themify icon pack : https://themify.me/themify-icons
     link : "#"

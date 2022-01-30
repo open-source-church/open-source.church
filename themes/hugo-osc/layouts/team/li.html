@@ -1,0 +1,12 @@
+<div class="media">
+  {{ if .Params.image }}
+    {{ $img := partial "img_fill" (dict "ctx" $ "path" .Params.image "param" "64x64 center") }}
+    <a href="{{ .Permalink }}">
+      <img class="rounded-circle mr-3" src="{{ $img }}" alt="{{ .Title }}">
+    </a>
+  {{ end }}
+  <div class="media-body">
+    <h5 class="mt-0"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+    <p>{{ or .Description .Summary   }}</p>
+  </div>
+</div>

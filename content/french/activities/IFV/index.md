@@ -2,6 +2,7 @@
 title: "In Fabula Veritas: le podcast humani-fantaisiste"
 image: ifv.webp
 location: En ligne
+when: Sporadiquement
 buttons:
 - link: http://infabulaveritas.ch/
   link_title: "Site"

@@ -23,26 +23,29 @@
     <div class="row align-items-center mb-5">
       <div class="col-auto">
         <ul class="list-inline">
+          <!-- Lieu -->
           <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
             <div class="d-flex align-items-center">
               {{ partial "ti" "location o" }}
               <div class="text-left ml-3">
                 <h6 class="mb-0">{{ i18n "location" | upper}}</h6>
-                <p class="mb-0">{{ .Params.Location | markdownify }}</p>
+                <p class="mb-0">{{ partial "location" (dict "location" .Params.location "address" .Params.address ) }}</p>
               </div>
             </div>
           </li>
-          {{ if .Params.jour }}
+          <!-- When -->
+          {{ if .Params.when }}
             <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
               <div class="d-flex align-items-center">
                 {{ partial "ti" "calendar o" }}
                 <div class="text-left ml-3">
-                  <h6 class="mb-0">{{ i18n "date" | upper }}</h6>
-                  <p class="mb-0">{{ .Params.jour | markdownify }}</p>
+                  <h6 class="mb-0">{{ i18n "when" | upper }}</h6>
+                  <p class="mb-0">{{ .Params.when | markdownify }}</p>
                 </div>
               </div>
             </li>
           {{ end }}
+          <!-- Heure -->
           {{ if .Params.time }}
             <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
               <div class="d-flex align-items-center">
@@ -54,6 +57,7 @@
               </div>
             </li>
           {{ end }}
+          <!-- Prix -->
           {{ if .Params.cout }}
             <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
               <div class="d-flex align-items-center">
@@ -64,6 +68,18 @@
                 </div>
               </div>
             </li>
+          {{ end }}
+          <!-- Inscription -->
+          {{ if .Params.inscription }}
+            <li class="list-inline-item mr-xl-5 mr-4 mb-3 mb-lg-0">
+              <div class="d-flex align-items-center">
+                {{ partial "ti" "signin" }}
+                <div class="text-left ml-3">
+                  <h6 class="mb-0">{{ i18n "registration" | upper }}</h6>
+                  <p class="mb-0">{{ .Params.inscription | markdownify }}</p>
+                </div>
+              </div>
+              </li>
           {{ end }}
         </ul>
       </div>
@@ -94,7 +110,7 @@
       <div class="row">
         <div class="col-12 mb-5 content">
           <h3>Prochaines dates</h3>
-          {{ range $pages }}
+          {{ range sort $pages "Params.start" }}
           {{ .Render "li" }}
           {{ end }}
         </div>

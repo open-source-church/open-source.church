@@ -34,17 +34,32 @@
 <section class="section">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12">
-				<div class="title text-center">
-					<h2 class="section-title">{{ i18n "posted_by" }} {{ .Title }}</h2>
-				</div>
-			</div>
 			{{ $p := where (where site.Pages "Type" "post") "Params.Author" "in" (slice .Title .Slug) }}
-  			{{ range $p }}
-			<div class="col-lg-4 col-sm-6 mb-4">
-				{{ .Render "card" }}
-			</div>
+  			{{ if $p }}
+				<div class="col-lg-12">
+					<div class="title text-center">
+						<h2 class="section-title">{{ i18n "posted_by" }} {{ .Title }}</h2>
+					</div>
+				</div>
+				{{ range $p }}
+				<div class="col-lg-4 col-sm-6 mb-4">
+					{{ .Render "card" }}
+				</div>
+				{{ end }}
 			{{ end }}
+			{{ $e  := where (where site.Pages "Type" "event") "Params.with" "intersect" (slice .Title .Slug) }}
+			{{ if $e }}
+			  <div class="col-lg-12">
+				  <div class="title text-center">
+					  <h2 class="section-title">Évenements avec {{ .Title }}</h2>
+				  </div>
+			  </div>
+			  {{ range $e }}
+			  <div class="col-lg-6 col-sm-12 mb-4">
+				  {{ .Render "li" }}
+			  </div>
+			  {{ end }}
+		  {{ end }}
 		</div>
 	</div>
 </section>

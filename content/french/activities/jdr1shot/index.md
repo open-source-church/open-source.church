@@ -6,6 +6,7 @@ buttons:
 - link: 
   link_title: "Inscription"
   icon: add
+weight: 10
 ---
 
 Des parties de jeu de rôle, one shot, une fois par mois. Pour tester des scénario, des jeux indés, etc.

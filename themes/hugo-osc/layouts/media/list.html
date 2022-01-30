@@ -24,7 +24,7 @@
           {{ range $paginator.Pages }}
             <div class="col-2 my-4">
               <span class="h2">{{ .Date.Format "2006"}}</span><br />
-              {{ .Date.Format "1 Jan"}}
+              {{ .Date | time.Format "1 Jan"}}
             </div>
             <div class="col-7 my-4">
               <h4><a href="{{ .Params.link | absURL }}" target="_blank"><span class="badge badge-danger">{{.Params.media}}</span> {{ .Title }}</a></h4>

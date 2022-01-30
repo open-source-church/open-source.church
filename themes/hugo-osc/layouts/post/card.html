@@ -16,7 +16,7 @@
     <ul class="list-inline mb-3">
       <!-- post date -->
       <li class="list-inline-item mr-3 ml-0">{{ partial "ti" "calendar o" }}
-        {{ .PublishDate.Format "02 Jan 2006" }}</li>
+        {{ .PublishDate | time.Format "02 Jan 2006" }}</li>
       <!-- author -->
       <li class="list-inline-item mr-3 ml-0">{{ partial "ti" "user o" }} <a
           href="{{ `team/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author | title }}</a>

@@ -9,6 +9,7 @@ buttons:
 - link: http://infabulaveritas.ch/feed/podcast
   link_title: "Podcast feed"
   icon: rss
+feed: http://infabulaveritas.ch/feed/podcast
 weight: 100
 ---
 

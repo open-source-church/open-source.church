@@ -82,10 +82,33 @@
     </div>
     <!-- event details -->
     <div class="row">
-      <div class="col-12 mb-50 content">
+      <div class="col-12 mb-5 content">
         {{ .Content }}
       </div>
     </div>
+    <!-- Feed -->
+    {{ if .Params.feed }}
+      <div class="row">
+        <div class="col-12 mb-5 content">
+          <h3>Derniers épisodes</h3>
+            
+          {{ $feed := resources.GetRemote .Params.feed | transform.Unmarshal }}
+          {{ range first 10 $feed.channel.item }}
+            {{ $title := cond (reflect.IsSlice .title) (index .title 0) .title }}
+            {{ $description := cond (isset . "encoded" ) .encoded .summary }}
+            <p class="h4"><a href="{{ .link }}" target="_blank">{{ $title }}</a></p>
+            <p class="caption">{{ (time .pubDate).Format "02 Jan 2006" }}</p>
+            <audio class="w-100" controls>
+              {{ $url := index .enclosure "-url"}}
+              {{ $type := index .enclosure "-type"}}
+              <source src="{{ $url }}" type="{{ $type }}">
+              Your browser does not support the audio tag.
+            </audio>
+            <div class="px-5 pt-3">{{ $description | safeHTML }}</div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
   </div>
 </section>
 <!-- /event single -->

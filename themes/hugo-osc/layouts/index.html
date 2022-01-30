@@ -21,9 +21,17 @@
       "type" "post"
       "button" (dict "enable" true "label" "lire la suite du post" "link" .Permalink)) }}
   {{ end }}
-  <!-- Add last articles -->
-  {{ range first .last_events (where site.RegularPages "Type" "event") }}
-    {{ $items = $items | append (dict "title" .Title "content" .Summary "image" .Params.image "bg_image" .Params.bg_image "type" "event" "button" (dict "enable" true "label" "info sur l'évènement" "link" .Permalink)) }}
+  <!-- Add last events -->
+  {{ range first .last_events (where (sort (where site.RegularPages "Type" "event") "Params.start") "Params.start-unix" "gt" now.Unix ) }}
+    {{ $activity := site.GetPage .Params.activity }}
+    {{ $items = $items | append (dict
+      "title" .Title
+      "content" (printf "<p>%s</p><p>%s</p>" $activity.Summary .Description)
+      "image" ($activity.Resources.GetMatch $activity.Params.image).RelPermalink
+      "bg_image" .Params.bg_image
+      "type" "event"
+      "meta" (printf "<p>%s // %s // %s</p>" (partial "event_date" .) (partial "event_time" .) .Params.location)
+      "button" (dict "enable" true "label" "info sur l'évènement" "link" .Permalink)) }}
   {{ end }}
 <section class="overlay bg-cover" data-background="{{ .bg_image | absURL }}">
   <div class="container-fluid p-0">

@@ -20,7 +20,7 @@
           <p class="col mb-0">{{ partial "ti" "location o" }}{{ partial "location" .Params }}</p>
           <!-- Time -->
           <p class="col mb-0">{{ partial "ti" "clock o" }}
-            {{ (time .Params.start).Format "15:04" }} – {{ (time .Params.end).Format "15:04" }}
+            {{ partial "event_time" .}}
           </p>
         </div>
       </div>

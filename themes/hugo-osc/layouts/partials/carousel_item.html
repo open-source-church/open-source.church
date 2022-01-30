@@ -5,6 +5,7 @@
                 <div class="caption animated fadeIn">
                     <h2 class="animated fadeInLeft"><a href="{{ .button.link | absLangURL }}">{{ .title | markdownify }}</a></h2>
                     <p class="animated fadeInRight">{{ .content | markdownify }}</p>
+                    <p class="animated fadeInRight">{{ .meta | markdownify }}</p>
                     {{ if .button.enable }}
                         <a class="animated fadeInUp btn btn-primary text-uppercase" href="{{ .button.link | absLangURL }}">{{ .button.label | markdownify }}</a>
                     {{ end }}

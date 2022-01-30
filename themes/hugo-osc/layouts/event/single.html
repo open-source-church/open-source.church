@@ -45,7 +45,7 @@
               {{ partial "ti" "calendar o" }}
               <div class="text-left ml-3">
                 <h6 class="mb-0">{{ i18n "date" | upper}}</h6>
-                <p class="mb-0">{{ .Date.Format "02 Jan 2006"}}</p>
+                <p class="mb-0">{{ partial "event_date" . }}</p>
               </div>
             </div>
           </li>
@@ -55,7 +55,7 @@
               {{ partial "ti" "clock o" }}
               <div class="text-left ml-3">
                 <h6 class="mb-0">{{ i18n "time" | upper }}</h6>
-                <p class="mb-0">{{ (time .Params.start).Format "15:04" }} – {{ (time .Params.end).Format "15:04" }}</p>
+                <p class="mb-0">{{ partial "event_time" .}}</p>
               </div>
             </div>
           </li>

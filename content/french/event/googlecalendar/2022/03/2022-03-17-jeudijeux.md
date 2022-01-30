@@ -10,8 +10,11 @@ location: Espace MLK
 path: 2022/03/2022-03-17-jeudijeux.md
 prix: gratuit
 start: '2022-03-17T12:00:00+01:00'
+start-unix: 1647514800.0
 template: JeudiJeux
 title: JeudiJeux
 type: event
-url: /activities/jeudijeux/2022/03/jeudijeux
+url: /activities/jeudijeux/2022/03/17/jeudijeux
+with:
+- Olivier Keshavjee
 ---

@@ -16,7 +16,7 @@ defaultContentLanguage = 'fr'
   category = "categories"
 [permalinks]
   blog = '/:year/:month/:slug/'
-  event = '/event/:year/:month/:slug/'
+  event = '/event/:year/:month/:day/:slug/'
 [frontmatter]
   date = ['date', ':filename', 'publishDate', 'lastmod']
 

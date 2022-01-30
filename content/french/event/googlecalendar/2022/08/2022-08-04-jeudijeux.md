@@ -10,8 +10,11 @@ location: Espace MLK
 path: 2022/08/2022-08-04-jeudijeux.md
 prix: gratuit
 start: '2022-08-04T12:00:00+02:00'
+start-unix: 1659607200.0
 template: JeudiJeux
 title: JeudiJeux
 type: event
-url: /activities/jeudijeux/2022/08/jeudijeux
+url: /activities/jeudijeux/2022/08/04/jeudijeux
+with:
+- Olivier Keshavjee
 ---

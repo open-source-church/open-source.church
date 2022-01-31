@@ -12,3 +12,6 @@ tags: ["OSC"]
 Après des mois et des mois de silence, à errer dans les profondeurs de la Moria, Open Source Church est de retour !
 
 <!--more-->
+
+## Un peu d'histoire
+

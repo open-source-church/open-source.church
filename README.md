@@ -15,3 +15,9 @@ Designed by [OSC](https://www.open-source.church), based on [EduCenter](https://
 - **Image:** les images ne nous appartiennent pas forcément et/ou ont leur propres licences
 
 - **Contenus:** selon leur propres licences
+
+## TODO
+
+- [ ] Commentaires (en récupérant les anciens si possible)
+- [ ] Améliorer les événements, en filtrant les événements passé (après build), et proposer d'autres vues
+- [ ] Fixer les tags OG et TC qui ne reconnaissent pas les images des posts

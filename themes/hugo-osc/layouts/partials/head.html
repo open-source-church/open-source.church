@@ -38,5 +38,23 @@
   {{ template "_internal/opengraph.html" . }}
   {{ "<!--Twitter Cards-->" | safeHTML }}
   {{ template "_internal/twitter_cards.html" . }}
+  <!-- Custom tweaks to add images from "Params.image" and asset folder -->
+  {{ $imgs := site.Params.images }}
+  {{ with .Params.image }} {{ $imgs = $imgs | append . }} {{ end }}
+  {{ range $imgs | collections.Reverse }}
+    {{ if hasPrefix . "https://" }}
+      <meta property="og:image" content="{{ . }}" />
+      <meta property="twitter:image" content="{{ . }}" />
+    {{ else }}
+      {{ with $.Resources.GetMatch . }}
+      <meta property="og:image" content="{{ .Permalink }}" />
+      <meta property="twitter:image" content="{{ .Permalink }}" />
+      {{ end }}
+      {{ with resources.Get . }}
+      <meta property="og:image" content="{{ .Permalink }}" />
+      <meta property="twitter:image" content="{{ .Permalink }}" />
+      {{ end }}
+    {{ end }}
+  {{ end }}
 
 </head>

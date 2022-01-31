@@ -42,7 +42,7 @@
           <li class="{{ $active }}" data-target="#carousel" data-slide-to="{{ $index }}"></li>
         {{ end }}
       </ol>
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner">
         {{ range $index, $item := $items }}
           {{ $item := merge $item ( dict "active" ( cond (eq $index 0) "active" "" ) "index" $index) }}
           {{ partial "carousel_item" $item }}
@@ -76,12 +76,12 @@
       <!-- Features -->
       <div class="col-xl-8 col-lg-7 text-center">
         <div class="row feature-blocks bg-gray justify-content-between">
-          <h6 class="col-12 text-majenta mt-3 mb-2 font-osd">{{ .subtitle | markdownify }}</h6>
-          <h2 class="col-12 text-yellow mt-2 mb-3">{{ .title | markdownify }}</h2>
-          <h6 class="col-12 text-white mb-5">{{ .text | markdownify }}</h6>
+          <p class="h4 col-12 text-majenta mt-3 mb-2 font-osd">{{ .subtitle | markdownify }}</p>
+          <p class="h2 col-12 text-yellow mt-2 mb-3">{{ .title | markdownify }}</p>
+          <p class="h6 col-12 text-white mb-5">{{ .text | markdownify }}</p>
           {{ range .feature_item }}
           <div class="col-sm-4 col-xl-4 mb-xl-5 mb-lg-3 mb-4 text-center">
-            <img src="{{ .image }}" class="mb-xl-4 mb-lg-3 mb-4" width="111px" />
+            <img src="{{ .image }}" class="mb-xl-4 mb-lg-3 mb-4" width="111px" alt="{{ .name }}" />
             <h3 class="mb-xl-4 mb-lg-3 mb-4" style="color:{{.color}};">{{ .name | markdownify }}</h3>
             <p>{{ .content | markdownify }}</p>
           </div>
@@ -129,7 +129,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h6 class="text-white font-secondary mb-0">{{ .subtitle | markdownify }}</h6>
+        <p class="h6 text-white font-secondary mb-0">{{ .subtitle | markdownify }}</p>
         <h2 class="section-title text-white">{{ .title | markdownify }}</h2>
         {{ if .button.enable }}
         {{ with .button }}
@@ -151,12 +151,12 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h6 class="text-white font-secondary mb-0">{{ .subtitle | markdownify }}</h6>
+        <p class="h6 text-white font-secondary mb-0">{{ .subtitle | markdownify }}</p>
         <h2 class="section-title text-white">{{ .title | markdownify }}</h2>
         <div class="row">
           {{ range .buttons }}
             {{ $b := index ( where site.Params.social "title" .) 0 }}
-            <a href="{{ $b.link | absLangURL }}" class="col mx-3 dark" target="_blank" >
+            <a href="{{ $b.link | absLangURL }}" class="col mx-3 dark" target="_blank" rel="noreferrer" >
               <p class="h2 mb-2">
                 {{ partial "ti" $b.icon }}
               </p>
@@ -168,9 +168,9 @@
           <div class="row mt-5">
             {{ $b := where site.Params.social "title" "not in" .buttons }}
             {{ range $b }}
-                <a class="col p-2 dark" href="{{ .link | safeURL }}" target="_blank" >
+                <a class="col p-2 dark" href="{{ .link | safeURL }}" target="_blank" rel="noreferrer" >
                   {{ with .icon }} {{ partial "ti" . }} {{end}}
-                  {{ with .image }} <img src="{{ . }}" width="16" /> {{end}}
+                  {{ with .image }} <img src="{{ . }}" width="16" alt="{{ . }}" /> {{end}}
                   <br /><span class="hidden">{{ .title }}</span>
                 </a>
             {{ end }}

@@ -126,7 +126,7 @@
           {{ range first 10 $feed.channel.item }}
             {{ $title := cond (reflect.IsSlice .title) (index .title 0) .title }}
             {{ $description := cond (isset . "encoded" ) .encoded .summary }}
-            <p class="h4"><a href="{{ .link }}" target="_blank">{{ $title }}</a></p>
+            <p class="h4"><a href="{{ .link }}" target="_blank" rel="noreferrer" >{{ $title }}</a></p>
             <p class="caption">{{ (time .pubDate) | time.Format "02 Jan 2006" }}</p>
             <audio class="w-100" controls>
               {{ $url := index .enclosure "-url"}}

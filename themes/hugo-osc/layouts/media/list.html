@@ -27,7 +27,7 @@
               {{ .Date | time.Format "1 Jan"}}
             </div>
             <div class="col-7 my-4">
-              <h4><a href="{{ .Params.link | absURL }}" target="_blank"><span class="badge badge-danger">{{.Params.media}}</span> {{ .Title }}</a></h4>
+              <h4><a href="{{ .Params.link | absURL }}" target="_blank" rel="noreferrer" ><span class="badge badge-danger">{{.Params.media}}</span> {{ .Title }}</a></h4>
               {{ .Content }}
             </div>
             <div class="col-3 my-4">

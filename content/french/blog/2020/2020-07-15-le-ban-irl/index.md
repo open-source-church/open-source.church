@@ -53,7 +53,7 @@ Donc, troisièmement (et c'est sans doute le point essentiel), la cancel culture
 Ainsi, pour la chrétienne féministe que je suis, il est **impératif de réconcilier** ma pratique militante avec l'Evangile. Or, une solution qui fonctionne à merveille pour un microcosme simple comme le sont les lives d'Antoine Daniel — le life ban — n'est absolument pas compatible avec une approche chrétienne des luttes contre quelque oppression que ce soit. **Car IRL, les enjeux ne sont pas seulement ludiques ou même artistiques, ce sont avant tout des enjeux humains**, et il importe de les aborder avec toute la nuance et la bienveillance nécessaire. Ça ne sera jamais simple, mais – à l'instar de Wendy qui pardonne à celle qui lui voulait du mal – **Jésus de Nazareth est là pour nous montrer la voie.**
 
  [1]: https://www.twitch.tv/antoinedaniellive
- [2]: http://pelerine-au-chocolat.blogspot.com/2016/11/petite-histoire-de-mon-feminisme.html
+ [2]: https://pelerine-au-chocolat.blogspot.com/2016/11/petite-histoire-de-mon-feminisme.html
  [3]: https://www.instagram.com/metoomvmt/
  [4]: https://www.instagram.com/blklivesmatter/
  [5]: https://www.madmoizelle.com/cancel-culture-definition-1037892

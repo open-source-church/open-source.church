@@ -109,7 +109,7 @@ expire_days = 2
 [[params.social]]
 title = "discord"
 icon = "discord" # teenyicons https://teenyicons.com/
-link = "http://discord.open-source.church/"
+link = "https://discord.gg/7FG3WvW"
 
 [[params.social]]
 title = "twitch"
@@ -234,4 +234,4 @@ url = "https://www.holygames.ch"
 
 [[Languages.fr.menu.footer]]
 name = "In Fabula Veritas"
-url = "http://infabulaveritas.ch"
+url = "https://infabulaveritas.ch"

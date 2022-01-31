@@ -12,7 +12,7 @@ image: https://media.giphy.com/media/5gZWipp7wbfP6LFsvs/giphy.gif
 ---
 > «&nbsp;Nous lisons tous des histoires, regardons des films, des séries, jouons à des jeux qui nous emmènent ailleurs, dans d’autres mondes qui souvent n’existent pas. Nous savons pourtant qu’il ne s’agit pas simplement d’une distraction, une activité qui nous éloignerait de notre vie, de ce qui nous est cher. Au contraire. Une fois le livre fermé, le jeu terminé, les mondes continuent à vivre, les personnages sont encore là, qui nous accompagnent, nous inspirent, habitent nos conversations ou nos rêves.&nbsp;»
 >
-> [In Fabula Veritas](http://infabulaveritas.ch/2019/11/08/bonjour-tout-le-monde/)
+> [In Fabula Veritas](https://infabulaveritas.ch/2019/11/08/bonjour-tout-le-monde/)
 
 Cette citation tirée de la présentation du podcast In Fabula Veritas, dont j'ai la joie de faire partie, dit bien **l'importance de la fiction dans la manière dont nous nous construisons en tant que personne**&nbsp;; la fiction fait partie de nous, et les personnages que nous rencontrons peuvent devenir de précieuxes compagne·on·s de route. Grâce aux épreuves, relations et aventures que nous avons vécues à travers elleux, nous avons une empathie et des ressources mentales insoupçonnées pour mener notre vie, des exemples, une ligne de conduite, des valeurs. 
 

@@ -4,13 +4,13 @@ image: ifv.webp
 location: En ligne
 when: Sporadiquement
 buttons:
-- link: http://infabulaveritas.ch/
+- link: https://infabulaveritas.ch/
   link_title: "Site"
   icon: globe-africa
-- link: http://infabulaveritas.ch/feed/podcast
+- link: https://infabulaveritas.ch/feed/podcast
   link_title: "Podcast feed"
   icon: rss
-feed: http://infabulaveritas.ch/feed/podcast
+feed: https://infabulaveritas.ch/feed/podcast
 weight: 100
 slug: ifv
 ---

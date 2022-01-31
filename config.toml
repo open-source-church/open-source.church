@@ -85,7 +85,7 @@ preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
 
 # Subscription
 [params.subscription]
-enable = true
+enable = false
 # mailchimp subsciption
 mailchimp_form_action = "" # replace this url with yours
 mailchimp_form_name = "" # replace this code with yours
@@ -182,9 +182,21 @@ copyright = "Powered by [Hugo](https://gohugo.io/) · thème [hugo-osc](https://
 ################### French navigation ####################
 
 # main menu
+
+
+[[Languages.fr.menu.main]]
+name = "Articles"
+url = "blog"
+weight = 1
+
+[[Languages.fr.menu.main]]
+name = "Évènements"
+url = "event"
+weight = 2
+
 [[Languages.fr.menu.main]]
 name = "À propos"
-weight = 1
+weight = 3
 
   [[Languages.fr.menu.main]]
   parent = "À propos"
@@ -203,16 +215,6 @@ weight = 1
   name = "Media"
   url = "media"
   weight = 4
-
-[[Languages.fr.menu.main]]
-name = "Évènements"
-url = "event"
-weight = 2
-  
-[[Languages.fr.menu.main]]
-name = "blog"
-url = "blog"
-weight = 4
   
 # [[Languages.fr.menu.main]]
 # name = "Contact"

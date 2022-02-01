@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "hugo --minify --gc"
+  command = "hugo --minify --gc --buildFuture"
   
 [build.environment]
   HUGO_VERSION = "0.92.0"

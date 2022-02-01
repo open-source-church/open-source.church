@@ -1,0 +1,6 @@
+{{- $a1 := where (where site.Pages "Type" "team") ".Title" . -}}
+{{- $a2 := where (where site.Pages "Type" "team") ".Slug" . -}}
+{{- $a := union $a1 $a2 -}}
+{{- if $a -}}
+    {{- return index $a 0 -}}
+{{- end -}}

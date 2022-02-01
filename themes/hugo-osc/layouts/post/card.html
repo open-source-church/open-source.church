@@ -10,17 +10,23 @@
     {{ $image = .Params.image | relURL }}
   {{ end }}
   <!-- <img class="card-img-top rounded-0" src="{{ .Params.image | relURL }}" alt="{{ .Title }}"> -->
-  <img class="card-img-top rounded-0" src="{{ $image }}" alt="{{ .Title }}">
+  <a href="{{ .Permalink }}"><img class="card-img-top rounded-0" src="{{ $image }}" alt="{{ .Title }}"></a>
   <div class="card-body">
     <!-- post meta -->
     <ul class="list-inline mb-3">
-      <!-- post date -->
-      <li class="list-inline-item mr-3 ml-0">{{ partial "ti" "calendar o" }}
-        {{ .PublishDate | time.Format "02 Jan 2006" }}</li>
       <!-- author -->
-      <li class="list-inline-item mr-3 ml-0">{{ partial "ti" "user o" }} <a
-          href="{{ `team/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author | title }}</a>
+      <li class="list-inline-item mr-3 ml-0 meta">
+        <a href="{{ `team/` | relLangURL }}{{ .Params.Author | urlize }}">
+          {{ $a := partial "get_team" .Params.Author }}
+          {{ $img := $a.Resources.GetMatch $a.Params.image }}
+          {{ $img = $img.Fill "32x32 center" }}
+          <img src="{{ $img.RelPermalink }}" alt="{{ .Params.Author }}" class="rounded-circle mr-1">
+          {{ .Params.Author | title }}
+        </a>
       </li>
+      <!-- post date -->
+      <li class="list-inline-item mr-3 ml-0 meta">{{ partial "ti" "calendar o" }}
+        {{ .PublishDate | time.Format "02 Jan 2006" }}</li>
     </ul>
     <h4 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
     <p class="card-text">{{ .Summary  }}</p>

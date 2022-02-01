@@ -4,7 +4,7 @@ draft: false
 hide_header: true
 
 # Vision
-vision: "**Open Source Church** est un lieu d’église en développement qui vit et annonce **l’Évangile** au sein de la « **culture geek** »,
+vision: "**Open Source Church** est un lieu d’église en développement qui vit et partage **l’Évangile** au sein de la « **culture geek** »,
       de manière pertinente, en étant axé radicalement sur les **non-églisé·e·s/distancié·e·s**."
 vision_description: "La « culture geek » est composée de ces trois éléments:<br/>le jeu, l’imaginaire et les sciences & technologies"
 vision_image: "symbol-geek-croix.webp"

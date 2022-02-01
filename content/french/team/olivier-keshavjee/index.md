@@ -15,5 +15,4 @@ social:
   - icon : "twitch" 
     link : "https://www.twitch.tv/theolog33k"
 ---
-
-Une description plus longue de Olivier.
+Théologeek

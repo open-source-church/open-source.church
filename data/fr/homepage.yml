@@ -2,7 +2,7 @@
 slider:
   enable : true
   bg_image : "images/banner/banner-osc.webp"
-  last_posts: 2
+  last_posts: 3
   last_events: 2
   slider_item:
     # slider item loop

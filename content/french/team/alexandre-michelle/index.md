@@ -14,4 +14,4 @@ social:
     link : "https://www.twitch.tv/ffierock"
 ---
 
-Une description plus longue d'Alexandre.
+aka ffierock

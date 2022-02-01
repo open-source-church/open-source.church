@@ -33,3 +33,7 @@
   });
 
 })(jQuery);
+
+// Bible Gateway Reference Tagging Tool
+BGLinks.version = "BDS";
+BGLinks.linkVerses();

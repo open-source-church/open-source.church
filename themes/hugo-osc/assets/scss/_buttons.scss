@@ -2,7 +2,6 @@
 .btn {
   font-size: 16px;
   font-family: $primary-font;
-  text-transform: capitalize;
   padding: 15px 40px;
   border-radius: 0;
   font-weight: 500;
@@ -52,7 +51,7 @@
 }
 
 .btn-primary {
-  color: $white;
+  color: $white !important;
   background-color: $primary-color;
 
   &::before {

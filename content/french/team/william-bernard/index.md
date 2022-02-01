@@ -14,4 +14,4 @@ social:
     link : "#"
 ---
 
-Une description plus longue de William.
+Maitre des Jeux et des Illusions.

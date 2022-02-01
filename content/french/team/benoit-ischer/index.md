@@ -14,4 +14,4 @@ social:
     link : "https://www.twitch.tv/kalecos7"
 ---
 
-Une description plus longue de Benoît.
+Écothéologien. Se met parfois en colère.

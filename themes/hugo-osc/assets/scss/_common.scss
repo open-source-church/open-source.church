@@ -299,8 +299,8 @@ textarea.form-control{
     &:hover{
       color: $secondary-color;
     }
-    .btn-primary{
-      color: $darkgray;
+    .btn-primary {
+      color: $darkgray !important;
     }
   }
 
@@ -404,3 +404,5 @@ textarea.form-control{
   }
 
 }
+
+.meta { font-size: 90%;}

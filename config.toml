@@ -54,7 +54,8 @@ link = "https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.mi
 link = "plugins/venobox/venobox.min.js"
 # [[params.plugins.js]]
 # link = "plugins/google-map/gmap.js"
-
+[[params.plugins.js]]
+link = "https://www.biblegateway.com/public/link-to-us/tooltips/bglinks.js"
 
 #################### default parameters ################################
 [params]

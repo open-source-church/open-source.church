@@ -54,3 +54,18 @@ figure.team img {
   max-width: 50%;
   @include mobile { max-width: 80%; }
 }
+
+// Bible Gateway Reference Tagging Tool
+#bg_popup-container {
+  .bg_popup-header {
+    background-color:$darkgray;
+    background-image: none;
+    .bg_popup-header_title { color: $majenta; }
+  }
+  .bg_popup-content {
+    background: $gray;
+    p { color: $yellow; }
+  }
+  a { color: $cyan; }
+  .bg_popup-footer { display: none; background-color: $cyan; }
+}

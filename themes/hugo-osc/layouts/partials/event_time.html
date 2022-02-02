@@ -1,1 +1,7 @@
-{{ (time .Params.start) | time.Format "15:04" }} – {{ (time .Params.end) | time.Format "15:04" }}
+{{ $d1 := .Params.Start | time.Format "2006-01-02" }}
+{{ $d2 := .Params.End | time.Format "2006-01-02" }}
+{{ if eq $d1 $d2 }}
+    {{ .Params.start | time.Format "15:04" }} – {{ .Params.end | time.Format "15:04" }}
+{{ else }}
+    {{ .Params.start | time.Format "Mon 15:04" }} – {{ .Params.end | time.Format "Mon 15:04" }}
+{{ end }}

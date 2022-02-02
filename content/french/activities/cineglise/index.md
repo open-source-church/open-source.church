@@ -4,6 +4,7 @@ location: À définir
 when: Une fois par mois?
 image: osc-cineglise-featured.jpg
 with: [Alexandre Michelle, Quentin B., Olivier Keshavjee]
+weight: 5
 ---
 
 Regarder un bon gros film badass de popculte — avec pop-corn, bière et tout ce qu'il faut. 

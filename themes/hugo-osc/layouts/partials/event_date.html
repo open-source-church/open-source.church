@@ -1,1 +1,25 @@
-{{ .Date | time.Format "02 Jan 2006" }}
+{{ with .Params.Start }}
+    {{- $start := $.Params.Start | time.Format "02 Jan 2006" -}}
+    {{- $end := $.Params.End | time.Format "02 Jan 2006" -}}
+    {{- if eq $start $end -}}
+        {{ $start }}
+    {{- else -}}
+        {{ $d1 := $.Params.Start | time.Format "02" -}}
+        {{ $m1 := $.Params.Start | time.Format "Jan" -}}
+        {{ $y1 := $.Params.Start | time.Format "2006" -}}
+        {{ $d2 := $.Params.End | time.Format "02" -}}
+        {{ $m2 := $.Params.End | time.Format "Jan" -}}
+        {{ $y2 := $.Params.End | time.Format "2006" -}}
+        {{ if eq $y1 $y2}}
+            {{ if eq $m1 $m2}}
+                {{ $d1 }}–{{ $d2 }} {{ $m1 }} {{ $y1 }}
+            {{ else }}
+                {{ $d1 }} {{ $m1 }} – {{ $d2 }} {{ $m2 }} {{ $y1 }}
+            {{ end }}
+        {{ else }}
+            {{ $start }}–{{ $end }}
+        {{ end }}
+    {{- end -}}
+{{- else -}}
+    {{- .Date | time.Format "02 Jan 2006" -}}
+{{- end -}}

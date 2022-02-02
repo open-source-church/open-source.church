@@ -89,11 +89,12 @@
     <!-- event details -->
     <div class="row">
       <div class="col-12 mb-50 content">
-        {{ $activity.Content }}
-        {{ if .Content }}
-          <hr />
-        {{ end }}
         {{ .Content }}
+        {{ if and $activity.Content .Content }} <hr /> {{ end }}
+        {{ if $activity.Content }}
+          <p class="h5 text-cyan">Description de <a href="{{ $activity.RelPermalink }}" alt="Vers la page {{ $activity.Title }}">{{ $activity.Title }}</a>:</p>
+          {{ end }}
+        {{ $activity.Content }}
       </div>
     </div>
     <div class="row">

@@ -4,7 +4,7 @@ author: William Bernard
 date: 2020-04-07T14:39:18+00:00
 aliases:
   - /la-chronique-ludique-nmbr9/
-image: Nmbr9-Version-Francaise.jpg
+image: Nmbr9-Version-Francaise-featured.jpg
 categories:
   - Articles
 type: post

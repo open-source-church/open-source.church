@@ -4,7 +4,7 @@ author: Benoît Ischer
 date: 2019-10-16T13:29:30+00:00
 aliases:
   - /dragon-age-inquisition-repondre-a-un-appel/
-image: DragonAgeInquisition.jpg
+image: DragonAgeInquisition-featured.jpg
 categories:
   - Articles
 type: post

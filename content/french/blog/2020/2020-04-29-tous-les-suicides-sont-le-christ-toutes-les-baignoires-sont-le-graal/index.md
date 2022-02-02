@@ -4,7 +4,7 @@ author: Noémie Emery
 date: 2020-04-29T13:54:57+00:00
 aliases:
   - /tous-les-suicides-sont-le-christ-toutes-les-baignoires-sont-le-graal/
-image: Kaamelott-suicides.jpg
+image: Kaamelott-suicides-featured.jpg
 categories:
   - Articles
 type: post

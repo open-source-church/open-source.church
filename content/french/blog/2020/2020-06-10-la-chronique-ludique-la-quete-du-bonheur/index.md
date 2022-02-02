@@ -6,7 +6,7 @@ aliases:
   - /la-chronique-ludique-la-quete-du-bonheur/
 categories:
   - Articles
-image: quetedubonheur.webp
+image: quetedubonheur-featured.webp
 tags: ["Avis", "Bonheur", "Choix", "Chronique", "Jeu de société", "Ludique", "Quête", "Vie"]
 type: post
 ---

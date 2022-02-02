@@ -6,7 +6,7 @@ aliases:
   - /levangile-est-un-jeu/
 categories:
   - Articles
-image: EvangileEstJeu.webp
+image: EvangileEstJeu-featured.webp
 tags: ["évangile", "jeu"]
 type: post
 

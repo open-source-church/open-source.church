@@ -1,7 +1,7 @@
 ---
 title: Open Source Church — le retour
 author: Olivier Keshavjee
-date: 2022-02-01T10:48:37+01:00
+date: 2022-02-02T22:22:22+01:00
 image: OSC-v2.0-featured.jpg
 categories:
   - News

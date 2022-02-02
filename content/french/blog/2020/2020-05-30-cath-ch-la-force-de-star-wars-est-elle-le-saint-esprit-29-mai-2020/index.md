@@ -4,7 +4,7 @@ author: Noémie Emery
 date: 2020-05-30T16:00:38+00:00
 aliases:
   - /cath-ch-la-force-de-star-wars-est-elle-le-saint-esprit-29-mai-2020/
-image: starwars-saintesprit.jpg
+image: starwars-saintesprit-featured.jpg
 type: post
 categories: ["Articles"]
 tags: ["Star wars", "Force", "Saint-Esprit", "Pentecôte", "SF"]

@@ -1,6 +1,6 @@
 ---
 title: "In Fabula Veritas: le podcast humani-fantaisiste"
-image: ifv.webp
+image: ifv-banner.webp
 location: En ligne
 when: Sporadiquement
 buttons:

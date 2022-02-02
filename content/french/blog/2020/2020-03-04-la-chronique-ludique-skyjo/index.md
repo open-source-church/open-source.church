@@ -4,7 +4,7 @@ author: William Bernard
 date: 2020-03-04T15:52:07+00:00
 aliases:
   - /la-chronique-ludique-skyjo/
-image: skyjo.webp
+image: skyjo-featured.webp
 categories:
   - Articles
 type: post

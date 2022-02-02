@@ -4,7 +4,7 @@ author: Benoît Ischer
 date: 2020-04-19T22:21:22+00:00
 aliases:
   - /pour-moi-le-travail-en-equipe-cest-comme-dans-jeu-en-ligne/
-image: roles.jpg
+image: roles-featured.jpg
 categories:
   - Articles
 type: post

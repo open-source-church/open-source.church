@@ -4,7 +4,7 @@ author: Benoît Ischer
 date: 2020-09-09T16:09:51+00:00
 aliases:
   - /ayez-foi-en-la-lumiere-et-tout-sera-possible-pourquoi-jai-toujours-aime-jouer-paladin/
-image: paladin.jpg
+image: paladin-featured.jpg
 categories:
   - Articles
 type: post

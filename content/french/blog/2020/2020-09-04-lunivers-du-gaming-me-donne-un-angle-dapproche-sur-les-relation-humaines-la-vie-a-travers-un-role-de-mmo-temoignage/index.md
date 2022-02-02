@@ -4,7 +4,7 @@ author: Benoît Ischer
 date: 2020-09-04T14:56:43+00:00
 aliases:
   - /lunivers-du-gaming-me-donne-un-angle-dapproche-sur-les-relation-humaines-la-vie-a-travers-un-role-de-mmo-temoignage/
-image: roles.jpg
+image: roles-featured.jpg
 categories:
   - Articles
 type: post

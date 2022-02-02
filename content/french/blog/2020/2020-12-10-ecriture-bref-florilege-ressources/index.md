@@ -5,7 +5,7 @@ date: 2020-12-10T16:10:03+00:00
 aliases:
   - /ecriture-bref-florilege-ressources/
 type: post
-image: 2020-12-writing.jpg
+image: 2020-12-writing-featured.jpg
 categories:
   - Articles
   - Ressources

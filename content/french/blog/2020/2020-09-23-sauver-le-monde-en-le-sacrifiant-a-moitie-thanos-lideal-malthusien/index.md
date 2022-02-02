@@ -4,7 +4,7 @@ author: Benoît Ischer
 date: 2020-09-23T16:59:34+00:00
 aliases:
   - /sauver-le-monde-en-le-sacrifiant-a-moitie-thanos-lideal-malthusien/
-image: thanos-malthus.jpg
+image: thanos-malthus-featured.jpg
 categories:
   - Articles
 type: post

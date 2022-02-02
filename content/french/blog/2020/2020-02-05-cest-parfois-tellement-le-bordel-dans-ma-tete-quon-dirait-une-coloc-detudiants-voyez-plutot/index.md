@@ -4,7 +4,7 @@ author: Noémie Emery
 date: 2020-02-05T11:48:37+00:00
 aliases:
   - /cest-parfois-tellement-le-bordel-dans-ma-tete-quon-dirait-une-coloc-detudiants-voyez-plutot/
-image: bordeldansmatete.jpg
+image: bordeldansmatete-featured.jpg
 categories:
   - Articles
 type: post

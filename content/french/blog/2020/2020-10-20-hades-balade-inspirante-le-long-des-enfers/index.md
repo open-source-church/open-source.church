@@ -7,7 +7,7 @@ aliases:
 categories:
   - Articles
 type: post
-image: hades.webp
+image: hades-featured.webp
 tags: ["Espérance", "Jeu", "Jeu vidéo", "Hadès", "Persévérance", "Résurrection", "Zagreus"]
 ---
 Bon, j'y tiens plus, faut que je vous parle d'un truc&nbsp;: **Hadès**.

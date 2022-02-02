@@ -4,7 +4,7 @@ author: Noémie Emery
 date: 2020-11-17T09:21:00+00:00
 aliases:
   - /real-geek-real-hero-danny-avidan-nsp/
-image: tenor-1.webp
+image: tenor-1-featured.webp
 dont_resize_image: true
 type: post
 categories:

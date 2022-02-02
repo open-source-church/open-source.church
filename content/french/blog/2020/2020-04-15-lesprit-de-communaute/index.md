@@ -8,7 +8,7 @@ categories:
   - Articles
 type: post
 tags: ["Communauté", "Esprit", "Relation", "Virtuel"]
-image: espritdelacommunaute.png
+image: espritdelacommunaute-featured.png
 ---
 
 On a souvent considéré avec une condescendance à peine masquée les relations, les amitiés nées sur internet, car elles sont « virtuelles », irréelles, autrement dit : non-authentiques. Beaucoup ont entendu cette injonction d'aller « voir ses copains en vrai, plutôt que de rester planté devant son écran »… *\*soupir\**

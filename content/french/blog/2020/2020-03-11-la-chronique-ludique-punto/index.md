@@ -4,7 +4,7 @@ author: William Bernard
 date: 2020-03-11T13:30:23+00:00
 aliases:
   - /la-chronique-ludique-punto/
-image: punto.jpg
+image: punto-featured.jpg
 categories:
   - Articles
 type: post

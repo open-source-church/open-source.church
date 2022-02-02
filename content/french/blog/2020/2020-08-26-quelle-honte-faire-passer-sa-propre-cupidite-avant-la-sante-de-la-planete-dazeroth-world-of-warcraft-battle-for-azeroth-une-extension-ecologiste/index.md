@@ -4,7 +4,7 @@ author: Benoît Ischer
 date: 2020-08-26T15:21:26+00:00
 aliases:
   - /quelle-honte-faire-passer-sa-propre-cupidite-avant-la-sante-de-la-planete-dazeroth-world-of-warcraft-battle-for-azeroth-une-extension-ecologiste/
-image: worldofwarcraft-ecologie.jpg
+image: worldofwarcraft-ecologie-featured.jpg
 categories:
   - Articles
 type: post

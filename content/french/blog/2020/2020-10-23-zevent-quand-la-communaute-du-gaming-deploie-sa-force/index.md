@@ -7,7 +7,7 @@ aliases:
 categories:
   - Articles
 type: post
-image: z-event.jpg
+image: z-event-featured.jpg
 tags: ["Chrétien", "Communauté", "Espérance", "Gaming", "Geek", "Inspiration", "Jeu", "Jeu vidéo", "Relation", "Zevent"]
 ---
 ## Un week-end qui inspire !

@@ -4,7 +4,7 @@ author: Benoît Ischer
 date: 2020-09-30T19:22:56+00:00
 aliases:
   - /nous-sommes-la-premiere-generation-des-derniers-humains-g-anders-et-si-on-parlait-un-peu-dapocalypse/
-image: anders-apocalypse.jpg
+image: anders-apocalypse-featured.jpg
 categories:
   - Articles
 type: post

@@ -54,13 +54,13 @@ Nouveau contexte + nouvelles personnes = **nouvelles activités**. Déjà quelqu
 
 - **Du jeu sur table:** notamment [JeudiJeux](/activities/jeudijeux/), une pause jeux de société au milieu de la journée et de la ville (:blue_heart: [EMLK](https://www.eerv.ch/activites-cantonales/eglise-martin-luther-king-lausanne/accueil)), les 1e et 3e jeudi du mois entre 12h et 14h. Et des parties de [jeu de rôles](/activities/jdr1shot/) régulières, one shot pour pouvoir avoir un groupe fluide, et tester des singularités dans le monde du jdr.
 
-- **Cinéglise:** des [soirées films suivies de discussion](/activities/cineglise/) pour analyser les propositions philosophiques, théologiques et spirituelles faites par le blockbusters de la popculture qu'on aime tant.
+- **Cinéglise:** des [soirées films suivies de discussion](/activities/cineglise/) pour analyser les propositions philosophiques, théologiques et spirituelles faites par les blockbusters de la popculture qu'on aime tant.
 
 - **Une chaîne twitch** qui pointe gentiment le bout de son pif. C'est potentiellement *le* gros projet. Vous en entendrez parler tantôt.
 
-- **Des activités pour les familles:** parce que tous les enfants sont des geeks selon leur réglage d'usine — avant qu'on ne les formate pour qu'ils arrêtent de jouer, de rêver et de poser des questions. En ce moment pour commencer, une formation pour les parents. Mais d'autres choses suivront.
+- **Des activités pour les familles:** parce que selon les réglages d'usine, par défaut, tous les enfants sont des geeks — avant qu'on ne les formate pour qu'ils arrêtent de jouer, de rêver et de poser des questions. En ce moment nous avons une formation pour les parents en cours. Mais d'autres choses suivront.
 
-- **De la production de contenus** théologique et spirituel autour de la culture geek. On va petit à petit reprendre la publication [d'articles](/categories/articles/), de [podcasts](/activities/ifv), de [vidéos](https://www.youtube.com/channel/UCNgeAmWZx4yWXK1TIp_PjqQ), d'[outils et ressources libres](/categories/ressources/)… Parmi les sujets que j'aimerais approfondir ces prochains temps: Dieu dans le Hobbit, la technospiritualité (les enjeux de la spiritualité à une époque saturée de technologies), et des choses autour de la gouvernance partagée.
+- **De la production de contenus** théologique et spirituel autour de la culture geek. On va petit à petit reprendre la publication [d'articles](/categories/articles/), de [podcasts](/activities/ifv), de [vidéos](https://www.youtube.com/channel/UCNgeAmWZx4yWXK1TIp_PjqQ), d'[outils et ressources libres](/categories/ressources/)… Parmi les sujets que j'aimerais approfondir ces prochains temps: Dieu dans *Le Hobbit*, la technospiritualité (les enjeux de la spiritualité à une époque saturée de technologies), et méthode modulaire et ludique de gouvernance partagée (« holycratie »).
 
 - **Des alliances pour des quêtes ponctuelles**: il y a des choses qui bouillonnent dans la marmite avec [Détox' la terre](https://detoxlaterre.ch/), le [Dr Nemrod](https://drnemrod.ch/), le [Festival 3,2,1… Futur](https://www.eerv.ch/activites-cantonales/enfance-et-familles/evenements/festival-321-futur-15-mai-2022-aigle), des [paroisses](https://formationmorgesaubonne.eerv.ch/catechisme-presentation-generale-page/kt-paroisse-de-gimel-longirod/)… et plein d'autres encore !
 
@@ -70,7 +70,7 @@ Nouveau contexte + nouvelles personnes = **nouvelles activités**. Déjà quelqu
 
 ### Le backend
 
-Pour soutenir tout ça, en backend, un vrai appui institutionnel: un **comité de pilotage** bienveillant, compétent et exigeant. Stratégie, reporting, firewall, tout ce qu'il faut pour que ca tourne, éviter les failles de sécurités importants, et patcher rapidement les éventuels bugs. Bravo et merci pour le chemin parcouru jusque-là.
+Pour soutenir tout ça, en backend, un vrai appui institutionnel: un **comité de pilotage** bienveillant, compétent et exigeant. Stratégie, reporting, firewall, tout ce qu'il faut pour que ca tourne, éviter les failles de sécurités importantes, et patcher rapidement les éventuels bugs. Bravo et merci pour le chemin parcouru jusque-là.
 
  Parce que tout ceci ne serait pas possible pareil si [mon église](https://www.eerv.ch), dans sa sagesse séculaire, n'avait pas malgré tout un petit grain de folie pour oser soutenir de tels projets qui sortent du cadre. Merci !
 

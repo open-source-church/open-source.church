@@ -3,9 +3,12 @@
   <div class="row no-gutters">
     <div class="col-4 col-md-3 col-lg-2 bg-primary">
       <div class="w-100">
-        {{ $image := $activity.Resources.GetMatch $activity.Params.image }}
-        {{ $image = $image.Fill "165x50 q30 Center" }}
-        <img class="card-img-top rounded-0" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+        {{ if $activity.Params.image }}
+          {{ $image := $activity.Resources.GetMatch $activity.Params.image }}
+          {{ $image = $image.Fill "165x50 q30 Center" }}
+          {{ $image = $image.RelPermalink }}
+          <img class="card-img-top rounded-0" src="{{ $image }}" alt="{{ .Title }}" width="165" height="50">
+        {{ end }}
       </div>
       {{ $date := (time .Params.start )}}
       {{ $date2 := (time .Params.end )}}

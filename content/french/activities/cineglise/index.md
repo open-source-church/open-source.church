@@ -2,7 +2,7 @@
 title: Cinéglise
 location: À définir
 when: Une fois par mois?
-image: osc-cineglise-banner.jpg
+image: osc-cineglise-featured.jpg
 with: [Alexandre Michelle, Quentin B., Olivier Keshavjee]
 ---
 

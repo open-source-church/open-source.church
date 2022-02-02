@@ -1,6 +1,6 @@
 ---
 title: "JeudiJeux"
-image: jeudijeux-banner.webp
+image: jeudijeux-featured.webp
 location: Espace MLK, St-Laurent
 address: Place St-Laurent, Lausanne
 when: "1<sup>e</sup> et 3<sup>e</sup> jeudi du mois"

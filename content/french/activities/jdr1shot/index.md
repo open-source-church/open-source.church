@@ -1,6 +1,6 @@
 ---
 title: "Jeu de rôle one shot"
-image: jdr1shot-banner.webp
+image: jdr1shot-featured.webp
 location: Sévelin
 address: Av. de Tivoli 74, Lausanne
 when: 1× par mois

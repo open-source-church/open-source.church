@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-12">
+        <h3 class="mb-4 text-majenta">{{ i18n "with"}}</h3>
+    </div>
+    {{ range .Params.with }}
+    <div class="col-lg-4 col-12 col-sm-6 mb-4 mb-lg-0">
+        {{ $name := . }}
+        {{ $team := where (where site.RegularPages "Type" "team") "Slug" $name }}
+        {{ $team = union $team (where (where site.RegularPages "Type" "team") "Title" $name ) }}
+        {{ with index $team 0 }}
+            {{ .Render "li" }}
+        {{ else }}
+        <!-- Anonymous, aka pas dans la Team -->
+        <div class="media">
+            {{ $img := printf "https://www.gravatar.com/avatar/%s?s=64&d=retro" ( md5 $name ) }}
+            <img class="rounded-circle mr-3" src="{{ $img }}" alt="{{ $name }}">
+            <div class="media-body">
+              <h5 class="mt-0">{{ $name }}</h5>
+              <p data-anonymous-title></p>
+            </div>
+          </div>
+          {{ end }}
+    </div>
+    {{ end }}
+</div>

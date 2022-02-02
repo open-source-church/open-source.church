@@ -9,6 +9,7 @@
     width:100%;
     min-height:80vh;
   }
+
   .carousel-inner .carousel-item{
     transition:-webkit-transform 1s ease;
     transition:transform 1s ease;
@@ -20,6 +21,7 @@
     color:white;
     animation-duration: 1s;
     animation-delay: 1s;
+    backdrop-filter: blur(8px);
   }
   .caption h2{
     animation-duration: 1s;

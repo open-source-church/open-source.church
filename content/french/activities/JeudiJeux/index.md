@@ -9,6 +9,7 @@ cout: gratuit
 buttons:
 weight: 10
 slug: jeudijeux
+with: ["William Bernard", "Olivier Keshavjee"]
 ---
 
 Une pause jeux de société au milieu de la journée. Amène ton repas, et rejoins nous pour faire des jeux pendant la pause de midi.

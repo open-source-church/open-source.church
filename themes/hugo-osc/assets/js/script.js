@@ -32,6 +32,10 @@
     $('.venobox').venobox();
   });
 
+  // Anonymous titles
+  // $a := (slice "Elfe" "Lutin" "Ogre" "Narval" "Nain" "Mouton" "Prophète" "Magicien") }}
+  //  $title := () }}
+
 })(jQuery);
 
 // Bible Gateway Reference Tagging Tool

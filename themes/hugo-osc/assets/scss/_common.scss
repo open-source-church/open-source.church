@@ -312,7 +312,7 @@ textarea.form-control{
   h6 {
     margin-bottom: 20px;
   }
-
+  strong { color: $majenta; }
   ol {
     padding-left: 20px;
   }
@@ -402,6 +402,7 @@ textarea.form-control{
   .media-list {
     blockquote p { font-size: small; }
   }
+  ul li p { display: inline; }
 
 }
 

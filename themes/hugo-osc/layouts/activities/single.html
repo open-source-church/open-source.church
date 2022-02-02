@@ -101,6 +101,12 @@
       <div class="col-12 mb-5 content">
         {{ .Content }}
       </div>
+      <!-- with -->
+      {{ if .Params.with }}
+        <div class="col-12 mb-5">
+          {{ partial "with" .}}
+        </div>
+      {{ end }}
     </div>
     <!-- linked events -->
     {{ $p1 := where .Site.Pages "Params.activity" (.Title | title) }}

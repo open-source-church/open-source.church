@@ -28,10 +28,10 @@ Ce qui est vécu au travers de la fiction est riche de sens et nous interpelle :
 - name : "Sciences & technologies"
   image: "symbol-tech.webp"
   color: "#ffd400"
-  content : "Un paroisse sur Twitch ? Du gaming dans l'église ? Un web-série sur les instants ordinaires de la vie de Christ ? Du podcast théologico-fantastique ? On en rêve !
+  content : "Une paroisse sur Twitch ? Du gaming dans l'église ? Une web-série sur les instants ordinaires de la vie de Christ ? Du podcast théologico-fantastique ? On en rêve !
 
 
-Mais Open Source Church c'est aussi une réflexion critique sur l'usage de la technologie, ses bienfaits et ses abus. Étant affilié au milieu dit \"geek\", cette dernière est forcément au centre de nos usages : comment est-ce qu'elle nous transforme? Quelle gestion juste ?"
+Mais Open Source Church c'est aussi une réflexion critique sur l'usage de la technologie, ses bienfaits et ses abus. Étant affiliée au milieu dit \"geek\", cette dernière est forcément au centre de nos usages : comment est-ce qu'elle nous transforme? Quelle gestion juste ?"
 
 vision_more: "L’**Évangile** prend toujours racine dans une **culture**, et ce qui implique une transformation mutuelle : cette culture spécifique mettra en lumière des aspects de l’Évangile que d’autres cultures ne voient peut-être pas ; l’Évangile transforme la culture en la réorientant. Bien que la culture geek soit importante dans notre société, elle est très marginalisée voir inexistante dans nos églises traditionnelles. Cela rend de fait l’accès à l’Évangile difficile pour les geeks, et cela prive l’Église de toute la richesse de cette culture. Nous voulons remédier à cela.
 
@@ -67,18 +67,18 @@ valeurs_liste:
 - name : "Activation"
   image: "symbol-cap-active.webp"
   color: "#00ffdd"
-  content : "Nous encourageons et équipons chacun·e pour trouver la place qui correspons à son appel, ses passions et ses dons, et à prendre un rôle actif."
+  content : "Nous encourageons et équipons chacun·e pour trouver la place qui correspond à son appel, ses passions et ses dons, et à prendre un rôle actif."
 
 - name : "Pluralité"
   image: "symbol-cap-diverse.webp"
   color: "#ffd400"
-  content : "Unis en Christ, nous acueillons comme un trésor une pluralité d'expressions, de croyances ou de pratiques."
+  content : "Unis en Christ, nous accueillons comme un trésor une pluralité d'expressions, de croyances ou de pratiques."
 
 valeurs_more: "Le projet est porté à tous les niveaux par 3 réflexes ou valeurs clés qui se fécondent mutuellement — le CAP :
 
 - **Christocentrisme:** le Christ est la référence, le fondement, le but et le sens de tout ce qui est vécu et développé dans ce projet. De manière explicite ou implicite. Par « le Christ » nous entendons le Christ Vivant — pas une doctrine sur le Christ, une culture ou une pratique (même si ces éléments sont utiles et importants).
 
-      > « L’Eglise évangélique réformée du canton de Vaud a pour seule autorité Jésus-Christ, le Fils de Dieu. Avec la Bible, elle le reconnaît comme Sauveur et Seigneur de l’humanité et du monde. L’Eglise trouve en Lui son fondement et son sens. » — Principes constitutifs de l’EERV, n°1.
+      > « L’Eglise évangélique réformée du canton de Vaud a pour seule autorité Jésus-Christ, le Fils de Dieu. Avec la Bible, elle le reconnaît comme Sauveur et Seigneur de l’humanité et du monde. L'Église trouve en Lui son fondement et son sens. » — Principes constitutifs de l’EERV, n°1.
 
 - **Activation:** le but est d’encourager et équiper chaque laïc pour qu’il devienne non pas consommateur mais acteur selon la spécificité de ses dons et de son appel. Ce projet vise la croissance par multiplication, qui n’est possible que par l’activation de tous.
 
@@ -95,36 +95,36 @@ D’autres valeurs qui nous portent et nous nourrissent : innovation, prise de r
 
 
 # Modes
-modes: "À Open Source Church, on peut appartenir avant de croire. Ou sans croire. Ou en croyant différement. Et c’est ok."
+modes: "À Open Source Church, on peut appartenir avant de croire. Ou sans croire. Ou en croyant différemment. Et c’est ok."
 modes_image: "symbol-mod-levels.webp"
-modes_description: "Comment vivre notre pluralité interne comme une richesse, dans le respect de la liberté de chacun·e? Comment témoigner de l’Évangile à des gens qui se méfient des institutions religieuses et du prosélytisme? Nous avons développé une stratégie simple pour garantir la liberté et le respect des participants, en explicitant différentes \"modes de jeu\"."
+modes_description: "Comment vivre notre pluralité interne comme une richesse, dans le respect de la liberté de chacun·e? Comment témoigner de l’Évangile à des gens qui se méfient des institutions religieuses et du prosélytisme? Nous avons développé une approche simple pour garantir au mieux la liberté, le respect et la sécurité des participant·e·s, en explicitant différents \"modes de jeu\" ou niveaux d'activités."
 modes_liste: 
 - name : "0 · Communauté"
   image: "symbol-mod-l0-communaute.webp"
   color: "#d700d7"
-  content : "Se rassembler autour d'intérêts partagés, créer des liens d'amitiés et de confiance. Éviter les sujets qui divisent pour se concentrer sur ce qui rassemble."
+  content : "On se rassemble autour d'intérêts partagés. On crée des liens d'amitié et de confiance. On évite les sujets qui divisent. En particulier la religion: c'est une \"God Free Zone\"."
 
 - name : "1 · Découverte"
   image: "symbol-mod-l1-decouverte.webp"
   color: "#00ffdd"
-  content : "Espace de partage, de proposition, d'expérimentation. Clarifier les modalités des désaccords et de discussion. Offrir la possibilité de découvrir l'Évangile d'une manière audible."
+  content : "On partage, on propose, on débat, on expérimente. On clarifie les modalités de désaccord et de discussion. On repart avec ce qu'on veut."
 
 - name : "2 · Enracinement"
   image: "symbol-mod-l2-enracinement.webp"
   color: "#ffd400"
-  content : "Affirmer joyeusement et clairement nos convictions. Vivre l'Évangile, le laisser prendre racine en nous et nous transformer."
+  content : "On affirme joyeusement et clairement nos convictions. On vit l'Évangile, on milite pour les causes qui nous tiennent à cœur."
 
-modes_more: "Nous observons que la plupart des gens qui font un cheminement de foi le font après avoir vécu pendant un temps dans une communauté qui vit sa foi simplement et joyeusement. Nous observons aussi qu’une partie de la population est méfiante envers les formes de religions organisées.
-
-
-Nous avons élaboré une typologie des activités en 3 niveaux par rapport à l’Évangile, qui nous permet de témoigner efficacement et sans faire de pression :
+modes_more: "Nous observons que la plupart des gens qui font un cheminement de foi le font après avoir vécu pendant un temps dans une communauté qui vit sa foi simplement et joyeusement. Nous observons aussi qu’une partie de la population est méfiante envers les formes de religions organisées. Nous observons encore que nos différences de convictions (sur tous les sujets, pas uniquement sur l'Évangile) peuvent autant nous rapprocher que nous diviser.
 
 
-0. **Communauté:** des activités sans références explicite à l’Évangile ou au Christ — ou aux autres sujets qui fâchent. Pas parce qu'ils ne sont pas importants, mais justement parce qu'ils sont trop importants pour être traités à la légère. Les activités de ce niveau sont une « God-free zone ». Permet d’inviter largement, de créer des amitiés et une communauté. La « culture geek » est une occasion de se rassembler.
+Nous avons élaboré une typologie des activités en 3 niveaux, par rapport à l’Évangile ou aux gros sujets qui divise, ce qui nous permet de partager nos convictions et sans faire de pression :
 
-1. **Découverte:** des activités avec une référence externe à l’Évangile ou au Christ, comme proposition de sens. Sans que ce soit pour autant forcément le centre de l’activité. Permet une mise en contact avec l’Évangile. La « culture geek » peut servir de passerelle. Des règles de discussions claires garantissent la sécurité de chacun·e pour partager ses convictions sur des sujets sensibles.
 
-2. **Enracinement:** des activités où l’Évangile est une référence interne, un moteur.  Ici la « culture geek » est le terreau dans lequel l’Évangile s’exprime, et qu’il vient transformer. Annoncé clairement, chacun·e sait ce qu'il vient y trouver, et si des choses dérangent, on fait comme quand on est invité ou que l'on visite une autre culture.
+0. **Communauté:** des activités sans références explicite à l’Évangile ou au Christ — ou aux autres sujets qui fâchent. Pas parce qu'ils ne sont pas importants, mais justement parce qu'ils sont trop importants pour être traités à la légère. Et que ça ne sert à rien de débattre si on ne se connaît pas, ne s'apprécie pas. Notamment, les activités de ce niveau sont une « God-free zone ». Cela permet d’inviter largement, de créer des amitiés et une communauté. La « culture geek » est une occasion de se rassembler.
+
+1. **Découverte:** des activités ou différents points de vue peuvent cohabiter — dont des perspectives sur l'Évangile — comme proposition de sens. Sans que ce soit pour autant forcément le centre de l’activité. Permet une mise en contact avec l’Évangile. La « culture geek » peut servir de passerelle. Des règles de discussion claires garantissent la sécurité de chacun·e pour partager ses convictions sur des sujets sensibles.
+
+2. **Enracinement:** des activités où l’Évangile est une référence interne, un moteur. Où l'on vit et l'on dit nos convictions, nos engagements, notre radicalité.  Ici la « culture geek » est le terreau dans lequel l’Évangile s’exprime, et qu’il vient transformer. Annoncé clairement, chacun·e sait ce qu'il vient y trouver. Et si ça dérange, on fait comme quand on est invité ou que l'on visite une autre culture: on est respectueux parce qu'on n'est pas chez soi.
 
 
 Ces modes de jeux nous permettent de communiquer clairement notre intention de témoigner de l’Évangile tout en garantissant une absence de prosélytisme. Ou d'aborder des sujets qui peuvent potentiellement cliver une communauté, tout en restant unis. En participant à une activité d’un niveau ou d’un autre, chacun sait ce qu’il va y trouver. Il est libre de rester à un niveau, ou d’en explorer un autre. Cela nous permet aussi d’inviter très largement, et créer une communauté hétérogène et potentiellement contagieuse.
@@ -155,4 +155,5 @@ Pasteur
 Open Source Church se base sur cette affirmation d’Olivier : assumer nos passions et intérêts partagés et les mettre au cœur de nos activités et idées pour la communauté. 
 
 Ces passions s’articulent principalement – mais pas exclusivement – autour de trois domaines : le game (jeux de plateau/jeux-vidéo), la technologie et la fiction.
+
 

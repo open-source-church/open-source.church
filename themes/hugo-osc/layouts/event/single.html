@@ -99,19 +99,9 @@
     <div class="row">
       <!-- event speakers -->
       {{ if .Params.with }}
-        <div class="col-12">
-          <h3 class="mb-4 text-majenta">{{ i18n "with"}}</h3>
+        <div class="col-12"> 
+          {{ partial "with" .}}
         </div>
-        {{ range .Params.with }}
-        <div class="col-lg-4 col-12 col-sm-6 mb-4 mb-lg-0">
-          {{ $name := . }}
-          {{ range where site.RegularPages "Type" "team" }}
-            {{ if in (slice .Slug .Title) $name }}
-              {{ .Render "li" }}
-            {{ end }}
-          {{ end }}
-        </div>
-        {{ end }}
       {{ end }}
       <!-- border -->
       <div class="col-12 mt-4 order-4">

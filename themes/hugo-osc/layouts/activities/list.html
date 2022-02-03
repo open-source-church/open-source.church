@@ -12,7 +12,7 @@
         <!-- $paginator := .Paginate ( where .Data.Pages "Type" "post")
         range $paginator.Pages -->
         {{ range .Paginator.Pages }}
-        <div class="col-sm-6 mb-5">
+        <div class="col-sm-6 col-lg-4 mb-5">
           <article
           class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
           {{ if .Params.image }}

@@ -18,5 +18,12 @@ start-unix: 1647010800.0
 title: Weekend Holygames
 type: event
 url: /activities/holygames/2022/03/11/weekend-holygames
+with:
+- William Bernard
+- Etienne Ischer
+- Olivier Keshavjee
+- Alexandre Michelle
+- Laurence Keshavjee
+- Florine Juvet
 ---
 Un weekend de jeux de société et spiritualité, en toute liberté, selon la formule qu'on connaît et qu'on aime.

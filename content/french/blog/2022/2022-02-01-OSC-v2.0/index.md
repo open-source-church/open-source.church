@@ -20,14 +20,14 @@ La première version d'Open Source Church a porté de beaux fruits, [pour lesque
 
 [^avertis]: Si seulement quelqu'un nous avait avertis à l'avance (Mt 9:17) :)
 
-Pour moi, ce fut de longs mois à errer dans le désert…
+Pour moi, ce fut de longs mois de désert, d'errance…
 
 Heureusement,
 
 > [*« Tous ceux qui errent ne sont point perdus…<br>Le gel n'atteint pas les racines profondes.<br>…<br>Des cendres, un feu sera attisé.<br>Une lueur, des ombres surgira… »*](https://www.theologeek.ch/2021/05/26/des-textes-du-seigneur-des-anneaux-pour-accompagner-la-mort/#Tout_ce_qui_est_or_ne_brille_pas)
 
 
-Après quelques mois de désert, quelques mois d'errements, quelques mois d'attentes, et quelques mois de planification — Open Source Church est de retour ! 
+Après quelques mois d'errements, quelques mois d'attentes, et quelques mois de planification — Open Source Church est de retour ! 
 
 ## Un nouveau départ, mais la même formule qui claque
 

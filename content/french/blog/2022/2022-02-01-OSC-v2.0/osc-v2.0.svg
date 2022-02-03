@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.094319059"
-     inkscape:cx="-482.40515"
-     inkscape:cy="5089.1093"
+     inkscape:zoom="0.066693646"
+     inkscape:cx="2856.3441"
+     inkscape:cy="9131.3046"
      inkscape:window-width="1920"
      inkscape:window-height="1007"
      inkscape:window-x="0"
@@ -104,6 +104,31 @@
        r="479.03143"
        gradientTransform="matrix(1.3800795,0,0,0.40543813,-65.659919,740.11912)"
        gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1035"
+       id="radialGradient2328"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.78424336,0,0,0.40543813,30.017843,1710.1399)"
+       cx="172.75311"
+       cy="1242.1444"
+       fx="172.75311"
+       fy="1242.1444"
+       r="479.03143" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2332">
+      <rect
+         style="opacity:1;fill:#212227;fill-opacity:1;stroke:#000000;stroke-width:0.138049;stroke-linecap:round;stop-color:#000000"
+         id="rect2334"
+         width="857.96088"
+         height="857.96088"
+         x="-263.48215"
+         y="933.80524"
+         inkscape:export-filename="/home/olivier/Dev/OSC/www.open-source.church/hugo-osc/content/french/blog/2022/2022-02-01-OSC-v2.0/OSC-v2.0_.png.png"
+         inkscape:export-xdpi="33.380001"
+         inkscape:export-ydpi="33.380001" />
+    </clipPath>
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -167,7 +192,7 @@
          width="1461.0079"
          height="913.12994"
          preserveAspectRatio="none"
-         xlink:href="https://pixabay.com/get/g752124195a9b79759fdd5874f7d095e7b35f505f1e1eb29e8da6eeee2ebf90964a538953a4ae2aff038b9d8f9ec93c7b04f487937a14125e2a7ae2cf27ae6548911f902857a86c623a68c6e3f89be9e5_1920.jpg"
+         xlink:href="https://pixabay.com/get/g1e28a36ba3b83e00a459578575374908e0d9808b60037d3adcb927e6c08bce9e59906f240b04c71299a0aa4f4ad74217f7b2d235ac4351f442dac254f7c1172bbf85320e86a75d4694910ff1a0fd3ac7_1920.jpg"
          id="image15293"
          x="-563.95551"
          y="914.56299"
@@ -238,5 +263,84 @@
        transform="translate(1756.5517,-64.451707)"
        width="100%"
        height="100%" />
+    <text
+       xml:space="preserve"
+       style="font-size:37.6806px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;stroke-width:0.942017"
+       x="-789.86334"
+       y="811.86011"
+       id="text1998"><tspan
+         sodipodi:role="line"
+         id="tspan1996"
+         style="fill:#ffffff;stroke-width:0.942017"
+         x="-789.86334"
+         y="811.86011">Image: https://pixabay.com/fr/photos/matrice-donn%c3%a9es-r%c3%a9seau-logiciel-4493783/</tspan></text>
+    <g
+       id="g2312"
+       clip-path="url(#clipPath2332)"
+       inkscape:export-filename="OSC-v2.0_squarepng"
+       inkscape:export-xdpi="35.529999"
+       inkscape:export-ydpi="35.529999"
+       transform="translate(0,1026.2524)">
+      <image
+         width="1461.0079"
+         height="913.12994"
+         preserveAspectRatio="none"
+         xlink:href="https://pixabay.com/get/g1e28a36ba3b83e00a459578575374908e0d9808b60037d3adcb927e6c08bce9e59906f240b04c71299a0aa4f4ad74217f7b2d235ac4351f442dac254f7c1172bbf85320e86a75d4694910ff1a0fd3ac7_1920.jpg"
+         id="image2310"
+         x="-563.95551"
+         y="914.56299"
+         style="filter:url(#filter923)" />
+    </g>
+    <g
+       id="g2322"
+       transform="matrix(1.0038263,0,0,1.0038263,207.20123,2189.5283)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:187.002px;line-height:1;font-family:'VCR OSD Mono';-inkscape-font-specification:'VCR OSD Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;mix-blend-mode:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.67507;stroke-opacity:1"
+         x="-36.748199"
+         y="338.65857"
+         id="text2316"><tspan
+           sodipodi:role="line"
+           id="tspan2314"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:136.024px;font-family:'VCR OSD Mono';-inkscape-font-specification:'VCR OSD Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.67507;stroke-opacity:1"
+           x="-36.748199"
+           y="338.65857">VERSION</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:187.002px;font-family:'VCR OSD Mono';-inkscape-font-specification:'VCR OSD Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.67507;stroke-opacity:1"
+           x="-36.748188"
+           y="525.66058"
+           id="tspan6150">2.0</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:187.002px;line-height:1;font-family:'VCR OSD Mono';-inkscape-font-specification:'VCR OSD Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;mix-blend-mode:normal;fill:#ffd400;fill-opacity:1;stroke:none;stroke-width:4.67507;stroke-opacity:1"
+         x="-46.339722"
+         y="329.06705"
+         id="text2320"><tspan
+           sodipodi:role="line"
+           id="tspan2318"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:136.024px;font-family:'VCR OSD Mono';-inkscape-font-specification:'VCR OSD Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffd400;fill-opacity:1;stroke:none;stroke-width:4.67507;stroke-opacity:1"
+           x="-46.339722"
+           y="329.06705">VERSION</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:187.002px;font-family:'VCR OSD Mono';-inkscape-font-specification:'VCR OSD Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffd400;fill-opacity:1;stroke:none;stroke-width:4.67507;stroke-opacity:1"
+           x="-46.33971"
+           y="516.06903"
+           id="tspan2846">2.0</tspan></text>
+    </g>
+    <rect
+       style="fill:url(#radialGradient2328);fill-opacity:1;stroke-width:0.196768;stroke-linecap:round;stop-color:#000000"
+       id="rect2324"
+       width="751.35443"
+       height="388.43524"
+       x="-210.17892"
+       y="2019.5353" />
+    <image
+       width="365.79837"
+       height="190.10739"
+       preserveAspectRatio="none"
+       xlink:href="../../../../../static/images/logo/logo_large.png"
+       id="image2326"
+       x="-17.400894"
+       y="2113.6924" />
   </g>
 </svg>

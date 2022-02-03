@@ -14,6 +14,7 @@ disableLanguages = ["En"] # desable language from here
 defaultContentLanguage = 'fr'
 # Emoji, parce que voilà. https://www.webfx.com/tools/emoji-cheat-sheet/
 enableEmoji = true
+googleAnalytics = "UA-153404165-1"
 
 [taxonomies]
   tag = "tags"
@@ -75,7 +76,7 @@ email = ""
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
 # Google Analitycs
-google_analitycs_id = "" # your id
+# google_analitycs_id = "" # your id
 # top header
 top_header = false
 # A second logo in the footer

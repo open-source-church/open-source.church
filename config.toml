@@ -68,7 +68,7 @@ logo_small = "images/logo/logo-oneline.webp" # when navbar is small
 # Meta data
 description = "Open Source Church — une église en développement, par des geeks, pour des geeks."
 author = "Open Source Church"
-images = ["/images/banner-osc.png"]
+images = ["/images/banner/banner-osc.png"]
 # contact info
 address = "Lausanne"
 mobile = ""

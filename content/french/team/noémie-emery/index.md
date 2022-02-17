@@ -3,6 +3,7 @@ title: "Noémie Emery"
 # page title background image
 # portrait
 image: "nemery.jpg"
+description: "Pasteure, féministe, conteuse, magicienne, maman."
 social:
   - icon : "instagram" # https://teenyicons.com/
     link : "https://www.instagram.com/nonodotheo/"

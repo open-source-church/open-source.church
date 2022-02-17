@@ -14,6 +14,8 @@ with:
 - Alexandre Michelle
 - Olivier Keshavjee
 - Noémie Emery
+- Etienne Ischer
+- MoCo
 ---
 
 La chaine twitch d'Open Source Church.

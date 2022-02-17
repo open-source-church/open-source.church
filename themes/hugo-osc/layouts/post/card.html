@@ -16,8 +16,8 @@
     <ul class="list-inline mb-3">
       <!-- author -->
       <li class="list-inline-item mr-3 ml-0 meta">
-        <a href="{{ `team/` | relLangURL }}{{ .Params.Author | urlize }}">
-          {{ $a := partial "get_team" .Params.Author }}
+        {{ $a := partial "get_team" .Params.Author }}
+        <a href="{{ $a.RelPermalink }}" alt="{{ $a.Title}}">
           {{ $img := $a.Resources.GetMatch $a.Params.image }}
           {{ $img = $img.Fill "32x32 center" }}
           <img src="{{ $img.RelPermalink }}" alt="{{ .Params.Author }}" class="rounded-circle mr-1">

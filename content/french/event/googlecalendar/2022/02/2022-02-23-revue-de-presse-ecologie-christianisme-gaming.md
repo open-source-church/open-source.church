@@ -8,6 +8,7 @@ buttons:
   link_title: Vers la chaine
 description: La revue de presse hebdomadaire de Benoît Ischer. Écologie, christianisme
   et gaming. En live sur twitch.
+display: light
 duration: '1:30:00'
 end: '2022-02-23T22:30:00+01:00'
 isodate: '2022-02-23'

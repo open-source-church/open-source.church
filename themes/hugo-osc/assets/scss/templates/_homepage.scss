@@ -117,16 +117,34 @@
 /* /success story */
 
 /* events */
-.card-date {
-  background: $primary-color;
-  font-family: $secondary-font;
-  text-align: center;
-  padding: 10px;
-  color: $white;
-  text-transform: uppercase;
+.card {
+  .left-col {
+    background: $primary-color;
+  }
 
-  span {
-    font-size: 40px;
+  .card-date {
+    background: $primary-color;
+    font-family: $secondary-font;
+    text-align: center;
+    padding: 10px;
+    color: $white;
+    text-transform: uppercase;
+
+    span {
+      font-size: 40px;
+    }
+  }
+  
+  &.recurrent {
+    .left-col {
+      background: transparent;
+    }
+    .card-date {
+      background: transparent;
+      color: $primary-color;
+      font-family: $primary-font;
+      span { font-size: 24px; }
+    }
   }
 }
 

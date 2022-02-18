@@ -14,7 +14,7 @@
         {{ template "_internal/pagination.html" . }}
       </div>
       {{ range $paginator.PageGroups }}
-        <h2 class="col-12 text-majenta my-5">{{ (time (printf "%s-01" .Key)) | time.Format "January 2006" | title }}</h2>
+        <h2 class="col-12 text-majenta my-5">{{ (index .Pages 0).Date | time.Format "January 2006" | title }}</h2>
         {{ range .Pages }}
           <div class="col-12">
             {{ .Render "li" }}

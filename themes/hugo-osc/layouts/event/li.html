@@ -1,7 +1,7 @@
 {{ $activity := site.GetPage .Params.activity }}
-<div class="card border-0 rounded-0 hover-shadow bg-dark mb-4">
+<div class="card border-0 rounded-0 hover-shadow bg-dark mb-4 {{ cond (eq .Params.display `light`) `recurrent` `` }}">
   <div class="row no-gutters">
-    <div class="col-3 col-md-4 col-lg-2 bg-primary">
+    <div class="col-3 col-md-4 col-lg-2 left-col">
       <div class="w-100">
         {{ if $activity.Params.image }}
           {{ $image := $activity.Resources.GetMatch $activity.Params.image }}

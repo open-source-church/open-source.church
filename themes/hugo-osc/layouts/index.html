@@ -22,7 +22,7 @@
       "button" (dict "enable" true "label" "lire la suite du post" "link" .Permalink)) }}
   {{ end }}
   <!-- Add last events -->
-  {{ range first .last_events (where (sort (where site.RegularPages "Type" "event") "Params.start") "Params.start-unix" "gt" now.Unix ) }}
+  {{ range first .last_events (where (sort (where (where site.RegularPages "Type" "event") "Params.display" "ne" "light") "Params.start") "Params.start-unix" "gt" now.Unix ) }}
     {{ $activity := site.GetPage .Params.activity }}
     {{ if $activity.Params.image }}
       {{ $items = $items | append (dict
@@ -209,7 +209,12 @@
     </div>
     <div class="row justify-content-center">
       <!-- event -->
-      {{ range first 2 ( sort (where (where site.RegularPages "Type" "event") "Params.start-unix" "gt" now.Unix) "Params.start")}}
+      {{ range first 2 ( sort (
+        where (where (where
+          site.RegularPages "Type" "event")
+          "Params.display" "ne" "light")
+          "Params.start-unix" "gt" now.Unix)
+        "Params.start")}}
       <div class="col-12 col-lg-6 mb-lg-0">
         {{ .Render "li" }}
       </div>

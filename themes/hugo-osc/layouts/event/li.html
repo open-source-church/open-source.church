@@ -3,7 +3,9 @@
   <div class="row no-gutters">
     <div class="col-3 col-md-4 col-lg-2 left-col">
       <div class="w-100">
-        {{ if $activity.Params.image }}
+        {{ if .Params.image }}
+          <img class="card-img-top rounded-0" style="max-height: 50px; object-fit: contain;" src="{{ .Params.image }}" alt="{{ .Title }}" >
+        {{ else if $activity.Params.image }}
           {{ $image := $activity.Resources.GetMatch $activity.Params.image }}
           {{ $image = $image.Fill "165x50 q30 Center" }}
           {{ $image = $image.RelPermalink }}

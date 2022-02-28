@@ -1,11 +1,12 @@
 ---
 title: Cinéglise
-location: À définir
-when: Une fois par mois?
+location: Église de la Sallaz
+address: Rte de Berne 97, Lausanne
+when: Une fois par mois environ
 image: osc-cineglise-featured.jpg
 with: [Alexandre Michelle, Quentin B., Olivier Keshavjee]
 weight: 5
-slug: cinéglise
+slug: cineglise
 ---
 
 Regarder un bon gros film badass de popculte — avec pop-corn, bière et tout ce qu'il faut. 
@@ -17,6 +18,3 @@ Parce que ce qu'on consomme nous transforme.
 
 Et qui sait, peut-être que Dieu nous rencontrera là où on s'y attendait pas?
 
-## Prochaines dates
-
-**À venir.** Pour être tenu·e au courant, suis-nous quelque part (réseaux sociaux, discord, etc.)

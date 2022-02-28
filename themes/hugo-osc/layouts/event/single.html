@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $activity := site.GetPage .Params.activity }}
+{{ $activity := site.GetPage (printf "/activities/%s" .Params.activity) }}
 <!-- event single -->
 <section class="section-sm">
   <div class="container">

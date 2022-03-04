@@ -10,16 +10,16 @@ description: La revue de presse hebdomadaire de Benoît Ischer. Écologie, chris
   et gaming. En live sur twitch.
 display: light
 duration: '1:30:00'
-end: '2022-03-09T22:30:00+01:00'
-isodate: '2022-03-09'
+end: '2022-03-10T22:30:00+01:00'
+isodate: '2022-03-10'
 location: en ligne
-path: 2022/03/2022-03-09-revue-de-presse-ecologie-christianisme-gaming.md
-start: '2022-03-09T21:00:00+01:00'
-start-unix: 1646856000.0
+path: 2022/03/2022-03-10-revue-de-presse-ecologie-christianisme-gaming.md
+start: '2022-03-10T21:00:00+01:00'
+start-unix: 1646942400.0
 template: twitch
 title: 'Revue de presse: écologie - christianisme - gaming'
 type: event
-url: /activities/twitch/2022/03/09/revue-de-presse-ecologie-christianisme-gaming
+url: /activities/twitch/2022/03/10/revue-de-presse-ecologie-christianisme-gaming
 with:
 - Benoît Ischer
 ---

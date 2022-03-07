@@ -1,5 +1,5 @@
 ---
-M: '03'
+M: '05'
 Y: '2022'
 activity: twitch
 buttons:
@@ -10,17 +10,17 @@ description: Une brève méditation à partir du *Hobbit* de J.R.R. Tolkien. Pou
   la semaine tout en douceur.
 display: light
 duration: 0:15:00
-end: '2022-03-06T22:15:00+01:00'
+end: '2022-05-01T22:15:00+02:00'
 image: https://cdna.artstation.com/p/assets/images/images/003/654/594/large/sam-robberechts-finalrender1.jpg
-isodate: '2022-03-06'
+isodate: '2022-05-01'
 location: en ligne
-path: 2022/03/2022-03-06-trouver-dieu-dans-un-trou-de-hobbit.md
-start: '2022-03-06T22:00:00+01:00'
-start-unix: 1646600400.0
+path: 2022/05/2022-05-01-trouver-dieu-dans-un-trou-de-hobbit.md
+start: '2022-05-01T22:00:00+02:00'
+start-unix: 1651435200.0
 template: twitch
 title: Trouver Dieu dans un trou de Hobbit
 type: event
-url: /activities/twitch/2022/03/06/trouver-dieu-dans-un-trou-de-hobbit
+url: /activities/twitch/2022/05/01/trouver-dieu-dans-un-trou-de-hobbit
 with:
 - Olivier Keshavjee
 ---

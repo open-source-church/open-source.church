@@ -93,19 +93,25 @@
     <div class="row">
       <div class="col-12 mb-50 content">
         {{ .Content }}
-        {{ if and $activity.Content .Content }} <hr /> {{ end }}
-        {{ if $activity.Content }}
-          <p class="h5 text-cyan">Description de <a href="{{ $activity.RelPermalink }}" alt="Vers la page {{ $activity.Title }}">{{ $activity.Title }}</a>:</p>
-          {{ end }}
-        {{ $activity.Content }}
+        {{ if .Params.activity }}
+          {{ if and $activity.Content .Content }} <hr /> {{ end }}
+          {{ if $activity.Content }}
+            <p class="h5 text-cyan">Description de <a href="{{ $activity.RelPermalink }}" alt="Vers la page {{ $activity.Title }}">{{ $activity.Title }}</a>:</p>
+            {{ end }}
+          {{ $activity.Content }}
+        {{ end }}
       </div>
     </div>
     <div class="row">
       <!-- event speakers -->
       {{ if .Params.with }}
-        <div class="col-12"> 
+        <div class="col-12 mb-5"> 
           {{ partial "with" .}}
         </div>
+      {{ end }}
+      <!-- partenaires -->
+      {{ with $activity.Params.partenaires }}
+        {{ partial "partenaires" .}}
       {{ end }}
       <!-- border -->
       <div class="col-12 mt-4 order-4">

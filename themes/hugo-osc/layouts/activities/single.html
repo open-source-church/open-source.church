@@ -107,6 +107,10 @@
           {{ partial "with" .}}
         </div>
       {{ end }}
+      <!-- partenaires -->
+      {{ with .Params.partenaires }}
+        {{ partial "partenaires" .}}
+      {{ end }}
     </div>
     <!-- linked events -->
     {{ $p1 := where .Site.Pages "Params.activity" (.Title | title) }}

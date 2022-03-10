@@ -77,9 +77,16 @@
         </ul>
       </div>
       <div class="col text-lg-right text-left">
+        <!-- Flyer -->
+        {{ if .Params.flyer }}
+          <a href="{{ .Params.flyer | safeURL }}" target="_blank" class="btn btn-primary">
+            {{ partial "ti" "image" }}
+            Flyer</a>
+        {{ end }}
+        <!-- Bouttons -->
         {{ range .Params.buttons }}
           {{ $title := cond ( isset . "link_title" ) .link_title "Lien"}}
-          <a href="{{ .link | safeURL }}" class="btn btn-primary">
+          <a href="{{ .link | safeURL }}" target="_blank" class="btn btn-primary">
             {{ with .icon }}{{ partial "ti" . }}{{end}} 
             {{ $title }}</a>
         {{ end }}

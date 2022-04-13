@@ -20,4 +20,4 @@ Designed by [OSC](https://www.open-source.church), based on [EduCenter](https://
 
 - [ ] Commentaires (en récupérant les anciens si possible)
 - [ ] Améliorer les événements, en filtrant les événements passé (après build), et proposer d'autres vues
-- [ ] Fixer les tags ~~OG et~~ TC qui ne reconnaissent pas les images des posts
+- [x] Fixer les tags OG et TC qui ne reconnaissent pas les images des posts

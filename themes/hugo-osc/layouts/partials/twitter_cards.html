@@ -1,0 +1,25 @@
+  <meta name="twitter:card" content="summary_large_image"/>
+  <!-- Featured in bundle-->
+  {{- $images := $.Resources.ByType "image" -}}
+  {{- $featured := $images.GetMatch "*feature*" -}}
+  {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+  {{ $activity := site.GetPage (printf "/activities/%s" .Params.activity) }}
+  {{- if $featured -}}
+  <meta name="twitter:image" content="{{ $featured.Permalink }}"/>
+  {{- else if .Params.image -}}
+  <!-- Params: image -->
+  <meta name="twitter:image" content="{{ .Params.image | absURL }}"/>
+  {{- else if $activity -}}
+  <!-- Activity -->
+  {{- $image := $activity.Resources.GetMatch $activity.Params.image -}}
+  <meta name="twitter:image" content="{{ $image.Permalink }}"/>
+  {{- else -}}
+  <!-- Image par défaut du site -->
+  {{- with $.Site.Params.images }}
+  <meta name="twitter:image" content="{{ index . 0 | absURL }}"/>
+  {{- end -}}
+  {{- end -}}
+
+  <meta name="twitter:title" content="{{ .Title }}"/>
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
+  <meta name="twitter:site" content="@OpnSourceChurch"/>

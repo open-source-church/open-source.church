@@ -35,9 +35,8 @@
   {{ end -}}
 
   {{ "<!--Open Graph-->" | safeHTML }}
-  <!-- {{ template "_internal/opengraph.html" . }} -->
-  {{ partial "opengraph.html" . }}
+{{ partial "opengraph" . }}
   {{ "<!--Twitter Cards-->" | safeHTML }}
-  {{ template "_internal/twitter_cards.html" . }}
+{{ partial "twitter_cards" . }}
 
 </head>

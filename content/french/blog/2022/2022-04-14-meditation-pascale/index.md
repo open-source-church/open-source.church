@@ -2,15 +2,15 @@
 title: Voici l’homme… Une méditation pascale sur fond musical de jeux-vidéo
 author: Céline Jaillet
 date: 2022-04-14T11:17:11+01:00
-image: "meditation-pascale-featured.jpg"
+image: "meditation-pascale-featured.webp"
 categories:
   - Articles
 type: post
-tags: ["Pâques", "Jeux vidéo", "Podcast"]
+tags: ["Pâques", "Jeux vidéo", "Audio", "Jésus", "Witcher", "Spellforce"]
 draft: false
 ---
 
-> *Une méditation sur fond musical pour la semaine sainte.*
+> *Une méditation pascale à la première personne, depuis la perspective de Jésus, sur fond musical de jeux vidéos.*
 
 <audio class="w-100"
   controls

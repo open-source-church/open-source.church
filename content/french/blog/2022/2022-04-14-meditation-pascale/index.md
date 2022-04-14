@@ -154,4 +154,4 @@ A ces mots, mes disciples prirent la fuite. Pas que… je crois bien avoir vu du
 Voici l’homme …
 </div></div>
 
-> *Méditation vécue IRL le 12 avril à Chavannes dans le cadre de la semaine sainte.*
+> *Méditation vécue IRL le 12 avril à [Chavannes-sur-Moudon](https://www.eerv.ch/region/la-broye/moudon-syens/accueil) dans le cadre de la semaine sainte.*

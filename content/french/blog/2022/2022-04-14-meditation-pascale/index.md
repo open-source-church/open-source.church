@@ -6,11 +6,11 @@ image: "meditation-pascale-featured.webp"
 categories:
   - Articles
 type: post
-tags: ["Pâques", "Jeux vidéo", "Audio", "Jésus", "Witcher", "Spellforce"]
+tags: ["Méditation", "Pâques", "Jeux vidéo", "Audio", "Jésus", "The Witcher", "Spellforce"]
 draft: false
 ---
 
-> *Une méditation pascale à la première personne, depuis la perspective de Jésus, sur fond musical de jeux vidéos.*
+> *Une méditation pascale à la première personne, depuis la perspective de Jésus, sur fond musical de The Witcher et Spellforce.*
 
 <audio class="w-100"
   controls

@@ -44,9 +44,15 @@
     {{ range first 5 ( where site.Pages "Type" "post" )}}
     <div class="media pb-2 mb-4">
       <a href="{{ .Permalink }}">
-        {{ $img := .Resources.GetMatch .Params.image }}
-        {{ $img = $img.RelPermalink }}
-        {{ if not .Params.dont_resize_image }}
+        {{ $img := "" }}
+        {{ $dont_resize := .Params.dont_resize_image }}
+        {{ with .Resources.GetMatch .Params.image }}
+          {{ $img = .RelPermalink }}
+        {{ else }}
+          {{ $img = .Params.image }}
+          {{ $dont_resize = true }}
+        {{ end }}
+        {{ if not $dont_resize }}
           {{ $img = partial "img_fill" (dict "ctx" . "path" .Params.image "param" "100x100 q50") }}
         {{ end }}
         <img class="mr-3 post-thumb-sm" src="{{ $img }}">

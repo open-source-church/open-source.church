@@ -9,9 +9,14 @@
   {{ $items := .slider_item }}
   <!-- Add last posts -->
   {{ range first .last_posts (where site.RegularPages "Type" "post") }}
-    {{ $image := ( .Resources.GetMatch .Params.image ).RelPermalink }}
-    {{ if not .Params.dont_resize_image}}
-      {{ $image = ( .Resources.GetMatch .Params.image ).RelPermalink }}
+    {{ $image := ( .Resources.GetMatch .Params.image ) }}
+    {{ if $image }}
+      {{ $image = $image.RelPermalink }}
+      {{ if not .Params.dont_resize_image}}
+        {{ $image = ( .Resources.GetMatch .Params.image ).RelPermalink }}
+      {{ end }}
+    {{ else }}
+      {{ $image = .Params.image }}
     {{ end }}
     {{ $items = $items | append (dict
       "title" .Title

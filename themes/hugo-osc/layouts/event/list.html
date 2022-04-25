@@ -16,7 +16,7 @@
       {{ range $paginator.PageGroups }}
         <h2 class="col-12 text-majenta my-5">{{ (index .Pages 0).Date | time.Format "January 2006" | title }}</h2>
         {{ range .Pages }}
-          <div class="col-12">
+          <div class="col-12 col-lg-6">
             {{ .Render "li" }}
           </div>
         {{ end }}

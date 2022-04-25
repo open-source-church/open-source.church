@@ -212,8 +212,8 @@
         </div>
       </div>
     </div>
+    <!-- events featured -->
     <div class="row justify-content-center">
-      <!-- event -->
       {{ range first 2 ( sort (
         where (where (where
           site.RegularPages "Type" "event")
@@ -222,6 +222,19 @@
         "Params.start")}}
       <div class="col-12 col-lg-6 mb-lg-0">
         {{ .Render "li" }}
+      </div>
+      {{ end }}
+    </div>
+    <!-- events light -->
+    <div class="row justify-content-center">
+      {{ range first 4 ( sort (
+        where (where (where
+          site.RegularPages "Type" "event")
+          "Params.display" "eq" "light")
+          "Params.start-unix" "gt" now.Unix)
+        "Params.start")}}
+      <div class="col-6 col-lg-3 mb-lg-0">
+        {{ .Render "li_small" }}
       </div>
       {{ end }}
     </div>

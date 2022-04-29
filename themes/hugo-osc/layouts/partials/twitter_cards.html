@@ -5,18 +5,18 @@
   {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
   {{ $activity := site.GetPage (printf "/activities/%s" .Params.activity) }}
   {{- if $featured -}}
-  <meta name="twitter:image" content="{{ $featured.Permalink }}"/>
+  <meta name="twitter:image:src" content="{{ $featured.Permalink }}"/>
   {{- else if .Params.image -}}
   <!-- Params: image -->
-  <meta name="twitter:image" content="{{ .Params.image | absURL }}"/>
+  <meta name="twitter:image:src" content="{{ .Params.image | absURL }}"/>
   {{- else if $activity -}}
   <!-- Activity -->
   {{- $image := $activity.Resources.GetMatch $activity.Params.image -}}
-  <meta name="twitter:image" content="{{ $image.Permalink }}"/>
+  <meta name="twitter:image:src" content="{{ $image.Permalink }}"/>
   {{- else -}}
   <!-- Image par défaut du site -->
   {{- with $.Site.Params.images }}
-  <meta name="twitter:image" content="{{ index . 0 | absURL }}"/>
+  <meta name="twitter:image:src" content="{{ index . 0 | absURL }}"/>
   {{- end -}}
   {{- end -}}
 

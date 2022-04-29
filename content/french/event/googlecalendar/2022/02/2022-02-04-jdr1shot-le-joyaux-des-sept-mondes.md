@@ -7,6 +7,9 @@ buttons:
 - icon: signin
   link: null
   link_title: Inscription
+- icon: discord
+  link: https://discord.gg/7FG3WvW
+  link_title: Inscription
 description: '*Un groupe de petit voleur a flairé un gros coup: dérober le ''joyau
   des 7 mondes'' a un riche marchand.*
 

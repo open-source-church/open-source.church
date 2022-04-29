@@ -3,6 +3,10 @@ M: '03'
 Y: '2022'
 activity: jdr1shot
 address: Av. de Tivoli 74, Lausanne
+buttons:
+- icon: discord
+  link: https://discord.gg/7FG3WvW
+  link_title: Inscription
 description: Fiasco est un jeu de rôle collaboratif sans MJ et sans préparation de
   Jason Morningstar. On y incarne des personnages ayant plus d'ambitions que de compétence,
   dans une fiction où tout tourne mal. La mise en scène est celle d'un film, inspiré

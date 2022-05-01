@@ -6,8 +6,6 @@ buttons:
 - icon: info
   link: https://www.holygames.ch/semaine-ete-2022/
   link_title: Info
-description: Une *semaine* de jeux de société et spiritualité, en toute liberté. Une
-  nouvelle formule, en demi-pension pour profiter de Leysin pendant la journée !
 duration: 5 days, 0:00:00
 end: '2022-07-29T14:00:00+02:00'
 isodate: '2022-07-24'

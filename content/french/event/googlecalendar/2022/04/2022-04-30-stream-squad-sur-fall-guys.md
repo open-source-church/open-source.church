@@ -6,7 +6,6 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
-description: Stream Squad sur Fall Guys.
 display: light
 duration: '2:00:00'
 end: '2022-04-30T22:00:00+02:00'

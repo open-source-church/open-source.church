@@ -6,8 +6,6 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
-description: Une brève méditation à partir du *Hobbit* de J.R.R. Tolkien. Pour commencer
-  la semaine tout en douceur.
 display: light
 duration: 0:15:00
 end: '2022-06-26T22:15:00+02:00'

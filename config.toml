@@ -201,20 +201,19 @@ url = "event"
 weight = 2
 
 [[Languages.fr.menu.main]]
-name = "À propos"
+name = "Activités"
+url = "activities"
 weight = 3
+
+[[Languages.fr.menu.main]]
+name = "À propos"
+weight = 4
 
   [[Languages.fr.menu.main]]
   parent = "À propos"
   name = "Open Source Church"
   url = "about"
   weight = 1
-
-  [[Languages.fr.menu.main]]
-  parent = "À propos"
-  name = "Activités"
-  url = "activities"
-  weight = 2
 
   [[Languages.fr.menu.main]]
   parent = "À propos"

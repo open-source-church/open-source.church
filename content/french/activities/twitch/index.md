@@ -13,9 +13,11 @@ with:
 - Benoît Ischer
 - Alexandre Michelle
 - Olivier Keshavjee
-- Noémie Emery
-- Etienne Ischer
-- MoCo
+- Irockois
+- Ilan
+#- Noémie Emery
+#- Etienne Ischer
+#- MoCo
 ---
 
 La chaine twitch d'Open Source Church.
@@ -24,6 +26,7 @@ Sur ce live vous trouverez plusieurs streamers qui font des émissions perso ou 
 
 Émissions régulières en ce moment:
 
-- **Matinales** avec Ffierock': lundi, mercredi et vendredi de 10h à 12h
-- **Revue de presse** "écologie - christianisme - gaming" avec Benoît Ischer
+<!-- - **Matinales** avec Ffierock: lundi, mercredi et vendredi de 10h à 12h -->
+- **Revue de presse**: "écologie - christianisme - gaming" avec Benoît Ischer
+- **Stream Squad**: avec Irockois et Ilans et d'autres, sur différents jeux
 - **Trouver Dieu dans un trou de Hobbit**: des méditions chrétiennes à partir du *Hobbit* de Tolkien avec Olivier Keshavjee

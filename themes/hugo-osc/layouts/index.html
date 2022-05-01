@@ -29,16 +29,23 @@
   <!-- Add last events -->
   {{ range first .last_events (where (sort (where (where site.RegularPages "Type" "event") "Params.display" "ne" "light") "Params.start") "Params.start-unix" "gt" now.Unix ) }}
     {{ $activity := site.GetPage .Params.activity }}
-    {{ if $activity.Params.image }}
+    {{ $image := "" }}
+    {{ if .Params.image }}
+      {{ $image = .Params.image }}
+    {{ else if $activity.Params.image }}
+      {{ ($activity.Resources.GetMatch $activity.Params.image).RelPermalink }}
+    {{ end }}
+    {{ if $image }}
       {{ $items = $items | append (dict
         "title" .Title
-        "content" (printf "<p>%s</p><p>%s</p>" $activity.Summary .Description)
-        "image" ($activity.Resources.GetMatch $activity.Params.image).RelPermalink
+        "content" ((printf "<p>%s</p><p>%s</p>" $activity.Summary .Summary))
+        "image" $image
         "bg_image" .Params.bg_image
         "type" "event"
         "meta" (printf "<p>%s // %s // %s</p>" (partial "event_date" .) (partial "event_time" .) .Params.location)
-        "button" (dict "enable" true "label" "info sur l'évènement" "link" .Permalink)) }}
-      {{ end }}
+        "button" (dict "enable" true "label" "info sur l'évènement" "link" .Permalink))
+      }}
+    {{ end }}
   {{ end }}
 <section class="overlay bg-cover" data-background="{{ .bg_image | absURL }}">
   <div class="container-fluid p-0">

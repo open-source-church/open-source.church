@@ -21,6 +21,6 @@ type: event
 url: /activities/twitch/2022/07/16/stream-squad
 with:
 - Irockois
-- Ilan
+- Ilans
 ---
-Stream Squad ! Irockois, Ilan et d'autres démontrent leur compétences phénoménales dans des jeux variés.
+Stream Squad ! Irockois, Ilans et d'autres démontrent leur compétences phénoménales dans des jeux variés.

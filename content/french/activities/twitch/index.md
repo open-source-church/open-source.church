@@ -14,7 +14,7 @@ with:
 - Alexandre Michelle
 - Olivier Keshavjee
 - Irockois
-- Ilan
+- Ilans
 #- Noémie Emery
 #- Etienne Ischer
 #- MoCo

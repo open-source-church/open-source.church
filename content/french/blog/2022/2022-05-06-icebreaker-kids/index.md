@@ -6,7 +6,7 @@ image: icebreaker-kids-showcase-seriousgame-featured.jpg
 categories:
   - Ressources
 type: post
-tags: ["jeu", "Enfants", "Jeu sérieux", "ressource", "cc-by"]
+tags: ["jeu", "Enfants", "Jeu sérieux", "ressource", "cc-by", "fiat ludux"]
 ---
 
 

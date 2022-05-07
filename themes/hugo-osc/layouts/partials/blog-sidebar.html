@@ -1,5 +1,12 @@
 {{ "<!-- sidebar -->" | safeHTML }}
 <aside class="col-lg-4 order-2 order-lg-2 mt-5 mt-lg-0">
+  {{ "<!-- Table of content -->" | safeHTML }}
+  {{ if gt (len .TableOfContents) 40 }}
+  <div class="bg-body mb-5">
+    <h4 class="mb-4 text-majenta">{{ i18n "table_of_contents" }}</h4>
+    {{ .TableOfContents }}
+  </div>
+  {{ end }}
   {{ "<!-- categories -->" | safeHTML }}
   <div class="bg-body mb-5">
     <h4 class="mb-4 text-majenta">{{ i18n "categories" }}</h4>
@@ -7,7 +14,8 @@
     {{- if not (eq (len site.Taxonomies.categories) 0) }}
     <ul class="list-unstyled">
       {{- range $name, $items := site.Taxonomies.categories }}
-      <li class="border-bottom"><a href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}" class="d-block pb-3 mt-3">{{ $name | title | humanize }}</a></li>
+      {{- $active := in $.Page.Params.categories (title $name) -}}
+      <li class="border-bottom{{cond $active " text-yellow" ""}}"><a href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}" class="d-block pb-3 mt-3">{{ $name | title | humanize }}</a></li>
       {{- end }}
       <li class="border-bottom"><a href="{{ `/blog` | relLangURL }}" class="d-block pb-3 mt-3">{{ "Tout" | title | humanize }}</a></li>
     </ul>
@@ -66,12 +74,5 @@
     </div>
     {{ end }}
   </div>
-  {{ "<!-- Table of content -->" | safeHTML }}
-  {{ if gt (len .TableOfContents) 40 }}
-  <div class="bg-body">
-    <h4 class="mb-4 text-majenta">{{ i18n "table_of_contents" }}</h4>
-    {{ .TableOfContents }}
-  </div>
-  {{ end }}
 </aside>
 {{ "<!-- /sidebar -->" | safeHTML }}

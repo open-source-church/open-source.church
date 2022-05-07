@@ -123,8 +123,10 @@
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
 
+{{ if not .Site.IsServer }}
 {{ "<!-- google analitycs -->" | safeHTML }}
 {{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
 
 <!-- cookie -->
 {{ if site.Params.cookies.enable }}

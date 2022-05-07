@@ -10,6 +10,14 @@
       color: $white;
     }
   }
+  &.dark a {
+    background: $gray;
+    color: $darkgray;
+    &:hover{
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
 }
 
 @for $i from 1 through 100 {

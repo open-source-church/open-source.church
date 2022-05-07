@@ -135,5 +135,5 @@ funfacts:
 ############################# blog ################################
 blog:
   enable : true
-  title : "Articles récents"
+  title : "Posts récents"
   # blog item comes from "content/**/blog" folder.

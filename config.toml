@@ -191,7 +191,7 @@ copyright = "Powered by [Hugo](https://gohugo.io/) · thème [hugo-osc](https://
 
 
 [[Languages.fr.menu.main]]
-name = "Articles"
+name = "Blog"
 url = "blog"
 weight = 1
 

@@ -33,7 +33,7 @@
     {{ if .Params.image }}
       {{ $image = .Params.image }}
     {{ else if $activity.Params.image }}
-      {{ ($activity.Resources.GetMatch $activity.Params.image).RelPermalink }}
+      {{ $image = ($activity.Resources.GetMatch $activity.Params.image).RelPermalink }}
     {{ end }}
     {{ if $image }}
       {{ $items = $items | append (dict

@@ -1,12 +1,12 @@
 ---
-title: "[Serious game] Brise-glace à dimension spi pour enfants"
+title: "Brise-glace à dimension spi pour enfants [Serious game]"
 author: Olivier Keshavjee
 date: 2022-05-06T12:24:32+01:00
 image: icebreaker-kids-showcase-seriousgame-featured.jpg
 categories:
   - Ressources
 type: post
-tags: ["jeu", "Enfants", "Jeu sérieux", "ressource", "cc-by", "fiat ludux"]
+tags: ["jeu", "Enfants", "Jeu sérieux", "ressource", "cc-by", "fiat ludux", "cartes"]
 ---
 
 

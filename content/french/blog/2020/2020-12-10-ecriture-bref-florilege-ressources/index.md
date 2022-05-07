@@ -7,7 +7,6 @@ aliases:
 type: post
 image: 2020-12-writing-featured.jpg
 categories:
-  - Articles
   - Ressources
 tags: ["Atelier", "Créativité", "Écriture", "Jeudregeek", "Ressource"]
 ---

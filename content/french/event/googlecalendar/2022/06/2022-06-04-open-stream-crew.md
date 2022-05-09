@@ -12,15 +12,16 @@ end: '2022-06-04T22:30:00+02:00'
 image: https://cdn.pixabay.com/photo/2021/09/07/07/11/game-console-6603120_960_720.jpg
 isodate: '2022-06-04'
 location: en ligne
-path: 2022/06/2022-06-04-stream-squad.md
+path: 2022/06/2022-06-04-open-stream-crew.md
 start: '2022-06-04T20:00:00+02:00'
 start-unix: 1654365600.0
 template: twitch
-title: Stream Squad
+title: Open Stream Crew
 type: event
-url: /activities/twitch/2022/06/04/stream-squad
+url: /activities/twitch/2022/06/04/open-stream-crew
 with:
 - Irockois
 - Ilans
+- Ellogan
 ---
-Stream Squad ! Irockois, Ilans et d'autres démontrent leur compétences phénoménales dans des jeux variés.
+Open Stream Crew ! Irockois, Ilans, Ellogan et d'autres démontrent leur compétences phénoménales dans des jeux variés.

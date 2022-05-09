@@ -9,7 +9,7 @@
 {{ end }}
 <div class="card border-0 rounded-0 hover-shadow bg-dark mb-4 bg-cover"
   data-background="{{$image}}">
-  <div class="row no-gutters" style="backdrop-filter: blur(2px) brightness(.8);">
+  <div class="row no-gutters" style="backdrop-filter: blur(1px) brightness(0.5); min-height: 180px;">
     <div class="col">
       <div class="card-body p-3">
         <h6>{{ partial "event_date" .}} · {{ .Params.start | time.Format "15:04" }}</h6>

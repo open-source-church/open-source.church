@@ -86,6 +86,7 @@ wtfu:
   title: "Retrouve-nous"
   buttons: ["discord", "twitch"]  # From config.toml [[params.social]]
   display_others: true
+  simple: true
 
 ######################## Success story #############################
 success_story:

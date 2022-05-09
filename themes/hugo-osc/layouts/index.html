@@ -163,6 +163,7 @@
 {{ with $data.homepage.wtfu }}
 <section class="section bg-primary">
   <div class="container">
+    {{ if not $data.homepage.wtfu.simple }}
     <div class="row">
       <div class="col-12 text-center">
         <p class="h6 text-white font-secondary mb-0">{{ .subtitle | markdownify }}</p>
@@ -192,6 +193,16 @@
         {{ end }}
       </div>
     </div>
+    {{ else }}
+    <div class="row text-center">
+      {{ range site.Params.social }}
+          <a class="col p-2 pb-0 dark" href="{{ .link | safeURL }}" target="_blank" rel="noreferrer" >
+            {{ with .icon }} <span class="h2">{{ partial "ti" . }}</span> {{end}}
+            <br> <span class="hidden h6">{{ .title }}</span>
+          </a>
+      {{ end }}
+    </div>
+    {{ end }}
   </div>
 </section>
 {{ end }}

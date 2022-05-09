@@ -9,6 +9,7 @@ buttons:
   icon: globe-africa
 weight: 1000
 slug: holygames
+summary: "Holygames est une association à but non-lucratif qui vise à vivre des temps d'amitiés et de spiritualité autour du jeu."
 ---
 
 Holygames est une association à but non-lucratif qui vise à:

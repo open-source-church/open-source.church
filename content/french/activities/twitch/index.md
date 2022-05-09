@@ -3,7 +3,7 @@ title: "Twitch – Open Source Church Web TV"
 image: twitch-featured.jpg
 location: En ligne
 summary: "La chaîne twitch d'Open Source Church. Jeux, revues de presse, discussion, méditations, et bien plus."
-weight: 10
+weight: 3
 slug: twitch
 buttons:
 - link: https://www.twitch.tv/opensourcechurch

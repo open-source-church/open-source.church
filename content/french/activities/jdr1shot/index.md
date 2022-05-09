@@ -11,6 +11,8 @@ inscription: Places limitées
 
 Des parties de jeu de rôle, one shot, une fois par mois. Pour tester des scénario, des jeux indés, etc.
 
+<!--more-->
+
 **Parmi les jeux qu'on a envie de tester ces prochain temps:** Fiasco, Lady Blackbird, Pour la reine, Heroes of the Hearth, Ten candles, Mnemosyne, [Testament D6](https://www.pointkt.org/wp-content/uploads/2021/06/Testament-d6-1.2.pdf), Alice is missing, des [créations du Dr. Nemrod](https://drnemrod.ch/download/), …
 
 Infos et inscription sur [discord](https://discord.gg/7FG3WvW).

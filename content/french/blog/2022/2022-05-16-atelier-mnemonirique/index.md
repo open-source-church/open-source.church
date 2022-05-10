@@ -7,6 +7,7 @@ categories:
   - Ressources
 type: post
 tags: ["jeu", "grattitude", "Jeu sérieux", "ressource", "cc-by", "fiat ludux", "cartes", "prière"]
+draft: true
 ---
 
 

@@ -16,5 +16,9 @@ start-unix: 1658664000.0
 title: Semaine Holygames
 type: event
 url: /activities/holygames/2022/07/24/semaine-holygames
+with:
+- Olivier Keshavjee
+- Alexandre Michelle
+- William Bernard
 ---
 Une *semaine* de jeux de société et spiritualité, en toute liberté. Une nouvelle formule, en demi-pension pour profiter de Leysin pendant la journée !

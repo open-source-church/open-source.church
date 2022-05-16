@@ -23,3 +23,9 @@ with:
 - Olivier Keshavjee
 ---
 Une brève méditation à partir du *Hobbit* de J.R.R. Tolkien. Pour commencer la semaine tout en douceur.
+
+
+
+#### Replay des dernières médithobbitations
+
+{{< youtube_playlist PLCjY_teexXiBpyPEGZjV-NTt7KRmJs9X_ >}}

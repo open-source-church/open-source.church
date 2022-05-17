@@ -1,5 +1,5 @@
 ---
-title: "GrattiCartes holygames: des cartes à s'échanger pour s'entrainer à la grattitude [Serious game]"
+title: "GrattiCartes holygames: des cartes à s'échanger pour s'entrainer à la gratitude [Serious game]"
 author: Olivier Keshavjee
 date: 2022-05-08T00:26:32+02:00
 image: gratticartes-featured.jpg
@@ -10,7 +10,7 @@ tags: ["jeu", "grattitude", "Jeu sérieux", "ressource", "cc-by", "fiat ludux", 
 ---
 
 
-Un petit jeu de cartes à s'échanger pour s'entrainer à la grattitude.
+Un petit jeu de cartes à s'échanger pour s'entrainer à la gratitude.
 
 À utiliser à 2, en petit groupe, pour honorer quelqu'un. Ou lors d'un événement de longue durée, en donnant quelques cartes à chaque participant·e·s, à se donner quand les occasions se présentent.
 
@@ -52,7 +52,7 @@ Par exemple:
 - À tour de rôle, quelqu'un prend une carte pour la donner à quelqu'un d'autre en expliquant pourquoi
 
 
-### Pour prier / développer une attitude de grattitude
+### Pour prier / développer une attitude de gratitude
 
 - Prendre une carte (pas le droit de changer)
 - Repenser à des situations spécifiques où la réalité décrite sur la carte a été vécue: quand, où, avec qui?

@@ -1,18 +1,18 @@
 ---
-title: "GrattiCartes holygames: des cartes à s'échanger pour s'entrainer à la gratitude [Serious game]"
+title: "GratiCartes holygames: des cartes à s'échanger pour s'entrainer à la gratitude [Serious game]"
 author: Olivier Keshavjee
 date: 2022-05-08T00:26:32+02:00
-image: gratticartes-featured.jpg
+image: graticartes-featured.jpg
 categories:
   - Ressources
 type: post
-tags: ["jeu", "grattitude", "Jeu sérieux", "ressource", "cc-by", "fiat ludux", "cartes", "prière"]
+tags: ["jeu", "gratitude", "Jeu sérieux", "ressource", "cc-by", "fiat ludux", "cartes", "prière", "OSG", "Open Serious Game"]
 ---
 
 
 Un petit jeu de cartes à s'échanger pour s'entrainer à la gratitude.
 
-À utiliser à 2, en petit groupe, pour honorer quelqu'un. Ou lors d'un événement de longue durée, en donnant quelques cartes à chaque participant·e·s, à se donner quand les occasions se présentent.
+À utiliser à 2, en petit groupe, pour honorer quelqu'un. Ou lors d'un évènement de longue durée, en donnant quelques cartes à chaque participant·e·s, à se donner quand les occasions se présentent.
 
 <!--more-->
 
@@ -22,7 +22,7 @@ Un petit jeu de cartes à s'échanger pour s'entrainer à la gratitude.
 |-------------------|------------------------------------------------------------------------|
 | Nombre de joueurs | *                                                                   |
 | Objectifs         | <ul><li>Apprendre à remercier de manière ciblée<li>Apprendre à recevoir des remerciements<li>Créer du lien dans un groupe</ul> |
-| Public idéal      | Membres d'un groupe ou d'un événements                        |
+| Public idéal      | Membres d'un groupe ou d'un évènements                        |
 | Licence           | CC-BY-SA                                                               |
 | Adapté de           | [Thanker Cards](https://openseriousgames.org/osg-703-thanker-cards/) de Alexandre Quach (#OSG 703)                                                               |
 
@@ -35,14 +35,14 @@ Nous avons crées ces cartes spécifiquement pour [holygames](https://www.holyga
 
 Les cartes peuvent s'utiliser de nombreuses manières, en voici quelques unes:
 
-### Lors d'un événement ouvert
+### Lors d'un évènement ouvert
 
 - Distribuer à l'arrivée une carte au hasard à chaque participant·e
 - En laisser une réserve quelque part d'accessible, pour pouvoir échanger sa carte ou aller en chercher une nouvelle
 - Encourager à donner sa carte à quelqu'un d'autre quand l'occasion se présente, en expliquant pourquoi.
 - Laisser les cartes circuler
 
-### Dans un groupe qui se connaît
+### Dans un groupe qui se connait
 
 Pendant un moment de célébration d'un groupe qui a cheminé ensemble, p.ex. une équipe qui collabore, un groupe de partage/prière, un couple, etc.
 
@@ -56,20 +56,20 @@ Par exemple:
 
 - Prendre une carte (pas le droit de changer)
 - Repenser à des situations spécifiques où la réalité décrite sur la carte a été vécue: quand, où, avec qui?
-- Éventuellement: l'écrire, et/ou écrire un petit mot à la personne concernée (même si cela concerne un événement d'il y a longtemps)
+- Éventuellement: l'écrire, et/ou écrire un petit mot à la personne concernée (même si cela concerne un évènement d'il y a longtemps)
 
 
 <hr>
 
 ## Matériel
 
-<img src="gratticartes-holygames-preview-pdf.jpg" class="d-none d-md-block float-right w-25" />
+<img src="graticartes-holygames-preview-pdf.jpg" class="d-none d-md-block float-right w-25" />
 
 <div class="text-center">
-<img src="gratticartes-holygames-preview-pdf.jpg" class="d-md-none mb-5 w-50 "  />
+<img src="graticartes-holygames-preview-pdf.jpg" class="d-md-none mb-5 w-50 "  />
 </div>
 
-- <a class="btn btn-primary" href="https://tools.open-source.church/wp-content/uploads/2022/05/gratticartes-holygames-v1.1.pdf" target="_blank">PDF des cartes (v.1.1, 167Ko)</a>  
+- <a class="btn btn-primary" href="https://tools.open-source.church/wp-content/uploads/2022/05/graticartes-holygames-v1.2.pdf" target="_blank">PDF des cartes (v.1.1, 167Ko)</a>  
   À imprimer recto et découper.
 
 - [Sources](https://gist.github.com/olivierkes/244dddece608d67a3cb68226a915e91b) (à utiliser avec [Fiat Ludux](https://fiatludux.open-source.church/))

@@ -9,7 +9,7 @@ buttons:
 display: light
 duration: '2:30:00'
 end: '2022-05-28T22:30:00+02:00'
-image: https://cdn.pixabay.com/photo/2021/09/07/07/11/game-console-6603120_960_720.jpg
+image: https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_ForTheKing_image1600w.jpg
 isodate: '2022-05-28'
 location: en ligne
 path: 2022/05/2022-05-28-open-stream-crew.md
@@ -24,4 +24,4 @@ with:
 - Ilans
 - Ellogan
 ---
-Open Stream Crew ! Irockois, Ilans, Ellogan et d'autres démontrent leur compétences phénoménales dans des jeux variés.
+Open Stream Crew ! Irockois, Ilans, Ellogan jouent à *For the King*.

@@ -1,0 +1,7 @@
+{{- $image := .Resources.GetMatch .Params.image -}}
+{{- if $image -}}
+  {{- $image = $image.Permalink -}}
+{{- else -}}
+  {{- $image = .Params.image | absURL -}}
+{{- end -}}
+{{- return $image -}}

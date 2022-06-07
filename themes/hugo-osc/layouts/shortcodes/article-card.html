@@ -1,7 +1,9 @@
 {{ $ref := .Get 0 }}
+{{ $classes := .Get 1 }}
+{{ if $ref }}
 {{ $article := $.Site.GetPage $ref }}
 {{ with $article }}
-<div class="bg-dark row">
+<div class="bg-dark row {{ $classes }}">
   <a class="col-3 bg-cover" data-background="{{ partial "get_image" $article }}" href="{{.Permalink}}"></a>
   <div class="col-9 p-2">
     <h4 class="card-title mb-1"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
@@ -9,3 +11,16 @@
   </div>
 </div>
 {{ end }}
+{{ else }}
+<div class="bg-dark row {{ .Get "class" }}">
+  <a style="min-height: 150px;" class="col-12 bg-cover" data-background="{{ .Get "image" }}" href="{{.Get "url" | absURL}}"></a>
+  <div class="col-12 p-3">
+    <h5 class="card-title mb-1"><a href="{{ .Get "url" }}">{{ .Get "title" }}</a></h5>
+    <p class="card-text">{{ .Get "summary" }}</p>
+  </div>
+</div>
+{{ end }}
+
+<style>
+  .card-text{ font-size: smaller; }
+</style>

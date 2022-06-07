@@ -1,6 +1,6 @@
 ---
 title: "Contribuer"
 # hide_header: true
-draft: true
+draft: false
 ---
 Contribuer à Open Source Church?

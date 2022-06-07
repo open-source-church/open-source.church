@@ -63,8 +63,14 @@
           <div class="col-12 mb-5 content">
             {{ .Content }}
           </div>
+          <!-- comments -->
+          {{ if site.DisqusShortname }}
+          <div class="col-12">
+            {{ template "_internal/disqus.html" . }}
+          </div>
+          {{ end }}
           <!-- Next / previous -->
-          <div class="row">
+          <div class="row my-4">
               {{ with .PrevInSection }}
               <a href="{{ .Permalink }}" class="col-1 btn btn-secondary text-nowrap btn-xs">{{ partial "ti" "double-caret-left o" }}</a>
               <a href="{{ .Permalink }}" class="col-5">{{ .Title }}</a>
@@ -74,12 +80,6 @@
               <a href="{{ .Permalink }}" class="col-1 btn btn-secondary text-nowrap btn-xs">{{ partial "ti" "double-caret-right o" }}</a>
               {{ end }}
           </div>
-          <!-- comments -->
-          {{ if site.DisqusShortname }}
-          <div class="col-12">
-            {{ template "_internal/disqus.html" . }}
-          </div>
-          {{ end }}
         </div>
       </div>
       {{ partial "blog-sidebar.html" . }}

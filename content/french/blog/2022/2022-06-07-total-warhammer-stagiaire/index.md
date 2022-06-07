@@ -1,5 +1,5 @@
 ---
-title: Comment Total War Warhammer II m’a appris que je me sous-estimais mon rang de force au travail
+title: Comment Total War Warhammer II m’a appris que je sous-estimais mon rang de force au travail
 title_: Comment Total War Warhammer II m’a appris que je me comportais comme une stagiaire dans un poste en pleine responsabilité
 author: Céline Jaillet
 date: 2022-06-07T08:17:11+01:00

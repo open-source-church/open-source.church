@@ -1,0 +1,11 @@
+{{ $ref := .Get 0 }}
+{{ $article := $.Site.GetPage $ref }}
+{{ with $article }}
+<div class="bg-dark row">
+  <a class="col-3 bg-cover" data-background="{{ partial "get_image" $article }}" href="{{.Permalink}}"></a>
+  <div class="col-9 p-2">
+    <h4 class="card-title mb-1"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+    <p class="card-text">{{ .Summary }}</p>
+  </div>
+</div>
+{{ end }}

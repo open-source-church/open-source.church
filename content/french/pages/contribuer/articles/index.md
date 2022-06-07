@@ -1,6 +1,8 @@
 ---
 title: "[WANTED] Rédaction d'articles théologiques"
 # hide_header: true
+summary: "Écrire des articles qui explorent les liens entre culture geek et théologie chrétienne."
+image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80"
 ---
 
 {{<figure src="/about/symbol-geek-croix.webp" width="33%" class="text-center float-right" >}}

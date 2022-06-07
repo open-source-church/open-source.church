@@ -217,6 +217,12 @@ weight = 4
 
   [[Languages.fr.menu.main]]
   parent = "À propos"
+  name = "Contribuer"
+  url = "pages/contribuer"
+  weight = 2
+
+  [[Languages.fr.menu.main]]
+  parent = "À propos"
   name = "Media"
   url = "media"
   weight = 4

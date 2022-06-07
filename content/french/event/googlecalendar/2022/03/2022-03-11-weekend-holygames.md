@@ -6,8 +6,6 @@ buttons:
 - icon: info
   link: https://www.holygames.ch/weekend-2022-03/
   link_title: Info
-description: Un weekend de jeux de société et spiritualité, en toute liberté, selon
-  la formule qu'on connaît et qu'on aime.
 duration: 1 day, 22:00:00
 end: '2022-03-13T14:00:00+01:00'
 isodate: '2022-03-11'

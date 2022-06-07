@@ -6,11 +6,10 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
-description: La revue de presse hebdomadaire de Benoît Ischer. Écologie, christianisme
-  et gaming. En live sur twitch.
 display: light
 duration: '1:30:00'
 end: '2022-06-29T22:30:00+02:00'
+image: https://www.reformes.ch/sites/default/files/styles/entete/public/data/images/comm/257/Beno%C3%AEt%20Ischer.jpg
 isodate: '2022-06-29'
 location: en ligne
 path: 2022/06/2022-06-29-revue-de-presse-ecologie-christianisme-gaming.md

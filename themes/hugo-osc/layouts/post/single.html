@@ -28,7 +28,6 @@
           <div class="col-12">
             <ul class="list-inline">
               <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light">
-                <span class="font-weight-bold mr-2">{{ i18n "posted_by" }}:</span>
                 {{ $a := partial "get_team" .Params.Author }}
                 <a href="{{ $a.RelPermalink }}" alt="{{ $a.Title}}">
                   {{ $img := $a.Resources.GetMatch $a.Params.image }}
@@ -45,9 +44,17 @@
                   :</span>{{ range $index, $elements:= .Params.Categories }}<a
                   href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}"> {{ if ne $index 0 }}, {{ end }}
                   {{ . | title }}</a> {{ end}}</li>
-
             </ul>
           </div>
+          <ul class="col-12 list-inline tag-list dark d-lg-none">
+            {{ range (.GetTerms "tags") }}
+            <li class="list-inline-item text-small mb-1">
+              <a href="{{ .Permalink }}" class="p-1">
+                {{ .LinkTitle }} 
+              </a>
+            </li>
+            {{ end }}
+          </ul>
           <!-- border -->
           <div class="col-12 my-4">
             <div class="border-bottom"></div>

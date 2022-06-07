@@ -6,8 +6,6 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
-description: Une brève méditation à partir du *Hobbit* de J.R.R. Tolkien. Pour commencer
-  la semaine tout en douceur.
 display: light
 duration: 0:15:00
 end: '2022-05-01T22:15:00+02:00'
@@ -25,3 +23,9 @@ with:
 - Olivier Keshavjee
 ---
 Une brève méditation à partir du *Hobbit* de J.R.R. Tolkien. Pour commencer la semaine tout en douceur.
+
+
+
+#### Replay des dernières médithobbitations
+
+{{< youtube_playlist PLCjY_teexXiBpyPEGZjV-NTt7KRmJs9X_ >}}

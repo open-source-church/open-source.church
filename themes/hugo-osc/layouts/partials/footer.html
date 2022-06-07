@@ -67,7 +67,7 @@
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-lg-0">
           <h4 class="text-white mb-5 text-uppercase">{{ i18n "article" }}</h4>
           <ul class="list-unstyled">
-            {{ range first 3 (where site.RegularPages "Type" "post")}}
+            {{ range first 4 (where site.RegularPages "Type" "post")}}
             <li class="mb-3"><a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a></li>
             {{ end }}
           </ul>
@@ -76,7 +76,9 @@
         <div class="col-lg-2 col-sm-4 col-6 mb-5 mb-lg-0">
           <h4 class="text-white mb-5 text-uppercase">Événements</h4>
           <ul class="list-unstyled">
-            {{ range first 5 (sort (where site.RegularPages "Type" "event") "Params.start") }}
+            {{ $events := where site.RegularPages "Type" "event" }}
+            {{ $events := where $events "Params.start-unix" "gt" now.Unix }}
+            {{ range first 5 (sort $events "Params.start") }}
             <li class="mb-3"><a class="text-color" href="{{ .Permalink }}">{{ .Title }}</a></li>
             {{ end }}
           </ul>
@@ -121,8 +123,10 @@
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
 
+{{ if not .Site.IsServer }}
 {{ "<!-- google analitycs -->" | safeHTML }}
 {{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
 
 <!-- cookie -->
 {{ if site.Params.cookies.enable }}

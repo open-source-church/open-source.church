@@ -98,14 +98,31 @@
     </div>
     <!-- event details -->
     <div class="row">
-      <div class="col-12 mb-50 content">
+      <div class="col-12 mb-5 content">
         {{ .Content }}
         {{ if .Params.activity }}
-          {{ if and $activity.Content .Content }} <hr /> {{ end }}
-          {{ if $activity.Content }}
-            <p class="h5 text-cyan">Description de <a href="{{ $activity.RelPermalink }}" alt="Vers la page {{ $activity.Title }}">{{ $activity.Title }}</a>:</p>
-            {{ end }}
-          {{ $activity.Content }}
+          {{ if and $activity.Summary .Content }} <hr /> {{ end }}
+          {{ if $activity.Summary }}
+            <div class="row no-gutters">
+              <div class="card col-12 col-md-8 offset-md-2 bg-dark">
+                <div class="row no-gutters">
+                  <div class="card-body p-4 col-8">
+                    <h5 class="card-title"><a class="text-cyan" href="{{ $activity.RelPermalink }}" alt="Vers la page {{ $activity.Title }}">{{ $activity.Title }}</a></h5>
+                    <p class="card-text">{{ $activity.Summary }}</p>
+                    <a href="{{ $activity.RelPermalink }}" class="card-link">Voir tous les événements</a>
+                  </div>
+                  {{ $image = $activity.Resources.GetMatch $activity.Params.image }}
+                  {{ if gt $image.Width 600 }}
+                    {{ $image = $image.Resize "600x q75" }}
+                  {{ end }}
+                  {{ $image = $image.RelPermalink }}
+                  <div class="col-4 bg-cover" data-background="{{ $image }}">
+                    <img class="w-100" src="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{ end }}
         {{ end }}
       </div>
     </div>

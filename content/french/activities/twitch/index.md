@@ -3,7 +3,7 @@ title: "Twitch – Open Source Church Web TV"
 image: twitch-featured.jpg
 location: En ligne
 summary: "La chaîne twitch d'Open Source Church. Jeux, revues de presse, discussion, méditations, et bien plus."
-weight: 10
+weight: 3
 slug: twitch
 buttons:
 - link: https://www.twitch.tv/opensourcechurch
@@ -13,9 +13,11 @@ with:
 - Benoît Ischer
 - Alexandre Michelle
 - Olivier Keshavjee
-- Noémie Emery
-- Etienne Ischer
-- MoCo
+- Irockois
+- Ilans
+#- Noémie Emery
+#- Etienne Ischer
+#- MoCo
 ---
 
 La chaine twitch d'Open Source Church.
@@ -24,6 +26,9 @@ Sur ce live vous trouverez plusieurs streamers qui font des émissions perso ou 
 
 Émissions régulières en ce moment:
 
-- **Matinales** avec Ffierock': lundi, mercredi et vendredi de 10h à 12h
-- **Revue de presse** "écologie - christianisme - gaming" avec Benoît Ischer
+<!-- - **Matinales** avec Ffierock: lundi, mercredi et vendredi de 10h à 12h -->
+- **Revue de presse**: "écologie - christianisme - gaming" avec Benoît Ischer
+- **Open Strem Crew**: avec Irockois et Ilans et d'autres, sur différents jeux
 - **Trouver Dieu dans un trou de Hobbit**: des méditions chrétiennes à partir du *Hobbit* de Tolkien avec Olivier Keshavjee
+
+##### Replay d'une partie des émissions sur [notre chaîne youtube](https://www.youtube.com/channel/UCNgeAmWZx4yWXK1TIp_PjqQ)

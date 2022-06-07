@@ -7,10 +7,6 @@ buttons:
 - icon: discord
   link: https://discord.gg/7FG3WvW
   link_title: Inscription
-description: Fiasco est un jeu de rôle collaboratif sans MJ et sans préparation de
-  Jason Morningstar. On y incarne des personnages ayant plus d'ambitions que de compétence,
-  dans une fiction où tout tourne mal. La mise en scène est celle d'un film, inspiré
-  des films des frères Cohen.
 duration: '4:30:00'
 end: '2022-03-04T23:30:00+01:00'
 image: https://www.gulix.fr/blog/wp-content/uploads/2020/06/Fiasco-1-1024x576.png

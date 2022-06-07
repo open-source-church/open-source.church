@@ -116,12 +116,45 @@
     {{ $p1 := where .Site.Pages "Params.activity" (.Title | title) }}
     {{ $p2 := where .Site.Pages "Params.activity" .Slug }}
     {{ $pages := union $p1 $p2}}
+    {{ $pages := where $pages "Params.start-unix" "gt" now.Unix }}
+    {{ $pages := sort $pages "Params.start" }}
+    {{ $pages := union 
+      (first 12 (where $pages "Params.display" "eq" "light"))
+      (where $pages "Params.display" "ne" "light")
+    }}
     {{ if $pages }}
       <div class="row">
         <div class="col-12 mb-5 content">
           <h3>Prochaines dates</h3>
-          {{ range sort $pages "Params.start" }}
-          {{ .Render "li" }}
+          <div class="row">
+            {{ range sort $pages "Params.start" }}
+              {{ if eq .Params.display "light" }}
+              <div class="col-12 col-lg-6">
+                {{ .Render "li" }}
+              </div>
+              {{ else }}
+                <div class="col-12 col-lg-6">
+                  {{ .Render "li" }}
+                </div>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    {{ end }}
+    <!-- past events -->
+    {{ $p1 := where .Site.Pages "Params.activity" (.Title | title) }}
+    {{ $p2 := where .Site.Pages "Params.activity" .Slug }}
+    {{ $pages := union $p1 $p2}}
+    {{ $pages := where $pages "Params.start-unix" "lt" now.Unix }}
+    {{ if $pages }}
+      <div class="row">
+        <div class="col-12 mb-5 content">
+          <h3>Archives</h3>
+          {{ range sort $pages "Params.start" "desc" }}
+          <ul>
+            <li>{{.Date | time.Format "02 Jan 2006"}}: <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          </ul>
           {{ end }}
         </div>
       </div>

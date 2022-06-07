@@ -29,16 +29,23 @@
   <!-- Add last events -->
   {{ range first .last_events (where (sort (where (where site.RegularPages "Type" "event") "Params.display" "ne" "light") "Params.start") "Params.start-unix" "gt" now.Unix ) }}
     {{ $activity := site.GetPage .Params.activity }}
-    {{ if $activity.Params.image }}
+    {{ $image := "" }}
+    {{ if .Params.image }}
+      {{ $image = .Params.image }}
+    {{ else if $activity.Params.image }}
+      {{ $image = ($activity.Resources.GetMatch $activity.Params.image).RelPermalink }}
+    {{ end }}
+    {{ if $image }}
       {{ $items = $items | append (dict
         "title" .Title
-        "content" (printf "<p>%s</p><p>%s</p>" $activity.Summary .Description)
-        "image" ($activity.Resources.GetMatch $activity.Params.image).RelPermalink
+        "content" ((printf "<p>%s</p><p>%s</p>" $activity.Summary .Summary))
+        "image" $image
         "bg_image" .Params.bg_image
         "type" "event"
         "meta" (printf "<p>%s // %s // %s</p>" (partial "event_date" .) (partial "event_time" .) .Params.location)
-        "button" (dict "enable" true "label" "info sur l'évènement" "link" .Permalink)) }}
-      {{ end }}
+        "button" (dict "enable" true "label" "info sur l'évènement" "link" .Permalink))
+      }}
+    {{ end }}
   {{ end }}
 <section class="overlay bg-cover" data-background="{{ .bg_image | absURL }}">
   <div class="container-fluid p-0">
@@ -156,6 +163,7 @@
 {{ with $data.homepage.wtfu }}
 <section class="section bg-primary">
   <div class="container">
+    {{ if not $data.homepage.wtfu.simple }}
     <div class="row">
       <div class="col-12 text-center">
         <p class="h6 text-white font-secondary mb-0">{{ .subtitle | markdownify }}</p>
@@ -185,6 +193,16 @@
         {{ end }}
       </div>
     </div>
+    {{ else }}
+    <div class="row text-center">
+      {{ range site.Params.social }}
+          <a class="col p-2 pb-0 dark" href="{{ .link | safeURL }}" target="_blank" rel="noreferrer" >
+            {{ with .icon }} <span class="h2">{{ partial "ti" . }}</span> {{end}}
+            <br> <span class="hidden h6">{{ .title }}</span>
+          </a>
+      {{ end }}
+    </div>
+    {{ end }}
   </div>
 </section>
 {{ end }}
@@ -220,7 +238,7 @@
           "Params.display" "ne" "light")
           "Params.start-unix" "gt" now.Unix)
         "Params.start")}}
-      <div class="col-12 col-lg-6 mb-lg-0">
+      <div class="col-12 col-lg-6 mb-lg-0 column">
         {{ .Render "li" }}
       </div>
       {{ end }}

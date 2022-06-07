@@ -10,11 +10,6 @@ buttons:
 - icon: discord
   link: https://discord.gg/7FG3WvW
   link_title: Inscription
-description: '*Un groupe de petit voleur a flairé un gros coup: dérober le ''joyau
-  des 7 mondes'' a un riche marchand.*
-
-
-  Un scénario d''Alex.'
 duration: '4:30:00'
 end: '2022-02-04T23:30:00+01:00'
 inscription: 5 places

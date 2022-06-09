@@ -20,7 +20,7 @@ Il y a des phases de ma vie où j’ai besoin de passer beaucoup de temps devant
 Je commence ma partie dans un coin de carte, coincée sur une petite île et séparée du reste du continent par une chaîne de montagnes remplie de nains bardés de fer. Je n’ai pas encore beaucoup d’expérience sur le jeu et je n’ai lu aucun guide sur cette faction. Mon jeu est un peu trop agressif et, après 3 défaites expéditives, je prends acte et ralentis un peu le rythme. 
 
 
-{{<figure src="warhammer-total-war-humerus-casses.jpg" alt="les rois des tombes" caption="En même temps, avec cette bande d’humérus cassé…" class="text-center" >}}
+{{<figure src="warhammer-total-war-humerus-casses.jpg" alt="les rois des tombes" caption="En même temps, avec cette bande d’humérus cassé…" class="text-center mw-100" >}}
 
 
 Je graisse abondement la patte d’un allié potentiel qui me fait la nique et ne m’empresse pas de rencontrer mes voisins hommes-lézards de la jungle afin d’éviter une cascade de déclarations de guerre. Rester immobile dans ce jeu est vite punitif, mais je n’ose même pas choisir une victime à piller. Je saute avec bonheur sur la première proposition de pacte de non-agression. 

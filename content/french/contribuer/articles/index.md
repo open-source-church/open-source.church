@@ -2,7 +2,8 @@
 title: "[WANTED] Rédaction d'articles théologiques"
 # hide_header: true
 summary: "Écrire des articles qui explorent les liens entre culture geek et théologie chrétienne."
-image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80"
+image: "contribuer-articles-featured.jpg"
+aliases: ["/pages/contribuer/articles"]
 ---
 
 {{<figure src="/about/symbol-geek-croix.webp" width="33%" class="text-center float-right" >}}
@@ -56,8 +57,9 @@ Et si tu le souhaites:
 - Entre 500 et 2500 mots, avec des sous-titres
 - Aéré, vocabulaire accessible, phrases courtes, genre informel
 - L'article doit être bon mais pas excellent: on se fait plaisir, sans prise de tête ni pinaillement --- l'important est d'ouvrir des voies, pas de les paver au millimètre près
+- Libre: tu publies sous une licence Creative Commons [CC-BY](https://creativecommons.org/licenses/by/4.0/deed.fr) — attribution à toi (nom ou pseudo)
 
-Si un autre format t'intéresse plus que l'article de blog (post insta? vidéo?), ou que tu veux te lancer dans quelque chose de plus substantiel: c'est possible, parles-en nous !
+Si un autre format t'intéresse plus que l'article de blog (post insta? photo? vidéo? art? game design? code?), ou que tu veux te lancer dans quelque chose de plus substantiel: c'est possible, parles-en nous !
 
 </div>
 <div class="col-12 col-md-6">
@@ -97,6 +99,20 @@ Une sélection d'articles et contenus produits par des gens d'Open Source Church
 {{< article-card "2020-07-15-le-ban-irl" "m-3" >}}
 {{< article-card "2020-08-18-fruits-basket-ce-manga-qui-me-redonne-la-foi" "m-3" >}}
 {{< article-card "2020-02-05-cest-parfois-tellement-le-bordel-dans-ma-tete-quon-dirait-une-coloc-detudiants-voyez-plutot" "m-3" >}}
+</div>
+
+<div class="col-12">
+
+#### Céline Jaillet
+
+</div>
+
+<div class="col-12 col-md-6 text-columns-2">
+
+{{< article-card "2022-04-14-meditation-pascale" "m-3" >}}
+</div>
+<div class="col-12 col-md-6 text-columns-2">
+{{< article-card "2022-06-07-total-warhammer-stagiaire" "m-3" >}}
 </div>
 </div>
 

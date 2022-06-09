@@ -217,7 +217,7 @@ weight = 4
   [[Languages.fr.menu.main]]
   parent = "À propos"
   name = "Contribuer"
-  url = "pages/contribuer"
+  url = "contribuer"
   weight = 2
 
   [[Languages.fr.menu.main]]

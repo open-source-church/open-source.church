@@ -138,7 +138,7 @@ link = "https://github.com/open-source-church"
 [[params.social]]
 title = "youtube"
 icon = "youtube" # teenyicons
-link = "https://www.youtube.com/channel/UCNgeAmWZx4yWXK1TIp_PjqQ"
+link = "https://youtube.com/c/opensourcechurch"
 
 [[params.social]]
 title = "facebook"

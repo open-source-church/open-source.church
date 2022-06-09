@@ -31,4 +31,4 @@ Sur ce live vous trouverez plusieurs streamers qui font des émissions perso ou 
 - **Open Strem Crew**: avec Irockois et Ilans et d'autres, sur différents jeux
 - **Trouver Dieu dans un trou de Hobbit**: des méditions chrétiennes à partir du *Hobbit* de Tolkien avec Olivier Keshavjee
 
-##### Replay d'une partie des émissions sur [notre chaîne youtube](https://www.youtube.com/channel/UCNgeAmWZx4yWXK1TIp_PjqQ)
+##### Replay d'une partie des émissions sur [notre chaîne youtube](https://youtube.com/c/opensourcechurch)

@@ -67,7 +67,7 @@ Si un autre format t'intéresse plus que l'article de blog (post insta? photo? v
 
 ### Par où commencer?
 
-- [Lis la vision d'Open Source Church](http://localhost:1313/about/#vision) (et pour aller plus loin: [Qu'est-ce que la culture geek?](https://www.theologeek.ch/2018/12/23/quest-ce-que-la-culture-geek/) sur theologeek.ch)
+- [Lis la vision d'Open Source Church](/about/#vision) (et pour aller plus loin: [Qu'est-ce que la culture geek?](https://www.theologeek.ch/2018/12/23/quest-ce-que-la-culture-geek/) sur theologeek.ch)
 
 - Réfléchs à un thème qui t'intéresse (des articles sont donnés en exemple ci-dessous). Écoute tes passions, suis tes intuitions!
 - Prends contact avec [Olivier Keshavjee](/team/olivier-keshavjee/) pour le proposer, on valide et se met d'accord sur un agenda

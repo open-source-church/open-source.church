@@ -1,5 +1,5 @@
 ---
-M: '06'
+M: '07'
 Y: '2022'
 activity: twitch
 buttons:
@@ -8,17 +8,17 @@ buttons:
   link_title: Vers la chaine
 display: light
 duration: '1:30:00'
-end: '2022-06-29T22:30:00+02:00'
+end: '2022-07-02T22:30:00+02:00'
 image: https://www.reformes.ch/sites/default/files/styles/entete/public/data/images/comm/257/Beno%C3%AEt%20Ischer.jpg
-isodate: '2022-06-29'
+isodate: '2022-07-02'
 location: en ligne
-path: 2022/06/2022-06-29-revue-de-presse-ecologie-christianisme-gaming.md
-start: '2022-06-29T21:00:00+02:00'
-start-unix: 1656529200.0
+path: 2022/07/2022-07-02-revue-de-presse-ecologie-christianisme-gaming.md
+start: '2022-07-02T21:00:00+02:00'
+start-unix: 1656788400.0
 template: twitch
 title: 'Revue de presse: écologie - christianisme - gaming'
 type: event
-url: /activities/twitch/2022/06/29/revue-de-presse-ecologie-christianisme-gaming
+url: /activities/twitch/2022/07/02/revue-de-presse-ecologie-christianisme-gaming
 with:
 - Benoît Ischer
 ---

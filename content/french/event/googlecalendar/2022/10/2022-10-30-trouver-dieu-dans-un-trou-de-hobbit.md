@@ -1,5 +1,5 @@
 ---
-M: '07'
+M: '10'
 Y: '2022'
 activity: twitch
 buttons:
@@ -8,17 +8,17 @@ buttons:
   link_title: Vers la chaine
 display: light
 duration: 0:15:00
-end: '2022-07-31T22:15:00+02:00'
+end: '2022-10-30T22:15:00+01:00'
 image: https://cdna.artstation.com/p/assets/images/images/003/654/594/large/sam-robberechts-finalrender1.jpg
-isodate: '2022-07-31'
+isodate: '2022-10-30'
 location: en ligne
-path: 2022/07/2022-07-31-trouver-dieu-dans-un-trou-de-hobbit.md
-start: '2022-07-31T22:00:00+02:00'
-start-unix: 1659297600.0
+path: 2022/10/2022-10-30-trouver-dieu-dans-un-trou-de-hobbit.md
+start: '2022-10-30T22:00:00+01:00'
+start-unix: 1667163600.0
 template: twitch
 title: Trouver Dieu dans un trou de Hobbit
 type: event
-url: /activities/twitch/2022/07/31/trouver-dieu-dans-un-trou-de-hobbit
+url: /activities/twitch/2022/10/30/trouver-dieu-dans-un-trou-de-hobbit
 with:
 - Olivier Keshavjee
 ---

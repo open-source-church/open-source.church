@@ -1,7 +1,7 @@
 ---
 title: "Vegeta et l'amour: aux prises avec notre humanité"
 author: Sylvain Corbaz
-date: 2022-08-22T08:17:11+01:00
+date: 2022-08-22T18:14:12+01:00
 image: "vegeta-vs-buu-featured.webp"
 categories:
   - Articles

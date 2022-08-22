@@ -61,7 +61,7 @@
           </div>
           <!-- blog contect -->
           <div class="col-12 mb-5 content">
-            {{ .Content }}
+            {{ .Content | replaceRE "&ldquo;(.*?)&rdquo;" "&laquo;&nbsp;$1&nbsp;&raquo;" | safeHTML }}
           </div>
           <!-- comments -->
           {{ if site.DisqusShortname }}

@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+<!-- blogs -->
+<section class="section dark">
+  <div class="container">
+    <h1 class="text-primary">{{.Title}}</h1>
+    <div class="row">
+      <div class="col-12 mt-4 mb-3">
+        {{ .Content }}
+      </div>
+      <!-- blog post -->
+      <!-- $paginator := .Paginate ( where .Data.Pages "Type" "post")
+      range $paginator.Pages -->
+      {{ range .Pages }}
+        <div class="col-sm-4 mb-5">
+          {{ .Render "generic" }}
+        </div>
+      {{ end }}
+      {{ range .Params.contrib }}
+        <div class="col-sm-4 mb-5">
+          <article
+          class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+          <img class="card-img-top rounded-0" src="{{ .image }}" alt="{{ .title }}">
+          <div class="card-body">
+              <h4 class="card-title"><a href="{{ .Permalink }}">{{ .title }}</a></h4>
+              <p class="card-text">{{ .summary | markdownify }}</p>
+              {{ range .buttons }}
+                {{ $name := index . 0 }}
+                {{ $url := index . 1 }}
+                {{ $icon := cond (ne  (index . 2) "") (partial "ti" (index . 2)) "" }}
+                <a href="{{ $url }}" class="btn btn-primary btn-sm">{{ $icon }}{{ $name }}</a>
+                
+              {{ end }}
+          </div>
+          </article>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- /blogs -->
+
+{{ end }}

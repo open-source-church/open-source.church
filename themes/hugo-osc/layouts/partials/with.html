@@ -5,9 +5,8 @@
     {{ range .Params.with }}
     <div class="col-lg-4 col-12 col-sm-6 mb-4 mb-lg-0">
         {{ $name := . }}
-        {{ $team := where (where site.RegularPages "Type" "team") "Slug" $name }}
-        {{ $team = union $team (where (where site.RegularPages "Type" "team") "Title" $name ) }}
-        {{ with index $team 0 }}
+        {{ $team := partial "get_team" $name }}
+        {{ with $team }}
             {{ .Render "li" }}
         {{ else }}
         <!-- Anonymous, aka pas dans la Team -->

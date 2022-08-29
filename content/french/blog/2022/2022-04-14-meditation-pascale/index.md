@@ -6,7 +6,7 @@ image: "meditation-pascale-featured.webp"
 categories:
   - Articles
 type: post
-tags: ["Méditation", "Pâques", "Jeux vidéo", "Audio", "Jésus", "The Witcher", "Spellforce"]
+tags: ["Méditation", "Pâques", "Jeu vidéo", "Audio", "Jésus", "The Witcher", "Spellforce"]
 draft: false
 ---
 

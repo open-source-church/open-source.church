@@ -2,12 +2,11 @@
 title: "Prendre le risque de lancer le dé"
 author: Alice Corbaz
 date: 2022-08-29T08:17:11+01:00
-image: "lancer-le-de-featured.webp"
+image: "lancer-le-de-featured.jpg"
 categories:
   - Articles
 type: post
-tags: [""]
-draft: true
+tags: ["Dé", "Jeu de rôle", "Donjons et dragons", "Aléatoire", "Dieu", "Réussite", "Échec", "Créativité"]
 summary: ""
 ---
 
@@ -29,13 +28,16 @@ Nous imaginons souvent avec mon mari ces actes de notre vie quotidienne où nous
 
 Oui, dans la vie, parfois on fait `1`, parfois `7`, `12` ou `15`, et parfois `20`. Et il n'y a pas plus de raison que je fasse `1` ou que je fasse ``20`` sur mon jet de dé. Il y a peut-être plus de probabilités, c'est sûr. Mais en soi, les probabilités ne sont pas une prédiction de l'avenir : ce n'est pas parce que j'ai plus de chance de faire tel résultat que ce sera forcément le cas.
 
+{{<figure width="60%" src="https://media.giphy.com/media/1eExO6YeWuh5v7beZy/giphy.gif" class="text-center">}}
+
 A chaque fois, il y a une chance sur `20` de faire `20`. Ou de faire `1`. Ou de faire `8`. A chaque fois, il faut prendre le risque de lancer le dé car le résultat est imprévisible !
+
+## Faire face à l'échec
 
 Jusqu'il y a deux ans environ, je n'avais pas conscience de ce que cette histoire de jet de dé, et de réussite/échec imprévisible, représentait vraiment dans ma vie. **Je partais plutôt du principe que j'allais réussir.** J'avais toujours réussi, ou presque, et il n'y avait pas de raison que ça ne continue pas ainsi ! Ma vie s'était déroulée à peu près comme je l'avais prévu pendant 29 ans, alors ça pouvait bien continuer.
 
 Et puis tout à coup, j'ai commencé à enchaîner les `1`, les `2`, les `5`, puis à nouveau un `1`. Échec. Le résultat final ne dépasse par la difficulté pour y arriver. Difficulté qu'on ne connaît pas, évidemment. On ne sait pas si on a raté de peu ou de beaucoup. Tout ce qu'on sait, c'est que c'est raté pour cette fois.
 
-## Echec → créativité
 
 Dans le jdr, quand on échoue, il y a plusieurs possibilités :
 
@@ -43,9 +45,11 @@ Dans le jdr, quand on échoue, il y a plusieurs possibilités :
 - soit **on essaie de passer par un autre chemin**, ou avec quelque chose pour nous aider (n'y aurait-il pas une corde quelque part pour faciliter l'ascension?) ;
 - ou alors **on fuit**, on part, on laisse tomber (ai-je vraiment besoin d'aller récupérer le trésor qui se trouve en haut de cette tour?).
 
-L'échec, en plus de mettre un peu de challenge dans le jeu et de lui donner un côté réaliste, est un bon **boost à la créativité** et à la recherche d'autre solution : pourquoi ne pas escalader plutôt que crocheter la serrure, négocier plutôt que taper, taper plutôt que négocier ? Et parfois ça montre simplement que ce n'est pas possible, qu'il faut abandonner. Que ce n'est pas pour nous, ou que ce n'est tout bonnement pas faisable, pour quiconque.
+{{<figure width="60%" src="https://y.yarn.co/ac0bc734-2510-4cd1-8571-c7dbd3262d54_text.gif" class="text-center">}}
 
-## Incertitude
+L'échec, en plus de mettre un peu de challenge dans le jeu et de lui donner un côté réaliste, est un bon **boost à la créativité** et à la **recherche d'autres solutions**: pourquoi ne pas escalader plutôt que crocheter la serrure, négocier plutôt que taper, taper plutôt que négocier ? Et parfois ça montre simplement que ce n'est pas possible, qu'il faut abandonner. Que ce n'est pas pour nous, ou que ce n'est tout bonnement pas faisable, pour quiconque.
+
+## La vie est un risque
 
 Quand on lance le dé, **on n'a aucune assurance de réussir**. Même si on a de super bonus, on n'est jamais à l'abri d'un `1`. Et on peut toujours espérer un `20`. Parfois c'est seulement le `20` qui permet de réussir, parfois il vient, parfois pas. Lorsqu'on lance le dé, on prend toujours le risque que ça ne fonctionne pas.
 
@@ -58,6 +62,8 @@ Oui, **la vie a une dimension imprévisible**, qu'on ne peut pas prévoir, pas c
 La vie est une surprise qu'on ne connaît pas à l'avance. **La vie est un risque.** Vais-je oser lancer le dé et m'en remettre au résultat ? Ou vais-je préférer ne pas tenter et donc ne rien faire ? Parfois c'est possible de ne rien faire, parfois pas. Mais si on ne lance jamais le dé, on quitte la partie, on arrête de jouer.
 
 Bien souvent, j'ai peur du résultat. Ou plutôt, **j'ai peur de l'échec**. Je n'aime pas ça, il me fait peur, j'ai trop peur qu'il me mette à terre complètement et que je n'arrive pas à continuer d'avancer. Mais j'ai aussi expérimenté que l'échec, s'il est désagréable (et parfois même plus que ça!!) n'est **pas pour autant synonyme de la fin de la partie**. Il y a la possibilité d'aller au-delà. De prendre un autre chemin. De continuer d'avancer. De relancer le dé.
+
+## Jouer avec Dieu
 
 J'ai expérimenté que Dieu, s'il n'est pas selon moi un modificateur qui m'aide à réussir mes actions ni celui qui contrôle le résultat du dé, **Dieu est Celui qui sera toujours présent à mes côtés**, que le jet de dé soit bon ou mauvais. Il est Celui qui m'encourage à recommencer ou à renoncer, qui me montre d'autres chemins, qui me console, qui me donne de la force pour avancer. Dieu est Celui qui fera toujours partie de mon équipe, et qui me fait voir que d'autres personnes aussi sont à mes côtés dans ce équipe.
 

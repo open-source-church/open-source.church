@@ -1,0 +1,75 @@
+
+<div id="quizz">
+{{ $q := .Page.Params.quizz }}
+
+<h2>[[ quizz.title ]]</h2>
+
+[[  ]]
+
+<div v-for="q in [quizz.questions[questionNumber]]"
+  class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+  <div class="card-body row">
+    <!-- Title -->
+    <h4 class="card-title col-12">[[q.title]]</h4>
+    <!-- Options -->
+    <div v-for="a in q.answers" class="col-6 p-1 text-center" v-if="!showAnswer">
+      <a class="btn btn-primary btn-sm" @click="validate(a)">
+        [[ a.title ]]
+      </a>
+    </div>
+    <!-- Answer -->
+    <div class="col-12 pb-3" v-if="showAnswer">
+      <h5 v-if="!showAnswer.value">
+        <span {{ partial "ti" "x" }}></span>
+          [[ showAnswer.title]]
+      </h5>
+      <h5 v-if="showAnswer.value">
+        <span {{ partial "ti" "tick" }}></span>
+          [[ showAnswer.title]]
+      </h5>
+      [[ showAnswer.comment ]]
+    </div>
+    <a class="text-center offset-3 col-6 btn btn-primary btn-sm" @click="nextQuestion" v-if="showAnswer">
+      Question suivante
+    </a>
+  </div>
+</div>
+
+
+<hr>
+
+</div>
+
+<script>
+const { createApp, ref } = Vue
+
+createApp({
+  delimiters: ["[[", "]]"],
+  data() {
+
+    const quizz = {{ .Page.Params.quizz | jsonify | safeJS }}
+    
+    const showAnswer = ref(false)
+    const questionNumber = ref(0)
+
+    const validate = (a) => {
+      console.log(a)
+      showAnswer.value = a
+    }
+
+    const nextQuestion = () => {
+      showAnswer.value = false
+      questionNumber.value += 1
+    }
+
+    return {
+      message: 'Hello Vue!',
+      questionNumber,
+      showAnswer,
+      quizz,
+      validate,
+      nextQuestion
+    }
+  }
+}).mount('#quizz')
+</script>

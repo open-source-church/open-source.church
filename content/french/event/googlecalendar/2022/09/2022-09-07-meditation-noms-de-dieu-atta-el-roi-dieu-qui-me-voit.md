@@ -12,13 +12,13 @@ end: '2022-09-07T11:00:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/night-sky-osc-noms-de-dieu.jpg
 isodate: '2022-09-07'
 location: en ligne
-path: 2022/09/2022-09-07-meditation-noms-de-dieu.md
+path: 2022/09/2022-09-07-meditation-noms-de-dieu-atta-el-roi-dieu-qui-me-voit.md
 start: '2022-09-07T10:00:00+02:00'
 start-unix: 1662537600.0
 template: twitch
-title: '[Méditation] Noms de Dieu'
+title: '[Méditation] Noms de Dieu: Atta El Roï - Dieu qui me voit'
 type: event
-url: /activities/twitch/2022/09/07/meditation-noms-de-dieu
+url: /activities/twitch/2022/09/07/meditation-noms-de-dieu-atta-el-roi-dieu-qui-me-voit
 with:
 - Daemarys
 ---

@@ -1,14 +1,14 @@
 ---
-title: "Quizz: Gandalf VS Dumbledore VS Dieu"
+title: "Quiz: sauras-tu correctement attribuer ces citations à leur auteur: Gandalf, Dumbledore, ou Dieu ?"
 author: "Olivier Keshavjee"
 date: 2022-09-01T08:17:11+01:00
 image: ""
 categories:
   - Articles
 type: post
-tags: ["Quizz", "Gandalf", "Dumbledore", "Tolkien", "Harry Potter", "Citation", "Dieu", "Bible"]
+tags: ["Quiz", "Gandalf", "Dumbledore", "Tolkien", "Harry Potter", "Citation", "Dieu", "Bible"]
 summary: ""
-quizz:
+quiz:
   title: Qui a dit … ?
   displayAnswersInline: false
   AnswersNumberInline: 3
@@ -260,7 +260,7 @@ quizz:
   
 ---
 
-{{< quizz >}}
+{{< quiz >}}
 
 <!--
 

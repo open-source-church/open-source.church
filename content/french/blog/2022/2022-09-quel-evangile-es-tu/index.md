@@ -8,6 +8,7 @@ categories:
 type: post
 tags: ["Quizz", "Évangile", "Matthieu", "Marc", "Luc", "Jean"]
 summary: ""
+draft: true
 quizz:
   title: 
   displayAnswersInline: true

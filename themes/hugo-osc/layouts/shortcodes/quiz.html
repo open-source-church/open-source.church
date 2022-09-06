@@ -1,10 +1,10 @@
 
-<div id="quizz">
-{{ $q := .Page.Params.quizz }}
+<div id="quiz">
+{{ $q := .Page.Params.quiz }}
 
-<h3 v-if="quizz.title">[[ quizz.title ]]</h3>
-<!-- Quizz -->
-<div v-if="!finished" v-for="q in [quizz.questions[questionNumber]]"
+<h3 v-if="quiz.title">[[ quiz.title ]]</h3>
+<!-- Quiz -->
+<div v-if="!finished" v-for="q in [quiz.questions[questionNumber]]"
   class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
   <div class="card-body row no-gutters questions">
     <!-- Title -->
@@ -13,14 +13,14 @@
     <div class="col-12 pb-3" v-html="md(q.text)"></div>
     <!-- Options -->
     <div v-for="a in q.answers" 
-      :class="[quizz.displayanswersinline ? {2: 'col-6', 3: 'col-4', 4: 'col-3'}[quizz.answersnumberinline] : 'col-12', 'row', 'm-0', 'align-items-center', 'pb-2', 'text-center']" >
-      <div v-if="a.image && !quizz.imageoveranswer" :data-background="a.image" @click="validate(a)"
+      :class="[quiz.displayanswersinline ? {2: 'col-6', 3: 'col-4', 4: 'col-3'}[quiz.answersnumberinline] : 'col-12', 'row', 'm-0', 'align-items-center', 'pb-2', 'text-center']" >
+      <div v-if="a.image && !quiz.imageoveranswer" :data-background="a.image" @click="validate(a)"
           class="col-3 pb-1"
           style="height: 100%; background-size: cover; background-position: center;"
           >
         </div>
-      <img v-if="a.image && quizz.imageoveranswer" :src="a.image" class="col-12" />
-      <div :class="[quizz.imageoveranswer || !a.image ? 'col-12': 'col-9']">
+      <img v-if="a.image && quiz.imageoveranswer" :src="a.image" class="col-12" />
+      <div :class="[quiz.imageoveranswer || !a.image ? 'col-12': 'col-9']">
         <a v-if="!showAnswer || showAnswer !== a && a.value !== true" class="btn btn-primary btn-block" @click="validate(a)" v-html="a.title" :style="{pointerEvents: typeof showAnswer.value == 'boolean' ? 'none' : ''}"></a>
         <a v-if="showAnswer && (showAnswer == a && a.value !== false || a.value === true)" class="btn btn-success btn-block" @click="validate(a)"  :style="{pointerEvents: typeof showAnswer.value == 'boolean' ? 'none' : ''}">
           <span v-if="showAnswer == a && a.value === true">✅</span> [[ a.title ]]  
@@ -34,7 +34,7 @@
     <div class="col-12" v-if="showAnswer && q.posttext" v-html="md(q.posttext)"></div>
     <div class="col-12" v-if="showAnswer && showAnswer.comment" v-html="md(showAnswer.comment)"></div>
     <a class="text-center offset-md-3 col-12 col-md-6 btn btn-primary btn-cyan" @click="nextQuestion" v-if="showAnswer">
-      <span v-if="questionNumber + 1 < (quizz.questions.length)">Suivant</span>
+      <span v-if="questionNumber + 1 < (quiz.questions.length)">Suivant</span>
       <span v-else>Résultats</span>
     </a>
   </div>
@@ -49,8 +49,8 @@
 <div v-else class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
   <div class="card-body row results">
     <!-- Title -->
-    <div v-if="isQuizz" class="col-12">
-      <h4> [[ quizz.results[finalscore._result].title ]]
+    <div v-if="isQuiz" class="col-12">
+      <h4> [[ quiz.results[finalscore._result].title ]]
         <span class="badge badge-secondary">
           [[finalscore.percent]] %
         </span> &nbsp;
@@ -58,16 +58,16 @@
           [[finalscore.right]] ✅
           [[finalscore.wrong]] ❌</h4>
         </span>
-        <div v-html="md(quizz.results[finalscore._result].description)"></div>
-        <img v-if="quizz.results[finalscore._result].image"
-          :src="quizz.results[finalscore._result].image"
+        <div v-html="md(quiz.results[finalscore._result].description)"></div>
+        <img v-if="quiz.results[finalscore._result].image"
+          :src="quiz.results[finalscore._result].image"
           class="col-12 px-0 pb-3" />
     </div>
-    <div v-if="!isQuizz" class="col-12"> 
-      <h4>[[ quizz.results[ finalscore["_max"] ].title ]]</h4>
-      <div v-html="md(quizz.results[ finalscore['_max'] ].description)"></div>
+    <div v-if="!isQuiz" class="col-12"> 
+      <h4>[[ quiz.results[ finalscore["_max"] ].title ]]</h4>
+      <div v-html="md(quiz.results[ finalscore['_max'] ].description)"></div>
       <div class="col-12 offset-0 col-md-8 offset-md-2 row">
-        <div class="col-12 row align-items-center" v-for="(r,k,i) in quizz.results" :key="k">
+        <div class="col-12 row align-items-center" v-for="(r,k,i) in quiz.results" :key="k">
           <div class="col-4">[[ r.name ]]</div>
           <div class="col-8">
             <div class="progress">
@@ -88,14 +88,14 @@
 </div>
 
 <style>
-  #quizz blockquote {
+  #quiz blockquote {
     background: #4b4c58;
     border-left: 10px solid #ffd400;
     margin: 0 0 1em 0;
     padding: 1em 1em;
     quotes: "\201C""\201D""\2018""\2019";
   }
-  #quizz blockquote:before {
+  #quiz blockquote:before {
     color: #ccc;
     content: open-quote;
     font-size: 4em;
@@ -103,18 +103,18 @@
     margin-right: 0.25em;
     vertical-align: -0.4em;
   }
-  #quizz blockquote p {
+  #quiz blockquote p {
     display: inline;
     font-size: larger;
     margin-left: 0;
   }
-  #quizz .results blockquote p { font-size: medium; }
-  #quizz .progress.max {
+  #quiz .results blockquote p { font-size: medium; }
+  #quiz .progress.max {
     background-color: #343a40;
     border-radius: 0;
     height: 0.5rem;
   }
-  #quizz .max .progress-bar {
+  #quiz .max .progress-bar {
     background-color: #f14ec3;
   }
   .btn-cyan {
@@ -136,16 +136,16 @@ createApp({
   delimiters: ["[[", "]]"],
   data() {
 
-    const quizz = {{ .Page.Params.quizz | jsonify | safeJS }}
+    const quiz = {{ .Page.Params.quiz | jsonify | safeJS }}
     
-    if (quizz.randomizequestions) {
-      quizz.questions = quizz.questions
+    if (quiz.randomizequestions) {
+      quiz.questions = quiz.questions
         .map(v => ({v, sort: Math.random()}))
         .sort((a, b) => a.sort - b.sort)
         .map(({v}) => v)
     }
-    if (quizz.randomizeanswers) {
-      quizz.questions.forEach(q => {
+    if (quiz.randomizeanswers) {
+      quiz.questions.forEach(q => {
         q.answers = q.answers
           .map(v => ({v, sort: Math.random()}))
           .sort((a, b) => a.sort - b.sort)
@@ -156,12 +156,12 @@ createApp({
     const showAnswer = ref(false) // whether we are showing the answer of a question
     const score = ref([]) // keeping track of the score
     const finalscore = ref() // final score
-    const isQuizz = ref() // true means this is a quizz and finalscore is a number
+    const isQuiz = ref() // true means this is a quiz and finalscore is a number
     const questionNumber = ref(0) // question number we're at
 
     // Debug results
     // finalscore.value = { percent: 95, _result: 85}
-    // isQuizz.value = true
+    // isQuiz.value = true
     // questionNumber.value = 100
 
     const validate = (a) => {
@@ -180,13 +180,13 @@ createApp({
       questionNumber.value += 1
       // On calcule le score final
       if (finished.value) {
-        // Is it all booleans? If so, this is a quizz
-        isQuizz.value = score.value.every(s => typeof s == "boolean")
-        if (isQuizz.value) {
+        // Is it all booleans? If so, this is a quiz
+        isQuiz.value = score.value.every(s => typeof s == "boolean")
+        if (isQuiz.value) {
           // Score is a number
-          var percent = (score.value.filter(s => s).length / quizz.questions.length * 100).toFixed()
-          // The result in the quizz results
-          var r = Math.max(...Object.keys(quizz.results).filter(v => percent >= parseInt(v)))
+          var percent = (score.value.filter(s => s).length / quiz.questions.length * 100).toFixed()
+          // The result in the quiz results
+          var r = Math.max(...Object.keys(quiz.results).filter(v => percent >= parseInt(v)))
           finalscore.value = {
             percent: percent,
             right: score.value.filter(s => s).length,
@@ -203,7 +203,7 @@ createApp({
           })
           // Transform score in percentage
           Object.keys(finalscore.value).forEach(k => {
-            finalscore.value[k] = (finalscore.value[k] / quizz.questions.length * 100).toFixed()})
+            finalscore.value[k] = (finalscore.value[k] / quiz.questions.length * 100).toFixed()})
           // get the maximum score
           max = Math.max(...Object.values(finalscore.value))
           Object.keys(finalscore.value).forEach(k => {
@@ -214,11 +214,11 @@ createApp({
     }
 
     const progressStyle = computed(() => {
-      progress = (questionNumber.value + (showAnswer.value ? 1 : 0)) / quizz.questions.length * 100
+      progress = (questionNumber.value + (showAnswer.value ? 1 : 0)) / quiz.questions.length * 100
       return `width: ${progress}%`
     })
 
-    const finished = computed(() => questionNumber.value >= (quizz.questions.length)    )
+    const finished = computed(() => questionNumber.value >= (quiz.questions.length)    )
     const md = (t) => marked.parse(t || "")
 
 
@@ -226,7 +226,7 @@ createApp({
       message: 'Hello Vue!',
       questionNumber,
       showAnswer,
-      quizz,
+      quiz,
       validate,
       nextQuestion,
       progressStyle,
@@ -234,8 +234,8 @@ createApp({
       md,
       score,
       finalscore,
-      isQuizz
+      isQuiz
     }
   }
-}).mount('#quizz')
+}).mount('#quiz')
 </script>

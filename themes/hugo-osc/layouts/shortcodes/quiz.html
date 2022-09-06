@@ -2,7 +2,7 @@
 <div id="quiz">
 {{ $q := .Page.Params.quiz }}
 
-<h3 v-if="quiz.title">[[ quiz.title ]]</h3>
+<h3 v-if="quiz.title" id="quizztitle">[[ quiz.title ]]</h3>
 <!-- Quiz -->
 <div v-if="!finished" v-for="q in [quiz.questions[questionNumber]]"
   class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
@@ -56,8 +56,9 @@
         </span> &nbsp;
         <span class="badge badge-secondary">
           [[finalscore.right]] ✅
-          [[finalscore.wrong]] ❌</h4>
+          [[finalscore.wrong]] ❌
         </span>
+      </h4>
         <div v-html="md(quiz.results[finalscore._result].description)"></div>
         <img v-if="quiz.results[finalscore._result].image"
           :src="quiz.results[finalscore._result].image"
@@ -160,7 +161,7 @@ createApp({
     const questionNumber = ref(0) // question number we're at
 
     // Debug results
-    // finalscore.value = { percent: 95, _result: 85}
+    // finalscore.value = { percent: 95, _result: 30}
     // isQuiz.value = true
     // questionNumber.value = 100
 
@@ -211,6 +212,7 @@ createApp({
           })
         }
       }
+      // document.getElementById("quizztitle").scrollIntoView();
     }
 
     const progressStyle = computed(() => {

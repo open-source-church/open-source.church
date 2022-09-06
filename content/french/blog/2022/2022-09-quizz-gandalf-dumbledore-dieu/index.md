@@ -1,15 +1,15 @@
 ---
-title: "Quiz: sauras-tu correctement attribuer ces citations à leur auteur: Gandalf, Dumbledore, ou Dieu ?"
+title: "[Quiz] Gandalf vs Dumbledore vs Dieu — à quel barbu appartient cette réplique ?"
 author: "Olivier Keshavjee"
-date: 2022-09-01T08:17:11+01:00
-image: ""
+date: 2022-09-06T08:17:11+01:00
+image: "2022-09-quiz-gandalf-dumbledore-dieu-featured.jpg"
 categories:
-  - Articles
+  - Quiz
 type: post
 tags: ["Quiz", "Gandalf", "Dumbledore", "Tolkien", "Harry Potter", "Citation", "Dieu", "Bible"]
-summary: ""
+summary: "Sauras-tu correctement attribuer ces citations à leur auteur: Gandalf, Dumbledore, ou Dieu ?"
 quiz:
-  title: Qui a dit … ?
+  title: "Qui a dit ?"
   displayAnswersInline: false
   AnswersNumberInline: 3
   ImageOverAnswer: false
@@ -259,6 +259,16 @@ quiz:
       image: https://media.giphy.com/media/njYrp176NQsHS/giphy.gif
   
 ---
+
+*Harry Potter*, *Le Seigneur des Anneaux*, *La Bible*. Trois séries de livres qui contiennent des aventures passionnantes, des personnages fascinants et profonds, des conflits, de l'humour, et de la sagesse. Ces histoires accompagnent nos vies et nous guident dans nos propres aventures, notamment au travers de répliques marquantes.
+
+Teste ta connaissance de ces trois sagas, en attribuant correctement les citations suivantes à Gandalf, Dumbledore, ou Dieu. (Ok pour Dieu c'est quand ça vient de la Bible, même si c'est pas toujours un discours direct de Dieu — mais on va pas pinailler ou discourir sur la [théopneustie](https://fr.wikipedia.org/wiki/Inspiration_biblique) pendant des plombes.)
+
+Prêt ?
+
+{{<figure width="60%" src="https://media.giphy.com/media/61tYloUgq1eOk/giphy.gif" class="text-center">}}
+
+<hr />
 
 {{< quiz >}}
 

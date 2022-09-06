@@ -37,7 +37,10 @@
 
   {{ "<!--Open Graph-->" | safeHTML }}
 {{ partial "opengraph" . }}
-  {{ "<!--Twitter Cards-->" | safeHTML }}
+  
 {{ partial "twitter_cards" . }}
+
+  {{ "<!--Vue -->" | safeHTML }}
+  <script src="https://unpkg.com/vue@3"></script>
 
 </head>

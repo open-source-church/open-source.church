@@ -137,7 +137,7 @@ quiz:
       image: https://media.giphy.com/media/ibGFpMv1Uoais/giphy.gif
       value: false
   - text: "> Ce qui est tordu ne peut être droit, ce qui manque ne peut se compter."
-    posttext: "Ecclésiaste 1, 15."
+    posttext: "La Bible, Ecclésiaste 1, 15."
     answers: 
     - title: Gandalf
       value: false
@@ -149,7 +149,7 @@ quiz:
       image: https://media.giphy.com/media/ibGFpMv1Uoais/giphy.gif
       value: true
   - text: "> Il y a un temps pour tout en ce monde, et une saisons pour chaque chose. Un temps pour naitre, et un temps pour mourir. Un temps pour tuer, et un temps pour guérir."
-    posttext: "Ecclésiaste 3, 1-3."
+    posttext: "La Bible, Ecclésiaste 3, 1-3."
     answers: 
     - title: Gandalf
       value: false
@@ -161,7 +161,7 @@ quiz:
       image: https://media.giphy.com/media/ibGFpMv1Uoais/giphy.gif
       value: true
   - text: "> Le dernier ennemi qui sera détruit, c’est la mort."
-    posttext: "1 Corinthiens 15, 26."
+    posttext: "La Bible, 1 Corinthiens 15, 26."
     answers: 
     - title: Gandalf
       value: false
@@ -173,7 +173,7 @@ quiz:
       image: https://media.giphy.com/media/ibGFpMv1Uoais/giphy.gif
       value: true
   - text: "> Lève-toi, car cette affaire est de ton ressort. Nous serons avec toi. Prends courage et agis. "
-    posttext: "Esdras 10, 4."
+    posttext: "La Bible, Esdras 10, 4."
     answers: 
     - title: Gandalf
       value: false
@@ -185,7 +185,7 @@ quiz:
       image: https://media.giphy.com/media/ibGFpMv1Uoais/giphy.gif
       value: true
   - text: "> Et que servira-t-il à un homme de gagner le monde entier, s'il perd son âme?"
-    posttext: "Marc 8, 36."
+    posttext: "La Bible, Marc 8, 36."
     answers: 
     - title: Gandalf
       value: false
@@ -196,8 +196,8 @@ quiz:
     - title: Dieu
       image: https://media.giphy.com/media/ibGFpMv1Uoais/giphy.gif
       value: true
-  - text: "> Voici, je me tiens à la porte et je frappe."
-    posttext: "Apocalypse 3, 20."
+  - text: "> Il n'y a pas de plus grand amour que de donnser sa vie pour ses amis."
+    posttext: "La Bible, Jean 15, 13."
     answers: 
     - title: Gandalf
       value: false
@@ -262,7 +262,7 @@ quiz:
 
 *Harry Potter*, *Le Seigneur des Anneaux*, *La Bible*. Trois séries de livres qui contiennent des aventures passionnantes, des personnages fascinants et profonds, des conflits, de l'humour, et de la sagesse. Ces histoires accompagnent nos vies et nous guident dans nos propres aventures, notamment au travers de répliques marquantes.
 
-Teste ta connaissance de ces trois sagas, en attribuant correctement les citations suivantes à Gandalf, Dumbledore, ou Dieu. (Ok pour Dieu c'est quand ça vient de la Bible, même si c'est pas toujours un discours direct de Dieu — mais on va pas pinailler ou discourir sur la [théopneustie](https://fr.wikipedia.org/wiki/Inspiration_biblique) pendant des plombes.)
+Teste ta connaissance de ces trois sagas, en attribuant correctement les citations suivantes à Gandalf, Dumbledore, ou Dieu (enfin, à la Bible — on ne va pas pinailler ou discourir sur la [théopneustie](https://fr.wikipedia.org/wiki/Inspiration_biblique) pendant des plombes.)
 
 Prêt ?
 
@@ -271,62 +271,4 @@ Prêt ?
 <hr />
 
 {{< quiz >}}
-
-<!--
-
-# Bible / Dieu / Jésus
-
-## Top five
-
-## Others
-Proverbs 12:18
-Reckless words pierce like a sword, but the tongue of the wise brings healing. 
-
-Ecc
-“Qui observe le vent ne sème point, qui regarde les nuages ne moissonne point.”
-
-
-
-Prov 21.16  L'homme qui s'écarte du chemin de la sagesse Reposera dans l'assemblée des morts. 
-
-Mt 10, 28: And do not fear those who kill the body but cannot kill the soul. Rather fear him who can destroy both soul and body in hell.
-
-# Gandalf
-
-## Top five
-
-Ce n’est pas du désespoir, car le désespoir est réservé à ceux qui voient la fin hors de tout doute.
-
-## Others
-
-
-Il y a d'autres forces à l'oeuvre dans ce monde, à part la volonté du mal.
-
-
-“Courage will now be your best defence against the storm that is at hand-—that and such hope as I bring.”
-
-It is not our part here to take thought only for a season, or for a few lives of Men, or for a passing age of the world. We should seek a final end of this menace, even if we do not hope to make one.
-
-The treacherous are ever distrustful.
-
-“Only a small part is played in great deeds by any hero.”
-
-# Dumbledore
-
-## Top five
-
-
-
-## Others
-
-« L’indifférence, la négligence, font parfois beaucoup plus de dégâts que l’hostilité déclarée. »
-
-« N’aie pas pitié des morts. Aie pitié des vivants et surtout de ceux qui vivent sans amour. »
-
-« Et les mots sont à mon avis, qui n’est pas si humble, notre plus inépuisable source de magie. Ils peuvent à la fois infliger des blessures et y porter remède. »
-
-la mort n'est qu'une grande aventure de plus. (Harry Potter à l’école des sorciers)
-
--->
-
 

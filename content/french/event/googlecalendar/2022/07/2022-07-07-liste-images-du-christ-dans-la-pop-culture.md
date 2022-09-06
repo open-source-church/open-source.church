@@ -6,6 +6,7 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
+date: '2022-07-07T20:30:00+02:00'
 duration: '2:00:00'
 end: '2022-07-07T22:30:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/06/jesus-pop-culture-thats-how-i-saved-the-world.jpg

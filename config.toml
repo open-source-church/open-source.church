@@ -14,6 +14,7 @@ defaultContentLanguage = 'fr'
 # Emoji, parce que voilà. https://www.webfx.com/tools/emoji-cheat-sheet/
 enableEmoji = true
 googleAnalytics = "UA-153404165-1"
+buildFuture = true # nécessaire pour inclure les événements
 
 [taxonomies]
   tag = "tags"

@@ -6,6 +6,7 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
+date: '2022-05-18T10:00:00+02:00'
 duration: '2:00:00'
 end: '2022-05-18T12:00:00+02:00'
 image: https://www.open-source.church/team/alexandre-michelle/amichelle.jpg

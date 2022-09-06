@@ -2,6 +2,7 @@
 M: 09
 Y: '2022'
 activity: ''
+date: '2022-09-04T10:00:00+02:00'
 duration: '1:00:00'
 end: '2022-09-04T11:00:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/06/commissioned.jpg

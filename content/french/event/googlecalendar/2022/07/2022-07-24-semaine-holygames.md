@@ -6,6 +6,7 @@ buttons:
 - icon: info
   link: https://www.holygames.ch/semaine-ete-2022/
   link_title: Info
+date: '2022-07-24T14:00:00+02:00'
 duration: 5 days, 0:00:00
 end: '2022-07-29T14:00:00+02:00'
 isodate: '2022-07-24'

@@ -6,6 +6,7 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
+date: '2022-07-03T22:00:00+02:00'
 display: light
 duration: 0:15:00
 end: '2022-07-03T22:15:00+02:00'

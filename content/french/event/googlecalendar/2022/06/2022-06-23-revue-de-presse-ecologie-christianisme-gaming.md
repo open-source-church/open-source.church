@@ -6,6 +6,7 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
+date: '2022-06-23T21:00:00+02:00'
 duration: '1:30:00'
 end: '2022-06-23T22:30:00+02:00'
 image: https://www.reformes.ch/sites/default/files/styles/entete/public/data/images/comm/257/Beno%C3%AEt%20Ischer.jpg

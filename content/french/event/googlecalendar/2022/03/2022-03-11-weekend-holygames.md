@@ -6,6 +6,7 @@ buttons:
 - icon: info
   link: https://www.holygames.ch/weekend-2022-03/
   link_title: Info
+date: '2022-03-11T16:00:00+01:00'
 duration: 1 day, 22:00:00
 end: '2022-03-13T14:00:00+01:00'
 isodate: '2022-03-11'

@@ -6,6 +6,7 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
+date: '2022-07-25T20:00:00+02:00'
 duration: '2:00:00'
 end: '2022-07-25T22:00:00+02:00'
 image: /images/avatar/scorbaz.jpg

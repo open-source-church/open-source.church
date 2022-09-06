@@ -6,6 +6,7 @@ buttons:
 - icon: ''
   link: https://www.eerv.ch/activites-cantonales/enfance-et-familles/evenements/festival-321-futur-15-mai-2022-aigle
   link_title: Site de l'événement
+date: '2022-05-15T09:00:00+02:00'
 duration: '7:00:00'
 end: '2022-05-15T16:00:00+02:00'
 image: https://www.eerv.ch/fileadmin/eerv/_ACTIVITES_CANTONALES/Enfance_et_familleS/image/Enfance_famillesS/3__2__1_..._Futur/image_web_compresse.jpg

@@ -6,6 +6,7 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
+date: '2022-07-27T16:00:00+02:00'
 duration: '1:30:00'
 end: '2022-07-27T17:30:00+02:00'
 image: /images/avatar/cmrossel.jpg

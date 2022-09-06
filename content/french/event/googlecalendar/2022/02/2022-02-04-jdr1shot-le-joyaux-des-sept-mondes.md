@@ -10,6 +10,7 @@ buttons:
 - icon: discord
   link: https://discord.gg/7FG3WvW
   link_title: Inscription
+date: '2022-02-04T19:00:00+01:00'
 duration: '4:30:00'
 end: '2022-02-04T23:30:00+01:00'
 inscription: 5 places

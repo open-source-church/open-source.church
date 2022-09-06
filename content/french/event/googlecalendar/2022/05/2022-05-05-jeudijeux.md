@@ -3,6 +3,7 @@ M: '05'
 Y: '2022'
 activity: jeudijeux
 address: Place St-Laurent, Lausanne
+date: '2022-05-05T12:00:00+02:00'
 display: light
 duration: '2:00:00'
 end: '2022-05-05T14:00:00+02:00'

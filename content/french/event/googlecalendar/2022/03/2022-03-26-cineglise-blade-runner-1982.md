@@ -7,6 +7,7 @@ buttons:
 - icon: discord
   link: https://discord.gg/9NM9yA8F2r?event=950307440925245440
   link_title: Événement discord
+date: '2022-03-26T18:30:00+01:00'
 duration: '3:30:00'
 end: '2022-03-26T22:00:00+01:00'
 flyer: https://tools.open-source.church/wp-content/uploads/2022/03/2022-03-26-cineglise-bladerunner_square.jpg

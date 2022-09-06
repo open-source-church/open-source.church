@@ -7,6 +7,7 @@ buttons:
 - icon: discord
   link: https://discord.gg/7FG3WvW
   link_title: Inscription
+date: '2022-05-06T19:00:00+02:00'
 duration: '4:30:00'
 end: '2022-05-06T23:30:00+02:00'
 image: https://www.eglise-baptiste-montbeliard.fr/wp-content/uploads/2022/02/Exode.jpg

@@ -6,6 +6,7 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
+date: '2022-09-15T20:30:00+02:00'
 duration: '2:00:00'
 end: '2022-09-15T22:30:00+02:00'
 image: https://catch-newz.com/images/2019/10/12/wwe-draft-2019.jpg

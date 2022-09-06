@@ -6,6 +6,7 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
+date: '2022-09-22T20:30:00+02:00'
 duration: '2:00:00'
 end: '2022-09-22T22:30:00+02:00'
 image: <u>https://tools.open-source.church/wp-content/uploads/2022/08/samantha-gades-LA6XfeVI5_c-unsplash-scaled.jpg</u>

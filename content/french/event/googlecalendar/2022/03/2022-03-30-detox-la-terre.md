@@ -6,6 +6,7 @@ buttons:
 - icon: more
   link: https://detoxlaterre.ch/
   title: Info
+date: '2022-03-30T19:00:00+02:00'
 duration: 15 days, 1:00:00
 end: '2022-04-14T20:00:00+02:00'
 image: https://detoxlaterre.ch/wp-content/uploads/2020/10/detoxTerreLogo-02.png

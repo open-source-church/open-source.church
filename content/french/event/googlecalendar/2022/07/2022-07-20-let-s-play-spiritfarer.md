@@ -6,6 +6,7 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
+date: '2022-07-20T20:00:00+02:00'
 duration: '2:00:00'
 end: '2022-07-20T22:00:00+02:00'
 image: https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_Spiritfarer_image1600w.jpg

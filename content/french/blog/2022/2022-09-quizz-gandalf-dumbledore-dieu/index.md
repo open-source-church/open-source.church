@@ -196,7 +196,7 @@ quiz:
     - title: Dieu
       image: https://media.giphy.com/media/ibGFpMv1Uoais/giphy.gif
       value: true
-  - text: "> Il n'y a pas de plus grand amour que de donnser sa vie pour ses amis."
+  - text: "> Il n'y a pas de plus grand amour que de donner sa vie pour ses amis."
     posttext: "La Bible, Jean 15, 13."
     answers: 
     - title: Gandalf

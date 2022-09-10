@@ -13,13 +13,13 @@ end: '2022-09-14T11:00:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/night-sky-osc-noms-de-dieu.jpg
 isodate: '2022-09-14'
 location: en ligne
-path: 2022/09/2022-09-14-meditation-noms-de-dieu-avec-daemarys.md
+path: 2022/09/2022-09-14-meditation-noms-de-dieu-avec-daemarys-el-shaddai-dieu-tout-puissant.md
 start: '2022-09-14T10:00:00+02:00'
 start-unix: 1663142400.0
 template: twitch
-title: '[Méditation] Noms de Dieu avec Daemarys'
+title: '[Méditation] Noms de Dieu avec Daemarys: El-Shaddaï — Dieu tout puissant'
 type: event
-url: /activities/twitch/2022/09/14/meditation-noms-de-dieu-avec-daemarys
+url: /activities/twitch/2022/09/14/meditation-noms-de-dieu-avec-daemarys-el-shaddai-dieu-tout-puissant
 with:
 - Daemarys
 ---

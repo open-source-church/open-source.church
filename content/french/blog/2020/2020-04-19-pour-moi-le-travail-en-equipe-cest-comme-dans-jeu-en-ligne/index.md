@@ -8,7 +8,7 @@ image: roles-featured.jpg
 categories:
   - Articles
 type: post
-tags: ["Gaming", "Jeu vidéo", "Management", "Teambuilding", "Warcraft"]
+tags: ["Gaming", "Jeu vidéo", "Management", "Teambuilding", "Warcraft", "WoW", "Tank", "DPS", "Heal"]
 
 ---
 Qu’on se le dise&nbsp;: je suis un grand fan des jeux en ligne massivement multijoueur (dits «&nbsp;MMO[^1]»). Que d’heures ai-je passées – et que je passe encore plus en ces temps de confinement – à explorer les vastes étendues d’Azeroth[^2], les confins de la galaxie de Star Wars[^3] ou plus récemment les riches terres de Tamriel[^4]&nbsp;!&nbsp; Or, comme l’essence de ces jeux réside dans le fait de jouer en collaboration quasi constante avec plein d’autres joueurs, cela exige de l’organisation, une répartition des rôles, des responsabilités différentes, etc., bref&nbsp;: du travail d’équipe&nbsp;! 

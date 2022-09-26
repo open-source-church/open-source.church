@@ -27,3 +27,7 @@ with:
 Le jeu est plus que du divertissement, cela fait partie de notre humanité et l’enrichit sur de nombreux plans. Échange avec des joueurs et joueuses, qui nous racontent la place du jeu dans leur vie: personnelle, relationnelle, professionnelle, voire spirituelle.
 
 Cédric et Murielle ont fondés Youphoric, une association de jeux de société avec des migrants. Et Cédric nous parle aussi du jeu vidéo dans sa vie.
+
+
+{{< youtube aJ8C_tqqZvo >}}
+

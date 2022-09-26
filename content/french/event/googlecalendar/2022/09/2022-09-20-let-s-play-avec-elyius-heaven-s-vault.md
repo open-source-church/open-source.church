@@ -10,16 +10,16 @@ date: '2022-09-20T20:00:00+02:00'
 display: light
 duration: '2:00:00'
 end: '2022-09-20T22:00:00+02:00'
-image: https://cdn.mcr.ea.com/3/images/03cfe37e-1c86-4063-8d5c-c67aff90a293/1587735143-0x0-0-0.jpg
+image: https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_HeavensVault.jpg
 isodate: '2022-09-20'
 location: en ligne
-path: 2022/09/2022-09-20-let-s-play-avec-elyius.md
+path: 2022/09/2022-09-20-let-s-play-avec-elyius-heaven-s-vault.md
 start: '2022-09-20T20:00:00+02:00'
 start-unix: 1663696800.0
 template: twitch
-title: Let's play avec Elyius !
+title: 'Let''s play avec Elyius: Heaven''s Vault'
 type: event
-url: /activities/twitch/2022/09/20/let-s-play-avec-elyius
+url: /activities/twitch/2022/09/20/let-s-play-avec-elyius-heaven-s-vault
 with:
 - Elyius
 ---

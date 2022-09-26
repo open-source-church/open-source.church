@@ -26,3 +26,8 @@ with:
 Le jeu est plus que du divertissement, cela fait partie de notre humanité et l’enrichit sur de nombreux plans. Échange avec des joueurs et joueuses, qui nous racontent la place du jeu dans leur vie: personnelle, relationnelle, professionnelle, voire spirituelle.
 
 Sylvain est rôliste, joueur, créateur de jeu, motard, pasteur et papa.
+
+
+{{< youtube ABltTlprZoA >}}
+
+

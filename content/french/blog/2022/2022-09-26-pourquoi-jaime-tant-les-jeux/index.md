@@ -2,7 +2,7 @@
 title: "Pourquoi j’aime tant les jeux"
 author: "Elie Saurel Lafont"
 date: 2022-09-26T08:17:11+01:00
-image: "2022-09-pourquoi-jaime-tant-les-jeux.jpg"
+image: "2022-09-pourquoi-jaime-tant-les-jeux-featured.jpg"
 categories:
   - Articles
 type: post

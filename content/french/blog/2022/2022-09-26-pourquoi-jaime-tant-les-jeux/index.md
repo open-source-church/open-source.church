@@ -1,7 +1,7 @@
 ---
 title: "Pourquoi j’aime tant les jeux"
 author: "Elie Saurel Lafont"
-date: 2022-09-15T08:17:11+01:00
+date: 2022-09-26T08:17:11+01:00
 image: "2022-09-pourquoi-jaime-tant-les-jeux.jpg"
 categories:
   - Articles
@@ -9,6 +9,11 @@ type: post
 tags: ["Jeu de société", "Jeu", "Jeu vidéo", "Gaming", "Dieu", "Skyrim", "Jeu de rôle", "Age of Empire", "Minecraft", "créativité", "Adaptabilité", "Teambuilding", "Empathie" ]
 summary: "Le jeu me permet de regarder différemment un sujet, d’expérimenter, de faire preuve de créativité, il m’ouvre à d’autres horizons, me fait gagner en compétences sociales et me rend attentif aux règles de ce monde."
 ---
+
+<style>
+.content p { text-align: justify; }
+</style>
+
 Le jeu m’a accompagné toute ma vie, j’ai appris à jouer au *Tarot* à 7 ans en regardant jouer mes frères. Nous jouions beaucoup, *Nain jaune*, *Bonne paye*, *Tiers monopoly*, puis des jeux où il faut un peu plus réfléchir: *Catane*, *Risk*, *Barbu*, *Richesses du monde*… Et maintenant des petits jeux (*Shotten totem*, *cap’taine carcasse*, *7 wonder’s duel*…), des jeux de plateaux (*Caylus*, *Discovery*, mais aussi *Concept*, les *Chevaliers de la table ronde*…).
 
 Pour ce qui est des jeux vidéos, nous avons eu très tôt un ordi, donc nous avions le 1er *Civilization*, sur disquettes si vous plaît (et tout en anglais), *Age of Empire* (1, 2 et Mythology), *Commando 2*, *Médieval Total War*, *Diablo 2* (où je me crée un nouveau perso chaque année)… et plus tard *Oblivion*, *Skyrim*, *Minecraft*, *Far Cry 3*, *Fable*, *La bataille pour la terre du milieu*…

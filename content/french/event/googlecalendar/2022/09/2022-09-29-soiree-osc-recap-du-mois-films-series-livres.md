@@ -12,13 +12,13 @@ end: '2022-09-29T22:30:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/samantha-gades-LA6XfeVI5_c-unsplash-scaled.jpg
 isodate: '2022-09-29'
 location: en ligne
-path: 2022/09/2022-09-29-soiree-osc-jeux-discussion-liste-que-du-bonheur.md
+path: 2022/09/2022-09-29-soiree-osc-recap-du-mois-films-series-livres.md
 start: '2022-09-29T20:30:00+02:00'
 start-unix: 1664476200.0
 template: twitch
-title: 'Soirée OSC: jeux, discussion, liste, que du bonheur !'
+title: 'Soirée OSC: recap du mois ! (films, séries, livres, ..)'
 type: event
-url: /activities/twitch/2022/09/29/soiree-osc-jeux-discussion-liste-que-du-bonheur
+url: /activities/twitch/2022/09/29/soiree-osc-recap-du-mois-films-series-livres
 with: []
 ---
-On joue, on cause, on fait des listes... Un rendez-vous hebdomadaire !
+On discute des choses qu'on a aimé pendant ce mois !

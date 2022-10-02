@@ -23,7 +23,9 @@
           {{ end }}
         </div>
       </div>
-      {{ partial "blog-sidebar.html" . }}
+      {{ if ne .Params.hide_sidebar true}}
+        {{ partial "blog-sidebar.html" . }}
+      {{ end }}
     </div>
   </div>
 </section>

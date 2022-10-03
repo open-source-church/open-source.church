@@ -12,13 +12,13 @@ end: '2022-10-06T22:30:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/samantha-gades-LA6XfeVI5_c-unsplash-scaled.jpg
 isodate: '2022-10-06'
 location: en ligne
-path: 2022/10/2022-10-06-soiree-osc-jeux-discussion-liste-que-du-bonheur.md
+path: 2022/10/2022-10-06-soiree-osc-concept.md
 start: '2022-10-06T20:30:00+02:00'
 start-unix: 1665081000.0
 template: twitch
-title: 'Soirée OSC: jeux, discussion, liste, que du bonheur !'
+title: 'Soirée OSC: Concept !'
 type: event
-url: /activities/twitch/2022/10/06/soiree-osc-jeux-discussion-liste-que-du-bonheur
+url: /activities/twitch/2022/10/06/soiree-osc-concept
 with: []
 ---
-On joue, on cause, on fait des listes... Un rendez-vous hebdomadaire !
+On joue ensemble à Concept sur BoardGameArena

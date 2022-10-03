@@ -17,30 +17,57 @@
   </div>
 
 <div class="story my-5">
-
+  <!-- Title -->
   <h2 v-if="story" @click="edit(data.find(s => s.uuid == story))">[[ stories[story] ]]</h2>
 
-  <span :class="'segment ' + (segment == editing_segment ? 'edit' : '')" v-for="segment in currentStory" :key="segment.uuid"
-  :title="(segment.edited_at ? `Modifié par ${segment.meta.name} à ${segment.edited_at}` : `Crée par ${segment.meta.name} à ${segment.created_at}`) + (logged && last_edit >= params.delay ? '. Clique pour modifier.' : '')"
-  data-toggle="tooltip" @click="edit(segment)">
-    [[segment.text]]&nbsp;</span>
-  </div>
+
+  <!-- Text -->
+  <span v-for="segment in currentStory" :key="segment.uuid"
+    :class="'segment ' + (segment == editing_segment ? 'edit' : '')" 
+    :title="(segment.edited_at ? `Modifié par ${segment.meta.name} à ${segment.edited_at}` : `Crée par ${segment.meta.name} à ${segment.created_at}`) + (logged && last_edit >= params.delay ? '. Clique pour modifier.' : '')"
+    data-toggle="tooltip"
+    @click="edit(segment)">
+    [[segment.text]]<span
+      :class="'insert ' + (segment == insert_after ? 'edit blinking-cursor' : '')"
+      @click.stop="insert(segment)">&nbsp;</span>
+  </span>
+  <span
+    :class="'blinking-cursor ' + (editing ? 'edit' : '')"
+    v-if="story && (!editing || !editing_segment && !insert_after)">
+  </span>
+</div>
   
 <div class="my-5 controls row mt-5 justify-content-center">
-  <a v-if="!editing && logged && last_edit >= params.delay" class="col-auto ml-3 btn btn-primary" @click="editing=true">{{partial "ti" "edit-small"}} [[currentStory.length ? 'Continue' : 'Commence']] l'histoire</a>
+  <!-- Continue story -->
+  <a v-if="!editing && logged && last_edit >= params.delay"
+    class="col-auto ml-3 btn btn-primary"
+    @click="editing=true">
+      {{partial "ti" "edit-small"}} [[currentStory.length ? 'Continue' : 'Commence']] l'histoire
+  </a>
+  <!-- Wait for it -->
   <a v-if="logged && last_edit < params.delay" class="col-auto ml-3 btn btn-secondary" @click="">{{partial "ti" "hourglass"}} Attends [[params.delay - last_edit]] secondes…</a>
+  <!-- Log in -->
   <a v-if="!logged" class="col-auto ml-3 btn btn-dark" @click="signInWithDiscord">{{partial "ti" "discord"}} Log in pour participer</a>
 
-  <div v-if="editing && last_edit > params.delay" class="col-12 card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+  <div v-if="editing && last_edit >= params.delay" class="col-12 card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
     <div class="card-body">
       <input class="form-control" type="text" placeholder="La suite" :maxlength="params.txt_length" v-model="edit_txt">
       <div class="progress bg-dark rounded-0" style="height: 5px;">
         <div class="progress-bar bg-yellow" role="progressbar" :style="{width: edit_txt.length / params.txt_length * 100 + '%'}" :aria-valuenow="edit_txt.length" aria-valuemin="0" :aria-valuemax="params.txt_length"></div>
       </div>
-      <button v-if="!editing_segment" type="button" class="mt-3 btn btn-primary col-6" :disabled="!edit_txt" @click="addSegment(edit_txt)">Ajouter</button>
-      <button v-else type="button" class="mt-3 btn btn-primary col-6" :disabled="!edit_txt" @click="editSegment()">Modifier</button>
+      <!-- Add -->
+      <button v-if="!editing_segment" type="button"
+        class="mt-3 btn btn-primary col-6"
+        :disabled="!edit_txt"
+        @click="addSegment(edit_txt)">Ajouter</button>
+      <!-- Edit -->
+      <button v-else type="button"
+        class="mt-3 btn btn-primary col-6"
+        :disabled="!edit_txt"
+        @click="editSegment()">Modifier</button>
+      <!-- Cancel -->
       <a class="mt-3 btn btn-secondary col-6"
-        @click="editing = false; editing_segment = false; edit_txt = ''">Annuler</a>
+        @click="cancel_edit">Annuler</a>
       <p class="mt-3">Après avoir posté, tu ne pourras plus écrire pendant [[ params.delay ]] secondes.</p>
     </div>
   </div>
@@ -53,6 +80,13 @@
     {{ partial "ti" "logout" }} Log out <img height="32" :src="user.user_metadata.avatar_url" class="rounded-circle" /> [[ user.user_metadata.full_name]]
   </a>
   <a class="btn btn-danger" v-if="user.user_metadata.provider_id == '309810812711862282' && story" @click="deleteStory">{{partial "ti" "bin"}} Supprimer l'histoire</a>
+  <!-- <div class="col-8 row mt-5 justify-content-center" v-if="user.user_metadata.provider_id == '309810812711862282' && story">
+    <span class="col-12 text-center text-cyan">Story settings</span>
+    <span class="col-6 text-center">delay</span><span class="col-6 text-center">max_length</span>
+      <input class="col-6" type="number" v-model="settings.delay">
+      <input class="col-6" type="number" v-model="settings.txt_length">
+    <a class="col-12 btn btn-sm btn-primary" @click="update_settings">update</a>
+  </div> -->
 </div>
 
 
@@ -126,7 +160,9 @@ createApp({
           text: title.trim(),
           meta: {
             name: user.value.user_metadata.full_name,
-            provider_id: user.value.user_metadata.provider_id
+            provider_id: user.value.user_metadata.provider_id,
+            delay: 180,
+            txt_length: 30
           }
         }
         var d = await SB.from("stories").insert(e);
@@ -136,9 +172,20 @@ createApp({
     }
     const addSegment = async (txt) => {
       if (story.value && logged.value) {
+        var position = maxPosition.value + 1
+        if (insert_after.value) {
+          var next = currentStory.value[currentStory.value.indexOf(insert_after.value) + 1]
+          if (next) {
+            position = (next.position + insert_after.value.position) / 2.
+          }
+          else
+            position = maxPosition.value + 1
+        } 
+
         var e = {
           story: story.value,
           text: txt.trim(),
+          position: position,
           meta: {
             name: user.value.user_metadata.full_name,
             provider_id: user.value.user_metadata.provider_id
@@ -146,26 +193,24 @@ createApp({
         }
         var d = await SB.from("stories").insert(e);
         console.log(d);
-        edit_txt.value = ""
-        editing.value = false
+        cancel_edit()
       }
     }
     const editSegment = async () => {
       if (story.value && logged.value && editing_segment.value) {
         var s = _.clone(editing_segment.value)
         s.text = edit_txt.value.trim()
-        s.meta = {
+        s.meta = Object.assign(s.meta, {
             name: user.value.user_metadata.full_name,
             provider_id: user.value.user_metadata.provider_id
-          }
+          })
         s.edited_at = new Date()
         console.log(s)
         var d = await SB.from("stories")
         .update(s)
         .match({ uuid: s.uuid });
         console.log(d);
-        edit_txt.value = ""
-        editing.value = false
+        cancel_edit()
       }
     }
     const deleteStory = async () => {
@@ -177,6 +222,17 @@ createApp({
         story.value = ""
       }
     }
+    // const settings = ref({})
+    // const update_settings = async () => {
+    //   if (story.value && logged.value && user.value.user_metadata.provider_id == '309810812711862282') {
+    //     var s = data.value.find(d => d.uuid == d.story)
+    //     var ob = { meta: Object.assign(s.meta, settings.value) }
+    //     var d = await SB.from("stories")
+    //     .update(ob)
+    //     .match({ uuid: story.value });
+    //     console.log(d);
+    //   }
+    // }
 
     // La liste des histoires sous forme { uuid: titre }
     const stories = computed(() => {
@@ -196,7 +252,11 @@ createApp({
     const currentStory = computed(() => {
       return data.value
       .filter(d => d.story == story.value && d.uuid != d.story)
-      .sort((a,b) => new Date(a.created_at) - new Date(b.created_at))
+      .sort((a,b) => a.position - b.position)
+    })
+    const maxPosition = computed(() => {
+      var c = currentStory.value.map(d => d.position || 0).sort()
+      return c[c.length - 1] || 0
     })
     /*
     Les paramètres de base.
@@ -240,15 +300,31 @@ createApp({
         editing_segment.value = segment
       }
     }
+    const insert_after = ref()
+    const insert = (segment) => {
+      if (last_edit.value >= params.value.delay) {
+        editing.value = true
+        edit_txt.value = ""
+        insert_after.value = segment
+      }
+    }
+    const cancel_edit = () => {
+      editing.value = false;
+      editing_segment.value = false;
+      edit_txt.value = ''
+      insert_after.value = ''
+    }
 
     return {
       message: "Coucou",
       user,
-      data,
+      data, maxPosition,
       logged, signInWithDiscord, signout, SB,
       stories, story, currentStory, params,
       addSegment, editSegment, newStory, deleteStory,
-      editing, edit_txt, last_edit, edit, editing_segment
+      editing, edit_txt, last_edit, edit, editing_segment,
+      insert_after, insert, cancel_edit,
+      // update_settings, settings
     }
   }
 }).mount('#story')
@@ -256,28 +332,45 @@ createApp({
 
 <style>
 
-@keyframes cursor-blink {
-  0% { opacity: 0; }
-}
-
 .story span {
   font-size: 22px;
 }
 .story span:hover {
-  font-size: 22px;
   color: white;
 }
 .story span.edit {
   color: #f14ec3;
 }
+.story span.insert {
+  width: 4px;
+  margin: 0 4px;
+  height: 1.3em;
+  vertical-align: middle;
+  display: inline-block;
+}
+.story span.insert.edit {
+  display: contents;
+}
+.story span.insert:hover {
+  content: "I";
+  background-color: #00ffdd;
+}
 
-.story span:last-child::after {
+@keyframes cursor-blink {
+  0% { opacity: 0; }
+}
+.story span.blinking-cursor::after {
   content: "";
   width: 5px;
-  height: 20px;
+  height: 1.3em;
+  margin-right: 4px;
+  vertical-align: text-top;
   background: #d5d0d6;
   display: inline-block;
   animation: cursor-blink 1s steps(2) infinite;
+}
+.story span.blinking-cursor.edit::after {
+  background: #f14ec3;
 }
 
 .controls .form-control {
@@ -288,42 +381,4 @@ createApp({
   color: #ddd;
 }
 
-  #quiz blockquote {
-    background: #4b4c58;
-    border-left: 10px solid #ffd400;
-    margin: 0 0 1em 0;
-    padding: 1em 1em;
-    quotes: "\201C""\201D""\2018""\2019";
-  }
-  #quiz blockquote:before {
-    color: #ccc;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-  }
-  #quiz blockquote p {
-    display: inline;
-    font-size: larger;
-    margin-left: 0;
-  }
-  #quiz .results blockquote p { font-size: medium; }
-  #quiz .progress.max {
-    background-color: #343a40;
-    border-radius: 0;
-    height: 0.5rem;
-  }
-  #quiz .max .progress-bar {
-    background-color: #f14ec3;
-  }
-  .btn-cyan {
-    background-color: #00ffdd;
-    color: #212227!important;
-  }
-  .btn-cyan:hover {
-    color: #00ffdd!important;
-    background-color: #00ffdd!important;
-    border-color: #00ffdd!important;
-  }
 </style>

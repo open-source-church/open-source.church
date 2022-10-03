@@ -9,7 +9,7 @@ buttons:
 date: '2022-10-06T20:30:00+02:00'
 duration: '2:00:00'
 end: '2022-10-06T22:30:00+02:00'
-image: https://tools.open-source.church/wp-content/uploads/2022/08/samantha-gades-LA6XfeVI5_c-unsplash-scaled.jpg
+image: https://www.boardgamequest.com/wp-content/uploads/2014/12/Concept-Header.jpg
 isodate: '2022-10-06'
 location: en ligne
 path: 2022/10/2022-10-06-soiree-osc-concept.md

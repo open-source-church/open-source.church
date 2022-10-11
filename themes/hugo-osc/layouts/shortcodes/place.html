@@ -1,0 +1,246 @@
+
+<div id="place" class="content text-center">
+  
+<div class="palette mb-3" v-if="logged">
+  <div v-for="c in colors" :key="c"
+    :class="'colorpicker ' + (selected_color == c ? 'selected' : '')" 
+    :style="'background:'+c"
+    @click="selected_color = c"></div>
+    <a class="ml-5 btn btn-primary btn-sm" @click="signout">
+      {{ partial "ti" "logout" }} Log out <img height="32" :src="user.user_metadata.avatar_url" class="rounded-circle" /> [[ user.user_metadata.full_name]]
+    </a>
+    <p v-if="!can_edit" class="text-majenta">Attend [[delay-last_edit]] secondes pour dessiner.</p>
+</div>
+<div v-else class="mb-3">
+  <a class="ml-5 btn btn-primary btn-sm" @click="signInWithDiscord">{{partial "ti" "discord"}} connecte-toi pour dessiner</a>
+</div>
+
+<canvas width="800" height="600" id="pixel"
+  @wheel.prevent="zoom"
+  @mousemove="mouseMove"
+  @click="click">
+</canvas>
+
+<hr>
+
+</div>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+<script>
+
+
+var SUPABASE_URL = "https://drbeghxanufknwzdtnub.supabase.co";
+var SUPABASE_ANON_KEY =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRyYmVnaHhhbnVma253emR0bnViIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ2MzYzODYsImV4cCI6MTk4MDIxMjM4Nn0.NiRDrSZx88xX_6I4XWt0k_y7JlszO4zGQPSDLvHDLm0";
+
+const { createClient } = supabase
+const SB = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const { createApp, onMounted, ref, computed, reactive, watch } = Vue
+
+
+
+createApp({
+  delimiters: ["[[", "]]"],
+  data() {
+    /*
+    SUPABASE
+    */
+    const data = ref([])
+    const fetch_pixels = async () => {
+      const R = await SB
+        .from("place")
+        .select();
+      data.value = R.data;
+    }
+    fetch_pixels()
+
+    const subscription = SB
+      .from("place")
+      .on("*", (d) => {
+        console.log("UPDAAAATE")
+        fetch_pixels();
+      })
+      .subscribe();
+      console.log(subscription)
+
+    var user = ref({})
+    SB.auth.onAuthStateChange((_, session) => {
+      if (session)
+        user.value = session.user;
+      else 
+        user.value = {}
+    });
+    onMounted(() => (user.value = SB.auth.user()));
+    const logged = computed(() => user.value && user.value.user_metadata)
+    const signInWithDiscord = async () => {
+      const { user, session, error } = await SB.auth.signIn({
+        provider: 'discord',
+      },{
+        redirectTo: {{ .Page.Permalink }}
+      })
+    }
+    const signout = async () => {
+      const { error } = await SB.auth.signOut()
+    }
+    const get_color = (x, y) => {
+      var d = data.value.find(d => d.x == x && d.y == y)
+      if (d) return d.color
+      else return "#000000"
+    }
+    const set_pixel = async (x, y, color) => {
+      if (!logged.value || !can_edit.value ) return
+      var d = data.value.find(d => d.x == x && d.y == y)
+      var meta = d ? d.meta : {}
+      s = {
+          x: x,
+          y: y,
+          color: color,
+          meta: Object.assign(meta, {
+            [Date.now()]: logged.value.provider_id
+          })
+        }
+      if (d)
+        await SB.from("place").update(s)
+        .match({x: x, y: y})
+      else 
+        await SB.from("place").insert(s)
+    }
+    var now = ref(Date.now())
+    setInterval(() => now.value = Date.now(), 1000)
+    const last_edit = computed(() => {
+      if (!logged.value) return null
+      var last = 0
+      data.value.forEach(
+        d => Object.keys(d.meta).forEach(
+          t => {
+            if(d.meta[t] == logged.value.provider_id && t > last) last = t
+          }))
+      return Math.round((now.value - last) / 1000)
+    })
+    const can_edit = computed(() => {
+      return logged.value && last_edit.value >= delay
+    })
+
+    /*
+    CANVAS
+    */
+    const W = 64
+    const H = 64
+    const WIDTH = 10
+    var canvas = null; var ctx = null
+    var scale = 1; var max_scale = 3; var min_scale = .1; var scale_step = .1;
+    var draw_pos = []
+    var selected = null
+    var delay = 60;
+    onMounted(() => {
+      canvas = document.getElementById("pixel")
+      ctx =  canvas.getContext("2d");
+      draw_pos = [canvas.width/2, canvas.height/2];
+      draw()
+    })
+    const draw = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (x = 0; x < W; x++) {
+        for (y = 0; y < H; y++) {
+          drawPixel(x, y);
+        }
+      }
+    }
+    const drawPixel = (x, y) => {
+      ctx.save()
+      ctx.fillStyle = get_color(x, y);
+      var dx = draw_pos[0] - (W * WIDTH * scale) / 2
+      var dy = draw_pos[1] - (H * WIDTH * scale) / 2
+      ctx.fillRect(dx + x*WIDTH*scale, dy + y*WIDTH*scale, WIDTH*scale, WIDTH*scale);
+
+      if (selected && selected[0] == x && selected[1] == y){
+        ctx.strokeStyle = "green"
+        ctx.strokeRect(dx + x*WIDTH*scale, dy + y*WIDTH*scale, WIDTH*scale, WIDTH*scale);
+      }
+      ctx.restore()
+    }
+    /*
+    PAN & ZOOM
+    */
+    const mouseMove = (evt) => {
+      // Move draw
+      if (evt.buttons) {
+        draw_pos[0] += evt.movementX
+        draw_pos[1] += evt.movementY
+      }
+      // Get selected
+      selected = pos2coord(evt.offsetX, evt.offsetY)
+      draw()
+    }
+    const pos2coord = (x, y) => {
+      // Prend la position x:y sur le canvas, et renvoie les coordonnées du pixel en dessous
+      var x = (W * WIDTH * scale) / 2 - draw_pos[0] + x
+      x = Math.floor(x / WIDTH / scale)
+      var y = (H * WIDTH * scale) / 2 - draw_pos[1] + y
+      y = Math.floor(y / WIDTH / scale)
+      if (x < 0 || x >= W || y < 0 || y >= H) 
+        return null
+      else
+        return [x, y]
+    }
+    const zoom = (evt) => {
+      if (evt.wheelDelta > 0){
+        scale = Math.min(scale + scale_step, max_scale)
+        draw()
+      }
+      else if (evt.wheelDelta < 0){
+        scale = Math.max(scale - scale_step, min_scale)
+        draw()
+      }
+    }
+    const click = async (evt) => {
+      var coord = pos2coord(evt.offsetX, evt.offsetY)
+      if (coord){
+        set_pixel(coord[0], coord[1], selected_color.value)
+      }
+    }
+    /*
+    INTERFACE
+    */
+    const colors = [
+      "white", "grey", "red", "fuchsia", "lime", "yellow", "blue", "aqua",
+      "black", "silver", "maroon", "purple", "green", "olive", "navy", "teal"
+    ]
+    const selected_color = ref("white")
+    return {
+      user, logged, signInWithDiscord, signout, 
+      draw, mouseMove, zoom, click,
+      colors, selected_color,
+      last_edit, delay, can_edit
+    }
+  }
+}).mount('#place')
+</script>
+
+<style>
+
+canvas#pixel {
+  border: 2px solid #00ffdd;
+}
+
+.palette div.colorpicker {
+  width: .9em;
+  height: .9em;
+  display: inline-block;
+  border-radius: 50%;
+  margin: .3em;
+  vertical-align: middle;
+}
+.palette div.colorpicker.selected {
+  /* border-radius: 0; */
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0;
+}
+
+
+</style>

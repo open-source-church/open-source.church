@@ -13,13 +13,13 @@ end: '2022-11-29T21:30:00+01:00'
 image: https://cdn.mcr.ea.com/3/images/03cfe37e-1c86-4063-8d5c-c67aff90a293/1587735143-0x0-0-0.jpg
 isodate: '2022-11-29'
 location: en ligne
-path: 2022/11/2022-11-29-let-s-play-avec-elyius.md
+path: 2022/11/2022-11-29-let-s-play-avec-elyius-spore-defi-full-extreme-centre.md
 start: '2022-11-29T20:00:00+01:00'
 start-unix: 1669748400.0
 template: twitch
-title: Let's play avec Elyius !
+title: 'Let''s play avec Elyius: Spore défi Full Extrême Centre  !'
 type: event
-url: /activities/twitch/2022/11/29/let-s-play-avec-elyius
+url: /activities/twitch/2022/11/29/let-s-play-avec-elyius-spore-defi-full-extreme-centre
 with:
 - Elyius
 ---

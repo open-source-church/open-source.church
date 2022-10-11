@@ -1,6 +1,6 @@
 
 <div id="place" class="content text-center">
-  
+
 <div class="palette mb-3" v-if="logged">
   <div v-for="c in colors" :key="c"
     :class="'colorpicker ' + (selected_color == c ? 'selected' : '')" 
@@ -9,7 +9,7 @@
     <a class="ml-5 btn btn-primary btn-sm" @click="signout">
       {{ partial "ti" "logout" }} Log out <img height="32" :src="user.user_metadata.avatar_url" class="rounded-circle" /> [[ user.user_metadata.full_name]]
     </a>
-    <p v-if="!can_edit" class="text-majenta">Attend [[delay-last_edit]] secondes pour dessiner.</p>
+    <p class="text-majenta"><span v-if="!can_edit" >Attend [[delay-last_edit]] secondes pour dessiner.</span></p>
 </div>
 <div v-else class="mb-3">
   <a class="ml-5 btn btn-primary btn-sm" @click="signInWithDiscord">{{partial "ti" "discord"}} connecte-toi pour dessiner</a>
@@ -207,8 +207,8 @@ createApp({
     INTERFACE
     */
     const colors = [
-      "white", "grey", "red", "fuchsia", "lime", "yellow", "blue", "aqua",
-      "black", "silver", "maroon", "purple", "green", "olive", "navy", "teal"
+      "white", "grey", "red", "orange", "fuchsia", "lime", "yellow", "blue", "aqua",
+      "black", "silver", "maroon", "#fbceb1", "purple", "green", "olive", "navy", "teal"
     ]
     const selected_color = ref("white")
     return {

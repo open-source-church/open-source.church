@@ -1,0 +1,384 @@
+
+<div id="story" class="content">
+  <div v-if="!story">
+    <select class="custom-select" v-model="story">
+      <option disabled value="" >Histoires</option>
+      <option v-for="v,k in stories" :key="k" :value="k">[[v]]</option>
+    </select>
+
+    <div class="text-center display-4 my-5">
+      <span v-if="logged">
+        Choisis un histoire, ou <a class="text-yellow" @click="newStory">crée</a> en une nouvelle.
+      </span>
+      <span v-else>
+        Choisis un histoire, ou <a class="text-yellow" @click="signInWithDiscord">{{partial "ti" "discord"}} connecte-toi</a> pour en créer.
+      </span>
+    </div>
+  </div>
+
+<div class="story my-5">
+  <!-- Title -->
+  <h2 v-if="story" @click="edit(data.find(s => s.uuid == story))">[[ stories[story] ]]</h2>
+
+
+  <!-- Text -->
+  <span v-for="segment in currentStory" :key="segment.uuid"
+    :class="'segment ' + (segment == editing_segment ? 'edit' : '')" 
+    :title="(segment.edited_at ? `Modifié par ${segment.meta.name} à ${segment.edited_at}` : `Crée par ${segment.meta.name} à ${segment.created_at}`) + (logged && last_edit >= params.delay ? '. Clique pour modifier.' : '')"
+    data-toggle="tooltip"
+    @click="edit(segment)">
+    [[segment.text]]<span
+      :class="'insert ' + (segment == insert_after ? 'edit blinking-cursor' : '')"
+      @click.stop="insert(segment)">&nbsp;</span>
+  </span>
+  <span
+    :class="'blinking-cursor ' + (editing ? 'edit' : '')"
+    v-if="story && (!editing || !editing_segment && !insert_after)">
+  </span>
+</div>
+  
+<div class="my-5 controls row mt-5 justify-content-center">
+  <!-- Continue story -->
+  <a v-if="!editing && logged && last_edit >= params.delay"
+    class="col-auto ml-3 btn btn-primary"
+    @click="editing=true">
+      {{partial "ti" "edit-small"}} [[currentStory.length ? 'Continue' : 'Commence']] l'histoire
+  </a>
+  <!-- Wait for it -->
+  <a v-if="logged && last_edit < params.delay" class="col-auto ml-3 btn btn-secondary" @click="">{{partial "ti" "hourglass"}} Attends [[params.delay - last_edit]] secondes…</a>
+  <!-- Log in -->
+  <a v-if="!logged" class="col-auto ml-3 btn btn-dark" @click="signInWithDiscord">{{partial "ti" "discord"}} Log in pour participer</a>
+
+  <div v-if="editing && last_edit >= params.delay" class="col-12 card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+    <div class="card-body">
+      <input class="form-control" type="text" placeholder="La suite" :maxlength="params.txt_length" v-model="edit_txt">
+      <div class="progress bg-dark rounded-0" style="height: 5px;">
+        <div class="progress-bar bg-yellow" role="progressbar" :style="{width: edit_txt.length / params.txt_length * 100 + '%'}" :aria-valuenow="edit_txt.length" aria-valuemin="0" :aria-valuemax="params.txt_length"></div>
+      </div>
+      <!-- Add -->
+      <button v-if="!editing_segment" type="button"
+        class="mt-3 btn btn-primary col-6"
+        :disabled="!edit_txt"
+        @click="addSegment(edit_txt)">Ajouter</button>
+      <!-- Edit -->
+      <button v-else type="button"
+        class="mt-3 btn btn-primary col-6"
+        :disabled="!edit_txt"
+        @click="editSegment()">Modifier</button>
+      <!-- Cancel -->
+      <a class="mt-3 btn btn-secondary col-6"
+        @click="cancel_edit">Annuler</a>
+      <p class="mt-3">Après avoir posté, tu ne pourras plus écrire pendant [[ params.delay ]] secondes.</p>
+    </div>
+  </div>
+</div>
+
+<hr style="margin-top: 10em;">
+
+<div v-if="logged" class="row justify-content-center" >
+  <a class="btn btn-secondary" @click="signout" >
+    {{ partial "ti" "logout" }} Log out <img height="32" :src="user.user_metadata.avatar_url" class="rounded-circle" /> [[ user.user_metadata.full_name]]
+  </a>
+  <a class="btn btn-danger" v-if="user.user_metadata.provider_id == '309810812711862282' && story" @click="deleteStory">{{partial "ti" "bin"}} Supprimer l'histoire</a>
+  <!-- <div class="col-8 row mt-5 justify-content-center" v-if="user.user_metadata.provider_id == '309810812711862282' && story">
+    <span class="col-12 text-center text-cyan">Story settings</span>
+    <span class="col-6 text-center">delay</span><span class="col-6 text-center">max_length</span>
+      <input class="col-6" type="number" v-model="settings.delay">
+      <input class="col-6" type="number" v-model="settings.txt_length">
+    <a class="col-12 btn btn-sm btn-primary" @click="update_settings">update</a>
+  </div> -->
+</div>
+
+
+</div>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+<script>
+
+
+var SUPABASE_URL = "https://drbeghxanufknwzdtnub.supabase.co";
+var SUPABASE_ANON_KEY =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRyYmVnaHhhbnVma253emR0bnViIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ2MzYzODYsImV4cCI6MTk4MDIxMjM4Nn0.NiRDrSZx88xX_6I4XWt0k_y7JlszO4zGQPSDLvHDLm0";
+
+const { createClient } = supabase
+const SB = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const { createApp, onMounted, ref, computed, reactive, watch } = Vue
+
+createApp({
+  delimiters: ["[[", "]]"],
+  data() {
+    const data = ref([])
+    const fetchStories = async () => {
+      const R = await SB
+        .from("stories")
+        .select();
+      data.value = R.data;
+    }
+    fetchStories()
+
+    const subscription = SB
+      .from("stories")
+      .on("*", (d) => {
+        console.log("UPDAAAATE", d)
+        fetchStories();
+      })
+      .subscribe();
+
+    var user = ref({})
+    SB.auth.onAuthStateChange((_, session) => {
+      if (session)
+        user.value = session.user;
+      else 
+        user.value = {}
+    });
+    onMounted(() => (user.value = SB.auth.user()));
+    const logged = computed(() => user.value && user.value.user_metadata)
+    const signInWithDiscord = async () => {
+      const { user, session, error } = await SB.auth.signIn({
+        provider: 'discord',
+      },{
+        redirectTo: {{ .Page.Permalink }}
+      })
+    }
+    const signout = async () => {
+      const { error } = await SB.auth.signOut()
+    }
+    /*
+    New story
+    */
+    const newStory = async () => {
+      if (logged.value) {
+        const title = prompt("Comment veux-tu appeler ton histoire?");
+        const uuid = crypto.randomUUID()
+        var e = {
+          uuid: uuid,
+          story: uuid,
+          text: title.trim(),
+          meta: {
+            name: user.value.user_metadata.full_name,
+            provider_id: user.value.user_metadata.provider_id,
+            delay: 180,
+            txt_length: 30
+          }
+        }
+        var d = await SB.from("stories").insert(e);
+        console.log(d);
+        story.value = uuid
+      }
+    }
+    const addSegment = async (txt) => {
+      if (story.value && logged.value) {
+        var position = maxPosition.value + 1
+        if (insert_after.value) {
+          var next = currentStory.value[currentStory.value.indexOf(insert_after.value) + 1]
+          if (next) {
+            position = (next.position + insert_after.value.position) / 2.
+          }
+          else
+            position = maxPosition.value + 1
+        } 
+
+        var e = {
+          story: story.value,
+          text: txt.trim(),
+          position: position,
+          meta: {
+            name: user.value.user_metadata.full_name,
+            provider_id: user.value.user_metadata.provider_id
+          }
+        }
+        var d = await SB.from("stories").insert(e);
+        console.log(d);
+        cancel_edit()
+      }
+    }
+    const editSegment = async () => {
+      if (story.value && logged.value && editing_segment.value) {
+        var s = _.clone(editing_segment.value)
+        s.text = edit_txt.value.trim()
+        s.meta = Object.assign(s.meta, {
+            name: user.value.user_metadata.full_name,
+            provider_id: user.value.user_metadata.provider_id
+          })
+        s.edited_at = new Date()
+        console.log(s)
+        var d = await SB.from("stories")
+        .update(s)
+        .match({ uuid: s.uuid });
+        console.log(d);
+        cancel_edit()
+      }
+    }
+    const deleteStory = async () => {
+      if (story.value && logged.value && user.value.user_metadata.provider_id == '309810812711862282') {
+        var d = await SB.from("stories")
+        .delete()
+        .match({ story: story.value });
+        console.log(d);
+        story.value = ""
+      }
+    }
+    // const settings = ref({})
+    // const update_settings = async () => {
+    //   if (story.value && logged.value && user.value.user_metadata.provider_id == '309810812711862282') {
+    //     var s = data.value.find(d => d.uuid == d.story)
+    //     var ob = { meta: Object.assign(s.meta, settings.value) }
+    //     var d = await SB.from("stories")
+    //     .update(ob)
+    //     .match({ uuid: story.value });
+    //     console.log(d);
+    //   }
+    // }
+
+    // La liste des histoires sous forme { uuid: titre }
+    const stories = computed(() => {
+      if (data.value.length == 0) return []
+      else {
+        var s = {}
+        data.value.filter(d => d.uuid == d.story).forEach(d => s[d.uuid] = d.text)
+        return s
+      }
+    })
+     // L'histoire sélectionnée
+    // Get URL parameters
+    const url_params = new URLSearchParams(window.location.search);
+    var story = ref(url_params.get("story"))
+    watch(story, () => history.pushState(history.state, "", `?story=${story.value}`))
+    // Les segments de l'histoire sélectionnée
+    const currentStory = computed(() => {
+      return data.value
+      .filter(d => d.story == story.value && d.uuid != d.story)
+      .sort((a,b) => a.position - b.position)
+    })
+    const maxPosition = computed(() => {
+      var c = currentStory.value.map(d => d.position || 0).sort()
+      return c[c.length - 1] || 0
+    })
+    /*
+    Les paramètres de base.
+    On poste que c'est dans le meta de l'entrée titre (celle qui a
+    uuid = story). Et on rajoute des valeurs par défauts.
+    */
+    const params = computed(() => {
+      var p = data.value.find(d => d.story == story.value && d.uuid == d.story)
+      if (!p) return {}
+      p = p.meta
+      p.txt_length = p.txt_length || 30
+      p.delay = p.delay || 180
+      return p
+    })
+    /*
+    Duration since last edit from logged user.
+    */
+    var now = ref(Date.now())
+    setInterval(() => now.value = Date.now(), 1000)
+    const last_edit = computed(() => {
+      if (!logged.value) return {}
+      // Sort user edits by date
+      var e = data.value
+      .filter(d => d.story == story.value && d.meta.provider_id == user.value.user_metadata.provider_id && (d.uuid != d.story || d.edited_at))
+      .sort((a,b) => new Date(a.edited_at || a.created_at) - new Date(b.edited_at || b.created_at))
+      // take the last
+      e = e[e.length -1]
+      if (e)
+        return ((now.value - new Date(e.edited_at || e.created_at)) / 1000).toFixed()
+      else
+        return 999999999
+    })
+
+    const editing = ref(false)
+    const editing_segment = ref(false)
+    const edit_txt = ref("")
+    const edit = (segment) => {
+      if (last_edit.value >= params.value.delay) {
+        editing.value = segment.uuid
+        edit_txt.value = segment.text
+        editing_segment.value = segment
+      }
+    }
+    const insert_after = ref()
+    const insert = (segment) => {
+      if (last_edit.value >= params.value.delay) {
+        editing.value = true
+        edit_txt.value = ""
+        insert_after.value = segment
+      }
+    }
+    const cancel_edit = () => {
+      editing.value = false;
+      editing_segment.value = false;
+      edit_txt.value = ''
+      insert_after.value = ''
+    }
+
+    return {
+      message: "Coucou",
+      user,
+      data, maxPosition,
+      logged, signInWithDiscord, signout, SB,
+      stories, story, currentStory, params,
+      addSegment, editSegment, newStory, deleteStory,
+      editing, edit_txt, last_edit, edit, editing_segment,
+      insert_after, insert, cancel_edit,
+      // update_settings, settings
+    }
+  }
+}).mount('#story')
+</script>
+
+<style>
+
+.story span {
+  font-size: 22px;
+}
+.story span:hover {
+  color: white;
+}
+.story span.edit {
+  color: #f14ec3;
+}
+.story span.insert {
+  width: 4px;
+  margin: 0 4px;
+  height: 1.3em;
+  vertical-align: middle;
+  display: inline-block;
+}
+.story span.insert.edit {
+  display: contents;
+}
+.story span.insert:hover {
+  content: "I";
+  background-color: #00ffdd;
+}
+
+@keyframes cursor-blink {
+  0% { opacity: 0; }
+}
+.story span.blinking-cursor::after {
+  content: "";
+  width: 5px;
+  height: 1.3em;
+  margin-right: 4px;
+  vertical-align: text-top;
+  background: #d5d0d6;
+  display: inline-block;
+  animation: cursor-blink 1s steps(2) infinite;
+}
+.story span.blinking-cursor.edit::after {
+  background: #f14ec3;
+}
+
+.controls .form-control {
+  height: 60px;
+  background: #212227;
+  border-radius: 0;
+  padding-left: 25px;
+  color: #ddd;
+}
+
+</style>

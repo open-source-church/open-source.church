@@ -26,6 +26,8 @@
       'background-image': 'url(' + $(this).data('background') + ')'
     });
   });
+  //Bootstrap tooltips
+  // $('[data-toggle="tooltip"]').tooltip()
 
   // venobox popup
   $(document).ready(function () {

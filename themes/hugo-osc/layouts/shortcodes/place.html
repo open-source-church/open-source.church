@@ -22,6 +22,8 @@
 
 <p class="text-majenta" v-if="logged"><span v-if="!can_edit" >Attend [[delay-last_edit]] secondes pour dessiner.</span></p>
 
+<p class="text-cyan" v-if="meta.name || meta.time">Pixel placé par [[meta.name || '???']] le [[meta.time]] </p>
+
 <hr>
 
 </div>
@@ -122,7 +124,8 @@ createApp({
           y: y,
           color: color,
           meta: Object.assign(meta, {
-            [Date.now()]: logged.value.provider_id
+            [Date.now()]: logged.value.provider_id,
+            last_edit: logged.value.full_name
           })
         }
       if (d)
@@ -138,7 +141,7 @@ createApp({
       var last = 0
       for (var x in data.value)
         for (var y in data.value)
-          if (data.value[x][y]) 
+          if (data.value[x][y])
             for (var t in data.value[x][y].meta)
               if (data.value[x][y].meta[t] == logged.value.provider_id && t > last)
                 last = t
@@ -192,6 +195,7 @@ createApp({
     PAN & ZOOM
     */
     var drag = false
+    const meta = ref({})
     const mouseMove = (evt) => {
       // Move draw
       if (evt.buttons) {
@@ -205,6 +209,19 @@ createApp({
         selected = pos2coord(evt.offsetX, evt.offsetY)
         if (selected) to_update.push(selected)
         draw_update()
+
+        // Get meta
+        if (selected) {
+          try {
+            var d = data.value[selected[0]][[selected[1]]]
+            meta.value = {
+              name: d.meta.last_edit,    
+              time: new Date(Math.max(...Object.keys(d.meta).filter(v => v != "last_edit"))).toLocaleString()
+            }
+          } catch {
+            meta.value = {}
+          }
+        }
       }
     }
     const pos2coord = (x, y) => {
@@ -247,7 +264,7 @@ createApp({
       user, logged, signInWithDiscord, signout, 
       draw, mouseMove, zoom, click,
       colors, selected_color,
-      last_edit, delay, can_edit
+      last_edit, delay, can_edit, meta
     }
   }
 }).mount('#place')

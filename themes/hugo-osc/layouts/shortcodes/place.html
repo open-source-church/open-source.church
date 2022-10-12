@@ -9,7 +9,6 @@
     <a class="ml-5 btn btn-primary btn-sm" @click="signout">
       {{ partial "ti" "logout" }} Log out <img height="32" :src="user.user_metadata.avatar_url" class="rounded-circle" /> [[ user.user_metadata.full_name]]
     </a>
-    <p class="text-majenta"><span v-if="!can_edit" >Attend [[delay-last_edit]] secondes pour dessiner.</span></p>
 </div>
 <div v-else class="mb-3">
   <a class="ml-5 btn btn-primary btn-sm" @click="signInWithDiscord">{{partial "ti" "discord"}} connecte-toi pour dessiner</a>
@@ -20,6 +19,8 @@
   @mousemove="mouseMove"
   @click="click">
 </canvas>
+
+<p class="text-majenta" v-if="logged"><span v-if="!can_edit" >Attend [[delay-last_edit]] secondes pour dessiner.</span></p>
 
 <hr>
 
@@ -55,13 +56,15 @@ createApp({
         .from("place")
         .select();
       data.value = R.data;
+      draw();
     }
     fetch_pixels()
 
     const subscription = SB
-      .from("place")
-      .on("*", (d) => {
-        console.log("UPDAAAATE")
+      .channel("public:place")
+      .on('postgres_changes',
+          { event: '*', schema: 'public', table: 'place' }, (d) => {
+        console.log("UPDAAAATE", d)
         fetch_pixels();
       })
       .subscribe();
@@ -74,13 +77,14 @@ createApp({
       else 
         user.value = {}
     });
-    onMounted(() => (user.value = SB.auth.user()));
+    onMounted(() => (user.value = SB.auth.getUser()));
     const logged = computed(() => user.value && user.value.user_metadata)
     const signInWithDiscord = async () => {
-      const { user, session, error } = await SB.auth.signIn({
+      const { user, session, error } = await SB.auth.signInWithOAuth({
         provider: 'discord',
-      },{
-        redirectTo: {{ .Page.Permalink }}
+        options: {
+          redirectTo: '{{ .Page.Permalink }}'
+        }
       })
     }
     const signout = async () => {

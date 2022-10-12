@@ -121,8 +121,9 @@ createApp({
     fetchStories()
 
     const subscription = SB
-      .from("stories")
-      .on("*", (d) => {
+      .channel("public:stories")
+      .on('postgres_changes',
+          { event: '*', schema: 'public', table: 'stories' }, (d) => {
         console.log("UPDAAAATE", d)
         fetchStories();
       })
@@ -135,13 +136,14 @@ createApp({
       else 
         user.value = {}
     });
-    onMounted(() => (user.value = SB.auth.user()));
+    onMounted(() => (user.value = SB.auth.getUser()));
     const logged = computed(() => user.value && user.value.user_metadata)
     const signInWithDiscord = async () => {
-      const { user, session, error } = await SB.auth.signIn({
+      const { user, session, error } = await SB.auth.signInWithOAuth({
         provider: 'discord',
-      },{
-        redirectTo: {{ .Page.Permalink }}
+        options: {
+          redirectTo: '{{ .Page.Permalink }}'
+        }
       })
     }
     const signout = async () => {

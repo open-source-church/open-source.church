@@ -48,14 +48,25 @@ createApp({
   delimiters: ["[[", "]]"],
   data() {
     /*
+    PARAMS
+    */
+    const W = 64
+    const H = 64
+    const WIDTH = 10
+    /*
     SUPABASE
     */
-    const data = ref([])
+   const data = ref({})
     const fetch_pixels = async () => {
       const R = await SB
         .from("place")
         .select();
-      data.value = R.data;
+      R.data.forEach(d => {
+        if (!(d.x in data.value))
+          data.value[d.x] = {}
+        data.value[d.x][d.y] = d
+        })
+      // data.value = R.data;
       draw();
     }
     fetch_pixels()
@@ -91,14 +102,21 @@ createApp({
       const { error } = await SB.auth.signOut()
     }
     const get_color = (x, y) => {
-      var d = data.value.find(d => d.x == x && d.y == y)
-      if (d) return d.color
-      else return "#000000"
+      try {
+        return data.value[x][y].color
+      } catch {
+        return "#000000"
+      }
     }
     const set_pixel = async (x, y, color) => {
       if (!logged.value || !can_edit.value ) return
-      var d = data.value.find(d => d.x == x && d.y == y)
-      var meta = d ? d.meta : {}
+      try {
+        var d = data.value[x][y]
+        var meta = d ? d.meta : {}
+      } catch {
+        var d = null
+        var meta = {}
+      }
       s = {
           x: x,
           y: y,
@@ -118,11 +136,12 @@ createApp({
     const last_edit = computed(() => {
       if (!logged.value) return null
       var last = 0
-      data.value.forEach(
-        d => Object.keys(d.meta).forEach(
-          t => {
-            if(d.meta[t] == logged.value.provider_id && t > last) last = t
-          }))
+      for (var x in data.value)
+        for (var y in data.value)
+          if (data.value[x][y]) 
+            for (var t in data.value[x][y].meta)
+              if (data.value[x][y].meta[t] == logged.value.provider_id && t > last)
+                last = t
       return Math.round((now.value - last) / 1000)
     })
     const can_edit = computed(() => {
@@ -132,14 +151,12 @@ createApp({
     /*
     CANVAS
     */
-    const W = 64
-    const H = 64
-    const WIDTH = 10
     var canvas = null; var ctx = null
     var scale = 1; var max_scale = 3; var min_scale = .1; var scale_step = .1;
     var draw_pos = []
     var selected = null
     var delay = 60;
+    var to_update = [];
     onMounted(() => {
       canvas = document.getElementById("pixel")
       ctx =  canvas.getContext("2d");
@@ -154,6 +171,10 @@ createApp({
         }
       }
     }
+    const draw_update = () => {
+      to_update.forEach(i => drawPixel(i[0], i[1]))      
+      to_update = []
+    }
     const drawPixel = (x, y) => {
       ctx.save()
       ctx.fillStyle = get_color(x, y);
@@ -163,22 +184,28 @@ createApp({
 
       if (selected && selected[0] == x && selected[1] == y){
         ctx.strokeStyle = "green"
-        ctx.strokeRect(dx + x*WIDTH*scale, dy + y*WIDTH*scale, WIDTH*scale, WIDTH*scale);
+        ctx.strokeRect(dx + x*WIDTH*scale + 1, dy + y*WIDTH*scale + 1, WIDTH*scale - 2, WIDTH*scale - 2);
       }
       ctx.restore()
     }
     /*
     PAN & ZOOM
     */
+    var drag = false
     const mouseMove = (evt) => {
       // Move draw
       if (evt.buttons) {
         draw_pos[0] += evt.movementX
         draw_pos[1] += evt.movementY
+        drag = true
+        draw()
+      } else {
+        // Get selected
+        if (selected) to_update.push(selected)
+        selected = pos2coord(evt.offsetX, evt.offsetY)
+        if (selected) to_update.push(selected)
+        draw_update()
       }
-      // Get selected
-      selected = pos2coord(evt.offsetX, evt.offsetY)
-      draw()
     }
     const pos2coord = (x, y) => {
       // Prend la position x:y sur le canvas, et renvoie les coordonnées du pixel en dessous
@@ -203,9 +230,10 @@ createApp({
     }
     const click = async (evt) => {
       var coord = pos2coord(evt.offsetX, evt.offsetY)
-      if (coord){
+      if (coord && !drag){
         set_pixel(coord[0], coord[1], selected_color.value)
       }
+      drag = false
     }
     /*
     INTERFACE

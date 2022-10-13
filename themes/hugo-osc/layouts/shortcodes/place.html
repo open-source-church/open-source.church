@@ -22,7 +22,7 @@
 
 <p class="text-majenta" v-if="logged"><span v-if="!can_edit" >Attend [[delay-last_edit]] secondes pour dessiner.</span></p>
 
-<p class="text-cyan" v-if="meta.name || meta.time">Pixel placé par [[meta.name || '???']] le [[meta.time]] </p>
+<p class="text-cyan" v-if="meta.name || meta.time">Pixel ([[ meta.coord.join(":") ]]) placé par [[meta.name || '???']] le [[meta.time]] </p>
 
 <hr>
 
@@ -30,7 +30,7 @@
 
 
 </div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.0.0/dist/umd/supabase.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 <script>
@@ -42,7 +42,7 @@ var SUPABASE_ANON_KEY =
 
 const { createClient } = supabase
 const SB = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-const { createApp, onMounted, ref, computed, reactive, watch } = Vue
+const { createApp, onMounted, onBeforeUnmount, ref, computed, reactive, watch } = Vue
 
 
 
@@ -55,19 +55,24 @@ createApp({
     const W = 64
     const H = 64
     const WIDTH = 10
+    var to_update = [];
     /*
     SUPABASE
     */
-   const data = ref({})
+    const update_data = (d) => {
+      if (!(d.x in data.value))
+        data.value[d.x] = {}
+      data.value[d.x][d.y] = d
+      to_update.push([d.x, d.y])
+      draw_update()
+    }
+    const data = ref({})
     const fetch_pixels = async () => {
       const R = await SB
         .from("place")
         .select();
-      R.data.forEach(d => {
-        if (!(d.x in data.value))
-          data.value[d.x] = {}
-        data.value[d.x][d.y] = d
-        })
+      console.log(`Recu ${R.data.length} elements.`)
+      R.data.forEach(d => update_data(d))
       // data.value = R.data;
       draw();
     }
@@ -78,19 +83,23 @@ createApp({
       .on('postgres_changes',
           { event: '*', schema: 'public', table: 'place' }, (d) => {
         console.log("UPDAAAATE", d)
-        fetch_pixels();
+        // fetch_pixels();
+        update_data(d.new)
       })
       .subscribe();
-      console.log(subscription)
+    console.log(SB.getChannels())
 
     var user = ref({})
     SB.auth.onAuthStateChange((_, session) => {
-      if (session)
+      if (session) {
         user.value = session.user;
+        console.log("USER CHANGED:", user.value)
+      }
       else 
         user.value = {}
     });
     onMounted(() => (user.value = SB.auth.getUser()));
+
     const logged = computed(() => user.value && user.value.user_metadata)
     const signInWithDiscord = async () => {
       const { user, session, error } = await SB.auth.signInWithOAuth({
@@ -114,7 +123,7 @@ createApp({
       if (!logged.value || !can_edit.value ) return
       try {
         var d = data.value[x][y]
-        var meta = d ? d.meta : {}
+        var meta = d ? JSON.parse(JSON.stringify(d.meta)) : {}
       } catch {
         var d = null
         var meta = {}
@@ -159,7 +168,6 @@ createApp({
     var draw_pos = []
     var selected = null
     var delay = 60;
-    var to_update = [];
     onMounted(() => {
       canvas = document.getElementById("pixel")
       ctx =  canvas.getContext("2d");
@@ -215,6 +223,7 @@ createApp({
           try {
             var d = data.value[selected[0]][[selected[1]]]
             meta.value = {
+              coord: selected,
               name: d.meta.last_edit,    
               time: new Date(Math.max(...Object.keys(d.meta).filter(v => v != "last_edit"))).toLocaleString()
             }

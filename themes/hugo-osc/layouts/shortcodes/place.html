@@ -14,11 +14,21 @@
   <a class="ml-5 btn btn-primary btn-sm" @click="signInWithDiscord">{{partial "ti" "discord"}} connecte-toi pour dessiner</a>
 </div>
 
-<canvas width="800" height="600" id="pixel"
-  @wheel.prevent="zoom"
-  @mousemove="mouseMove"
-  @click="click">
-</canvas>
+<!-- <div class="place-container">
+  <div class="area">
+    <div style="transform: scale(10);">
+    -->
+      <canvas width="640" height="640" id="pixel"
+        @wheel.prevent="zoom"
+        @mousemove="mouseMove"
+        @touchmove="touchMove"
+        @touchstart="touchMove"
+        @click="click">
+      </canvas>
+      <!--       
+    </div>
+  </div>
+</div> -->
 
 <p class="text-majenta" v-if="logged"><span v-if="!can_edit" >Attend [[delay-last_edit]] secondes pour dessiner.</span></p>
 
@@ -164,7 +174,10 @@ createApp({
     CANVAS
     */
     var canvas = null; var ctx = null
-    var scale = 1; var max_scale = 3; var min_scale = .1; var scale_step = .1;
+    var scale = 1;
+    var max_scale = 3;
+    var min_scale = .1;
+    var scale_step = .1;
     var draw_pos = []
     var selected = null
     var delay = 60;
@@ -174,24 +187,40 @@ createApp({
       draw_pos = [canvas.width/2, canvas.height/2];
       draw()
     })
+    var last_draw = [null, null, null]
+    var _draw_pos = []
     const draw = () => {
+      _draw_pos = [ 
+        Math.floor(draw_pos[0] / WIDTH / scale) * WIDTH * scale,
+        Math.floor(draw_pos[1] / WIDTH / scale) * WIDTH * scale,
+      ]
+      if (_draw_pos[0] == last_draw[0] && 
+          _draw_pos[1] == last_draw[1] && 
+          scale == last_draw[2]) return
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       for (x = 0; x < W; x++) {
         for (y = 0; y < H; y++) {
           drawPixel(x, y);
         }
       }
+      last_draw = [
+        _draw_pos[0], _draw_pos[1], scale
+      ]
     }
     const draw_update = () => {
       to_update.forEach(i => drawPixel(i[0], i[1]))      
       to_update = []
     }
     const drawPixel = (x, y) => {
+      var dx = _draw_pos[0] - (W * WIDTH * scale) / 2
+      var dy = _draw_pos[1] - (H * WIDTH * scale) / 2
+      var px = dx + x*WIDTH*scale
+      var py = dy + y*WIDTH*scale
+      if (px + WIDTH*scale < 0 || py + WIDTH*scale < 0
+          || px > canvas.width || py > canvas.height ) return
       ctx.save()
       ctx.fillStyle = get_color(x, y);
-      var dx = draw_pos[0] - (W * WIDTH * scale) / 2
-      var dy = draw_pos[1] - (H * WIDTH * scale) / 2
-      ctx.fillRect(dx + x*WIDTH*scale, dy + y*WIDTH*scale, WIDTH*scale, WIDTH*scale);
+      ctx.fillRect(px, py, WIDTH*scale, WIDTH*scale);
 
       if (selected && selected[0] == x && selected[1] == y){
         ctx.strokeStyle = "green"
@@ -233,11 +262,31 @@ createApp({
         }
       }
     }
+    var last_touch = null
+    const touchMove = (evt) => {
+      if (evt.type == "touchstart")
+      last_touch = [
+        evt.touches[0].clientX,
+        evt.touches[0].clientY,
+      ]
+      if (evt.type == "touchmove" && last_touch)
+      {
+        evt.preventDefault()
+        draw_pos[0] -= last_touch[0] - evt.touches[0].clientX
+        draw_pos[1] -= last_touch[1] - evt.touches[0].clientY
+        draw()
+        last_touch = [
+          evt.touches[0].clientX,
+          evt.touches[0].clientY,
+        ]
+      } else if (evt.type == "touchend")
+        last_touch = null
+    }
     const pos2coord = (x, y) => {
       // Prend la position x:y sur le canvas, et renvoie les coordonnées du pixel en dessous
-      var x = (W * WIDTH * scale) / 2 - draw_pos[0] + x
+      var x = (W * WIDTH * scale) / 2 - _draw_pos[0] + x
       x = Math.floor(x / WIDTH / scale)
-      var y = (H * WIDTH * scale) / 2 - draw_pos[1] + y
+      var y = (H * WIDTH * scale) / 2 - _draw_pos[1] + y
       y = Math.floor(y / WIDTH / scale)
       if (x < 0 || x >= W || y < 0 || y >= H) 
         return null
@@ -271,7 +320,7 @@ createApp({
     const selected_color = ref("white")
     return {
       user, logged, signInWithDiscord, signout, 
-      draw, mouseMove, zoom, click,
+      draw, mouseMove, zoom, click, touchMove,
       colors, selected_color,
       last_edit, delay, can_edit, meta
     }
@@ -283,6 +332,7 @@ createApp({
 
 canvas#pixel {
   border: 2px solid #00ffdd;
+  image-rendering: pixelated;
 }
 
 .palette div.colorpicker {
@@ -300,5 +350,20 @@ canvas#pixel {
   margin: 0;
 }
 
+.place-container {
+  position: fixed;
+  width: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+.area {
+  /*position: absolute;*/
+  display:inline-block;
+}
 
 </style>

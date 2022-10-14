@@ -17,6 +17,16 @@ quiz:
   randomizeanswers: true
   skipvalidation: true
   questions:
+  - text: "#### Parmi ces qualités, laquelle te correspond le mieux ?"
+    answers:
+    - title: Une bonne humeur débordante !
+      value: 1
+    - title: Un leadership naturel
+      value: 2
+    - title: Une grande honnêteté
+      value: 3
+    - title: Une serviabilité quasiment constante
+      value: 4
   - text: "#### Et quel serait ton petit défaut ?"
     answers:
     - title: Tu manques de confiance en toi 

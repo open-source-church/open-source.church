@@ -108,28 +108,26 @@ quiz:
       title: "Tu es Mirabel !"
       name: "Mirabel"
       description: "Elle est le personnage principal du film Encanto. Mirabel est une fille pleine de bonne humeur et d’une grande gentillesse. Elle souffre du fait qu’elle soit la seule de sa famille à ne pas posséder de pouvoir, mais va se rendre compte au fil de son aventure que ses qualités valent bien toute la magie du monde !"
-      image: https://media.giphy.com/media/njYrp176NQsHS/giphy.gif
+      image: https://media.giphy.com/media/HG6FHWzOJQiWvNTPjh/giphy.gif
     2: 
       title: "Tu es Abuela!"
       name: "Abuela"
       description: "Abuela est la matriarche de la famille Madrigal. C’est à elle que le premier don a été confié. Elle possède une grande force de caractère et dirige sa famille avec une main de fer. Elle souhaite être digne des pouvoirs magiques qui ont été confiés aux Madrigal, et fait tout pour que sa famille se mettent au service du village. Même si au fond elle aime profondément ses proches, elle ne se rend malheureusement pas compte de la pression qu’elle leur inflige."
-      image: https://media.giphy.com/media/njYrp176NQsHS/giphy.gif
+      image: https://lh5.googleusercontent.com/proxy/YRw7tLXq6PVDQOx0oLYMmwNOAqWwh2WmmHqZxrBck5zK32lU5DnzNNRVuQhSaCdnn2W8Z-5quxJwnA16XHpFmZLr12sl9DYMRHnZKptxPtqA4Fa01FWyPrQq8p3XGqafP2_ef8cKPIJ66YGotecXybFNMQYMT1b4oMhS=w1200-h630-p-k-no-nu
     3: 
       title: "Tu es Bruno!"
       name: "Bruno"
       description: "Bruno est le marginal de la famille Madrigal. Il possède un don qui lui permet de percevoir l’avenir, et même s’il est plein de bonnes intentions, il a parfois de la peine à utiliser ce pouvoir avec du tact. Sa plus grande force est certainement son authenticité. Loin des faux semblants et des apparences, Bruno reste fidèle à lui-même mais si ça ne plait pas à tout le monde."
-      image: https://media.giphy.com/media/njYrp176NQsHS/giphy.gif
+      image: https://www.elvigia.net/u/fotografias/m/2022/1/10/f850x638-481223_558712_5050.jpg
     4: 
       title: "Tu es Luisa !"
       name: "Luisa"
       description: "Luisa est la sœur ainée de Mirabel. Elle a une force incroyable et la met volontiers au service d’autrui. Elle a d’ailleurs tendance a vouloir porter les problèmes de tout le monde sur ses épaules. Luisa va devoir apprendre à s’en remettre aux autres et à accepter qu’elle possède des failles comme tout le monde !"
-      image: https://media.giphy.com/media/njYrp176NQsHS/giphy.gif
+      image: https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/rockcms/2022-01/luisa-encanto-doppleganger-today-main-406cd6.jpg
   
 ---
 
 Un petit quizz qui en 9 questions te permettra de trouver ton alter ego dans le film Encanto ! (réalisé avec des méthodes hautement scientifiques issues des plus grandes universités québécoises de psychologie ><)
-
-{{<figure width="60%" src="https://media.giphy.com/media/61tYloUgq1eOk/giphy.gif" class="text-center">}}
 
 <hr />
 

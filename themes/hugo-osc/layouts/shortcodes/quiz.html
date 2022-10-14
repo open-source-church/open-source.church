@@ -67,6 +67,9 @@
     <div v-if="!isQuiz" class="col-12"> 
       <h4>[[ quiz.results[ finalscore["_max"] ].title ]]</h4>
       <div v-html="md(quiz.results[ finalscore['_max'] ].description)"></div>
+      <img v-if="quiz.results[finalscore['_max']].image"
+          :src="quiz.results[finalscore['_max']].image"
+          class="col-12 px-0 pb-3" />
       <div class="col-12 offset-0 col-md-8 offset-md-2 row">
         <div class="col-12 row align-items-center" v-for="(r,k,i) in quiz.results" :key="k">
           <div class="col-4">[[ r.name ]]</div>

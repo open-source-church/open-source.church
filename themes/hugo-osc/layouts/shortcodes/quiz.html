@@ -127,6 +127,9 @@
     background-color: #00ffdd!important;
     border-color: #00ffdd!important;
   }
+  #quiz .questions .btn {
+    white-space: break-spaces;
+  }
 </style>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -171,9 +174,11 @@ createApp({
       if (score.value.length == questionNumber.value)
         // Adding value
         score.value.push(a.value)
-        else
+      else
         // Changing value
         score.value[score.value.length - 1] = a.value
+      // Skipping validation?
+      if (quiz.skipvalidation) nextQuestion()
     }
 
     const nextQuestion = () => {

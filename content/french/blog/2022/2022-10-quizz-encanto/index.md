@@ -1,13 +1,15 @@
 ---
-title: "[Quiz] Auquel de ces 4 personnages d’Encanto ressembles-tu le plus ?"
+title: "[Test] Auquel de ces 4 personnages d’Encanto ressembles-tu le plus ?"
 author: "Elia Deshayes"
-date: 2022-11-14T08:17:11+01:00
-image: "2022-11-quizz-encanto-featured.jpg"
+date: 2022-10-14T08:17:11+01:00
+image: "2022-10-quizz-encanto-featured.jpg"
+aliases:
+  - /2022/11/quiz-auquel-de-ces-4-personnages-dencanto-ressembles-tu-le-plus/
 categories:
   - Quiz
 type: post
 tags: ["Quiz", "Encanto", "Personnage"]
-summary: "Un petit quizz qui en 9 questions te permettra de trouver ton alter ego dans le film Encanto !"
+summary: "Un petit test de personalité en 9 questions qui te permettra de trouver ton alter ego dans le film Encanto !"
 quiz:
   title: ""
   displayAnswersInline: false
@@ -137,7 +139,7 @@ quiz:
   
 ---
 
-Un petit quizz qui en 9 questions te permettra de trouver ton alter ego dans le film Encanto ! (réalisé avec des méthodes hautement scientifiques issues des plus grandes universités québécoises de psychologie ><)
+Un petit test qui en 9 questions te permettra de trouver ton alter ego dans le film Encanto ! (réalisé avec des méthodes hautement scientifiques issues des plus grandes universités québécoises de psychologie ><)
 
 <hr />
 

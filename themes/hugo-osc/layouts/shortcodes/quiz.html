@@ -91,6 +91,31 @@
 
 </div>
 
+<div hidden>
+  <h2>Contenu du quiz sans javascript:</h2>
+  <h3>Questions:</h3>
+  
+  {{ range .Page.Params.quiz.questions  }}
+  <p>
+    {{ .text | markdownify }}
+    <ul>
+    {{ range .answers }}
+      <li>{{ .title }} ({{.value}}) {{ .comment | markdownify }}</li>
+    {{ end }}
+    </ul>
+    {{ .posttext | markdownify }}
+  </p>
+  {{ end }}
+
+  <h3>Résultats:</h3>
+  {{ range .Page.Params.quiz.results  }}
+  <h4>{{ .title }}</h4>
+  <p>
+    {{ .description }}
+  </p>
+  {{ end }}
+</div>
+
 <style>
   #quiz blockquote {
     background: #4b4c58;

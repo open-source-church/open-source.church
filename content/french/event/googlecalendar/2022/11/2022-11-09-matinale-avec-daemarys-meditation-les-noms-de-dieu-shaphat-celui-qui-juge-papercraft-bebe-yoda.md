@@ -13,13 +13,14 @@ end: '2022-11-09T11:00:00+01:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/night-sky-osc-noms-de-dieu.jpg
 isodate: '2022-11-09'
 location: en ligne
-path: 2022/11/2022-11-09-matinale-avec-daemarys-meditation-les-noms-de-dieu-papercraft-lego.md
+path: 2022/11/2022-11-09-matinale-avec-daemarys-meditation-les-noms-de-dieu-shaphat-celui-qui-juge-papercraft-bebe-yoda.md
 start: '2022-11-09T09:30:00+01:00'
 start-unix: 1667982600.0
 template: twitch
-title: 'Matinale avec Daemarys: Méditation "Les noms de Dieu" & Papercraft / Lego'
+title: 'Matinale avec Daemarys: Méditation "Les noms de Dieu" [Shaphat — Celui qui
+  juge] & Papercraft [Bébé Yoda]'
 type: event
-url: /activities/twitch/2022/11/09/matinale-avec-daemarys-meditation-les-noms-de-dieu-papercraft-lego
+url: /activities/twitch/2022/11/09/matinale-avec-daemarys-meditation-les-noms-de-dieu-shaphat-celui-qui-juge-papercraft-bebe-yoda
 with:
 - Daemarys
 ---

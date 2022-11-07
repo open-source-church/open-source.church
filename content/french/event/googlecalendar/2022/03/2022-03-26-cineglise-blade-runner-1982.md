@@ -25,7 +25,7 @@ url: /activities/cineglise/2022/03/26/cineglise-blade-runner-1982
 with:
 - Alexandre Michelle
 - Quentin B.
-- Olivier Keshavjee
+- Olivier Keshavjeehttps://www.deformes.ch/portrait/2022/10/elle-parvient-enfin-entrer-dans-le-liberalisme-religieux-enfance
 ---
 On regarde le *Director's Cut* (1992) de ***Blade Runner*** (1982) de Ridley Scott, avec notamment Harrison Ford, Sean Young et Rutger Hauer, basé sur une nouvelle de Philip K. Dick.
 

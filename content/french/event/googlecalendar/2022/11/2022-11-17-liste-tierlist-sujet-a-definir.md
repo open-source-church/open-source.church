@@ -12,13 +12,15 @@ end: '2022-11-17T22:30:00+01:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/samantha-gades-LA6XfeVI5_c-unsplash-scaled.jpg
 isodate: '2022-11-17'
 location: en ligne
-path: 2022/11/2022-11-17-soiree-osc-jeux-discussion-liste-que-du-bonheur.md
+path: 2022/11/2022-11-17-liste-tierlist-sujet-a-definir.md
 start: '2022-11-17T20:30:00+01:00'
 start-unix: 1668713400.0
 template: twitch
-title: 'Soirée OSC: jeux, discussion, liste, que du bonheur !'
+title: '[Liste] TierList, sujet à définir'
 type: event
-url: /activities/twitch/2022/11/17/soiree-osc-jeux-discussion-liste-que-du-bonheur
-with: []
+url: /activities/twitch/2022/11/17/liste-tierlist-sujet-a-definir
+with:
+- Elyius
+- Olivier Keshavjee
 ---
 On joue, on cause, on fait des listes... Un rendez-vous hebdomadaire !

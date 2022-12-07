@@ -6,7 +6,7 @@ image: "2022-12-thanos-jesus-featured.jpg"
 categories:
   - Articles
 type: post
-tags: ["Thanos", "Doctor Strange", "Moon Knight" ]
+tags: ["Thanos", "Doctor Strange", "Moon Knight", "Marvel", "Tentation", "Jésus" ]
 summary: ""
 ---
 

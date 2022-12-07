@@ -8,7 +8,7 @@ image: thanos-malthus-featured.jpg
 categories:
   - Articles
 type: post
-tags: ["Chrétien", "Communauté", "Écologie", "Foi", "Marvel", "Militantisme"]
+tags: ["Chrétien", "Communauté", "Écologie", "Foi", "Marvel", "Militantisme", "Thanos"]
 ---
 
 ## Pensée écologique, théologie et … Marvel !

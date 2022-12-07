@@ -1,7 +1,7 @@
 ---
 title: "Thanos versus Jésus face à la tentation de maîtrise absolue"
 author: "Sébastien Gengembre"
-date: 2022-12-26T08:17:11+01:00
+date: 2022-12-07T20:17:11+01:00
 image: "2022-12-thanos-jesus-featured.jpg"
 categories:
   - Articles

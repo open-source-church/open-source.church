@@ -6,16 +6,16 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
-date: '2022-12-06T20:00:00+01:00'
+date: '2022-12-06T20:30:00+01:00'
 display: light
 duration: '1:30:00'
-end: '2022-12-06T21:30:00+01:00'
+end: '2022-12-06T22:00:00+01:00'
 image: https://subpac.com/wp-content/uploads/2016/09/maxresdefault.jpg
 isodate: '2022-12-06'
 location: en ligne
 path: 2022/12/2022-12-06-let-s-play-avec-elyius-fallout-4.md
-start: '2022-12-06T20:00:00+01:00'
-start-unix: 1670353200.0
+start: '2022-12-06T20:30:00+01:00'
+start-unix: 1670355000.0
 template: twitch
 title: 'Let''s play avec Elyius: Fallout 4'
 type: event

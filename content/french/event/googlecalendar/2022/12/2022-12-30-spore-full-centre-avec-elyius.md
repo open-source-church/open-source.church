@@ -10,16 +10,16 @@ date: '2022-12-30T10:00:00+01:00'
 display: light
 duration: '2:00:00'
 end: '2022-12-30T12:00:00+01:00'
-image: https://niche-game.com/wordpress/wp-content/uploads/2021/06/KeyVisual_1024x576.png
+image: https://steamrip.com/wp-content/uploads/2021/07/spore-free-download-preinstalled-steamrip.jpg
 isodate: '2022-12-30'
 location: en ligne
-path: 2022/12/2022-12-30-niche-avec-elyius.md
+path: 2022/12/2022-12-30-spore-full-centre-avec-elyius.md
 start: '2022-12-30T10:00:00+01:00'
 start-unix: 1672390800.0
 template: twitch
-title: Niche avec Elyius
+title: Spore full centre avec Elyius
 type: event
-url: /activities/twitch/2022/12/30/niche-avec-elyius
+url: /activities/twitch/2022/12/30/spore-full-centre-avec-elyius
 with:
 - Elyius
 ---

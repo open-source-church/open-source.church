@@ -13,14 +13,14 @@ end: '2023-03-15T22:30:00+01:00'
 image: https://www.reformes.ch/sites/default/files/styles/entete/public/data/images/comm/257/Beno%C3%AEt%20Ischer.jpg
 isodate: '2023-03-15'
 location: en ligne
-path: 2023/03/2023-03-15-revue-de-presse-avec-benoit-ecologie-christianisme-gaming.md
+path: 2023/03/2023-03-15-benoit-revue-de-presse-ecologie-christianisme-gaming-et-gaming.md
 start: '2023-03-15T21:00:00+01:00'
 start-unix: 1678910400.0
 template: twitch
-title: 'Revue de Presse avec Benoît: écologie, christianisme, gaming.'
+title: 'Benoît: revue de presse (écologie, christianisme, gaming) et gaming'
 type: event
-url: /activities/twitch/2023/03/15/revue-de-presse-avec-benoit-ecologie-christianisme-gaming
+url: /activities/twitch/2023/03/15/benoit-revue-de-presse-ecologie-christianisme-gaming-et-gaming
 with:
 - Benoît Ischer
 ---
-La revue de presse de Benoît Ischer. Écologie, christianisme et gaming. En live sur twitch.
+La revue de presse de Benoît Ischer. Écologie, christianisme et gaming. Et aussi du gaming après. En live sur twitch.

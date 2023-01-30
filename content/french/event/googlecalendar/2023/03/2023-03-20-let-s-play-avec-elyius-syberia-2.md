@@ -13,13 +13,13 @@ end: '2023-03-20T22:00:00+01:00'
 image: https://sickr.files.wordpress.com/2017/06/syberia.jpg
 isodate: '2023-03-20'
 location: en ligne
-path: 2023/03/2023-03-20-let-s-play-avec-elyius-syberia.md
+path: 2023/03/2023-03-20-let-s-play-avec-elyius-syberia-2.md
 start: '2023-03-20T20:30:00+01:00'
 start-unix: 1679340600.0
 template: twitch
-title: 'Let''s play avec Elyius: Syberia'
+title: 'Let''s play avec Elyius: Syberia 2'
 type: event
-url: /activities/twitch/2023/03/20/let-s-play-avec-elyius-syberia
+url: /activities/twitch/2023/03/20/let-s-play-avec-elyius-syberia-2
 with:
 - Elyius
 ---

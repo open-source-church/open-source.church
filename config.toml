@@ -142,6 +142,11 @@ icon = "youtube" # teenyicons
 link = "https://youtube.com/c/opensourcechurch"
 
 [[params.social]]
+title = "mastodon"
+icon = "mastodon" # teenyicons
+link = "https://tooting.ch/@osc"
+
+[[params.social]]
 title = "facebook"
 icon = "facebook" # teenyicons
 link = "https://facebook.com/opensourcechurch"

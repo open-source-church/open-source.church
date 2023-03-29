@@ -196,7 +196,8 @@
     {{ else }}
     <div class="row text-center">
       {{ range site.Params.social }}
-          <a class="col p-2 pb-0 dark" href="{{ .link | safeURL }}" target="_blank" rel="noreferrer" >
+          <a class="col p-2 pb-0 dark" href="{{ .link | safeURL }}" target="_blank"
+            rel="{{ with .rel }}{{ . }}{{ else }}noreferrer{{end}}" >
             {{ with .icon }} <span class="h2">{{ partial "ti" . }}</span> {{end}}
             <br> <span class="hidden h6">{{ .title }}</span>
           </a>

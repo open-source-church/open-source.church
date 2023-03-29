@@ -101,7 +101,8 @@
         <div class="col-md-5 text-md-right text-center">
           <ul class="list-inline">
             {{ range site.Params.social }}
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="{{ .link | safeURL }}" target="_blank" rel="noreferrer" >
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="{{ .link | safeURL }}" target="_blank"
+              rel="{{ with .rel }}{{ . }}{{ else }}noreferrer{{end}}" >
               {{ with .icon }} {{ partial "ti" . }} {{end}}
               {{ with .image }} <img src="{{ . }}" width="16" /> {{end}}
             </a></li>

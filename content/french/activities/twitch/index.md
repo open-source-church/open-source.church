@@ -15,9 +15,9 @@ with:
 - Olivier Keshavjee
 - Irockois
 - Ilans
-#- Noémie Emery
-#- Etienne Ischer
-#- MoCo
+- Noémie Emery
+- Elyius
+- Daemarys
 ---
 
 La chaine twitch d'Open Source Church.

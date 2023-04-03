@@ -22,7 +22,7 @@ Et on se retrouve un moment au coin du feu. À nous d’en faire un moment bienf
 
 Pour cela, quelques règles du jeu:
 
-**Accueil**
+**I Am Groot**
 
 > *Par la grâce de Dieu, je suis ce que je suis* — 1 Corinthiens 15.10
 

@@ -1,5 +1,5 @@
 ---
-title: "Soirée de partage"
+title: "Infusion: soirées de partage"
 image: 2020-10-31_spritely_scene-featured.jpg
 location: Discord
 summary: "Une soirée pour partager et prier"

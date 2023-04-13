@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2023-02-09T22:30:00+01:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/samantha-gades-LA6XfeVI5_c-unsplash-scaled.jpg
 isodate: '2023-02-09'
-location: en ligne
+location: twitch
 path: 2023/02/2023-02-09-soiree-osc-jeux-discussion-liste-que-du-bonheur.md
 start: '2023-02-09T20:30:00+01:00'
 start-unix: 1675971000.0

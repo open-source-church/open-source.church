@@ -12,7 +12,7 @@ duration: '2:00:00'
 end: '2023-02-24T12:00:00+01:00'
 image: https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_Gris_image1600w.jpg
 isodate: '2023-02-24'
-location: en ligne
+location: twitch
 path: 2023/02/2023-02-24-elyius-joue-a-gris.md
 start: '2023-02-24T10:00:00+01:00'
 start-unix: 1677229200.0

@@ -12,7 +12,7 @@ duration: '1:30:00'
 end: '2023-01-25T22:30:00+01:00'
 image: https://www.reformes.ch/sites/default/files/styles/entete/public/data/images/comm/257/Beno%C3%AEt%20Ischer.jpg
 isodate: '2023-01-25'
-location: en ligne
+location: twitch
 path: 2023/01/2023-01-25-revue-de-presse-avec-benoit-ecologie-christianisme-gaming.md
 start: '2023-01-25T21:00:00+01:00'
 start-unix: 1674676800.0

@@ -12,7 +12,7 @@ duration: '2:00:00'
 end: '2022-04-30T22:00:00+02:00'
 image: https://assets.nintendo.com/image/upload/c_fill,f_auto,q_auto,w_1200/v1/ncom/en_US/games/switch/f/fall-guys-ultimate-knockout-switch/hero
 isodate: '2022-04-30'
-location: en ligne
+location: twitch
 path: 2022/04/2022-04-30-stream-squad-sur-fall-guys.md
 start: '2022-04-30T20:00:00+02:00'
 start-unix: 1651341600.0

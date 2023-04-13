@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2022-09-03T16:30:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/esther-mottier.webp
 isodate: '2022-09-03'
-location: en ligne
+location: twitch
 path: 2022/09/2022-09-03-cafe-transition-rencontre-avec-esther-mottier.md
 start: '2022-09-03T14:30:00+02:00'
 start-unix: 1662208200.0

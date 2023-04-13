@@ -12,7 +12,7 @@ duration: '2:30:00'
 end: '2022-12-14T22:30:00+01:00'
 image: https://s3.gaming-cdn.com/images/products/1793/616x353/talisman-digital-edition-pc-mac-jeu-steam-cover.jpg
 isodate: '2022-12-14'
-location: en ligne
+location: twitch
 path: 2022/12/2022-12-14-open-stream-crew-talisman.md
 start: '2022-12-14T20:00:00+01:00'
 start-unix: 1671044400.0

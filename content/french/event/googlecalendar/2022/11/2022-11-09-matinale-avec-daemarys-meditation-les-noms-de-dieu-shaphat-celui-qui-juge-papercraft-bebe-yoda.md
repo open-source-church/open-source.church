@@ -12,7 +12,7 @@ duration: '1:30:00'
 end: '2022-11-09T11:00:00+01:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/night-sky-osc-noms-de-dieu.jpg
 isodate: '2022-11-09'
-location: en ligne
+location: twitch
 path: 2022/11/2022-11-09-matinale-avec-daemarys-meditation-les-noms-de-dieu-shaphat-celui-qui-juge-papercraft-bebe-yoda.md
 start: '2022-11-09T09:30:00+01:00'
 start-unix: 1667982600.0

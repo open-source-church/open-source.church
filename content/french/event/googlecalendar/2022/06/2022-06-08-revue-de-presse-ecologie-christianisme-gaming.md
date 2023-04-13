@@ -12,7 +12,7 @@ duration: '1:30:00'
 end: '2022-06-08T22:30:00+02:00'
 image: https://www.reformes.ch/sites/default/files/styles/entete/public/data/images/comm/257/Beno%C3%AEt%20Ischer.jpg
 isodate: '2022-06-08'
-location: en ligne
+location: twitch
 path: 2022/06/2022-06-08-revue-de-presse-ecologie-christianisme-gaming.md
 start: '2022-06-08T21:00:00+02:00'
 start-unix: 1654714800.0

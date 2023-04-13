@@ -12,7 +12,7 @@ duration: '1:30:00'
 end: '2023-02-06T22:00:00+01:00'
 image: https://sickr.files.wordpress.com/2017/06/syberia.jpg
 isodate: '2023-02-06'
-location: en ligne
+location: twitch
 path: 2023/02/2023-02-06-let-s-play-avec-elyius-syberia-2.md
 start: '2023-02-06T20:30:00+01:00'
 start-unix: 1675711800.0

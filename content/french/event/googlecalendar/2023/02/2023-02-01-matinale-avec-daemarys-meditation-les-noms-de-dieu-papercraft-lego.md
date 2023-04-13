@@ -12,7 +12,7 @@ duration: '1:30:00'
 end: '2023-02-01T11:00:00+01:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/night-sky-osc-noms-de-dieu.jpg
 isodate: '2023-02-01'
-location: en ligne
+location: twitch
 path: 2023/02/2023-02-01-matinale-avec-daemarys-meditation-les-noms-de-dieu-papercraft-lego.md
 start: '2023-02-01T09:30:00+01:00'
 start-unix: 1675240200.0

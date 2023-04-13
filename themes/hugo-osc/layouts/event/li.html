@@ -27,9 +27,9 @@
         <p>{{ $description | markdownify }}</p>
         <div class="row">
           <!-- location -->
-          <p class="col mb-0">{{ partial "ti" "location o" }}{{ partial "location" .Params }}</p>
+          <p class="col mb-0">{{ partial "ti" "location o" }}&nbsp;{{ partial "location" .Params }}</p>
           <!-- Time -->
-          <p class="col mb-0">{{ partial "ti" "clock o" }}
+          <p class="col mb-0">{{ partial "ti" "clock o" }}&nbsp;
             {{ partial "event_time" .}}
           </p>
         </div>

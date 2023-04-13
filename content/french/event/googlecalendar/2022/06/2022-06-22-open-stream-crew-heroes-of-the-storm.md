@@ -11,7 +11,7 @@ duration: '2:30:00'
 end: '2022-06-22T22:30:00+02:00'
 image: https://static.heroesofthestorm.com/images/global/fb-share-1fcc54becc.jpg
 isodate: '2022-06-22'
-location: en ligne
+location: twitch
 path: 2022/06/2022-06-22-open-stream-crew-heroes-of-the-storm.md
 start: '2022-06-22T20:00:00+02:00'
 start-unix: 1655920800.0

@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2023-02-02T22:30:00+01:00'
 image: https://tools.open-source.church/wp-content/uploads/2023/01/meilleurs-mechants.jpg
 isodate: '2023-02-02'
-location: en ligne
+location: twitch
 path: 2023/02/2023-02-02-tier-liste-les-meilleurs-villains.md
 start: '2023-02-02T20:30:00+01:00'
 start-unix: 1675366200.0

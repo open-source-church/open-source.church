@@ -12,7 +12,7 @@ duration: '2:00:00'
 end: '2023-04-17T17:00:00+02:00'
 image: https://cdn3.whatculture.com/images/2022/10/97b3abf8f012dc60-1200x675.jpg
 isodate: '2023-04-17'
-location: en ligne
+location: twitch
 path: 2023/04/2023-04-17-let-s-play-avec-elyius.md
 start: '2023-04-17T15:00:00+02:00'
 start-unix: 1681736400.0

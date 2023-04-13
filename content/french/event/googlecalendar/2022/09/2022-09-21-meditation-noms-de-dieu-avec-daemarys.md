@@ -12,7 +12,7 @@ duration: '1:00:00'
 end: '2022-09-21T11:00:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/night-sky-osc-noms-de-dieu.jpg
 isodate: '2022-09-21'
-location: en ligne
+location: twitch
 path: 2022/09/2022-09-21-meditation-noms-de-dieu-avec-daemarys.md
 start: '2022-09-21T10:00:00+02:00'
 start-unix: 1663747200.0

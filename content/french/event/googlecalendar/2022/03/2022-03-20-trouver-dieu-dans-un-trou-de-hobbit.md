@@ -12,7 +12,7 @@ duration: 0:15:00
 end: '2022-03-20T22:15:00+01:00'
 image: https://cdna.artstation.com/p/assets/images/images/003/654/594/large/sam-robberechts-finalrender1.jpg
 isodate: '2022-03-20'
-location: en ligne
+location: twitch
 path: 2022/03/2022-03-20-trouver-dieu-dans-un-trou-de-hobbit.md
 start: '2022-03-20T22:00:00+01:00'
 start-unix: 1647810000.0

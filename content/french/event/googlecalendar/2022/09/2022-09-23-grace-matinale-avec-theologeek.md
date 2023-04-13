@@ -12,7 +12,7 @@ duration: '3:00:00'
 end: '2022-09-23T12:00:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/09/grace-matinale.jpg
 isodate: '2022-09-23'
-location: en ligne
+location: twitch
 path: 2022/09/2022-09-23-grace-matinale-avec-theologeek.md
 start: '2022-09-23T09:00:00+02:00'
 start-unix: 1663916400.0

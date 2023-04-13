@@ -12,7 +12,7 @@ duration: '1:00:00'
 end: '2022-08-31T11:00:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/night-sky-osc-noms-de-dieu.jpg
 isodate: '2022-08-31'
-location: en ligne
+location: twitch
 path: 2022/08/2022-08-31-meditation-noms-de-dieu-el-elyon-dieu-tres-haut.md
 start: '2022-08-31T10:00:00+02:00'
 start-unix: 1661932800.0

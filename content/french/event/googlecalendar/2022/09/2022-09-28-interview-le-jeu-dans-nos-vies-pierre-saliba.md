@@ -11,7 +11,7 @@ duration: '2:30:00'
 end: '2022-09-28T23:00:00+02:00'
 image: https://drnemrod.ch/wp-content/uploads/2019/11/Payot-2Nov_3.jpg
 isodate: '2022-09-28'
-location: en ligne
+location: twitch
 path: 2022/09/2022-09-28-interview-le-jeu-dans-nos-vies-pierre-saliba.md
 start: '2022-09-28T20:30:00+02:00'
 start-unix: 1664389800.0

@@ -12,7 +12,7 @@ duration: '1:30:00'
 end: '2022-12-13T22:00:00+01:00'
 image: https://www.microids.com/wp-content/uploads/2019/04/Syberia_3_Keyart_Landscape.jpg
 isodate: '2022-12-13'
-location: en ligne
+location: twitch
 path: 2022/12/2022-12-13-let-s-play-avec-elyius-syberia.md
 start: '2022-12-13T20:30:00+01:00'
 start-unix: 1670959800.0

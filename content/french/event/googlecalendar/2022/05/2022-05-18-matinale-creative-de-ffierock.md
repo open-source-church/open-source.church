@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2022-05-18T12:00:00+02:00'
 image: https://www.open-source.church/team/alexandre-michelle/amichelle.jpg
 isodate: '2022-05-18'
-location: en ligne
+location: twitch
 path: 2022/05/2022-05-18-matinale-creative-de-ffierock.md
 start: '2022-05-18T10:00:00+02:00'
 start-unix: 1652860800.0

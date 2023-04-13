@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2022-09-08T22:30:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/samantha-gades-LA6XfeVI5_c-unsplash-scaled.jpg
 isodate: '2022-09-08'
-location: en ligne
+location: twitch
 path: 2022/09/2022-09-08-jeux-et-films.md
 start: '2022-09-08T20:30:00+02:00'
 start-unix: 1662661800.0

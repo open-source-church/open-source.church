@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2022-10-13T22:30:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/samantha-gades-LA6XfeVI5_c-unsplash-scaled.jpg
 isodate: '2022-10-13'
-location: en ligne
+location: twitch
 path: 2022/10/2022-10-13-soiree-osc-jeux-discussion-liste-que-du-bonheur.md
 start: '2022-10-13T20:30:00+02:00'
 start-unix: 1665685800.0

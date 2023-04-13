@@ -12,7 +12,7 @@ duration: '2:00:00'
 end: '2023-01-13T12:00:00+01:00'
 image: https://steamrip.com/wp-content/uploads/2021/07/spore-free-download-preinstalled-steamrip.jpg
 isodate: '2023-01-13'
-location: en ligne
+location: twitch
 path: 2023/01/2023-01-13-spore-full-centre-avec-elyius.md
 start: '2023-01-13T10:00:00+01:00'
 start-unix: 1673600400.0

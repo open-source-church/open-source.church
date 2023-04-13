@@ -12,7 +12,7 @@ duration: 0:15:00
 end: '2022-10-02T22:15:00+02:00'
 image: https://cdna.artstation.com/p/assets/images/images/003/654/594/large/sam-robberechts-finalrender1.jpg
 isodate: '2022-10-02'
-location: en ligne
+location: twitch
 path: 2022/10/2022-10-02-medithobbitation-trouver-dieu-dans-l-histoire-du-hobbit.md
 start: '2022-10-02T22:00:00+02:00'
 start-unix: 1664740800.0

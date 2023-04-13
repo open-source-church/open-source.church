@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2022-11-17T22:30:00+01:00'
 image: https://img.over-blog-kiwi.com/0/86/51/78/20190123/ob_af675d_kaamelott.jpg
 isodate: '2022-11-17'
-location: en ligne
+location: twitch
 path: 2022/11/2022-11-17-liste-tierlist-les-personnages-kaamelott.md
 start: '2022-11-17T20:30:00+01:00'
 start-unix: 1668713400.0

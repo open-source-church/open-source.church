@@ -12,7 +12,7 @@ duration: '1:30:00'
 end: '2022-08-26T11:30:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/2022-08-26-timelinebible.jpg
 isodate: '2022-08-26'
-location: en ligne
+location: twitch
 path: 2022/08/2022-08-26-boardgame-review-timeline-bibliques.md
 start: '2022-08-26T10:00:00+02:00'
 start-unix: 1661500800.0

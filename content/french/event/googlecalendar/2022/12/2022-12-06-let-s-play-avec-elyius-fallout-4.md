@@ -12,7 +12,7 @@ duration: '1:30:00'
 end: '2022-12-06T22:00:00+01:00'
 image: https://subpac.com/wp-content/uploads/2016/09/maxresdefault.jpg
 isodate: '2022-12-06'
-location: en ligne
+location: twitch
 path: 2022/12/2022-12-06-let-s-play-avec-elyius-fallout-4.md
 start: '2022-12-06T20:30:00+01:00'
 start-unix: 1670355000.0

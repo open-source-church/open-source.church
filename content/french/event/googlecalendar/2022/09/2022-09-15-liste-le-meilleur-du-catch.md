@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2022-09-15T22:30:00+02:00'
 image: https://catch-newz.com/images/2019/10/12/wwe-draft-2019.jpg
 isodate: '2022-09-15'
-location: en ligne
+location: twitch
 path: 2022/09/2022-09-15-liste-le-meilleur-du-catch.md
 start: '2022-09-15T20:30:00+02:00'
 start-unix: 1663266600.0

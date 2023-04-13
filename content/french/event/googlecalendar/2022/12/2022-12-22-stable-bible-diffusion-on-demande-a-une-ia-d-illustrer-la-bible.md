@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2022-12-22T22:30:00+01:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/12/000016_0_plms40_PS7.5_photo-realistic_jesus_holding_a_pokemon_generated.jpg
 isodate: '2022-12-22'
-location: en ligne
+location: twitch
 path: 2022/12/2022-12-22-stable-bible-diffusion-on-demande-a-une-ia-d-illustrer-la-bible.md
 start: '2022-12-22T20:30:00+01:00'
 start-unix: 1671737400.0

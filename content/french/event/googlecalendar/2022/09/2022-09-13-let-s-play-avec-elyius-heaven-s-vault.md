@@ -12,7 +12,7 @@ duration: '2:00:00'
 end: '2022-09-13T22:00:00+02:00'
 image: https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_HeavensVault.jpg
 isodate: '2022-09-13'
-location: en ligne
+location: twitch
 path: 2022/09/2022-09-13-let-s-play-avec-elyius-heaven-s-vault.md
 start: '2022-09-13T20:00:00+02:00'
 start-unix: 1663092000.0

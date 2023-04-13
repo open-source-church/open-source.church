@@ -11,7 +11,7 @@ duration: '1:30:00'
 end: '2022-07-27T17:30:00+02:00'
 image: /images/avatar/cmrossel.jpg
 isodate: '2022-07-27'
-location: en ligne
+location: twitch
 path: 2022/07/2022-07-27-le-jeu-dans-ma-vie-cedric-et-murielle.md
 start: '2022-07-27T16:00:00+02:00'
 start-unix: 1658930400.0

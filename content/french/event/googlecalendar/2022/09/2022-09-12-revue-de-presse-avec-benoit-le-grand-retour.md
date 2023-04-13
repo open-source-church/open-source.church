@@ -11,7 +11,7 @@ duration: '1:30:00'
 end: '2022-09-12T22:30:00+02:00'
 image: https://www.reformes.ch/sites/default/files/styles/entete/public/data/images/comm/257/Beno%C3%AEt%20Ischer.jpg
 isodate: '2022-09-12'
-location: en ligne
+location: twitch
 path: 2022/09/2022-09-12-revue-de-presse-avec-benoit-le-grand-retour.md
 start: '2022-09-12T21:00:00+02:00'
 start-unix: 1663009200.0

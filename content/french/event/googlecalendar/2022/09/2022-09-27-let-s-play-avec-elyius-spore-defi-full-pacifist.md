@@ -12,7 +12,7 @@ duration: '1:30:00'
 end: '2022-09-27T22:00:00+02:00'
 image: https://cdn.mcr.ea.com/3/images/03cfe37e-1c86-4063-8d5c-c67aff90a293/1587735143-0x0-0-0.jpg
 isodate: '2022-09-27'
-location: en ligne
+location: twitch
 path: 2022/09/2022-09-27-let-s-play-avec-elyius-spore-defi-full-pacifist.md
 start: '2022-09-27T20:30:00+02:00'
 start-unix: 1664303400.0

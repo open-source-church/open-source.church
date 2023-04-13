@@ -12,7 +12,7 @@ duration: '2:00:00'
 end: '2023-04-10T22:00:00+02:00'
 image: https://cdn3.whatculture.com/images/2022/10/97b3abf8f012dc60-1200x675.jpg
 isodate: '2023-04-10'
-location: en ligne
+location: twitch
 path: 2023/04/2023-04-10-let-s-play-avec-elyius-wwe-2k23.md
 start: '2023-04-10T20:00:00+02:00'
 start-unix: 1681149600.0

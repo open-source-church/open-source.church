@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2022-07-25T22:00:00+02:00'
 image: /images/avatar/scorbaz.jpg
 isodate: '2022-07-25'
-location: en ligne
+location: twitch
 path: 2022/07/2022-07-25-le-jeu-dans-ma-vie-sylvain-corbaz.md
 start: '2022-07-25T20:00:00+02:00'
 start-unix: 1658772000.0

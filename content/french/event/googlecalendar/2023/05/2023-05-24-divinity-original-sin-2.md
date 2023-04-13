@@ -12,7 +12,7 @@ duration: '1:30:00'
 end: '2023-05-24T22:00:00+02:00'
 image: https://gametrex.com/wp-content/uploads/2021/04/Divinity-Original-Sin-2-Definitive-Edition-Free-Download.jpg
 isodate: '2023-05-24'
-location: en ligne
+location: twitch
 path: 2023/05/2023-05-24-divinity-original-sin-2.md
 start: '2023-05-24T20:30:00+02:00'
 start-unix: 1684953000.0

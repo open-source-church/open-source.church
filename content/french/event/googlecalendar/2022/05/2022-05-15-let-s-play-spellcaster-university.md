@@ -12,7 +12,7 @@ duration: '2:00:00'
 end: '2022-05-15T13:00:00+02:00'
 image: https://cdn.akamai.steamstatic.com/steam/apps/895620/capsule_616x353.jpg?t=1623829039
 isodate: '2022-05-15'
-location: en ligne
+location: twitch
 path: 2022/05/2022-05-15-let-s-play-spellcaster-university.md
 start: '2022-05-15T11:00:00+02:00'
 start-unix: 1652605200.0

@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2022-05-13T22:00:00+02:00'
 image: https://cdn.discordapp.com/attachments/962436903691513857/972795306150359100/unknown.png
 isodate: '2022-05-13'
-location: en ligne
+location: twitch
 path: 2022/05/2022-05-13-intradiegetique-avant-premiere.md
 start: '2022-05-13T20:00:00+02:00'
 start-unix: 1652464800.0

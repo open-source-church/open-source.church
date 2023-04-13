@@ -11,7 +11,7 @@ duration: '2:30:00'
 end: '2022-06-30T22:30:00+02:00'
 image: https://fs-prod-cdn.nintendo-europe.com/media/images/06_screenshots/games_5/nintendo_switch_download_software_2/nswitchds_fallguys/NSwitchDS_FallGuys_02.jpg
 isodate: '2022-06-30'
-location: en ligne
+location: twitch
 path: 2022/06/2022-06-30-open-stream-crew-unrailed-et-fall-guys.md
 start: '2022-06-30T20:00:00+02:00'
 start-unix: 1656612000.0

@@ -12,7 +12,7 @@ duration: '2:30:00'
 end: '2022-06-11T22:30:00+02:00'
 image: https://cdn.pixabay.com/photo/2021/09/07/07/11/game-console-6603120_960_720.jpg
 isodate: '2022-06-11'
-location: en ligne
+location: twitch
 path: 2022/06/2022-06-11-open-stream-crew.md
 start: '2022-06-11T20:00:00+02:00'
 start-unix: 1654970400.0

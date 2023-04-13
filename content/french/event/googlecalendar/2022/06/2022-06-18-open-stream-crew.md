@@ -12,7 +12,7 @@ duration: '2:30:00'
 end: '2022-06-18T22:30:00+02:00'
 image: https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_Unrailed.jpg
 isodate: '2022-06-18'
-location: en ligne
+location: twitch
 path: 2022/06/2022-06-18-open-stream-crew.md
 start: '2022-06-18T20:00:00+02:00'
 start-unix: 1655575200.0

@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2022-10-06T22:30:00+02:00'
 image: https://www.boardgamequest.com/wp-content/uploads/2014/12/Concept-Header.jpg
 isodate: '2022-10-06'
-location: en ligne
+location: twitch
 path: 2022/10/2022-10-06-soiree-osc-concept.md
 start: '2022-10-06T20:30:00+02:00'
 start-unix: 1665081000.0

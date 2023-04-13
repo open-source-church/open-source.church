@@ -12,7 +12,7 @@ duration: '2:00:00'
 end: '2022-10-28T12:00:00+02:00'
 image: https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_TheElderScrollsVSkyrim.jpg
 isodate: '2022-10-28'
-location: en ligne
+location: twitch
 path: 2022/10/2022-10-28-narratif-skyrim-avec-elyius.md
 start: '2022-10-28T10:00:00+02:00'
 start-unix: 1666944000.0

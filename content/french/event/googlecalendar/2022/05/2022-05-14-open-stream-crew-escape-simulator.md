@@ -12,7 +12,7 @@ duration: '2:30:00'
 end: '2022-05-14T22:30:00+02:00'
 image: https://cdn.akamai.steamstatic.com/steam/apps/1435790/capsule_616x353.jpg?t=1642344571
 isodate: '2022-05-14'
-location: en ligne
+location: twitch
 path: 2022/05/2022-05-14-open-stream-crew-escape-simulator.md
 start: '2022-05-14T20:00:00+02:00'
 start-unix: 1652551200.0

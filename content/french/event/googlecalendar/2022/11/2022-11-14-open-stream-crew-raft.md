@@ -12,7 +12,7 @@ duration: '2:30:00'
 end: '2022-11-14T22:30:00+01:00'
 image: https://i.ytimg.com/vi/GT2ge4Q5GYI/maxresdefault.jpg
 isodate: '2022-11-14'
-location: en ligne
+location: twitch
 path: 2022/11/2022-11-14-open-stream-crew-raft.md
 start: '2022-11-14T20:00:00+01:00'
 start-unix: 1668452400.0

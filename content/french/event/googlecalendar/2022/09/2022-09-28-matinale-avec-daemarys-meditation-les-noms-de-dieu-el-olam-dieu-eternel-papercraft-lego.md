@@ -12,7 +12,7 @@ duration: '1:30:00'
 end: '2022-09-28T11:00:00+02:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/night-sky-osc-noms-de-dieu.jpg
 isodate: '2022-09-28'
-location: en ligne
+location: twitch
 path: 2022/09/2022-09-28-matinale-avec-daemarys-meditation-les-noms-de-dieu-el-olam-dieu-eternel-papercraft-lego.md
 start: '2022-09-28T09:30:00+02:00'
 start-unix: 1664350200.0

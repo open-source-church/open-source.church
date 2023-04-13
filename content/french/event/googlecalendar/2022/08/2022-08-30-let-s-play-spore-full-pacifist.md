@@ -12,7 +12,7 @@ duration: '2:00:00'
 end: '2022-08-30T22:00:00+02:00'
 image: https://cdn.mcr.ea.com/3/images/03cfe37e-1c86-4063-8d5c-c67aff90a293/1587735143-0x0-0-0.jpg
 isodate: '2022-08-30'
-location: en ligne
+location: twitch
 path: 2022/08/2022-08-30-let-s-play-spore-full-pacifist.md
 start: '2022-08-30T20:00:00+02:00'
 start-unix: 1661882400.0

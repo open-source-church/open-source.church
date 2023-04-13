@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2022-06-04T12:30:00+02:00'
 image: https://steamrip.com/wp-content/uploads/2021/07/spore-free-download-preinstalled-steamrip.jpg
 isodate: '2022-06-04'
-location: en ligne
+location: twitch
 path: 2022/06/2022-06-04-let-s-play-spore-full-pacifist.md
 start: '2022-06-04T10:30:00+02:00'
 start-unix: 1654331400.0

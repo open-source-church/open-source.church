@@ -11,7 +11,7 @@ duration: '2:00:00'
 end: '2022-12-01T22:30:00+01:00'
 image: https://tools.open-source.church/wp-content/uploads/2022/08/samantha-gades-LA6XfeVI5_c-unsplash-scaled.jpg
 isodate: '2022-12-01'
-location: en ligne
+location: twitch
 path: 2022/12/2022-12-01-soiree-osc-geoguessr.md
 start: '2022-12-01T20:30:00+01:00'
 start-unix: 1669923000.0

@@ -8,8 +8,8 @@ buttons:
   link_title: Vers la chaine
 date: '2023-05-10T20:30:00+02:00'
 display: light
-duration: '1:30:00'
-end: '2023-05-10T22:00:00+02:00'
+duration: '2:00:00'
+end: '2023-05-10T22:30:00+02:00'
 image: https://gametrex.com/wp-content/uploads/2021/04/Divinity-Original-Sin-2-Definitive-Edition-Free-Download.jpg
 isodate: '2023-05-10'
 location: twitch

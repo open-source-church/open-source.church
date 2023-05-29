@@ -25,4 +25,4 @@ url: /activities/partage/2023/06/20/infusion-soiree-de-partage-osc
 with:
 - Elyius
 ---
-Une soirée d'échange, partage, prière sur discord. Dans le respect des croyances et pratiques des uns et des autres. Animée à tour de rôle, c'est chaque fois un peu différent !
+Une soirée d'échange, partage, prière sur discord. Dans le respect des croyances et pratiques de toutes et tous. Animée à tour de rôle, c'est chaque fois un peu différent !

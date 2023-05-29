@@ -4,6 +4,8 @@ Y: '2023'
 activity: holygames
 buttons:
 - icon: info
+  link: https://www.holygames.ch/semaine-ete-2023/
+  link_title: Info
 date: '2023-07-23T14:00:00+02:00'
 duration: 5 days, 0:00:00
 end: '2023-07-28T14:00:00+02:00'
@@ -18,8 +20,6 @@ url: /activities/holygames/2023/07/23/semaine-holygames
 with:
 - Olivier Keshavjee
 - Alexandre Michelle
-- William Bernard
-  link: https://www.holygames.ch/
-  link_title: Info
+- Dainii
 ---
-Une *semaine* de jeux de société et spiritualité, en toute liberté. Une nouvelle formule, en demi-pension pour profiter de Leysin pendant la journée !
+Une [*semaine* de jeux de société et spiritualité](https://www.holygames.ch/semaine-ete-2023/), en toute liberté. Une nouvelle formule, en demi-pension pour profiter de Leysin pendant la journée !

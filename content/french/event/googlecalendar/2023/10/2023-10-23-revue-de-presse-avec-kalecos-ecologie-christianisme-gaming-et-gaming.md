@@ -1,25 +1,25 @@
 ---
-M: '03'
+M: '10'
 Y: '2023'
 activity: twitch
 buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
-date: '2023-03-22T21:00:00+01:00'
+date: '2023-10-23T20:30:00+02:00'
 display: light
 duration: '1:30:00'
-end: '2023-03-22T22:30:00+01:00'
+end: '2023-10-23T22:00:00+02:00'
 image: https://www.reformes.ch/sites/default/files/styles/entete/public/data/images/comm/257/Beno%C3%AEt%20Ischer.jpg
-isodate: '2023-03-22'
+isodate: '2023-10-23'
 location: twitch
-path: 2023/03/2023-03-22-benoit-revue-de-presse-ecologie-christianisme-gaming-et-gaming.md
-start: '2023-03-22T21:00:00+01:00'
-start-unix: 1679515200.0
+path: 2023/10/2023-10-23-revue-de-presse-avec-kalecos-ecologie-christianisme-gaming-et-gaming.md
+start: '2023-10-23T20:30:00+02:00'
+start-unix: 1698085800.0
 template: twitch
-title: 'Benoît: revue de presse (écologie, christianisme, gaming) et gaming'
+title: Revue de presse avec Kalecos (écologie, christianisme, gaming) et gaming
 type: event
-url: /activities/twitch/2023/03/22/benoit-revue-de-presse-ecologie-christianisme-gaming-et-gaming
+url: /activities/twitch/2023/10/23/revue-de-presse-avec-kalecos-ecologie-christianisme-gaming-et-gaming
 with:
 - Benoît Ischer
 ---

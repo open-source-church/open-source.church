@@ -1,25 +1,25 @@
 ---
-M: '05'
+M: '06'
 Y: '2023'
 activity: twitch
 buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
-date: '2023-05-31T20:30:00+02:00'
+date: '2023-06-15T20:30:00+02:00'
 display: light
 duration: '1:30:00'
-end: '2023-05-31T22:00:00+02:00'
+end: '2023-06-15T22:00:00+02:00'
 image: https://gametrex.com/wp-content/uploads/2021/04/Divinity-Original-Sin-2-Definitive-Edition-Free-Download.jpg
-isodate: '2023-05-31'
+isodate: '2023-06-15'
 location: twitch
-path: 2023/05/2023-05-31-divinity-original-sin-2.md
-start: '2023-05-31T20:30:00+02:00'
-start-unix: 1685557800.0
+path: 2023/06/2023-06-15-divinity-original-sin-2.md
+start: '2023-06-15T20:30:00+02:00'
+start-unix: 1686853800.0
 template: twitch
 title: Divinity Original Sin 2
 type: event
-url: /activities/twitch/2023/05/31/divinity-original-sin-2
+url: /activities/twitch/2023/06/15/divinity-original-sin-2
 with:
 - Benoît Ischer
 - Olivier Keshavjee

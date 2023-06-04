@@ -29,7 +29,7 @@ with:
 
 Dieu se révèle à travers de nombreux noms et titres. Chacun révèle une facette différente de la beauté de Dieu et de sa manière d'être en lien avec nous. À travers ces noms, Daemarys nous aide à mieux découvrir Dieu et comment il peut toucher nos vies.
 
-#### 10h00: Papercraft ou légo
+#### 10h00: Papercraft : Pikachu ⚡️
 
 
 #### Replay des méditations passées

@@ -7,7 +7,7 @@ categories:
   - Articles
 type: post
 tags: ["Réflexion", "Errance", "Horizon Forbidden West", "Hogwart Legacy", "Ghost of Tsushima", "Jeux vidéo", "Foi", "Église"]
-summary: "Plus que jamais nous sommes dans un monde qui donne peu de place à l'errance. On parle de ce qu'on *fait*, pendant nos vacances, pendant nos week-ends, pendant nos semaines. On se définit par notre travail et nos hobbys. Mais rarement on valorise les moments où nos pensées s'égarent, où nos actions ne poursuivent aucun but but précis."
+summary: "Quelle place à l'errance dans les jeux, la vie, la foi?"
 
 ---
 

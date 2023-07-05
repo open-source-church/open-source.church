@@ -6,6 +6,8 @@ description : "Écothéologien."
 # portrait
 image: "bischer.jpg"
 social:
+  - icon : "link" # https://teenyicons.com/
+    link : "https://genophage.ch/"
   - icon : "instagram" # https://teenyicons.com/
     link : "https://www.instagram.com/kalecos1/"
   - icon : "twitter"

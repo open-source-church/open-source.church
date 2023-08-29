@@ -17,15 +17,11 @@ contrib:
   summary: T-shirts, mugs et goodies.
   image: "shop-800x.jpg"
   buttons:
-  - [ "Shop", "https://opensourcechurch.myspreadshop.ch/", "shop" ]
+  - [ "Shop ↪", "https://opensourcechurch.myspreadshop.ch/", "shop" ]
 - title: Twitch
   image: twitch.png
   summary: "Achetez / offrez un abonnement."
-  buttons: [["Twitch", "https://www.twitch.tv/opensourcechurch", "twitch"]]
-- title: PayPal
-  image: paypal.jpg
-  summary: "Faire un don ponctuel ou récurrent."
-  buttons: [["PayPal", "https://www.paypal.com/donate?token=Xw_TahVb3s2O8XjO0spZGmcw22WN1Pwd86zV-B3kQz_QFrIwqDJ0GxlA88Jg7sltyQUlhXyqH4RiRI8c", "paypal"]]
+  buttons: [["Twitch ↪", "https://www.twitch.tv/opensourcechurch", "twitch"]]
   
 ---
 
@@ -40,6 +36,14 @@ contrib:
 </div>
 -->
 
+<!--
+
+- title: PayPal
+  image: paypal.jpg
+  summary: "Faire un don ponctuel ou récurrent."
+  buttons: [["PayPal", "https://www.paypal.com/donate?token=Xw_TahVb3s2O8XjO0spZGmcw22WN1Pwd86zV-B3kQz_QFrIwqDJ0GxlA88Jg7sltyQUlhXyqH4RiRI8c", "paypal"]]
+
+-->
 
 <link rel="stylesheet" href="venobox/venobox.min.css" type="text/css" media="screen" />
 <script type="text/javascript" src="venobox/venobox.min.js"></script>

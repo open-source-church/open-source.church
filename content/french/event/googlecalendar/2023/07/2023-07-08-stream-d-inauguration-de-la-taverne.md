@@ -28,4 +28,4 @@ with:
 - Ilans
 - Véga
 ---
-Le Divin est mort, le Néant approche à grands pas, et la puissance qui sommeille en vous est sur le point de s'éveiller. Le combat pour la divinité a commencé. Soupesez vos décisions avec soin et accordez votre confiance avec parcimonie, car les ténèbres rôdent dans tous les cœurs.
+Depuis le temps qu'on en rêve, la voici : une taverne toute neuve où l'on va pourvoir se retrouver pour discuter, jouer, méditer, prier (et boire) tout en se voyant pour de vrai ! Et même si elle n'est pas encore toute décorée, on a envie de l'inaugurer en stream !

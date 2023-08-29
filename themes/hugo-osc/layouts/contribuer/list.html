@@ -28,7 +28,7 @@
                 {{ $name := index . 0 }}
                 {{ $url := index . 1 }}
                 {{ $icon := cond (ne  (index . 2) "") (partial "ti" (index . 2)) "" }}
-                <a href="{{ $url }}" class="btn btn-primary btn-sm">{{ $icon }}{{ $name }}</a>
+                <a href="{{ $url }}" class="btn btn-primary btn-sm {{ (index . 3) }}">{{ $icon }}{{ $name }}</a>
                 
               {{ end }}
           </div>

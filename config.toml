@@ -229,6 +229,12 @@ weight = 4
 
   [[Languages.fr.menu.main]]
   parent = "À propos"
+  name = "Soutenir"
+  url = "soutenir"
+  weight = 3
+
+  [[Languages.fr.menu.main]]
+  parent = "À propos"
   name = "Media"
   url = "media"
   weight = 4

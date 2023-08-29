@@ -10,7 +10,7 @@ date: '2023-07-11T20:30:00+02:00'
 display: light
 duration: '2:00:00'
 end: '2023-07-11T22:30:00+02:00'
-image: https://tools.open-source.church/wp-content/uploads/2023/04/theologie-red-team-banner.jpg
+image: https://i2.paste.pics/5228f7c87bcad8c1416e1efa62b2b9c5.png
 isodate: '2023-07-11'
 location: twitch
 path: 2023/07/2023-07-11-theologie-red-team-eco-anxiete.md

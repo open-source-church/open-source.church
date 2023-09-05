@@ -4,31 +4,11 @@ title: "Soutenir"
 draft: false
 type: contribuer
 image: "donner-featured.jpg"
-contrib:
-- title: TWINT
-  image: twint.jpg
-  summary: "Faire un don avec TWINT"
-  buttons: [["TWINT", "twint-qr.png", "gift", "venobox"]]
-- title: IBAN
-  image: qr-swiss.png
-  summary: "Faire un versement bancaire"
-  buttons: [["Bulletin de versement", "bv.jpg", "bank", "venobox"]]
-- title: Shop OSC
-  summary: T-shirts, mugs et goodies.
-  image: "shop-800x.jpg"
-  buttons:
-  - [ "Shop ↪", "https://opensourcechurch.myspreadshop.ch/", "shop" ]
-- title: Twitch
-  image: twitch.png
-  summary: "Achetez / offrez un abonnement."
-  buttons: [["Twitch ↪", "https://www.twitch.tv/opensourcechurch", "twitch"]]
-  
 ---
 
 ## Nous avons besoin de vous pour rendre cette aventure possible !
 
 ### Voici différentes manières de soutenir financièrement Open Source Church.
-
 
 <!--
 <div style="background-color:#ffd400; width: 50%;">
@@ -44,15 +24,64 @@ contrib:
   buttons: [["PayPal", "https://www.paypal.com/donate?token=Xw_TahVb3s2O8XjO0spZGmcw22WN1Pwd86zV-B3kQz_QFrIwqDJ0GxlA88Jg7sltyQUlhXyqH4RiRI8c", "paypal"]]
 
 -->
+<div class="row mt-5">
+  <div class="col-sm-4 mb-5">
+    <article class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+    <img class="card-img-top rounded-0" src="twint.jpg" alt="TWINT">
+    <div class="card-body">
+        <h4 class="card-title"><a href="#">TWINT</a></h4>
+        <p class="card-text">Faire un don avec TWINT</p>
+        <a href="twint-qr.png" class="btn btn-primary btn-sm venobox">{{< ti "gift" >}} TWINT</a>
+    </div>
+    </article>
+  </div>
 
-<link rel="stylesheet" href="venobox/venobox.min.css" type="text/css" media="screen" />
-<script type="text/javascript" src="venobox/venobox.min.js"></script>
+  <div class="col-sm-4 mb-5">
+    <article class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+    <img class="card-img-top rounded-0" src="qr-swiss.png" alt="IBAN">
+    <div class="card-body">
+        <h4 class="card-title"><a href="#">IBAN</a></h4>
+        <p class="card-text">Faire un versement bancaire</p>
+        <a href="bv.jpg" class="btn btn-primary btn-sm venobox">{{< ti "bank" >}} BV</a>
+        <a class="btn btn-primary btn-sm venobox" data-vbtype="inline" data-maxwidth="500px" href="#inline-content">{{< ti "info-circle" >}} Info</a>
+        <div id="inline-content" style="display:none;" >
+          <div class="bg-dark" style="padding: 1em;">
+            <h3>Coordonnées bancaires</h3>
+            <span class="fs-1">
+            CH62 0076 7000 U001 2236 7  </br>
+            Eglise Réformée Vaud   </br>
+            Chemin des Cèdres 7   </br>
+            1004 Lausanne   </br>
+            Mention: Open Source Church   </br></br></br>
+            </span>
+            <i>La mention est importante</i>
+          </div>
+        </div>
+    </div>
+    </article>
+  </div>
 
-<script>
-  new VenoBox({
-    selector: '.vvv'
-  });
-  new VenoBox({
-  selector: '.venobox'
-});
+  <div class="col-sm-4 mb-5">
+    <article class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+    <img class="card-img-top rounded-0" src="shop-800x.jpg" alt="Shop OSC">
+    <div class="card-body">
+        <h4 class="card-title"><a href="#">Shop OSC</a></h4>
+        <p class="card-text">T-shirts, mugs et goodies.</p>
+        <a href="https://opensourcechurch.myspreadshop.ch/" class="btn btn-primary btn-sm" target="_blank">{{< ti "shop" >}} Shop ↪</a>
+    </div>
+    </article>
+  </div>
+
+  <div class="col-sm-4 mb-5">
+    <article class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+    <img class="card-img-top rounded-0" src="twitch.png" alt="Twitch">
+    <div class="card-body">
+        <h4 class="card-title"><a href="#">Twitch</a></h4>
+        <p class="card-text">Achetez / offrez un abonnement.</p>
+        <a href="https://www.twitch.tv/opensourcechurch" class="btn btn-primary btn-sm" target="_blank">{{< ti "twitch" >}} Twitch ↪</a>
+    </div>
+    </article>
+  </div>
+</div>
+
 </script>

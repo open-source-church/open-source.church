@@ -10,8 +10,8 @@ buttons:
   link: /activities/partage/
   link_title: Règles du jeu
 date: '2023-06-20T20:30:00+02:00'
-duration: '1:30:00'
-end: '2023-06-20T22:00:00+02:00'
+duration: '1:00:00'
+end: '2023-06-20T21:30:00+02:00'
 image: https://www.davidrevoy.com/data/images/blog/2020/2020-10-31_spritely_scene.jpg
 isodate: '2023-06-20'
 location: Discord
@@ -23,6 +23,6 @@ title: 'Infusion: soirée de partage OSC'
 type: event
 url: /activities/partage/2023/06/20/infusion-soiree-de-partage-osc
 with:
-- Elyius
+- Trolli
 ---
-Une soirée d'échange, partage, prière sur discord. Dans le respect des croyances et pratiques de toutes et tous. Animée à tour de rôle, c'est chaque fois un peu différent !
+Une soirée d&#39;échange, partage, prière sur discord. Dans le respect des croyances et pratiques des uns et des autres. Animée à tour de rôle, c&#39;est chaque fois un peu différent !

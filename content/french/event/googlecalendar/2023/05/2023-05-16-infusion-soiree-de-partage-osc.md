@@ -23,6 +23,6 @@ title: 'Infusion: soirée de partage OSC'
 type: event
 url: /activities/partage/2023/05/16/infusion-soiree-de-partage-osc
 with:
-- Elyius
+- Trolli
 ---
-Une soirée d'échange, partage, prière sur discord. Dans le respect des croyances et pratiques des uns et des autres. Animée à tour de rôle, c'est chaque fois un peu différent !
+Une soirée d&#39;échange, partage, prière sur discord. Dans le respect des croyances et pratiques des uns et des autres. Animée à tour de rôle, c&#39;est chaque fois un peu différent !

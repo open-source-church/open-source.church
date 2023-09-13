@@ -1,10 +1,10 @@
 ---
 title: Cinéglise
-location: Église de la Sallaz
-address: Rte de Berne 97, Lausanne
+location: Jardins Divers
+address: Av. de Tivoli 74, 1007 Lausanne
 when: Une fois par mois environ
 image: osc-cineglise-featured.jpg
-with: [Alexandre Michelle, Quentin B., Olivier Keshavjee]
+with: [Quentin B., Ilans, Olivier Keshavjee]
 weight: 5
 slug: cineglise
 partenaires:

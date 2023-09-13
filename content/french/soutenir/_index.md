@@ -8,6 +8,24 @@ image: "donner-featured.jpg"
 
 ## Nous avons besoin de vous pour rendre cette aventure possible !
 
+Grâce à vos dons, OSC peut accomplir sa mission de créer une communauté chrétienne inclusive par et pour des geeks.
+
+<!--
+
+L'argent est utilisé pour:
+
+- Créer des activités et permettre à des personnes en situation de précarité de participer
+- Défraier et engager des collaborateurs et collaboratrices
+- Achater du matériel
+
+-->
+
+<div class="row my-5 justify-content-center">
+<a class="m-3 col-8 col-md-4 btn btn-primary" href="#voici-différentes-manières-de-soutenir-financièrement-open-source-church">Faire un don unique</a>
+<a class="m-3 col-8 col-md-4 btn btn-primary" href="#sengager-à-soutenir-osc-de-manière-régulière">Faire un don régulier</a>
+
+</div>
+
 ### Voici différentes manières de soutenir financièrement Open Source Church.
 
 <!--
@@ -84,4 +102,19 @@ image: "donner-featured.jpg"
   </div>
 </div>
 
-</script>
+
+
+### S'engager à soutenir OSC de manière régulière
+
+Afin de péréniser le développement d'OSC, nous recherchons dans l'idéal des donateurs réguliers, mensuels ou annuels.
+
+**Objectif:** 20 promesses de dons
+
+<div class="bg-primary" style="width:80%; margin: auto;">
+  <div class="font-weight-bold bg-secondary text-accent p-3" style="width: 10%; color:#f14ec3;">
+    <span style="white-space: nowrap;">2 / 20 (10%)</span>
+  </div>
+</div>
+
+
+<iframe class="mt-5" src="https://framaforms.org/je-mengage-a-donner-pour-osc-1694167126" width="100%" height="800" border="0"></iframe>

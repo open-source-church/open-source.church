@@ -2,7 +2,7 @@
 M: '03'
 Y: '2022'
 activity: cineglise
-address: Rte de Berne 97, Lausanne
+address: Av. de Tivoli 74, 1007 Lausanne
 buttons:
 - icon: discord
   link: https://discord.gg/9NM9yA8F2r?event=950307440925245440
@@ -13,7 +13,7 @@ end: '2022-03-26T22:00:00+01:00'
 flyer: https://tools.open-source.church/wp-content/uploads/2022/03/2022-03-26-cineglise-bladerunner_square.jpg
 image: https://variety.com/wp-content/uploads/2013/05/bladerunner_sequel.jpg
 isodate: '2022-03-26'
-location: Église de la Sallaz
+location: Jardins Divers
 path: 2022/03/2022-03-26-cineglise-blade-runner-1982.md
 prix: gratuit
 start: '2022-03-26T18:30:00+01:00'

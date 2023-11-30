@@ -21,5 +21,5 @@ title: Neeodev gaming
 type: event
 url: /activities/twitch/2023/12/07/neeodev-gaming
 with:
-- Neeodev gamin
+- Neeodev
 ---

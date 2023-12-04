@@ -7,10 +7,9 @@ buttons:
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
 date: '2023-12-17T10:30:00+01:00'
-display: light
 duration: '1:30:00'
 end: '2023-12-17T12:00:00+01:00'
-image: https://live.staticflickr.com/8520/8592665417_b4b9c650b8_b.jpg
+image: https://tools.open-source.church/wp-content/uploads/2023/12/ceci-nest-pas-un-culte-banner.jpg
 isodate: '2023-12-17'
 location: twitch
 path: 2023/12/2023-12-17-ceci-n-est-pas-un-culte-si.md
@@ -28,4 +27,4 @@ with:
 - Galahad
 - Laluxure
 ---
-Prototype live de *Ceci n'est pas un culte (si!)*.
+Prototype live de *Ceci n'est pas un culte (si!)*: un format qui n'est pas un culte, mais quand même un peu.

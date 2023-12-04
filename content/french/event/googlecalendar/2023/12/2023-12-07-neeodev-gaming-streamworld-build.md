@@ -13,13 +13,13 @@ end: '2023-12-07T23:00:00+01:00'
 image: https://images.pexels.com/photos/596750/pexels-photo-596750.jpeg
 isodate: '2023-12-07'
 location: twitch
-path: 2023/12/2023-12-07-neeodev-gaming.md
+path: 2023/12/2023-12-07-neeodev-gaming-streamworld-build.md
 start: '2023-12-07T20:00:00+01:00'
 start-unix: 1701975600.0
 template: twitch
-title: Neeodev gaming
+title: 'Neeodev gaming: Streamworld Build'
 type: event
-url: /activities/twitch/2023/12/07/neeodev-gaming
+url: /activities/twitch/2023/12/07/neeodev-gaming-streamworld-build
 with:
 - Neeodev
 ---

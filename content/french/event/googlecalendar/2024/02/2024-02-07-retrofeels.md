@@ -6,20 +6,20 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
-date: '2024-02-14T20:30:00+01:00'
+date: '2024-02-07T20:30:00+01:00'
 display: light
 duration: '2:00:00'
-end: '2024-02-14T22:30:00+01:00'
+end: '2024-02-07T22:30:00+01:00'
 image: https://i.postimg.cc/MTH2DQ7r/retrofeels.png
-isodate: '2024-02-14'
+isodate: '2024-02-07'
 location: twitch
-path: 2024/02/2024-02-14-retrofeels.md
-start: '2024-02-14T20:30:00+01:00'
-start-unix: 1707939000.0
+path: 2024/02/2024-02-07-retrofeels.md
+start: '2024-02-07T20:30:00+01:00'
+start-unix: 1707334200.0
 template: twitch
 title: Retrofeels
 type: event
-url: /activities/twitch/2024/02/14/retrofeels
+url: /activities/twitch/2024/02/07/retrofeels
 with:
 - Ilans
 ---

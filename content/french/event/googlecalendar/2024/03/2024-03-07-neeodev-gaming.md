@@ -10,7 +10,7 @@ date: '2024-03-07T20:00:00+01:00'
 display: light
 duration: '3:00:00'
 end: '2024-03-07T23:00:00+01:00'
-image: https://images.pexels.com/photos/596750/pexels-photo-596750.jpeg
+image: https://nintendoeverything.com/wp-content/uploads/SteamWorld-Build.jpg
 isodate: '2024-03-07'
 location: twitch
 path: 2024/03/2024-03-07-neeodev-gaming.md

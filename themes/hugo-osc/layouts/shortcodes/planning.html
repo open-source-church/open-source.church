@@ -1,65 +1,383 @@
 <div id="q-app">
-  <q-btn label="events" @click="() => console.log(calendar.getEvents())"></q-btn>
-  <div id="calendar"></div>
-</div>
+  <div class="row q-mb-xl">
+    <q-btn
+      label="Update"
+      icon="update"
+      color="primary"
+      class="col-3"
+      @click="update"
+    ></q-btn>
+    <q-btn label="export" @click="save"></q-btn>
+  </div>
+  <div
+    class="column q-gutter-none"
+    id="planning"
+    style="
+      width: 1920px;
+      height: 1080px;
+      font-family: 'VCR OSD Mono', sans-serif;
+      text-transform: uppercase;
+      line-height: 1;
+    "
+  >
+    <div class="col-auto row" style="height: 100px; margin-top: 10px">
+      <div class="col-5 column justify-center">
+        <!-- <span style="font-size: 32px;">PLANNING DU</span> -->
+        <span
+          class="q-ml-md text-cyan"
+          style="font-size: 48px; text-shadow: 0px 0px 15px #d700d7"
+        >
+          [[ rangeDate ]]
+        </span>
+      </div>
+      <div class="col-2 text-center">
+        <img
+          src="https://pngimg.com/uploads/twitch/twitch_PNG23.png"
+          style="height: 100px"
+        />
+        <img
+          src="https://tools.open-source.church/wp-content/uploads/2022/03/logo_trans_text.png"
+          style="height: 95px"
+        />
+      </div>
+      <div class="col-5 text-right column justify-center">
+        <span class="q-mr-md text-yellow" style="font-size: 28px">
+          TWITCH.TV/OPENSOURCECHURCH<br />
+          www.open-source.church
+        </span>
+      </div>
+    </div>
+    <div class="col column q-gutter-none q-pa-none">
+      <!-- Jours -->
+      <div class="col-auto row">
+        <div
+          class="col text-center"
+          style="font-size: 30px; margin-top: 20px"
+          v-for="t,i in 'lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche'.split(',')"
+          :key="t"
+          :class="['text-yellow', 'text-cyan', 'text-majenta'][i % 3]"
+        >
+          [[t]]
+        </div>
+      </div>
+      <!-- Events -->
+      <div class="col row q-pl-md q-pr-none">
+        <!-- Column -->
+        <div
+          class="col q-mr-md q-pa-none column q-mt-sm"
+          v-for="day in _.range(1, 8)"
+          :key="day"
+          style="background-color: #ffd4001a"
+        >
+          <!-- Event card -->
+          <div
+            class="col-6"
+            v-if="nEventsByDay(day) == 1 && events.filter(e => e.day == day)[0].startHour >= 12"
+          ></div>
+          <div
+            v-for="e,i in events.filter(e => e.day == day)"
+            :key="i"
+            :class="'overflow-hidden q-pa-none column ' +  ({1: 'col-6', 2: 'col-6', 3: 'col-4'}[nEventsByDay(day)] || 'col')"
+          >
+            <q-img
+              class="col-auto"
+              :src="e.image"
+              :ratio="nEventsByDay(day) <= 2 ? 1 : 16/9"
+            >
+              <div
+                class="absolute-bottom text-center bg-transparent"
+                style="padding: 0"
+              >
+                <span
+                  :class="'q-pa-sm ' + getClasses(e.color)"
+                  style="font-size: 24px"
+                  >[[e.time]]</span
+                >
+              </div>
+            </q-img>
+            <div
+              :class="'col text-center column q-pa-none q-pb-sm ' + getClasses(e.color)"
+            >
+              <span
+                class="col text-center q-pa-none column justify-center"
+                style="font-size: 24px"
+              >
+                [[ e.title ]]
+              </span>
+              <div class="col-auto" style="font-size: 20px">
+                <div v-if="e.template == 'discord'" class="row items-center">
+                  <img
+                    class="col-3"
+                    src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1.png"
+                    width="32px"
+                  />
+                  <span class="col-9 text-left">Sur discord</span>
+                </div>
+                <div v-if="e.template == 'jdr1shot'" class="row items-center q-mb-sm">
+                  <span class="col-12 text-center">IRL à Lausanne</span>
+                  <img
+                    class="col-3"
+                    src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1.png"
+                    width="32px"
+                  />
+                  <span class="col-9 text-left">Inscription sur discord</span>
+                </div>
+              </div>
+              <span class="col-auto text-center" style="font-size: 16px">
+                [[e.with.join(" ")]]
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto row">
+        <div class="col q-pl-md q-py-sm">
+          <span class="text-yellow" style="font-size: 24px"
+            >DES STREAMS NON PLANIFIÉS PEUVENT PARFOIS SURGIR SPONTANÉMENT DU
+            CHAOS PRIMORDIAL</span
+          >
+        </div>
+        <img
+          src="https://tools.open-source.church/wp-content/uploads/2024/03/eerv_NB_Dark_ai.png"
+          style="height: 50px; opacity: 0.5"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="q-mt-lg">
+    <h4>Settings</h4>
+    <div
+      :class="'row items-center ' + (i%2 == 0 ? 'bg-grey-10' : 'bg-grey-9')"
+      v-for="e,i in events"
+      :key="i"
+    >
+      <img :src="e.image" class="col-1" />
+      <div class="col">[[ e.title ]]</div>
+      <div class="col">
+        <q-btn
+          round
+          :label="e.color == 'Y' ? 'X' : ''"
+          color="yellow"
+          text-color="black"
+          @click="e.color = 'Y'"
+        ></q-btn>
+        <q-btn
+          round
+          :label="e.color == 'C' ? 'X' : ''"
+          color="cyan"
+          @click="e.color = 'C'"
+        ></q-btn>
+        <q-btn
+          round
+          :label="e.color == 'M' ? 'X' : ''"
+          color="purple"
+          @click="e.color = 'M'"
+        ></q-btn>
+      </div>
+    </div>
+  </div>
+  <div class="row q-mt-lg">
+    <div class="col" id="calendar"></div>
+  </div>
 
-<link
-  href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
-  rel="stylesheet"
-  type="text/css"
-/>
-<link
-  href="https://cdn.jsdelivr.net/npm/quasar@2.14.6/dist/quasar.prod.css"
-  rel="stylesheet"
-  type="text/css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/quasar@2.14.6/dist/quasar.umd.prod.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/quasar@2.14.6/dist/quasar.prod.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quasar@2.14.6/dist/quasar.umd.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet" />
 
-<script src="https://cdn.jsdelivr.net/npm/ical.js@1.5.0/build/ical.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.11/index.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ical.js@1.5.0/build/ical.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.11/index.global.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.11/index.global.min.js"></script>
 
-<script>
-  const {
-    createApp,
-    onMounted,
-    onBeforeUnmount,
-    ref,
-    computed,
-    reactive,
-    watch,
-  } = Vue;
-  const { Calendar } = FullCalendar;
+  <script>
+    const {
+      createApp,
+      onMounted,
+      onBeforeUnmount,
+      ref,
+      computed,
+      reactive,
+      watch,
+    } = Vue;
+    const { Calendar } = FullCalendar;
 
-  const app = createApp({
-    delimiters: ["[[", "]]"],
-    setup() {
+    const app = createApp({
+      delimiters: ["[[", "]]"],
+      setup() {
+        var calendar = ref();
+        onMounted(() => {
+          const calendarEl = document.getElementById("calendar");
 
-      var calendar = ref()
-      onMounted(() => {
-        const calendarEl = document.getElementById("calendar");
+          calendar.value = new Calendar(calendarEl, {
+            initialView: "listWeek",
+            firstDay: 1,
+            googleCalendarApiKey: "AIzaSyBdK_PZm3zIRza-bo0rzAGY3BXIEwkAChc",
+            events: {
+              /*url: 'https://calendar.google.com/calendar/ical/ot0211020tnjv1gnor2a9o2shg%40group.calendar.google.com/public/basic.ics',
+                //url: 'https://ics.calendarlabs.com/76/d2ebfb20/US_Holidays.ics',
+                format: 'ics'
+                */
+              googleCalendarId:
+                "ot0211020tnjv1gnor2a9o2shg@group.calendar.google.com",
+            },
+            datesSet: (dateInfo) => {
+              startDate.value = dateInfo.start;
+              endDate.value = dateInfo.end;
+              console.log("Date set");
+            },
+            eventsSet: (events) => {
+              console.log("Events set");
+              update();
+            },
+          });
 
-        calendar.value = new Calendar(calendarEl, {
-          initialView: "listWeek",
-          events: {
-            url: 'https://calendar.google.com/calendar/ical/ot0211020tnjv1gnor2a9o2shg%40group.calendar.google.com/public/basic.ics',
-            //url: 'https://ics.calendarlabs.com/76/d2ebfb20/US_Holidays.ics',
-            format: 'ics'
-          }
+          calendar.value.render();
         });
 
-        calendar.value.render()
-      });
+        const events = ref([]);
+        const startDate = ref();
+        const endDate = ref();
+        const toMonth = (m) =>
+          ({
+            1: "Janvier",
+            2: "Février",
+            3: "Mars",
+            4: "Avril",
+            5: "Mai",
+            6: "Juin",
+            7: "Juillet",
+            8: "Août",
+            9: "Septembre",
+            10: "Octobre",
+            11: "Novembre",
+            12: "Décembre",
+          }[m]);
+        const rangeDate = computed(() => {
+          var d1 = Quasar.date.formatDate(startDate.value, "D");
+          var m1 = Quasar.date.formatDate(startDate.value, "M");
+          var d2 = Quasar.date.formatDate(endDate.value, "D");
+          var m2 = Quasar.date.formatDate(endDate.value, "M");
+          if (m1 == m2) return `${d1} au ${d2} ${toMonth(m1)}`;
+          else return `${d1} ${toMonth(m1)} au ${d2} ${toMonth(m2)}`;
+        });
 
-      return {
-        calendar
-      };
-    },
-  });
+        const update = () => {
+          console.log("Updating, please");
+          var ev = calendar.value.getEvents();
+          console.log(ev);
+          events.value = ev.map((e) => formatEvent(e));
+          events.value = _.sortBy(events.value, [(e) => e.start]);
+          console.log("Storing", events.value);
+        };
 
-  app.use(Quasar);
-  app.mount("#q-app");
-</script>
+        const getProps = (d, prop) => {
+          var reg = new RegExp(`${prop}:\\s*(.+?)\\s*<br>`, "g");
+          var match = d.match(`${prop}:\\s*(.+?)\\s*<br>`);
+          if (!match) return null;
+          if (prop == "with") {
+            return [...match[1].matchAll('"(.*?)"')].map((m) => m[1]);
+          } else if (prop == "image") {
+            image = match[1];
+            m = image.match("<a.*>(.*)<");
+            if (m) return m[1];
+            return image;
+          } else return match[1];
+        };
 
-<style></style>
+        const getColor = (e) => {
+          var description = e.extendedProps.description;
+          if (description.toLowerCase().includes("discussion")) {
+            return "C";
+          }
+          if (description.toLowerCase().includes("méditation")) {
+            return "M";
+          }
+          return "Y";
+        };
+
+        const getClasses = (color) => {
+          return {
+            C: "bg-cyan text-dark",
+            M: "bg-purple text-white",
+            Y: "bg-yellow text-dark",
+          }[color];
+        };
+        const formatEvent = (e) => {
+          var start = new Date(e.start);
+          var end = new Date(e.end);
+          var description = e.extendedProps.description + "<br>";
+          return {
+            title: e.title,
+            start: e.start,
+            startHour: e.start.getHours(),
+            time: Quasar.date.formatDate(e.start, "HH:mm"),
+            duration: Quasar.date.getDateDiff(start, end, "minutes"), // minutes
+            day: Quasar.date.getDayOfWeek(start),
+            end: e.end,
+            description: description,
+            with: getProps(description, "with") || [],
+            image: getProps(description, "image"),
+            color: getColor(e),
+            template: getProps(description, "template"),
+          };
+        };
+
+        const nEventsByDay = (day) => {
+          return events.value.filter((e) => e.day == day).length;
+        };
+
+        // Local Storage
+        watch(events, () => Quasar.LocalStorage.set("events", events.value), {
+          deep: true,
+        });
+        events.value = Quasar.LocalStorage.getItem("events") || [];
+
+        const save = () => {
+          console.log("Exporting");
+        };
+
+        return {
+          calendar,
+          update,
+          events,
+          nEventsByDay,
+          getClasses,
+          save,
+          rangeDate,
+        };
+      },
+    });
+
+    app.use(Quasar);
+    app.mount("#q-app");
+  </script>
+
+  <style scoped lang="css">
+    // Hack because of mixing bootstrap and quasar
+    .column > .col-1,
+    .column > .col-2,
+    .column > .col-3,
+    .column > .col-4,
+    .column > .col-5,
+    .column > .col-6,
+    .column > .col-7,
+    .column > .col-8,
+    .column > .col-9,
+    .column > .col-10,
+    .column > .col-11,
+    .column > .col-12 {
+      max-width: 100%;
+    }
+  </style>
+</div>

@@ -6,16 +6,16 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
-date: '2023-11-30T20:00:00+01:00'
+date: '2023-11-30T20:30:00+01:00'
 display: light
 duration: '3:00:00'
-end: '2023-11-30T23:00:00+01:00'
+end: '2023-11-30T23:30:00+01:00'
 image: https://images.pexels.com/photos/596750/pexels-photo-596750.jpeg
 isodate: '2023-11-30'
 location: twitch
 path: 2023/11/2023-11-30-neeodev-gaming.md
-start: '2023-11-30T20:00:00+01:00'
-start-unix: 1701370800.0
+start: '2023-11-30T20:30:00+01:00'
+start-unix: 1701372600.0
 template: twitch
 title: Neeodev gaming
 type: event

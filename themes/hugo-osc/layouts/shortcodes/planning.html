@@ -1,0 +1,67 @@
+<div id="q-app">
+  Hello [[ msg ]] <q-btn label="events" @click="() => console.log(calendar.getEvents())"></q-btn>
+  <div id="calendar"></div>
+</div>
+
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
+  rel="stylesheet"
+  type="text/css"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/quasar@2.14.6/dist/quasar.prod.css"
+  rel="stylesheet"
+  type="text/css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/quasar@2.14.6/dist/quasar.umd.prod.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/ical.js@1.5.0/build/ical.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.11/index.global.min.js"></script>
+
+<script>
+  const {
+    createApp,
+    onMounted,
+    onBeforeUnmount,
+    ref,
+    computed,
+    reactive,
+    watch,
+  } = Vue;
+  const { Calendar } = FullCalendar;
+
+  const app = createApp({
+    delimiters: ["[[", "]]"],
+    setup() {
+      const msg = ref("Coucou");
+
+      var calendar = ref()
+      onMounted(() => {
+        const calendarEl = document.getElementById("calendar");
+
+        calendar.value = new Calendar(calendarEl, {
+          initialView: "listWeek",
+          events: {
+            url: 'https://calendar.google.com/calendar/ical/ot0211020tnjv1gnor2a9o2shg%40group.calendar.google.com/public/basic.ics',
+            //url: 'https://ics.calendarlabs.com/76/d2ebfb20/US_Holidays.ics',
+            format: 'ics'
+          }
+        });
+
+        calendar.value.render()
+      });
+
+      return {
+        msg,
+        calendar
+      };
+    },
+  });
+
+  app.use(Quasar);
+  app.mount("#q-app");
+</script>
+
+<style></style>

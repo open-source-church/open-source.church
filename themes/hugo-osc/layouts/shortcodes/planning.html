@@ -1,5 +1,5 @@
 <div id="q-app">
-  Hello [[ msg ]] <q-btn label="events" @click="() => console.log(calendar.getEvents())"></q-btn>
+  <q-btn label="events" @click="() => console.log(calendar.getEvents())"></q-btn>
   <div id="calendar"></div>
 </div>
 
@@ -35,7 +35,6 @@
   const app = createApp({
     delimiters: ["[[", "]]"],
     setup() {
-      const msg = ref("Coucou");
 
       var calendar = ref()
       onMounted(() => {
@@ -54,7 +53,6 @@
       });
 
       return {
-        msg,
         calendar
       };
     },

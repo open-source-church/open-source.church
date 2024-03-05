@@ -1,36 +1,97 @@
 <div id="q-app">
   <div class="row q-mb-xl q-gutter-md">
     <q-btn
+      icon="arrow_back"
+      class="col-1"
+      color="primary"
+      @click="calendar.prev()"
+    ></q-btn>
+    <q-btn
+      icon="arrow_forward"
+      class="col-1"
+      color="primary"
+      @click="calendar.next()"
+    ></q-btn>
+    <q-btn
+      icon="event"
+      class="col-1"
+      color="primary"
+      @click="calendar.today()"
+    ></q-btn>
+    <q-btn
+      v-if="false"
       label="Update"
       icon="update"
       color="primary"
-      class="col-3"
+      class="col-2"
       @click="update"
     ></q-btn>
-    <q-btn class="col-1" :icon="zoom == 0.5 ? 'zoom_in' : 'zoom_out'" @click="zoom == 0.5 ? zoom = 1 : zoom = 0.5" color="secondary"></q-btn>
-    <q-btn class="col-3" label="export" @click="save" color="secondary"></q-btn>
-    <q-btn class="col-3" label="add" @click="calendar.addEvent({
-      title: 'Test',
-      start: '2024-03-05',
-      description: 'Coucou, ceci est un test!'
-    })" color="secondary"></q-btn>
+    <q-btn
+      class="col-1"
+      :icon="zoom == 0.5 ? 'zoom_in' : 'zoom_out'"
+      @click="zoom == 0.5 ? zoom = 1 : zoom = 0.5"
+      color="secondary"
+    ></q-btn>
+    <q-btn
+      class="col-2"
+      icon="image"
+      label="export"
+      @click="save"
+      color="secondary"
+    ></q-btn>
   </div>
+  <q-dialog v-model="exportDialog">
+    <q-card dark class="q-pa-md">
+      <q-card-section class="row items-center q-pb-none">
+        <div class="text-h6">Export</div>
+        <q-space></q-space>
+        <q-btn icon="close" flat round dense v-close-popup></q-btn>
+      </q-card-section>
+
+      <q-card-section>
+        <div
+          id="export"
+          :style="{
+          zoom: 0.2,
+          width: '1920px',
+          height: (cover.top.src && cover.bottom.src ? '1920px' : '1080px')
+        }"
+        ></div>
+        <q-inner-loading :showing="exportLoading" dark>
+          <q-spinner-gears size="50px" color="primary"></q-spinner-gears>
+        </q-inner-loading>
+        <span class="text-caption" v-if="!exportLoading"
+          >Clic droit pour copier ou enregistrer l'image</span
+        >
+      </q-card-section>
+    </q-card>
+  </q-dialog>
   <div
     class="column q-gutter-none"
     id="planning"
     :style="{
       width: '1920px',
-      height: '1080px',
+      height: (cover.top.src && cover.bottom.src ? '1920px' : '1080px'),
       fontFamily: '\'VCR OSD Mono\', sans-serif',
       textTransform: 'uppercase',
       lineHeight: 1,
+      background: '#212227ff',
       zoom: zoom
     }
       "
   >
+    <div
+      v-if="cover.top.src && cover.bottom.src"
+      class="col-auto row"
+      :style="{
+      height: '420px',
+      background: 'url(' + cover.top.src + ') no-repeat center ' +  cover.top.position,
+      backgroundSize: 'cover'
+    }"
+    ></div>
+    <!-- Top Bar -->
     <div class="col-auto row" style="height: 100px; margin-top: 10px">
       <div class="col-5 column justify-center">
-        <!-- <span style="font-size: 32px;">PLANNING DU</span> -->
         <span
           class="q-ml-md text-cyan"
           style="font-size: 48px; text-shadow: 0px 0px 15px #d700d7"
@@ -88,30 +149,38 @@
             :class="'overflow-hidden q-pa-none column ' +  ({1: 'col-6', 2: 'col-6', 3: 'col-4'}[nEventsByDay(day)] || 'col')"
             :style="i + 1 < nEventsByDay(day) ? 'border-bottom: 5px solid #ffd4001a;' : ''"
           >
-            <q-img
-              class="col-auto"
-              :src="e.image"
-              :ratio="nEventsByDay(day) <= 2 ? 1 : 16/9"
-            >
+            <div class="q-img col-auto q-pa-none">
               <div
-                class="absolute-bottom text-center bg-transparent"
-                style="padding: 0"
+                :style="{paddingBottom: nEventsByDay(day) <= 2 ? (1/1*100)+'%' : (9/16*100)+'%'}"
+              ></div>
+              <div
+                class="absolute-full"
+                :style="{
+                background: 'url(' + e.image + ') no-repeat center center',
+                backgroundSize: 'cover'
+              }"
               >
-                <span
-                  :class="'q-pa-sm ' + getClasses(e.color)"
-                  style="font-size: 24px"
-                  >[[e.time]]</span
+                <div
+                  class="absolute-bottom text-center bg-transparent"
+                  style="padding: 0"
                 >
+                  <span
+                    :class="'q-pa-sm ' + getClasses(e.color)"
+                    style="font-size: 24px"
+                    >[[e.time]]</span
+                  >
+                </div>
               </div>
-            </q-img>
+            </div>
+            <!-- Text box -->
             <div
               :class="e.template + ' col text-center column q-pa-none q-pb-sm ' + getClasses(e.color)"
             >
               <span
                 class="col text-center q-pa-none column justify-center"
                 style="font-size: 24px"
+                v-html="e.title.replaceAll('\\n', '<br>')"
               >
-                [[ e.title ]]
               </span>
               <div class="col-auto" style="font-size: 20px">
                 <div v-if="e.template == 'discord'" class="row items-center">
@@ -132,20 +201,28 @@
                     src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1.png"
                     width="32px"
                   />
-                  <span class="col-9 text-left" style="font-size: 16px;">Inscription sur discord</span>
+                  <span class="col-9 text-left" style="font-size: 16px"
+                    >Inscription sur discord</span
+                  >
                 </div>
                 <div
                   v-if="e.template == 'jd'"
                   class="row items-center q-mb-none"
-                  style="margin-bottom: -20px;"
+                  style="margin-bottom: -20px"
                 >
-                  <span class="col-12 text-center" style="margin-bottom: -10px;">À la taverne</span>
+                  <span class="col-12 text-center" style="margin-bottom: -10px"
+                    >À la taverne</span
+                  >
                   <img
                     class="col text-center q-pr-none"
                     src="https://www.eerv.ch/fileadmin/_processed_/a/e/csm_Jardins_Divers_logo_1b022b1a13.png"
-                    width="52px" 
+                    width="52px"
                   />
-                  <span class="col-auto text-left q-pl-none" style="font-size: 16px; ">Av. de Tivoli 74<br/>Lausanne</span>
+                  <span
+                    class="col-auto text-left q-pl-none"
+                    style="font-size: 16px"
+                    >Av. de Tivoli 74<br />Lausanne</span
+                  >
                 </div>
               </div>
               <span class="col-auto text-center" style="font-size: 16px">
@@ -168,6 +245,15 @@
         />
       </div>
     </div>
+    <div
+      v-if="cover.top.src && cover.bottom.src"
+      class="col-auto row"
+      :style="{
+      height: '420px',
+      background: 'url(' + cover.bottom.src + ') no-repeat center ' +  cover.bottom.position,
+      backgroundSize: 'cover'
+    }"
+    ></div>
   </div>
   <div class="q-mt-lg">
     <h4>Settings</h4>
@@ -177,30 +263,109 @@
       :key="i"
     >
       <img :src="e.image" class="col-1" />
-      <div class="col">[[ e.title ]]</div>
+      <div class="col">
+        <q-input dense borderless v-model="e.title" input-class="text-white">
+          <template v-if="e.title != e.defaultTitle" v-slot:append>
+            <q-icon
+              name="cancel"
+              @click.stop.prevent="e.title = e.defaultTitle"
+              class="cursor-pointer"
+            /> </template
+        ></q-input>
+      </div>
       <div class="col">
         <q-btn
-          round dense
+          round
+          dense
           :outline="e.color != 'Y'"
           color="yellow"
           @click="e.color = 'Y'"
         ></q-btn>
         <q-btn
-          round dense
+          round
+          dense
           :outline="e.color != 'C'"
           color="cyan"
           @click="e.color = 'C'"
         ></q-btn>
         <q-btn
-          round dense
+          round
+          dense
           :outline="e.color != 'M'"
           color="purple"
           @click="e.color = 'M'"
         ></q-btn>
       </div>
     </div>
+    <h5 class="q-mt-md">Cover Images</h5>
+    <div class="row items-center bg-grey-9">
+      <img :src="cover.top.src" class="col-1" />
+      <div class="col">
+        <q-input
+          dense
+          borderless
+          clearable
+          v-model="cover.top.src"
+          input-class="text-white"
+          label="Image URL"
+        ></q-input>
+      </div>
+      <div class="col-3">
+        <q-select
+          dense
+          options-dense
+          borderless
+          :options="['top', 'center', 'bottom']"
+          label="Position"
+          label-color="white"
+          popup-content-class="bg-dark text-white"
+          v-model="cover.top.position"
+        ></q-select>
+      </div>
+      <div class="col-1">
+        <q-btn
+          round
+          flat
+          icon="shuffle"
+          @click="cover.top.src = _.sample(events).image"
+        ></q-btn>
+      </div>
+    </div>
+    <div class="row items-center bg-grey-10">
+      <img :src="cover.bottom.src" class="col-1" />
+      <div class="col">
+        <q-input
+          dense
+          borderless
+          clearable
+          v-model="cover.bottom.src"
+          input-class="text-white"
+          label="Image URL"
+        ></q-input>
+      </div>
+      <div class="col-3">
+        <q-select
+          dense
+          options-dense
+          borderless
+          :options="['top', 'center', 'bottom']"
+          label="Position"
+          label-color="white"
+          popup-content-class="bg-dark text-white"
+          v-model="cover.bottom.position"
+        ></q-select>
+      </div>
+      <div class="col-1">
+        <q-btn
+          round
+          flat
+          icon="shuffle"
+          @click="cover.bottom.src = _.sample(events).image"
+        ></q-btn>
+      </div>
+    </div>
   </div>
-  <div class="row q-mt-lg">
+  <div class="row q-mt-lg hidden">
     <div class="col" id="calendar"></div>
   </div>
 
@@ -223,6 +388,8 @@
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar@6.1.11/index.global.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.11/index.global.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 
   <script>
     const {
@@ -273,6 +440,7 @@
         const events = ref([]);
         const startDate = ref();
         const endDate = ref();
+
         const toMonth = (m) =>
           ({
             1: "Janvier",
@@ -306,7 +474,7 @@
         };
 
         const getProps = (d, prop) => {
-          d = d.replaceAll("&quot;", '"')
+          d = d.replaceAll("&quot;", '"');
           var reg = new RegExp(`${prop}:\\s*(.+?)\\s*<br>`, "g");
           var match = d.match(`${prop}:\\s*(.+?)\\s*<br>`);
           if (!match) return null;
@@ -322,10 +490,16 @@
 
         const getColor = (e) => {
           var description = e.extendedProps.description || "";
-          if (e.title.toLowerCase().includes("scussion") || e.title.toLowerCase().includes("papote")) {
+          if (
+            e.title.toLowerCase().includes("scussion") ||
+            e.title.toLowerCase().includes("papote")
+          ) {
             return "C";
           }
-          if (description.toLowerCase().includes("méditation") || e.title.toLowerCase().includes("infusion")) {
+          if (
+            description.toLowerCase().includes("méditation") ||
+            e.title.toLowerCase().includes("infusion")
+          ) {
             return "M";
           }
           return "Y";
@@ -344,6 +518,7 @@
           var description = e.extendedProps.description + "<br>";
           return {
             title: e.title,
+            defaultTitle: e.title,
             start: e.start,
             startHour: e.start.getHours(),
             time: Quasar.date.formatDate(e.start, "HH:mm"),
@@ -362,14 +537,45 @@
           return events.value.filter((e) => e.day == day).length;
         };
 
-        // Local Storage
-        watch(events, () => Quasar.LocalStorage.set("events", events.value), {
-          deep: true,
+        const cover = ref({
+          top: { src: "", position: "center" },
+          bottom: { src: "", position: "center" },
         });
-        events.value = Quasar.LocalStorage.getItem("events") || [];
 
+        // Local Storage
+        watch(
+          [events, rangeDate, cover],
+          () => {
+            console.log("Storing");
+            Quasar.LocalStorage.set("events", events.value);
+            Quasar.LocalStorage.set("rangeDate", [
+              startDate.value,
+              endDate.value,
+            ]);
+            Quasar.LocalStorage.set("cover", cover.value);
+          },
+          {
+            deep: true,
+          }
+        );
+
+        events.value = Quasar.LocalStorage.getItem("events") || [];
+        [startDate.value, endDate.value] =
+          Quasar.LocalStorage.getItem("rangeDate") || "";
+        if (Quasar.LocalStorage.has("cover"))
+          cover.value = Quasar.LocalStorage.getItem("cover");
+        const exportDialog = ref(false);
+        const exportLoading = ref(false);
         const save = () => {
           console.log("Exporting");
+          exportLoading.value = true;
+          exportDialog.value = true;
+          html2canvas(document.querySelector("#planning"), {
+            allowTaint: true,
+          }).then((canvas) => {
+            document.querySelector("#export").appendChild(canvas);
+            exportLoading.value = false;
+          });
         };
 
         return {
@@ -380,7 +586,10 @@
           getClasses,
           save,
           rangeDate,
-          zoom
+          zoom,
+          exportDialog,
+          exportLoading,
+          cover,
         };
       },
     });

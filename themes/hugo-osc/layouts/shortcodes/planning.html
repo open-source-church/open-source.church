@@ -1,5 +1,5 @@
 <div id="q-app">
-  <div class="row q-mb-xl">
+  <div class="row q-mb-xl q-gutter-md">
     <q-btn
       label="Update"
       icon="update"
@@ -7,18 +7,26 @@
       class="col-3"
       @click="update"
     ></q-btn>
-    <q-btn label="export" @click="save"></q-btn>
+    <q-btn class="col-1" :icon="zoom == 0.5 ? 'zoom_in' : 'zoom_out'" @click="zoom == 0.5 ? zoom = 1 : zoom = 0.5" color="secondary"></q-btn>
+    <q-btn class="col-3" label="export" @click="save" color="secondary"></q-btn>
+    <q-btn class="col-3" label="add" @click="calendar.addEvent({
+      title: 'Test',
+      start: '2024-03-05',
+      description: 'Coucou, ceci est un test!'
+    })" color="secondary"></q-btn>
   </div>
   <div
     class="column q-gutter-none"
     id="planning"
-    style="
-      width: 1920px;
-      height: 1080px;
-      font-family: 'VCR OSD Mono', sans-serif;
-      text-transform: uppercase;
-      line-height: 1;
-    "
+    :style="{
+      width: '1920px',
+      height: '1080px',
+      fontFamily: '\'VCR OSD Mono\', sans-serif',
+      textTransform: 'uppercase',
+      lineHeight: 1,
+      zoom: zoom
+    }
+      "
   >
     <div class="col-auto row" style="height: 100px; margin-top: 10px">
       <div class="col-5 column justify-center">
@@ -78,6 +86,7 @@
             v-for="e,i in events.filter(e => e.day == day)"
             :key="i"
             :class="'overflow-hidden q-pa-none column ' +  ({1: 'col-6', 2: 'col-6', 3: 'col-4'}[nEventsByDay(day)] || 'col')"
+            :style="i + 1 < nEventsByDay(day) ? 'border-bottom: 5px solid #ffd4001a;' : ''"
           >
             <q-img
               class="col-auto"
@@ -96,7 +105,7 @@
               </div>
             </q-img>
             <div
-              :class="'col text-center column q-pa-none q-pb-sm ' + getClasses(e.color)"
+              :class="e.template + ' col text-center column q-pa-none q-pb-sm ' + getClasses(e.color)"
             >
               <span
                 class="col text-center q-pa-none column justify-center"
@@ -113,14 +122,30 @@
                   />
                   <span class="col-9 text-left">Sur discord</span>
                 </div>
-                <div v-if="e.template == 'jdr1shot'" class="row items-center q-mb-sm">
+                <div
+                  v-if="e.template == 'jdr1shot'"
+                  class="row items-center q-mb-sm"
+                >
                   <span class="col-12 text-center">IRL à Lausanne</span>
                   <img
                     class="col-3"
                     src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1.png"
                     width="32px"
                   />
-                  <span class="col-9 text-left">Inscription sur discord</span>
+                  <span class="col-9 text-left" style="font-size: 16px;">Inscription sur discord</span>
+                </div>
+                <div
+                  v-if="e.template == 'jd'"
+                  class="row items-center q-mb-none"
+                  style="margin-bottom: -20px;"
+                >
+                  <span class="col-12 text-center" style="margin-bottom: -10px;">À la taverne</span>
+                  <img
+                    class="col text-center q-pr-none"
+                    src="https://www.eerv.ch/fileadmin/_processed_/a/e/csm_Jardins_Divers_logo_1b022b1a13.png"
+                    width="52px" 
+                  />
+                  <span class="col-auto text-left q-pl-none" style="font-size: 16px; ">Av. de Tivoli 74<br/>Lausanne</span>
                 </div>
               </div>
               <span class="col-auto text-center" style="font-size: 16px">
@@ -155,21 +180,20 @@
       <div class="col">[[ e.title ]]</div>
       <div class="col">
         <q-btn
-          round
-          :label="e.color == 'Y' ? 'X' : ''"
+          round dense
+          :outline="e.color != 'Y'"
           color="yellow"
-          text-color="black"
           @click="e.color = 'Y'"
         ></q-btn>
         <q-btn
-          round
-          :label="e.color == 'C' ? 'X' : ''"
+          round dense
+          :outline="e.color != 'C'"
           color="cyan"
           @click="e.color = 'C'"
         ></q-btn>
         <q-btn
-          round
-          :label="e.color == 'M' ? 'X' : ''"
+          round dense
+          :outline="e.color != 'M'"
           color="purple"
           @click="e.color = 'M'"
         ></q-btn>
@@ -216,6 +240,7 @@
       delimiters: ["[[", "]]"],
       setup() {
         var calendar = ref();
+        const zoom = ref(0.5);
         onMounted(() => {
           const calendarEl = document.getElementById("calendar");
 
@@ -275,13 +300,13 @@
         const update = () => {
           console.log("Updating, please");
           var ev = calendar.value.getEvents();
-          console.log(ev);
           events.value = ev.map((e) => formatEvent(e));
           events.value = _.sortBy(events.value, [(e) => e.start]);
           console.log("Storing", events.value);
         };
 
         const getProps = (d, prop) => {
+          d = d.replaceAll("&quot;", '"')
           var reg = new RegExp(`${prop}:\\s*(.+?)\\s*<br>`, "g");
           var match = d.match(`${prop}:\\s*(.+?)\\s*<br>`);
           if (!match) return null;
@@ -296,11 +321,11 @@
         };
 
         const getColor = (e) => {
-          var description = e.extendedProps.description;
-          if (description.toLowerCase().includes("discussion")) {
+          var description = e.extendedProps.description || "";
+          if (e.title.toLowerCase().includes("scussion") || e.title.toLowerCase().includes("papote")) {
             return "C";
           }
-          if (description.toLowerCase().includes("méditation")) {
+          if (description.toLowerCase().includes("méditation") || e.title.toLowerCase().includes("infusion")) {
             return "M";
           }
           return "Y";
@@ -355,6 +380,7 @@
           getClasses,
           save,
           rangeDate,
+          zoom
         };
       },
     });

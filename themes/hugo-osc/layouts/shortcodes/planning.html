@@ -139,6 +139,7 @@
           style="background-color: #ffd4001a"
         >
           <!-- Event card -->
+          <!-- Filler -->
           <div
             class="col-6"
             v-if="nEventsByDay(day) == 1 && events.filter(e => e.day == day)[0].startHour >= 12"
@@ -146,10 +147,19 @@
           <div
             v-for="e,i in events.filter(e => e.day == day)"
             :key="i"
-            :class="'overflow-hidden q-pa-none column ' +  ({1: 'col-6', 2: 'col-6', 3: 'col-4'}[nEventsByDay(day)] || 'col')"
+            :class="{
+             'overflow-hidden': true,
+             'q-pa-none': true,
+             'column': true,
+             'col-6': [1, 2].includes(nEventsByDay(day)),
+             'col-4': nEventsByDay(day) == 3,
+             'col-12': e.allDay,
+             
+            }"
             :style="i + 1 < nEventsByDay(day) ? 'border-bottom: 5px solid #ffd4001a;' : ''"
           >
             <div class="q-img col-auto q-pa-none">
+              <!-- Image -->
               <div
                 :style="{paddingBottom: nEventsByDay(day) <= 2 ? (1/1*100)+'%' : (9/16*100)+'%'}"
               ></div>
@@ -160,9 +170,11 @@
                 backgroundSize: 'cover'
               }"
               >
+                <!-- Time-->
                 <div
                   class="absolute-bottom text-center bg-transparent"
                   style="padding: 0"
+                  v-if="!e.allDay"
                 >
                   <span
                     :class="'q-pa-sm ' + getClasses(e.color)"
@@ -195,7 +207,10 @@
               <!-- Templates: logo, adresses, ... -->
               <div class="col-auto column" style="font-size: 20px">
                 <!-- Discord -->
-                <div v-if="e.template == 'discord' || e.template == 'partage'" class="row items-center">
+                <div
+                  v-if="e.template == 'discord' || e.template == 'partage'"
+                  class="row items-center"
+                >
                   <img
                     class="col-3"
                     src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1.png"
@@ -509,7 +524,9 @@
             },
             datesSet: (dateInfo) => {
               startDate.value = dateInfo.start;
-              endDate.value = Quasar.date.subtractFromDate(dateInfo.end, { day: 1});
+              endDate.value = Quasar.date.subtractFromDate(dateInfo.end, {
+                day: 1,
+              });
               console.log("Date set", dateInfo);
             },
             eventsSet: (events) => {
@@ -600,13 +617,14 @@
           var start = new Date(e.start);
           var end = new Date(e.end);
           var description = e.extendedProps.description + "<br>";
-          console.log(e.title.split(" - ")[0], e.title.split(" - ")[1] || "");
+          console.log("EVENT", e.title, e);
           return {
             title: e.title.split(" - ")[0],
             defaultTitle: e.title.split(" - ")[0],
             subtitle: e.title.split(" - ")[1] || "",
             defaultSubtitle: e.title.split(" - ")[1] || "",
             showNames: true,
+            allDay: e.allDay,
             start: e.start,
             startHour: e.start.getHours(),
             time: Quasar.date.formatDate(e.start, "HH:mm"),
@@ -648,10 +666,15 @@
         );
 
         events.value = Quasar.LocalStorage.getItem("events") || [];
-        [startDate.value, endDate.value] =
-          Quasar.LocalStorage.getItem("rangeDate") || "";
+        console.log("Events", events.value);
+
+        if (Quasar.LocalStorage.has("rangeDate"))
+          [startDate.value, endDate.value] =
+            Quasar.LocalStorage.getItem("rangeDate");
+
         if (Quasar.LocalStorage.has("cover"))
           cover.value = Quasar.LocalStorage.getItem("cover");
+
         const exportDialog = ref(false);
         const exportLoading = ref(false);
         const save = () => {

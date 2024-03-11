@@ -153,7 +153,7 @@
              'column': true,
              'col-6': [1, 2].includes(nEventsByDay(day)),
              'col-4': nEventsByDay(day) == 3,
-             'col-12': e.allDay,
+             'col-12': e.allDay || (nEventsByDay(day) == 1 && e.duration > 12*60),
              
             }"
             :style="i + 1 < nEventsByDay(day) ? 'border-bottom: 5px solid #ffd4001a;' : ''"
@@ -179,8 +179,10 @@
                   <span
                     :class="'q-pa-sm ' + getClasses(e.color)"
                     style="font-size: 24px"
-                    >[[e.time]]</span
+                    v-if="!e.multiDay"
                   >
+                    [[e.startTime]]
+                  </span>
                 </div>
               </div>
             </div>
@@ -392,6 +394,15 @@
           color="purple"
           @click="e.color = 'M'"
         ></q-btn>
+        <q-btn
+          round
+          dense
+          size="xs"
+          :outline="e.color != 'Cream'"
+          color="#f1e9daf"
+          :class="{'bg-cream': e.color == 'Cream'}"
+          @click="e.color = 'Cream'"
+        ></q-btn>
       </div>
     </div>
     <!-- Settings: cover images -->
@@ -464,7 +475,6 @@
     </div>
   </div>
   <div class="row q-mt-lg hidden">
-    [[ startDate]] [[endDate]] [[rangeDate]]
     <div class="col" id="calendar"></div>
   </div>
 
@@ -569,13 +579,72 @@
         const update = () => {
           console.log("Updating, please");
           var ev = calendar.value.getEvents();
-          events.value = ev.map((e) => formatEvent(e));
+          events.value = [];
+          ev.forEach((e) => {
+            // Évenement sur un jour: normal ou allDay
+            if (
+              e.start.getDate() == e.end.getDate() ||
+              (Quasar.date.getDateDiff(e.end, e.start, "hours") == 24 &&
+                e.start.getHours() == 0)
+            ) {
+              events.value.push(formatEvent(e));
+            }
+            // Evenement sur plusieurs jours
+            else {
+              var d1 = e.start.getDate();
+              var t1 = e.start.getTime();
+              var d2 = e.end.getDate();
+              var t2 = e.end.getTime();
+
+              function clone(event) {
+                return {
+                  title: event.title,
+                  start: event.start,
+                  end: event.end,
+                  extendedProps: {
+                    description: event.extendedProps?.description,
+                  },
+                  allDay: event.allDay,
+                };
+              }
+
+              // Début
+              var tev = clone(e);
+              tev.end = Quasar.date.adjustDate(e.start, {
+                hour: 24,
+                minutes: 0,
+              });
+              tev.multiDay = true;
+              events.value.push(formatEvent(tev));
+              // Milieu
+              _.range(e.start.getDate() + 1, e.end.getDate()).forEach((i) => {
+                tev = clone(e);
+                tev.start = Quasar.date.adjustDate(e.end, {
+                  day: i,
+                  hour: 0,
+                  minutes: 0,
+                });
+                tev.multiDay = true;
+                tev.allDay = true;
+                events.value.push(formatEvent(tev));
+              });
+              // Fin
+              tev = clone(e);
+              tev.start = Quasar.date.adjustDate(e.end, {
+                hour: 0,
+                minutes: 0,
+              });
+              tev.multiDay = true;
+              events.value.push(formatEvent(tev));
+            }
+          });
           events.value = _.sortBy(events.value, [(e) => e.start]);
           console.log("Storing", events.value);
         };
 
         const getProps = (d, prop) => {
           d = d.replaceAll("&quot;", '"');
+          d += "<br>";
           var reg = new RegExp(`${prop}:\\s*(.+?)\\s*<br>`, "g");
           var match = d.match(`${prop}:\\s*(.+?)\\s*<br>`);
           if (!match) return null;
@@ -594,15 +663,15 @@
           if (
             e.title.toLowerCase().includes("scussion") ||
             e.title.toLowerCase().includes("papote")
-          ) {
+          )
             return "C";
-          }
+
           if (
             description.toLowerCase().includes("méditation") ||
             e.title.toLowerCase().includes("infusion")
-          ) {
+          )
             return "M";
-          }
+          if (getProps(description, "notosc")) return "Cream";
           return "Y";
         };
 
@@ -611,13 +680,13 @@
             C: "bg-cyan text-dark",
             M: "bg-purple text-white",
             Y: "bg-yellow text-dark",
+            Cream: "bg-cream text-dark",
           }[color];
         };
         const formatEvent = (e) => {
           var start = new Date(e.start);
           var end = new Date(e.end);
           var description = e.extendedProps.description + "<br>";
-          console.log("EVENT", e.title, e);
           return {
             title: e.title.split(" - ")[0],
             defaultTitle: e.title.split(" - ")[0],
@@ -627,8 +696,11 @@
             allDay: e.allDay,
             start: e.start,
             startHour: e.start.getHours(),
-            time: Quasar.date.formatDate(e.start, "HH:mm"),
-            duration: Quasar.date.getDateDiff(start, end, "minutes"), // minutes
+            multiDay: e.multiDay,
+            endHour: e.end.getHours(),
+            startTime: Quasar.date.formatDate(e.start, "HH:mm"),
+            endTime: Quasar.date.formatDate(e.end, "HH:mm"),
+            duration: Quasar.date.getDateDiff(end, start, "minutes"), // minutes
             day: Quasar.date.getDayOfWeek(start),
             end: e.end,
             description: description,
@@ -732,6 +804,13 @@
     .col {
       padding-left: 0px;
       padding-right: 0px;
+    }
+
+    .bg-cream {
+      background: #f1e9da !important;
+    }
+    .text-cream {
+      color: #f1e9da;
     }
   </style>
 </div>

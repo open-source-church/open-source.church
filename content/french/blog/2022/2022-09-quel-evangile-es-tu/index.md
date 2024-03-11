@@ -66,7 +66,7 @@ quizz:
 
 Test quizz vue
 
-{{< quizz >}}
+{{< quiz >}}
 
 # Bible / Dieu / Jésus
 

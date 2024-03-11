@@ -449,6 +449,7 @@
     </div>
   </div>
   <div class="row q-mt-lg hidden">
+    [[ startDate]] [[endDate]] [[rangeDate]]
     <div class="col" id="calendar"></div>
   </div>
 
@@ -508,8 +509,8 @@
             },
             datesSet: (dateInfo) => {
               startDate.value = dateInfo.start;
-              endDate.value = dateInfo.end;
-              console.log("Date set");
+              endDate.value = Quasar.date.subtractFromDate(dateInfo.end, { day: 1});
+              console.log("Date set", dateInfo);
             },
             eventsSet: (events) => {
               console.log("Events set");

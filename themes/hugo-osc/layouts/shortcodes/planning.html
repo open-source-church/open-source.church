@@ -474,6 +474,36 @@
       </div>
     </div>
   </div>
+  <!-- Settings -->
+  <div class="q-mt-lg">
+    <h4>Annonces</h4>
+    <div class="row">
+      <q-radio
+        v-model="names_plateform"
+        val="discord"
+        label="discord"
+      ></q-radio>
+      <q-radio
+        v-model="names_plateform"
+        val="instagram"
+        label="Instagram"
+      ></q-radio>
+    </div>
+    <code>
+      ## Planning OSC de la semaine <br /><br />
+      <span v-for="e,i in events" :key="i">
+        * [[
+        'Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi,Dimanche'.split(',')[e.day]
+        ]] [[e.startTime]]: **[[e.title]]**<span v-if="e.subtitle">
+          · [[e.subtitle]]</span
+        >
+        <span v-if="e.with.length">
+          avec [[e.with.map(n => formattedName(n)).join(" ")]]</span
+        >
+        <br
+      /></span>
+    </code>
+  </div>
   <div class="row q-mt-lg hidden">
     <div class="col" id="calendar"></div>
   </div>
@@ -520,30 +550,31 @@
         onMounted(() => {
           const calendarEl = document.getElementById("calendar");
 
-          calendar.value = new Calendar(calendarEl, {
-            initialView: "listWeek",
-            firstDay: 1,
-            googleCalendarApiKey: "AIzaSyBdK_PZm3zIRza-bo0rzAGY3BXIEwkAChc",
-            events: {
-              /*url: 'https://calendar.google.com/calendar/ical/ot0211020tnjv1gnor2a9o2shg%40group.calendar.google.com/public/basic.ics',
+          if (true)
+            calendar.value = new Calendar(calendarEl, {
+              initialView: "listWeek",
+              firstDay: 1,
+              googleCalendarApiKey: "AIzaSyBdK_PZm3zIRza-bo0rzAGY3BXIEwkAChc",
+              events: {
+                /*url: 'https://calendar.google.com/calendar/ical/ot0211020tnjv1gnor2a9o2shg%40group.calendar.google.com/public/basic.ics',
                 //url: 'https://ics.calendarlabs.com/76/d2ebfb20/US_Holidays.ics',
                 format: 'ics'
                 */
-              googleCalendarId:
-                "ot0211020tnjv1gnor2a9o2shg@group.calendar.google.com",
-            },
-            datesSet: (dateInfo) => {
-              startDate.value = dateInfo.start;
-              endDate.value = Quasar.date.subtractFromDate(dateInfo.end, {
-                day: 1,
-              });
-              console.log("Date set", dateInfo);
-            },
-            eventsSet: (events) => {
-              console.log("Events set");
-              update();
-            },
-          });
+                googleCalendarId:
+                  "ot0211020tnjv1gnor2a9o2shg@group.calendar.google.com",
+              },
+              datesSet: (dateInfo) => {
+                startDate.value = dateInfo.start;
+                endDate.value = Quasar.date.subtractFromDate(dateInfo.end, {
+                  day: 1,
+                });
+                console.log("Date set", dateInfo);
+              },
+              eventsSet: (events) => {
+                console.log("Events set");
+                update();
+              },
+            });
 
           calendar.value.render();
         });
@@ -761,6 +792,80 @@
           });
         };
 
+        const names_plateform = ref("discord");
+        const formattedName = computed(() => {
+          return (name) => {
+            var rname = {};
+            var names = [
+            {
+              names: "olivier, théologeek, theologeek, olivier keshavjee",
+              val: {
+                discord: "@théologeek",
+                instagram: "@olivierkes",
+              }
+            },
+            {
+              names: "jérémie, ilans",
+              val: {
+                discord: "@ilans",
+                instagram: null,
+              }
+            },
+            {
+              names: "irockois, cédric, cédric rossel",
+              val: {
+                discord: "@irockois",
+                instagram: "@cedric.rossel",
+              }
+            },
+            {
+              names: "benoît ischer kalecos benrael",
+              val: {
+                discord: "@benrael",
+                instagram: "@benoit.ischer",
+              }
+            },
+            {
+              names: "daemarys, damaris",
+              val: {
+                discord: "@daemarys",
+                instagram: null,
+              }
+            },
+            {
+              names: "yun",
+              val: {
+                discord: "@yunananas.",
+                instagram: null,
+              }
+            },
+            {
+              names: "bibiche",
+              val: {
+                discord: "@b_ms90",
+                instagram: null,
+              }
+            },
+            {
+              names: "castiel",
+              val: {
+                discord: "@.castichroel.",
+                instagram: null,
+              }
+            },
+            {
+              names: "steve saladeverte saladverte",
+              val: {
+                discord: "@saladeverte.",
+                instagram: null,
+              }
+            }
+            ];
+            rname = _.find(names, n => n.names.includes(name.toLowerCase()))?.val || {}
+            return rname[names_plateform.value] || name
+          };
+        });
+
         return {
           calendar,
           update,
@@ -773,6 +878,8 @@
           exportDialog,
           exportLoading,
           cover,
+          names_plateform,
+          formattedName,
         };
       },
     });

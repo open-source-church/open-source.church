@@ -7,7 +7,7 @@ categories:
   - Articles
 type: post
 tags: ["Témoignage", "Église", "Souffrance", "Dépression"]
-summary: "Comment Sheldon Cooper de *Big Bang Theory* m'a appris des choses sur moi."
+summary: "Comment j'ai du m'extraire d'un modèle template de témoigagne qui me faisait du mal, et deux personnes qui m'y ont aidé."
 
 ---
 

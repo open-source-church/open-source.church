@@ -10,7 +10,7 @@ date: '2024-02-26T20:30:00+01:00'
 display: light
 duration: '2:30:00'
 end: '2024-02-26T23:00:00+01:00'
-image: null
+image: https://wallpapercave.com/wp/wp2233411.jpg
 isodate: '2024-02-26'
 location: twitch
 path: 2024/02/2024-02-26-open-stream-crew-2-0-terraria.md

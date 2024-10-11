@@ -23,6 +23,6 @@ url: /activities/twitch/2023/06/29/sea-of-thieves
 with:
 - Ilans
 - Elyius
--  "Saladeverte"
+- Saladeverte
 ---
 La suite de Sea of Thieves

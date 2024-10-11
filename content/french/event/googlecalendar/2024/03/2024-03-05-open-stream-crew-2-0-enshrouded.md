@@ -17,7 +17,7 @@ path: 2024/03/2024-03-05-open-stream-crew-2-0-enshrouded.md
 start: '2024-03-05T20:00:00+01:00'
 start-unix: 1709665200.0
 template: twitch
-title: 'Open Stream Crew 2.0: Enshrouded'
+title: Open Stream Crew 2.0 - Enshrouded
 type: event
 url: /activities/twitch/2024/03/05/open-stream-crew-2-0-enshrouded
 with:

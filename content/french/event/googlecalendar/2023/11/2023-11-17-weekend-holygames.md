@@ -4,6 +4,8 @@ Y: '2023'
 activity: holygames
 buttons:
 - icon: info
+  link: https://www.holygames.ch/
+  link_title: Info
 date: '2023-11-17T16:00:00+01:00'
 duration: 1 day, 22:00:00
 end: '2023-11-19T14:00:00+01:00'
@@ -22,7 +24,5 @@ with:
 - Alexandre Michelle
 - Laurence Keshavjee
 - Florine Juvet
-  link: https://www.holygames.ch/
-  link_title: Info
 ---
 Un weekend de jeux de société et spiritualité, en toute liberté, selon la formule qu'on connaît et qu'on aime.

@@ -19,7 +19,7 @@ path: 2024/01/2024-01-23-infusion-soiree-de-partage-osc.md
 start: '2024-01-23T20:30:00+01:00'
 start-unix: 1706038200.0
 template: partage
-title: 'Infusion: soirée de partage OSC'
+title: Infusion - Soirée de partage OSC
 type: event
 url: /activities/partage/2024/01/23/infusion-soiree-de-partage-osc
 with:

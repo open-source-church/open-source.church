@@ -8,7 +8,8 @@
         <h1 class="">{{.Title}}</h1>
       </div>
       <!-- event -->
-      {{ $p := sort .Data.Pages ".Params.start" }}
+      {{ $p := where .Site.Pages "Type" "event" }}
+      {{ $p := sort $p ".Params.start" }}
       {{ $p := where $p "Params.start-unix" "gt" now.Unix }}
       {{ $paginator := .Paginate ($p.GroupByDate "2006-01" "asc") }}
       <div class="col-12">

@@ -17,7 +17,7 @@ path: 2024/03/2024-03-12-matinale-avec-daemarys-meditation-papercraft-lego.md
 start: '2024-03-12T09:30:00+01:00'
 start-unix: 1710232200.0
 template: twitch
-title: 'Matinale avec Daemarys: Méditation & Papercraft / Lego'
+title: Matinale avec Daemarys - Méditation & Papercraft / Lego
 type: event
 url: /activities/twitch/2024/03/12/matinale-avec-daemarys-meditation-papercraft-lego
 with:

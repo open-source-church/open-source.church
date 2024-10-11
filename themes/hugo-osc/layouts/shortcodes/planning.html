@@ -184,6 +184,10 @@
                     [[e.startTime]]
                   </span>
                 </div>
+                <!-- Red Ribbon Taverne -->
+                <div class="absolute-top q-mt-xs" v-if="['taverne', 'twitch@taverne', 'jdr1shot'].includes(e.template)">
+                  <img src="https://tools.open-source.church/wp-content/uploads/2024/10/taverne-ribbon.png" class="full-width"/>
+                </div>
               </div>
             </div>
             <!-- Text box -->
@@ -210,15 +214,25 @@
               <div class="col-auto column" style="font-size: 20px">
                 <!-- Discord -->
                 <div
-                  v-if="e.template == 'discord' || e.template == 'partage'"
+                  v-if="e.template == 'discord'"
                   class="row items-center"
                 >
+                <span class="col-12 text-center" style="color: #5865F2;">
                   <img
-                    class="col-3"
                     src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1.png"
                     width="32px"
+                  /> discord</span>
+                </div>
+                <!-- Twitch -->
+                <div
+                  v-if="e.template == 'twitch' || e.template == 'twitch@taverne'"
+                  class="row items-center"
+                ><span class="col-12 text-center text-purple">
+                  <img
+                    src="https://pngimg.com/uploads/twitch/twitch_PNG23.png"
+                    width="32px"
                   />
-                  <span class="col-9 text-left">Sur discord</span>
+                  twitch</span>
                 </div>
                 <!-- JDR1Shot -->
                 <div
@@ -243,7 +257,7 @@
                   </div>
                 </div>
                 <!-- JD -->
-                <div v-if="e.template == 'jd'" class="col row items-center">
+                <div v-if="e.template == 'taverne'" class="col row items-center">
                   <img
                     class="col-3 text-center q-pa-none"
                     src="https://www.eerv.ch/fileadmin/_processed_/a/e/csm_Jardins_Divers_logo_1b022b1a13.png"
@@ -358,7 +372,7 @@
             dense
             clickable
             v-close-popup
-            v-for="t in ',twitch,discord,jdr1shot,jd'.split(',')"
+            v-for="t in ',twitch,twitch@taverne,discord,jdr1shot,taverne'.split(',')"
             :key="t"
             @click="e.template = t"
           >
@@ -670,7 +684,7 @@
             }
           });
           events.value = _.sortBy(events.value, [(e) => e.start]);
-          console.log("Storing", events.value);
+          console.log("Storing in cache", events.value);
         };
 
         const getProps = (d, prop) => {
@@ -808,6 +822,13 @@
               names: "jérémie, ilans",
               val: {
                 discord: "@ilans",
+                instagram: null,
+              }
+            },
+            {
+              names: "elia, elyius",
+              val: {
+                discord: "@elyius",
                 instagram: null,
               }
             },

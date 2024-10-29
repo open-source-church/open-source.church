@@ -20,7 +20,7 @@
             {{ .Content }}
           </div>
           <!-- comments -->
-          {{ if site.DisqusShortname }}
+          {{ if site.Config.Services.Disqus.Shortname }}
           <div class="col-12">
             {{ template "_internal/disqus.html" . }}
           </div>

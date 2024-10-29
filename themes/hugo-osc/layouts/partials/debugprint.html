@@ -79,7 +79,7 @@
     <div class="debugprint_wrap">
         {{ if $typeIsSiteInfo }} <!-- https://github.com/gohugoio/hugo/blob/master/hugolib/site.go -->
             {{ $siteVarNames   := (slice "Title" "Author" "Social" "LastChange" "DisqusShortname" "GoogleAnalytics" "Copyright" "RSSLink" "LanguageCode" "BuildDrafts" "Params") }}
-            {{ $siteVarSymbols := (slice .Title  .Author  .Social  .LastChange  .DisqusShortname  .GoogleAnalytics  .Copyright  .RSSLink  .LanguageCode  .BuildDrafts  .Params ) }}
+            {{ $siteVarSymbols := (slice .Title  .Author  .Social  .LastChange  .Config.Services.Disqus.Shortname  .GoogleAnalytics  .Copyright  .RSSLink  .LanguageCode  .BuildDrafts  .Params ) }}
             <table class="debugprint">
                 <tr><th class="key">SiteInfo Variable</th><th class="value">Value</th></tr>
                 {{ range $idx, $elem := $siteVarNames }}

@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+<!-- events -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-4">
+        <h1 class="">{{.Title}}</h1>
+      </div>
+      <!-- event -->
+      {{ $p := where .Site.RegularPages "Type" "event" }}
+      {{ $p := sort $p ".Params.start" }}
+      {{ $paginator := .Paginate ($p.GroupByDate "2006-01" "asc") }}
+      <div class="col-12">
+        {{ template "_internal/pagination.html" . }}
+      </div>
+      {{ range $paginator.PageGroups }}
+        <h2 class="col-12 text-majenta my-5">{{ (index .Pages 0).Date | time.Format "January 2006" | title }}</h2>
+        {{ range .Pages }}
+          <div class="col-12 col-lg-6">
+            {{ .Render "li" }}
+          </div>
+        {{ end }}
+      {{ end }}
+      <div class="col-12">
+        {{ template "_internal/pagination.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /events -->
+
+{{ end }}

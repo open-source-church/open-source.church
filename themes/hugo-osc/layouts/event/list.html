@@ -8,10 +8,19 @@
         <h1 class="">{{.Title}}</h1>
       </div>
       <!-- event -->
-      {{ $p := where .Site.Pages "Type" "event" }}
+      {{ $p := where .Site.RegularPages "Type" "event" }}
       {{ $p := sort $p ".Params.start" }}
       {{ $p := where $p "Params.start-unix" "gt" now.Unix }}
       {{ $paginator := .Paginate ($p.GroupByDate "2006-01" "asc") }}
+
+      <!-- lien vers tous les événements -->
+      {{ $all := where .Site.RegularPages "Type" "event" }}
+      {{ $past_n := sub (len $all) (len $p) }}
+      {{ $past_n := (len $all) }}
+      {{ $target_page := math.Ceil (div $past_n $paginator.PagerSize ) }}
+      <div class="col-12 text-center">
+        <a class="btn btn-primary" href="/event/all/page/{{ $target_page }}">Afficher les événements passés</a>
+      </div>
       <div class="col-12">
         {{ template "_internal/pagination.html" . }}
       </div>

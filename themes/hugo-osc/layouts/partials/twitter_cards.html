@@ -12,7 +12,7 @@
   {{- else if $activity -}}
   <!-- Activity -->
   {{- $image := $activity.Resources.GetMatch $activity.Params.image -}}
-  <meta name="twitter:image" content="{{ $image.Permalink }}"/>
+  {{- if $image -}} <meta name="twitter:image" content="{{ $image.Permalink }}"/> {{- end -}}
   {{- else -}}
   <!-- Image par défaut du site -->
   {{- with $.Site.Params.images }}

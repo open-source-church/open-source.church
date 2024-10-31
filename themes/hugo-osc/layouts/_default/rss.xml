@@ -3,6 +3,11 @@
 {{- $pages := slice -}}
 {{- if $.IsHome -}}
 {{- $pages = where $pctx.RegularPages "Type" "post" -}}
+{{- else if eq $.Path "/event" -}}
+{{- $pages = where .Site.RegularPages "Type" "event" -}}
+{{- $pages = where $pages "Params.start-unix" "gt" now.Unix -}}
+{{- else if eq $.Path "/event/all" -}}
+{{- $pages = where .Site.RegularPages "Type" "event" -}}
 {{- else if $.IsSection -}}
 {{- $pages = $pctx.RegularPages -}}
 {{- else -}}

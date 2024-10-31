@@ -15,7 +15,7 @@
   {{- else if $activity -}}
   <!-- Activity -->
   {{- $image := $activity.Resources.GetMatch $activity.Params.image -}}
-  <meta property="og:image" content="{{ $image.Permalink }}"/>
+  {{- if $image -}} <meta property="og:image" content="{{ $image.Permalink }}"/> {{- end -}}
   {{- else -}}
   <!-- Image par défaut du site -->
   {{- with $.Site.Params.images }}

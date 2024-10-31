@@ -5,6 +5,7 @@ description : "Écothéologien."
 # email: "email2@example.org"
 # portrait
 image: "bischer.jpg"
+pseudo: "Kalecos"
 social:
   - icon : "link" # https://teenyicons.com/
     link : "https://genophage.ch/"

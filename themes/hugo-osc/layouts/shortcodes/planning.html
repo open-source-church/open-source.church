@@ -553,6 +553,7 @@
       computed,
       reactive,
       watch,
+      nextTick
     } = Vue;
     const { Calendar } = FullCalendar;
 
@@ -794,8 +795,11 @@
 
         const exportDialog = ref(false);
         const exportLoading = ref(false);
-        const save = () => {
+        const save = async () => {
           console.log("Exporting");
+          const last_zoom = zoom.value;
+          zoom.value = 1;
+          await nextTick();
           exportLoading.value = true;
           exportDialog.value = true;
           html2canvas(document.querySelector("#planning"), {
@@ -803,6 +807,7 @@
           }).then((canvas) => {
             document.querySelector("#export").appendChild(canvas);
             exportLoading.value = false;
+            zoom.value = last_zoom
           });
         };
 

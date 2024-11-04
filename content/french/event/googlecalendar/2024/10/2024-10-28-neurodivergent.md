@@ -22,4 +22,4 @@ url: /activities/twitch/2024/10/28/neurodivergent
 with:
 - Irockois
 ---
-Le cerveau humain, c'est le bordel, el il y a certaines personnes chez qui ça l'est particulièrement. Et si, au lieu de voir ça comme des bizarreries, on essyyait de comprendre ce qui se passe ? Des interviews menés par Irockois autours de la neurodivergence.
+Le cerveau humain, c'est le bordel, et il y a certaines personnes chez qui ça l'est particulièrement. Et si, au lieu de voir ça comme des bizarreries, on essyyait de comprendre ce qui se passe ? Des interviews menés par Irockois autours de la neurodivergence.

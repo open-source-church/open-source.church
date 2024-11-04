@@ -23,4 +23,4 @@ url: /activities/twitch/2024/10/31/hollow-knight
 with:
 - Elyius
 ---
-Hollow Knight, c&#39;est dur. Mais on va quand même essayer !
+Hollow Knight, c'est dur. Mais on va quand même essayer !

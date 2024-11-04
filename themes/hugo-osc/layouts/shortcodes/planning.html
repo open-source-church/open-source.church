@@ -116,6 +116,7 @@
         </span>
       </div>
     </div>
+    
     <div class="col column q-gutter-none q-pa-none">
       <!-- Jours -->
       <div class="col-auto row">
@@ -892,6 +893,9 @@
           };
         });
 
+        /* Story view */
+        const view_story = ref(false);
+
         return {
           calendar,
           update,
@@ -906,6 +910,7 @@
           cover,
           names_plateform,
           formattedName,
+          view_story
         };
       },
     });
@@ -937,13 +942,6 @@
     .col {
       padding-left: 0px;
       padding-right: 0px;
-    }
-
-    .bg-cream {
-      background: #f1e9da !important;
-    }
-    .text-cream {
-      color: #f1e9da;
     }
   </style>
 </div>

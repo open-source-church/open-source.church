@@ -24,4 +24,4 @@ with:
 - Kalecos
 Über Google Meet teilnehmen: https://meet.google.com/onr-jqps-ycb
 ---
-Bienvenue à la Taverne pour un apéro chill ! Dès 17h30 et jusqu'à pas d'heures, passes quand tu veux.
+Bienvenue à la Taverne pour un apéro chill ! Dès 17h30 et jusqu&#39;à pas d&#39;heures, passes quand tu veux.

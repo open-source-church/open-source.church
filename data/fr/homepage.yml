@@ -82,11 +82,11 @@ cta:
 
 wtfu:
   enable: true
-  subtitle: "Tu as quelque chose à contribuer !"
-  title: "Retrouve-nous"
+  subtitle: ""
+  title: "Rejoins-nous"
   buttons: ["discord", "twitch"]  # From config.toml [[params.social]]
-  display_others: true
-  simple: true
+  display_others: false
+  simple: false
 
 ######################## Success story #############################
 success_story:

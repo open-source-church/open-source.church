@@ -109,54 +109,6 @@
 {{ end }}
 <!-- /banner-feature -->
 
-<!-- about us -->
-{{ if $data.homepage.about.enable }}
-{{ with $data.homepage.about }}
-<section class="section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-2 order-md-1">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
-        <p>{{ .content | markdownify }}</p>
-        {{ if .button.enable }}
-        {{ with .button }}
-        <a href="{{ .link | absLangURL }}" class="btn btn-outline-primary">{{ .label }}</a>
-        {{ end }}
-        {{ end }}
-      </div>
-      {{ with .image }}
-      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-        <a href="{{ . | absURL }}" class="venobox"><img class="img-fluid w-100" src="{{ . | absURL }}" alt="it's dangerous to go alone" style="mix-blend-mode: screen;"></a>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /about us -->
-
-<!-- cta -->
-{{ if $data.homepage.cta.enable }}
-{{ with $data.homepage.cta }}
-<section class="section bg-primary">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <p class="h6 text-white font-secondary mb-0">{{ .subtitle | markdownify }}</p>
-        <h2 class="section-title text-white">{{ .title | markdownify }}</h2>
-        {{ if .button.enable }}
-        {{ with .button }}
-        <a href="{{ .link | absLangURL }}" class="btn btn-light">{{ .label }}</a>
-        {{ end }}
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /cta -->
 
 <!-- where to fin us -->
 {{ if $data.homepage.wtfu.enable }}
@@ -209,6 +161,56 @@
 {{ end }}
 {{ end }}
 <!-- /where to fin us -->
+
+
+<!-- about us -->
+{{ if $data.homepage.about.enable }}
+{{ with $data.homepage.about }}
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <p>{{ .content | markdownify }}</p>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link | absLangURL }}" class="btn btn-outline-primary">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+      {{ with .image }}
+      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <a href="{{ . | absURL }}" class="venobox"><img class="img-fluid w-100" src="{{ . | absURL }}" alt="it's dangerous to go alone" style="mix-blend-mode: screen;"></a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /about us -->
+
+<!-- cta -->
+{{ if $data.homepage.cta.enable }}
+{{ with $data.homepage.cta }}
+<section class="section bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p class="h6 text-white font-secondary mb-0">{{ .subtitle | markdownify }}</p>
+        <h2 class="section-title text-white">{{ .title | markdownify }}</h2>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link | absLangURL }}" class="btn btn-light">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /cta -->
 
 <!-- success story -->
 {{ if $data.homepage.success_story.enable }}

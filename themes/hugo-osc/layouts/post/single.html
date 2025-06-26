@@ -21,9 +21,11 @@
           {{ else }}
             {{ $image = .Params.image | relURL }}
           {{ end }}
+          {{ if not .Params.no_image }}
           <div class="col-12 mb-4">
             <img src="{{ $image }}" alt="blog-thumb" class="img-fluid w-100">
           </div>
+          {{ end }}
           <!-- Meta -->
           <div class="col-12">
             <ul class="list-inline">

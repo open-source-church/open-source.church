@@ -4,7 +4,7 @@ Y: '2025'
 activity: holygames
 buttons:
 - icon: info
-  link: https://www.holygames.ch/semaine-ete-2022/
+  link: https://holygames.ch/semaine-ete-2025/
   link_title: Info
 date: '2025-07-20T14:00:00+02:00'
 duration: 5 days, 0:00:00

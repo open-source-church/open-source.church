@@ -12,7 +12,9 @@ contrib:
 - title: Magicien·ne
   image: https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80
   summary: "Viens bidouiller sur des projets existants, ou en proposer des nouveaux."
-  buttons: [["Github", "https://github.com/open-source-church", "github"]]
+  buttons: 
+  - ["Github", "https://github.com/open-source-church", "github"]
+  - ["Gitlab", "https://gitlab.com/opensourcechurch", "gitlab"]
 - title: Héraut
   summary: Parle d'Open Source Church, partage les contenus et publications.
   image: "https://images.squarespace-cdn.com/content/5356aa98e4b0e10db1993391/1398260977324-SH1KA6R0KAHERUP5BGZS/Centaurs-Herald.jpg?content-type=image%2Fjpeg"

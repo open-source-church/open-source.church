@@ -66,13 +66,11 @@ L'argent est utilisé pour:
           <div class="bg-dark" style="padding: 1em;">
             <h3>Coordonnées bancaires</h3>
             <span class="fs-1">
-            CH62 0076 7000 U001 2236 7  </br>
-            Eglise Réformée Vaud   </br>
-            Chemin des Cèdres 7   </br>
-            1004 Lausanne   </br>
-            Mention: Open Source Church   </br></br></br>
+            CH40 0839 0040 5385 1000 1  </br>
+            Open Source Church   </br>
+            Avenue de Chailly 52   </br>
+            1012 Lausanne
             </span>
-            <i>La mention est importante</i>
           </div>
         </div>
     </div>

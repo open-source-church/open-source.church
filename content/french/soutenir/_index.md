@@ -49,7 +49,20 @@ L'argent est utilisé pour:
     <div class="card-body">
         <h4 class="card-title"><a href="#">TWINT</a></h4>
         <p class="card-text">Faire un don avec TWINT</p>
-        <a href="twint-qr.png" class="btn btn-primary btn-sm venobox">{{< ti "gift" >}} TWINT</a>
+        <a href="twint-qr.png" class="btn btn-primary btn-sm venobox" style="display:none;">{{< ti "gift" >}} TWINT</a>
+        <a href="#twintform" class="btn btn-primary btn-sm venobox" data-vbtype="inline" data-maxwidth="500px">{{< ti "gift" >}} TWINT</a>
+        <div id="twintform" style="display:none;" >
+          <div class="bg-dark" style="padding: 1em;">
+            <h3>Coordonnées bancaires</h3>
+            <div id="rnw-solution-embed-vjqqd" style="width: 100%; margin: 0 auto; max-width: 580px;"></div>
+            <script type="module">
+              import {SolutionEmbed} from "https://cdn.jsdelivr.net/npm/@raisenow/solution-embed@1/dist/index.js"
+              SolutionEmbed.render("#rnw-solution-embed-vjqqd", {
+                "url": "https://pay.raisenow.io/vjqqd",
+              })
+            </script>
+          </div>
+        </div>
     </div>
     </article>
   </div>

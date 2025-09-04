@@ -28,6 +28,11 @@ summary: "Un survol de la Bible: sa composition, son contenu, son histoire. Tout
 
 [![Cliquez pour ouvrir en grand](/2025/06/infographie-vue-chronologique-de-la-bible/chronologie-bible.png)](/2025/06/infographie-vue-chronologique-de-la-bible/chronologie-bible.png)
 
+Ce contenu a aussi été présenté en stream, et commenté avec un peu plus de substance. Vous pouvez retrouver la vidéo ici:
+
+{{< youtube bKIyRMZ5IDU >}}
+&nbsp;
+
 ## Général
 
 0. **Il n'y a pas de « fait brut ».** Ces 100 faits sont observés et interprétés depuis une perspective chrétienne réformée parmi d'autres.  

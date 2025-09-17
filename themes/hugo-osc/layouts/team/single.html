@@ -52,14 +52,24 @@
 				</div>
 				{{ end }}
 			{{ end }}
-			{{ $e  := where (where site.Pages "Type" "event") "Params.with" "intersect" (slice .Title .Slug .Params.pseudo) }}
-			{{ if $e }}
+			{{ $targetValues := slice (lower .Title) (lower .Slug) (lower .Params.pseudo) }}
+			{{ $events := slice }}
+			{{ range where site.Pages "Type" "event" }}
+				{{ $eventWith := slice }}
+				{{ range .Params.with }}
+					{{ $eventWith = $eventWith | append (lower .) }}
+				{{ end }}
+				{{ if intersect $eventWith $targetValues }}
+					{{ $events = $events | append . }}
+				{{ end }}
+			{{ end }}
+			{{ if $events }}
 			  <div class="col-lg-12">
 				  <div class="title text-center">
 					  <h2 class="section-title">Évenements avec {{ .Title }}</h2>
 				  </div>
 			  </div>
-			  {{ range $e }}
+			  {{ range $events }}
 			  <div class="col-lg-6 col-sm-12 mb-4">
 				  {{ .Render "li" }}
 			  </div>

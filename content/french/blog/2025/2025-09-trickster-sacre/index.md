@@ -1,5 +1,6 @@
 ---
 title: "Le motif du 'trickster sacré' dans la Bible"
+slug: "motif-trickster-sacre-bible-jeux-video"
 author: "Jonathan Saber"
 date: 2025-09-16T08:16:11+01:00
 image: trickster-sacre-featured.jpg

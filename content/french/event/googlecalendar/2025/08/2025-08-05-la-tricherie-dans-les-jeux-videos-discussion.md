@@ -23,7 +23,7 @@ type: event
 url: /activities/twitch/2025/08/05/la-tricherie-dans-les-jeux-videos-discussion
 with:
 - Ilans
-- Jonjon
+- jonjon
 - Champinounours
 - Neeodev
 Über Google Meet teilnehmen: https://meet.google.com/onr-jqps-ycb

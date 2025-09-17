@@ -22,6 +22,5 @@ type: event
 url: /activities/twitch/2025/04/29/decouverte-de-blue-prince
 with:
 - Ilans
-- ''
 ---
 Je vous fais découvrir ce magnifique jeu, attention au SPOIL!

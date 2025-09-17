@@ -6,7 +6,7 @@ image: "fable-featured.jpg"
 categories:
   - Articles
 type: post
-tags: ["Bien", "Mal", "Fable", "RPG", "Émotions", "Jeu vidéo", "Undertale", "Genèse", "Jésus", "Péché", "Skyrim"]
+tags: ["Bien et mal", "Fable", "RPG", "Émotions", "Jeu vidéo", "Undertale", "Genèse", "Jésus", "Péché", "Skyrim"]
 summary: "Une exploration de la façon dont le jeu *Fable: The Lost Chapters* aborde les concepts de bien et de mal à travers les choix moraux du joueur, tout en discutant des limites de cette mécanique de jeu par rapport aux nuances complexes du bien et du mal dans la réalité et à travers une perspective biblique."
 
 ---

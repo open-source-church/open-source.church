@@ -14,7 +14,7 @@ template: twitch@taverne
 title: '[Discussion] KPop Demon Hunters - Un regard chrétien occidental'
 type: event
 with:
-- Jonjon
+- jonjon
 - daemarys
 - théologeek
 ---

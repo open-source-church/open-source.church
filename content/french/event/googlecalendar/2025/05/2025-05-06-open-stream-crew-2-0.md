@@ -25,6 +25,5 @@ with:
 - Yun
 - Castiel
 - Bibiche
-- ''
 ---
 On fait des jeux!

@@ -21,6 +21,6 @@ title: FAQ - Bible et Théol
 type: event
 url: /activities/twitch/2025/09/12/faq-bible-et-theol
 with:
-- theologeek
+- théologeek
 ---
 Théologeek essaie de répondre à des questions.

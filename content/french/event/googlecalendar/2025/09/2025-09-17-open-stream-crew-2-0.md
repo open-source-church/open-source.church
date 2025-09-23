@@ -21,7 +21,7 @@ title: Open Stream Crew 2.0
 type: event
 url: /activities/twitch/2025/09/17/open-stream-crew-2-0
 with:
-- Ilans
+- ilans
 - Castiel
 ---
 On fait des jeux!

@@ -1,7 +1,7 @@
 ---
 title: "Des images du Christ dans la pop-culture"
 author: "Olivier Keshavjee"
-date: 2022-12-07T20:17:11+01:00
+date: 2025-09-24T20:17:11+01:00
 image: "2023-01-images-christ-popculture-featured.jpg"
 categories:
   - Articles

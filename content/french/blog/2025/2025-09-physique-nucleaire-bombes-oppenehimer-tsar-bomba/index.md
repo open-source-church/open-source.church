@@ -6,7 +6,7 @@ date: 2025-09-19
 tags: ["physique nucléaire", "histoire des sciences", "Oppenheimer", "bombe A", "bombe H", "Tsar Bomba"]
 categories: ["Vulgarisation scientifique", "Articles"]
 summary: "De la fission à la fusion : Oppenheimer, la bombe A, Ivy Mike et la Tsar Bomba."
-image: "atomic.jpg"
+image: "atomic-featured.jpg"
 type: "post"
 ---
 

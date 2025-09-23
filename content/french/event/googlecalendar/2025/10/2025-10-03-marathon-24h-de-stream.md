@@ -21,7 +21,7 @@ title: Marathon 24h de stream
 type: event
 url: /activities/twitch/2025/10/03/marathon-24h-de-stream
 with:
-- Ilans
+- ilans
 - Saladeverte
 - Ffierock
 - Galahad

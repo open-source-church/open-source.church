@@ -6,16 +6,16 @@ buttons:
 - icon: twitch
   link: https://www.twitch.tv/opensourcechurch
   link_title: Vers la chaine
-date: '2025-09-24T20:00:00+02:00'
+date: '2025-09-24T19:00:00+02:00'
 display: light
-duration: '2:00:00'
-end: '2025-09-24T22:00:00+02:00'
+duration: '1:30:00'
+end: '2025-09-24T20:30:00+02:00'
 image: https://www.open-source.church/2025/09/physique-nucleaire-bombes-oppenheimer-tsar-bomba/atomic-featured_hu10401732686585652897.jpg
 isodate: '2025-09-24'
 location: twitch
 path: 2025/09/2025-09-24-bombe-atomique-article-et-discussion.md
-start: '2025-09-24T20:00:00+02:00'
-start-unix: 1758736800.0
+start: '2025-09-24T19:00:00+02:00'
+start-unix: 1758733200.0
 template: twitch
 title: Bombe atomique - Article et discussion
 type: event

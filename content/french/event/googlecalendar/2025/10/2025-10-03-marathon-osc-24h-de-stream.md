@@ -10,25 +10,26 @@ buttons:
 date: '2025-10-03T18:00:00+02:00'
 duration: 1 day, 0:00:00
 end: '2025-10-04T18:00:00+02:00'
-image: https://tools.open-source.church/wp-content/uploads/2022/03/twitch-banner-osc-logo-all.png
+image: https://tools.open-source.church/wp-content/uploads/2025/09/logo_trans_fantasy.png
 isodate: '2025-10-03'
 location: twitch
-path: 2025/10/2025-10-03-marathon-24h-de-stream.md
+path: 2025/10/2025-10-03-marathon-osc-24h-de-stream.md
 start: '2025-10-03T18:00:00+02:00'
 start-unix: 1759507200.0
 template: twitch
-title: Marathon 24h de stream
+title: Marathon OSC - 24h de stream
 type: event
-url: /activities/twitch/2025/10/03/marathon-24h-de-stream
+url: /activities/twitch/2025/10/03/marathon-osc-24h-de-stream
 with:
 - ilans
 - Saladeverte
 - Ffierock
 - Galahad
 - Irockois
-- Elyis
+- Elyius
 - Neeodev
 - Daemarys
+- théologeek
 Über Google Meet teilnehmen: https://meet.google.com/onr-jqps-ycb
 ---
 Le fameux marathon de stream annuel, 24h de bonheur!

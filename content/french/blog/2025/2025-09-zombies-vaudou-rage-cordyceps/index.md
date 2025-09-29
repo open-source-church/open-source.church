@@ -10,6 +10,11 @@ image: "zombie-featured.jpg"
 type: "post"
 ---
 
+<style>
+.content img { max-width: 100%;}
+.content strong { color: #ffd400; }
+</style>
+
 # Quand l’humanité a inventé le zombie
 *(De Haïti à la science moderne)*
 

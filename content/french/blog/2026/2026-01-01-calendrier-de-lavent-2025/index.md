@@ -8,7 +8,7 @@ categories:
 type: post
 tags: ["Calendrier", "Avent", "Noël", "liens", "Jeu vidéo", "Test", "Connaissance de soi", "Ressource"]
 summary: "Cette année encore, OSC nous a proposé un petit calendrier de l'Avent pour nous faire patienter jusqu'à Noël. Vous y trouverez certaines de nos découvertes sur les interwebs de cette année 🎄🎅🎁."
-
+url: /2026/01/calendrier-de-lavent-2025
 ---
 
 Cette année encore, la Guilde *Activités et Projets* d'OSC nous a proposé un petit calendrier de l'Avent pour nous faire patienter jusqu'à Noël. Vous y trouverez certaines de leurs découvertes sur les interwebs de cette année 🎄 🎅 🎁

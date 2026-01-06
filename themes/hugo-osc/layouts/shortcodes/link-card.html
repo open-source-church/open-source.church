@@ -1,0 +1,42 @@
+{{ $url := .Get "url" | default (.Get 0) }}
+{{ $overTitle := .Get "title" }}
+{{ $overDesc := .Get "description" }}
+{{ $overImage := .Get "image" }}
+{{ $height := .Get "height" }}
+
+{{ $res := resources.GetRemote $url }}
+{{ $title := "" }}{{ $desc := "" }}{{ $image := "" }}
+
+{{ if $res }}
+  {{ $html := $res.Content }}
+  
+  {{ $title = index (findRE "<meta property=\"og:title\" content=\"([^\"]+)\"" $html) 0 | replaceRE "<meta property=\"og:title\" content=\"([^\"]+)\"" "$1" | htmlUnescape }}
+  {{ if not $title }}{{ $title = index (findRE "<title>([^<]+)</title>" $html) 0 | replaceRE "<title>([^<]+)</title>" "$1" | htmlUnescape }}{{ end }}
+
+  {{ $desc = index (findRE "<meta property=\"og:description\" content=\"([^\"]+)\"" $html) 0 | replaceRE "<meta property=\"og:description\" content=\"([^\"]+)\"" "$1" | htmlUnescape }}
+  {{ if not $desc }}{{ $desc = index (findRE "<meta name=\"description\" content=\"([^\"]+)\"" $html) 0 | replaceRE "<meta name=\"description\" content=\"([^\"]+)\"" "$1" | htmlUnescape }}{{ end }}
+
+  
+  {{ $image = index (findRE "<meta property=\"og:image\" content=\"([^\"]+)\"" $html) 0 | replaceRE "<meta property=\"og:image\" content=\"([^\"]+)\"" "$1" }}
+{{ end }}
+
+{{ $finalTitle := $overTitle | default $title | default $url }}
+{{ $finalDesc := $overDesc | default $desc }}
+{{ $finalImage := $overImage | default $image }}
+  
+
+  <a href="{{ $url }}" target="_blank" rel="noopener">
+    <div class="bg-dark row m-4 link-card">
+        {{ if $height }}
+        <div class="col-12 bg-cover" style="min-height: {{ $height }};" data-background="{{ $finalImage }}"> &nbsp;</div>
+        <div class="col-12 p-2">
+        {{ else }}
+        <div class="col-3 bg-cover" data-background="{{ $finalImage }}"></div>
+        <div class="col-9 p-2">
+        {{ end }}
+          <h4 class="card-title mb-1">{{ $finalTitle | truncate 100 }}</h4>
+          <p class="card-text">{{ $finalDesc | truncate 160 }}</p>
+        </div>
+    </div>
+  </a>
+

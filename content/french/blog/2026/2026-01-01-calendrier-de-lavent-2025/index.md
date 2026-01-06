@@ -1,12 +1,12 @@
 ---
-title: "[Archive] Calendrier de l'Avent 2025"
+title: "Calendrier de l'Avent 2025 🗓️🎄"
 author: "Jérémie Provenzano"
 date: 2026-01-01T09:12:13+01:00
 image: "2025-calendrier-de-lavent-osc-dark-featured.jpg"
 categories:
   - Ressources
 type: post
-tags: ["Calendrier", "Avent", "liens", "Jeu vidéo", "Test", "Connaissance de soi", "Ressource"]
+tags: ["Calendrier", "Avent", "Noël", "liens", "Jeu vidéo", "Test", "Connaissance de soi", "Ressource"]
 summary: "Cette année encore, OSC nous a proposé un petit calendrier de l'Avent pour nous faire patienter jusqu'à Noël. Vous y trouverez certaines de nos découvertes sur les interwebs de cette année 🎄🎅🎁."
 
 ---
@@ -400,6 +400,8 @@ LES 4 COMPOSANTES DE VOTRE PROFIL: Elles rassemblent un certain nombre de caract
 8 TENDANCES : A l’issue du test Force4, certains se retrouvent dans une seule couleur majoritaire. Mais il est probable que vous vous placiez à la jonction de deux couleurs, à des degrés plus ou moins forts. Ce qui permet de nuancer votre profil.
 
 *Pour ce dernier test, pas de lien, juste me dire si vous êtes intéressés ✅ Et ensuite je vous l’offre pour Noël 🎄🤗*
+
+> *Daemarys*
 
 Plusieurs endroit pour faire un test rapide en ligne et avoir un apperçu:
 

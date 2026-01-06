@@ -411,7 +411,7 @@ Plusieurs endroit pour faire un test rapide en ligne et avoir un apperçu:
 
 {{< link-card "https://www.fasterclass.fr/test-disc-quelle-couleur-etes-vous" >}}
 
-##  🗓️ 24 décembre 🎄<br/> Joyeux Noël!
+##  🗓️ 25 décembre 🎄<br/> Joyeux Noël!
 
 Et voilà nous y sommes! On espère que ce petit calendrier de l'avent vous à plus et il ne reste plus qu'à vous souhaiter de belles fêtes de Noël avec vos amis et familles et une bonne année!
 

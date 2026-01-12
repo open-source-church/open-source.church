@@ -7,7 +7,6 @@ buttons:
   link: https://discord.gg/7FG3WvW
   link_title: Discord
 date: '2026-01-14T13:00:00+01:00'
-display: light
 duration: 0:30:00
 end: '2026-01-14T13:30:00+01:00'
 image: https://www.davidrevoy.com/data/images/blog/2020/2020-10-31_spritely_scene.jpg

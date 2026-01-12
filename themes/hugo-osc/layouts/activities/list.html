@@ -9,9 +9,11 @@
           {{ template "_internal/pagination.html" . }}
         </div>
         <!-- blog post -->
-        <!-- $paginator := .Paginate ( where .Data.Pages "Type" "post")
-        range $paginator.Pages -->
-        {{ range .Paginator.Pages }}
+         <!--
+         $paginator := .Paginate ( where .Data.Pages "Params.active" "false" ) 
+         range $paginator.Pages 
+        -->
+        {{ range ( where .Paginator.Pages "Params.active" "!=" false) }}
         <div class="col-sm-6 col-lg-4 mb-5">
           <article
           class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">

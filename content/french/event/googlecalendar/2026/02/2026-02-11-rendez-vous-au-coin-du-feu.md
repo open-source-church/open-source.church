@@ -1,21 +1,21 @@
 ---
-M: '01'
+M: '02'
 Y: '2026'
 activity: ''
 buttons:
 - icon: discord
   link: https://discord.gg/7FG3WvW
   link_title: Discord
-date: '2026-01-14T13:00:00+01:00'
+date: '2026-02-11T13:00:00+01:00'
 display: light
 duration: 0:30:00
-end: '2026-01-14T13:30:00+01:00'
+end: '2026-02-11T13:30:00+01:00'
 image: https://www.davidrevoy.com/data/images/blog/2020/2020-10-31_spritely_scene.jpg
-isodate: '2026-01-14'
+isodate: '2026-02-11'
 location: Discord
-path: 01/2026-01-14-rendez-vous-au-coin-du-feu.md
-start: '2026-01-14T13:00:00+01:00'
-start-unix: 1768392000.0
+path: 02/2026-02-11-rendez-vous-au-coin-du-feu.md
+start: '2026-02-11T13:00:00+01:00'
+start-unix: 1770811200.0
 template: discord
 title: Rendez-vous au coin du feu
 type: event

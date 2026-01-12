@@ -6,6 +6,7 @@ when: Une fois par mois environ
 image: osc-cineglise-featured.jpg
 with: [Quentin B., Ilans, Olivier Keshavjee]
 weight: 5
+active: false
 slug: cineglise
 partenaires:
 - name: "Espace 4C"

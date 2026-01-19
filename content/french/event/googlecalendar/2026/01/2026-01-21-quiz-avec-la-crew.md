@@ -10,20 +10,20 @@ date: '2026-01-21T20:00:00+01:00'
 display: light
 duration: '2:00:00'
 end: '2026-01-21T22:00:00+01:00'
-image: https://cdn12.picryl.com/photo/2016/12/31/game-gaming-gaming-console-science-technology-555734-1024.png
+image: https://maitre-des-fleurs.com/logo.png
 isodate: '2026-01-21'
 location: twitch
-path: 01/2026-01-21-open-stream-crew-2-0.md
+path: 01/2026-01-21-quiz-avec-la-crew.md
 start: '2026-01-21T20:00:00+01:00'
 start-unix: 1769022000.0
 template: twitch
-title: Open Stream Crew 2.0
+title: Quiz avec la Crew
 type: event
-url: /activities/twitch/2026/01/21/open-stream-crew-2-0
+url: /activities/twitch/2026/01/21/quiz-avec-la-crew
 with:
 - ilans
 - Castiel
 - Yun
 - Bibiche
 ---
-On fait des jeux!
+Soirée Quiz **Maître des fleurs**.

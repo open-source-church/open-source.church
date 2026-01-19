@@ -10,7 +10,7 @@ date: '2026-01-24T10:00:00+01:00'
 display: light
 duration: '2:00:00'
 end: '2026-01-24T12:00:00+01:00'
-image: <u>https://supercell.com/_next/static/media/games_thumbnail_brawlstars.5cd76330.jpg</u>
+image: https://supercell.com/_next/static/media/games_thumbnail_brawlstars.5cd76330.jpg
 isodate: '2026-01-24'
 location: twitch
 path: 01/2026-01-24-brawl-stars-avec-nos-enfants.md

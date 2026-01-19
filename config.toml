@@ -124,25 +124,15 @@ title = "twitch"
 icon = "twitch" # teenyicons
 link = "https://www.twitch.tv/opensourcechurch"
 
-[[params.social]]
-title = "twitter"
-icon = "twitter" # teenyicons
-link = "https://twitter.com/Opnsourcechurch"
+# [[params.social]]
+# title = "twitter"
+# icon = "twitter" # teenyicons
+# link = "https://twitter.com/Opnsourcechurch"
 
 [[params.social]]
 title = "instagram"
 icon = "instagram" # teenyicons
 link = "https://www.instagram.com/opensource.church"
-
-[[params.social]]
-title = "github"
-icon = "github" # teenyicons
-link = "https://github.com/open-source-church"
-
-[[params.social]]
-title = "youtube"
-icon = "youtube" # teenyicons
-link = "https://youtube.com/c/opensourcechurch"
 
 [[params.social]]
 title = "mastodon"
@@ -151,9 +141,19 @@ link = "https://tooting.ch/@osc"
 rel = "me"
 
 [[params.social]]
-title = "facebook"
-icon = "facebook" # teenyicons
-link = "https://facebook.com/opensourcechurch"
+title = "youtube"
+icon = "youtube" # teenyicons
+link = "https://youtube.com/c/opensourcechurch"
+
+[[params.social]]
+title = "github"
+icon = "github" # teenyicons
+link = "https://github.com/open-source-church"
+
+# [[params.social]]
+# title = "facebook"
+# icon = "facebook" # teenyicons
+# link = "https://facebook.com/opensourcechurch"
 
 # [[params.social]]
 # title = "newsletter"

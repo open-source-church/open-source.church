@@ -85,7 +85,7 @@ wtfu:
   subtitle: ""
   title: "Rejoins-nous"
   buttons: ["discord", "twitch"]  # From config.toml [[params.social]]
-  display_others: false
+  display_others: true
   simple: false
 
 ######################## Success story #############################

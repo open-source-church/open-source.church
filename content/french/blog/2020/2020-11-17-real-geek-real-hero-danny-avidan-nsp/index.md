@@ -9,7 +9,6 @@ dont_resize_image: true
 type: post
 categories:
   - Articles
-type: post
 tags: ["Danny Avidan", "Geek", "Héro", "Inspiration", "Musique", "Ninja Sex Party", "Sexbang"]
 ---
 Aujourd'hui, pas de jeu-vidéo ni de manga, mais une personne bien réelle&nbsp;: Danny Avidan.

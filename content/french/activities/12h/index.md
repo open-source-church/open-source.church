@@ -7,8 +7,6 @@ image: 12h-osc-featured.jpg
 with: [Ilans]
 weight: 4
 slug: 12h
-location: Jardins Divers
-address: Av. de Tivoli 74, 1007 Lausanne
 buttons:
 - link: https://discord.gg/7FG3WvW
   link_title: "Infos sur discord"

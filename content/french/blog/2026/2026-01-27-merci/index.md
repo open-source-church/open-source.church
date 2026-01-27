@@ -33,8 +33,8 @@ Très régulièrement de nouvelles personnes rejoignent la communauté, IRL ou e
 
 #### En terme de dons sur 2025
 
-- **CHF 1'830.-** de **dons mensuels**
-- **CHF 2'461.-** de **dons ponctuels**
+- Des **dons mensuels** pour un total annuel de **CHF 1'830.-**
+- Des **dons ponctuels** pour un total de **CHF 2'461.-**
 - De nombreux **dons matériels**, petits ou grands, souvent discrets
 - Et on ne compte même pas le nombres **d'heures données** !
 

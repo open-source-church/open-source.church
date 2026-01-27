@@ -7,7 +7,7 @@ categories:
   - News
 type: post
 tags: ["News", "OSC", "Bourses", "Merci"]
-summary: "Cette année encore, OSC nous a proposé un petit calendrier de l'Avent pour nous faire patienter jusqu'à Noël. Vous y trouverez certaines de nos découvertes sur les interwebs de cette année 🎄🎅🎁."
+summary: "Merci à toutes et tous pour vos contributitions à OSC ! Petit aperçu de 2025, et regards vers 2026."
 ---
 
 ## Chers amis et amies<br>Chers donateurs et donatrices

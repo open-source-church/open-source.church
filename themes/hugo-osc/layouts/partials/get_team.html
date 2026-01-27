@@ -1,6 +1,13 @@
-{{- $team := where (where site.Pages "Type" "team") ".Title" . -}}
-{{- $team = union $team (where (where site.Pages "Type" "team") ".Slug" .) -}}
-{{- $team = union $team (where (where site.Pages "Type" "team") ".Params.pseudo" .) -}}
-{{- if $team -}}
-    {{- return index $team 0 -}}
+{{- $search := lower . -}}
+{{- $teamPages := where site.Pages "Type" "team" -}}
+{{- $result := slice -}}
+
+{{- range $teamPages -}}
+    {{- if or (eq (lower .Title) $search) (eq (lower .Slug) $search) (eq (lower .Params.pseudo) $search) -}}
+        {{- $result = $result | append . -}}
+    {{- end -}}
+{{- end -}}
+
+{{- if $result -}}
+    {{- return index $result 0 -}}
 {{- end -}}

@@ -67,6 +67,7 @@ def fetch_and_save_events():
         
         # Gestion du titre et du nom de fichier
         titre = fields.get('Titre', 'Sans titre')
+        titre = titre.replace('"', '\"')
         slug = slugify(titre)
         filename = f"{iso_date}-{slug}.md"
         
@@ -111,7 +112,7 @@ image: {image or ""}
 isodate: '{iso_date}'
 start: '{dt_start.isoformat()}'
 start-unix: {float(start_unix)}
-title: "{titre.replace('"', '\\"')}"
+title: "{ titre }"
 type: event
 {light}
 {yaml.dump(templates, sort_keys=False, allow_unicode=True)}

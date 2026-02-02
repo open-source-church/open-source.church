@@ -57,8 +57,8 @@ def fetch_and_save_events():
         if not start_unix:
             continue
 
-        dt_start = datetime.datetime.fromtimestamp(start_unix, tz=datetime.timezone.utc)
-        dt_end = datetime.datetime.fromtimestamp(end_unix, tz=datetime.timezone.utc) if end_unix else dt_start
+        dt_start = datetime.datetime.fromtimestamp(start_unix)
+        dt_end = datetime.datetime.fromtimestamp(end_unix) if end_unix else dt_start
 
         # Variables de formatage
         iso_date = dt_start.strftime('%Y-%m-%d')

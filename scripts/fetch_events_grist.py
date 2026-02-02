@@ -10,8 +10,11 @@ from zoneinfo import ZoneInfo
 
 # Configuration
 API_URL = "https://opensourcechurch.getgrist.com/api/docs/3XxwRnvDfrfWuvWHp7jjVP/tables/Events/records"
+MEMBERS_URL = "https://opensourcechurch.getgrist.com/api/docs/3XxwRnvDfrfWuvWHp7jjVP/tables/Membres/records"
 CONTENT_DIR = "content/french/event/grist"
 TEMPLATES_DIR = "scripts/templates"
+
+_members = {}
 
 # On définit le fuseau horaire cible
 TZ_CIBLE = ZoneInfo("Europe/Paris")
@@ -51,6 +54,18 @@ def get_iso_with_tz(unix_timestamp):
     
     return dt_local
 
+def fetch_members():
+  try:
+    response = requests.get(MEMBERS_URL)
+    response.raise_for_status()
+    data = response.json()["records"]
+    for d in data:
+      _members[d["id"]] = d["fields"]
+    
+  except Exception as e:
+      print(f"Erreur lors de la récupération : {e}")
+      return
+
 def fetch_and_save_events():
     try:
         response = requests.get(API_URL)
@@ -73,7 +88,6 @@ def fetch_and_save_events():
         dt_start = get_iso_with_tz(start_unix)
         dt_end = get_iso_with_tz(end_unix)
 
-        print(dt_start)
         # Variables de formatage
         iso_date = dt_start.strftime('%Y-%m-%d')
         year = dt_start.strftime('%Y')
@@ -104,7 +118,7 @@ def fetch_and_save_events():
         if fields.get("Featured"): light = ""
 
         # Templates
-        templates = { "activity": "''" }
+        templates = { "activity": "" }
         if "Twitch" in fields.get("Lieu", []):
           templates |= get_template("twitch.json")
         if "Taverne" in fields.get("Lieu", []):
@@ -113,6 +127,13 @@ def fetch_and_save_events():
           templates |= get_template("discord.json")
         if "12h" in fields.get("Titre"):
           templates |= get_template("12h.json")
+
+        # Avec
+        _with = ""
+        if fields.get("Avec"): 
+          avec = fields.get("Avec")[1:]
+          avec = [_members[m]["Pseudo"] for m in avec]
+          _with = yaml.dump({ "with": avec})
 
         # Préparation du Frontmatter Hugo
         # Note: On utilise des guillemets simples pour éviter les problèmes avec certains caractères
@@ -130,6 +151,7 @@ title: "{ titre }"
 type: event
 {light}
 {yaml.dump(templates, sort_keys=False, allow_unicode=True)}
+{_with}
 ---
 {fields.get('Description', '')}
 """
@@ -142,4 +164,5 @@ type: event
         print(f"Généré : {file_path}")
 
 if __name__ == "__main__":
-    fetch_and_save_events()
+  fetch_members()
+  fetch_and_save_events()

@@ -5,11 +5,16 @@ import re
 import unicodedata
 import json
 import yaml
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 # Configuration
 API_URL = "https://opensourcechurch.getgrist.com/api/docs/3XxwRnvDfrfWuvWHp7jjVP/tables/Events/records"
 CONTENT_DIR = "content/french/event/grist"
 TEMPLATES_DIR = "scripts/templates"
+
+# On définit le fuseau horaire cible
+TZ_CIBLE = ZoneInfo("Europe/Paris")
 
 def slugify(value):
     """Transforme un titre en slug propre pour un nom de fichier."""
@@ -37,6 +42,14 @@ def get_template(t):
   else:
       print("Trouvé une template qui n'existe pas: ", templateName)
 
+def get_iso_with_tz(unix_timestamp):
+    # 1. On crée une date consciente de l'UTC (plus sûr)
+    dt_utc = datetime.fromtimestamp(unix_timestamp, tz=timezone.utc)
+    
+    # 2. On la convertit dans ton fuseau horaire (gère l'heure d'été/hiver)
+    dt_local = dt_utc.astimezone(TZ_CIBLE)
+    
+    return dt_local
 
 def fetch_and_save_events():
     try:
@@ -57,9 +70,10 @@ def fetch_and_save_events():
         if not start_unix:
             continue
 
-        dt_start = datetime.datetime.fromtimestamp(start_unix)
-        dt_end = datetime.datetime.fromtimestamp(end_unix) if end_unix else dt_start
+        dt_start = get_iso_with_tz(start_unix)
+        dt_end = get_iso_with_tz(end_unix)
 
+        print(dt_start)
         # Variables de formatage
         iso_date = dt_start.strftime('%Y-%m-%d')
         year = dt_start.strftime('%Y')

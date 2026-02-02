@@ -1,9 +1,10 @@
 [build]
   publish = "public"
-  command = "hugo --minify --gc --buildFuture"
+  command = "bash build.sh"
   
 [build.environment]
-  HUGO_VERSION = "0.134.2"
+  HUGO_VERSION = "0.154.2"
+  PYTHON_VERSION = "3.10"
 
 [context.branch-deploy]
 command = "hugo --minify --gc --buildFuture -b $DEPLOY_PRIME_URL"

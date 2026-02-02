@@ -1,0 +1,12 @@
+{
+  "location": "Taverne",
+  "address": "Av. de Tivoli 74, 1007 Lausanne",
+  "activity": "12h",
+  "buttons": [
+    {
+      "link": "https://discord.gg/7FG3WvW",
+      "link_title": "Infos sur discord",
+      "icon": "discord"
+    }
+  ]
+}

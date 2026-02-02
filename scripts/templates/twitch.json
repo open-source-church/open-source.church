@@ -1,0 +1,11 @@
+{
+  "location": "twitch",
+  "activity": "twitch",
+  "buttons": [
+    {
+      "link": "https://www.twitch.tv/opensourcechurch",
+      "link_title": "Vers la chaine",
+      "icon": "twitch"
+    }
+  ]
+}

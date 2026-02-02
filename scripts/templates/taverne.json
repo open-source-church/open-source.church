@@ -1,0 +1,11 @@
+{
+  "location": "Taverne @ Jardins Divers",
+  "address": "Av. de Tivoli 74, 1007 Lausanne",
+  "buttons": [
+    {
+      "link_title": "Jardins Divers",
+      "link": "https://jardins-divers.ch/",
+      "icon": "house"
+    }
+  ]
+}

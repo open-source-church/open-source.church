@@ -1,0 +1,10 @@
+{
+  "location": "Discord",
+  "buttons": [
+    {
+      "link_title": "Discord",
+      "link": "https://discord.gg/7FG3WvW",
+      "icon": "discord"
+    }
+  ]
+}

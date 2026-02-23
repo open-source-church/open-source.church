@@ -95,7 +95,7 @@ def fetch_and_save_events():
         
         # Gestion du titre et du nom de fichier
         titre = fields.get('Titre', 'Sans titre')
-        titre = titre.replace('"', '\"')
+        titre = titre.replace('"', '\\"')
         slug = slugify(titre)
         filename = f"{iso_date}-{slug}.md"
         

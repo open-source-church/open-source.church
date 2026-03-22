@@ -74,16 +74,16 @@ def fetch_and_save_events():
     except Exception as e:
         print(f"Erreur lors de la récupération : {e}")
         return
-
-    for record in data.get('records', []):
+    
+    records = sorted(data.get("records", []), key=lambda r: r.get("fields", {}).get("Depart", {}))
+    for record in records:
         fields = record.get('fields', {})
         
         # Extraction et conversion des dates
         start_unix = fields.get('Depart')
         end_unix = fields.get('Fin')
         
-        if not start_unix:
-            continue
+        if not start_unix: continue
 
         dt_start = get_iso_with_tz(start_unix)
         dt_end = get_iso_with_tz(end_unix)
@@ -98,6 +98,11 @@ def fetch_and_save_events():
         titre = titre.replace('"', '\\"')
         slug = slugify(titre)
         filename = f"{iso_date}-{slug}.md"
+
+        # On ignore les événements privés
+        if fields.get("Prive") == "Privé": 
+          print("On ignore l'événement privé: ", iso_date, titre)
+          continue
         
         # Chemin du dossier : content/event/grist/YYYY/MM
         target_dir = os.path.join(CONTENT_DIR, year, month)

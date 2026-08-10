@@ -75,7 +75,7 @@ images = ["/images/banner/banner-osc.png"]
 # contact info
 address = "Lausanne"
 mobile = ""
-email = ""
+email = "postmaster@open-source.church"
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
 # Google Analitycs
@@ -162,8 +162,8 @@ link = "https://github.com/open-source-church"
 
 ################################### English language #####################################
 [Languages.en]
-languageName = "En"
-languageCode = "en-us"
+label = "En"
+locale = "en-us"
 contentDir = "content/english"
 weight = 2
 disabled = true
@@ -188,8 +188,8 @@ url = "event"
 
 ################################### French language #####################################
 [Languages.fr]
-languageName = "Français"
-languageCode = "fr-fr"
+label = "Français"
+locale = "fr-fr"
 contentDir = "content/french"
 weight = 1
 [languages.fr.params]

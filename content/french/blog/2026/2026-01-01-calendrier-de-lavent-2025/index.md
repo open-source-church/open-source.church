@@ -254,7 +254,7 @@ Je trouve que l’[Holycratie de OSC](https://docs.google.com/document/d/1YEGGdh
 
 > *Daemarys*
 
-{{<link-card url="https://5ministeres.ch/" image="https://5ministeres.ch/assets/assets/images/5ministeres.5dc7014b6a888fcab8b23ec840e6923e.png" title="Découvre ton profil ministériel" description="Bienvenue dans cette auto-évaluation conçue pour t'aider à identifier ton profil ministériel actuel selon les 5 ministères : apôtre, prophète, évangéliste, berger, et docteur." >}}
+{{<link-card url="https://www.5ministeres.ch/" image="https://5ministeres.ch/assets/assets/images/5ministeres.5dc7014b6a888fcab8b23ec840e6923e.png" title="Découvre ton profil ministériel" description="Bienvenue dans cette auto-évaluation conçue pour t'aider à identifier ton profil ministériel actuel selon les 5 ministères : apôtre, prophète, évangéliste, berger, et docteur." >}}
 
 
 ##  🗓️ 16 décembre 🎄<br/> Spriters Resource

@@ -9,13 +9,12 @@ end: '2023-10-21T18:00:00+02:00'
 image: https://www.board-game.co.uk/wp-content/uploads/2023/08/Cosmoctopus-.png
 isodate: '2023-10-21'
 location: Taverne
-path: 2023/10/2023-10-21-journee-jeux.md
 prix: gratuit
 start: '2023-10-21T10:00:00+02:00'
 start-unix: 1697875200.0
 title: Journée jeux
 type: event
 with:
-- Ilans
-- Elyius
+  - Ilans
+  - Elyius
 ---

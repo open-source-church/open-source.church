@@ -9,7 +9,6 @@ image: https://www.rfj.ch/Htdocs/Images/Pictures/3525212.jpg
 isodate: '2024-03-15'
 location: La Chaux de Fonds
 notosc: true
-path: 2024/03/2024-03-15-ludesco-la-chaux-de-fonds.md
 start: '2024-03-15T13:00:00+01:00'
 start-unix: 1710504000.0
 title: Ludesco - La Chaux-de-fonds

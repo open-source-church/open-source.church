@@ -3,9 +3,9 @@ M: '04'
 Y: '2023'
 activity: twitch
 buttons:
-- icon: twitch
-  link: https://www.twitch.tv/opensourcechurch
-  link_title: Vers la chaine
+  - icon: twitch
+    link: https://www.twitch.tv/opensourcechurch
+    link_title: Vers la chaine
 date: '2023-04-17T15:00:00+02:00'
 display: light
 duration: '2:00:00'
@@ -13,7 +13,6 @@ end: '2023-04-17T17:00:00+02:00'
 image: https://cdn3.whatculture.com/images/2022/10/97b3abf8f012dc60-1200x675.jpg
 isodate: '2023-04-17'
 location: twitch
-path: 2023/04/2023-04-17-let-s-play-avec-elyius.md
 start: '2023-04-17T15:00:00+02:00'
 start-unix: 1681736400.0
 template: twitch
@@ -21,6 +20,7 @@ title: Let's play avec Elyius !
 type: event
 url: /activities/twitch/2023/04/17/let-s-play-avec-elyius
 with:
-- Elyius
+  - Elyius
 ---
+
 Let's play avec Elyius sur un jeu du moment.

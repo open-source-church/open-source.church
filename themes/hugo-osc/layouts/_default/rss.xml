@@ -21,8 +21,12 @@
 {{- $pctx := . }}
 {{- if .IsHome }}{{ $pctx = .Site }}{{ end }}
 {{- $pages := slice }}
-{{- if or $.IsHome $.IsSection }}
-	{{- $pages = $pctx.RegularPages }}
+{{- if $.IsHome }}
+	{{- $pages = where $pctx.RegularPages "Type" "post" -}}
+{{- else if eq $.Path "/event" -}}
+  {{- $pages = where $pctx.RegularPages "Type" "event" -}}
+{{- else if eq $.Path "/event/all" -}}
+  {{- $pages = where .Site.RegularPages "Type" "post" -}}
 {{- else }}
 	{{- $pages = $pctx.Pages }}
 {{- end }}

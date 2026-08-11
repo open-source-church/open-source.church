@@ -228,11 +228,12 @@ createApp({
       if (n % 2 != 0) r.push(0)
       let i = 1
       while(r.length < n){
-        r.push(i)
-        r.push(-i)
+        r.push(i ** 1.6)
+        r.push(-(i ** 1.6))
         i++
       }
       r.sort((a, b) => b - a)
+      console.log(r)
       return r
     })
 
@@ -277,7 +278,7 @@ createApp({
       var max_v = Math.max(...vals)
       Object.keys(quiz.results).forEach(arch => r.push({
         ...quiz.results[arch],
-        value: result.value[arch] ?? 0,
+        value: Math.round(result.value[arch] ?? 0),
         ratio: map_range(result.value[arch] ?? 0, min_v, max_v, 0, 1)
       }))
       r.sort((a, b) => b.value - a.value)

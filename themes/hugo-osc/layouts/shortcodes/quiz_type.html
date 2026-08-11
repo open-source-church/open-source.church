@@ -46,7 +46,7 @@
           <div class="col-7">
             <div class="progress" style="height: 1.3rem;">
               <div class="progress-bar" role="progressbar"
-                  :style="{color: '#343a40', backgroundColor: questColor[r.quest], width: (10 + r.ratio*90)+'%'}">[[ (r.value ?? 0) ]]</div>
+                  :style="{color: '#343a40', backgroundColor: questColor[r.quest], width: (10 + r.ratio*90)+'%'}">[[ (Math.round((r.value ?? 0) * 10) / 10) ]]</div>
             </div>
           </div>
         </div>
@@ -233,7 +233,6 @@ createApp({
         i++
       }
       r.sort((a, b) => b - a)
-      console.log(r)
       return r
     })
 
@@ -278,7 +277,7 @@ createApp({
       var max_v = Math.max(...vals)
       Object.keys(quiz.results).forEach(arch => r.push({
         ...quiz.results[arch],
-        value: Math.round(result.value[arch] ?? 0),
+        value: result.value[arch] ?? 0,
         ratio: map_range(result.value[arch] ?? 0, min_v, max_v, 0, 1)
       }))
       r.sort((a, b) => b.value - a.value)

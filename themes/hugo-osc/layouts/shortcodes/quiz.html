@@ -4,6 +4,8 @@
 
 <h3 v-if="quiz.title" id="quizztitle">[[ quiz.title ]]</h3>
 <!-- Quiz -->
+ [[score]]
+ [[finalscore]]
 <div v-if="!finished" v-for="q in [quiz.questions[questionNumber]]"
   class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
   <div class="card-body row no-gutters questions">
@@ -13,7 +15,7 @@
     <div class="col-12 pb-3" v-html="md(q.text)"></div>
     <!-- Options -->
     <div v-for="a in q.answers" 
-      :class="[quiz.displayanswersinline ? {2: 'col-6', 3: 'col-4', 4: 'col-3'}[quiz.answersnumberinline] : 'col-12', 'row', 'm-0', 'align-items-center', 'pb-2', 'text-center']" >
+      :class="[quiz.displayanswersinline ? {2: 'col-6', 3: 'col-4', 4: 'col-3', 5: 'col'}[quiz.answersnumberinline] : 'col-12', 'row', 'm-0', 'align-items-center', 'pb-2', 'text-center']" >
       <div v-if="a.image && !quiz.imageoveranswer" :data-background="a.image" @click="validate(a)"
           class="col-3 pb-1"
           style="height: 100%; background-size: cover; background-position: center;"
@@ -258,7 +260,6 @@ createApp({
 
 
     return {
-      message: 'Hello Vue!',
       questionNumber,
       showAnswer,
       quiz,

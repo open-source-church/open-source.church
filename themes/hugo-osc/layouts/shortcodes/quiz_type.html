@@ -1,0 +1,349 @@
+
+<div id="quiz" class="pb-4">
+{{ $q := .Page.Params.quiz }}
+
+<h3 v-if="quiz.title" id="quizztitle">[[ quiz.title ]]</h3>
+<!-- Quiz -->
+<a class="w-100 text-center btn btn-primary btn-cyan" @click="questionNumber = quiz.questions.length" v-if="true">
+ <span>! Fin !</span>
+</a>
+
+<div class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
+  <!-- Questions -->
+  <div class="card-body row no-gutters questions" v-if="!showResult">
+    <!-- Title -->
+    <img :src="currentQuestion.image" class="col-12 pb-2" v-if="currentQuestion.image" />
+    <div class="h3 text-center" style="min-height: 7rem;">[[currentQuestion.text]]</div>
+    <!-- Options -->
+    <div v-for="a in answersOptions" 
+      :class="['col-12', 'm-0', 'align-items-center', 'pb-2', 'text-center']" >
+        <a class="btn btn-block" :class="currentAnswer && currentAnswer.value == a ? 'text-white btn-success' : 'btn-primary'" @click="validate(a)">[[(a < 0 ? '-' : a > 0 ? '+' : '=').repeat(Math.abs(a) || 1)]]</a>
+    </div>
+  </div>
+  <!-- Résultats -->
+  <div class="card-body row results" v-else>
+    <!-- Title -->
+    <div class="col-12 pb-4"> 
+      <h4>[[finalResult[showTypeIdx].title]]</h4>
+      <div v-html="md(finalResult[showTypeIdx].description)"></div>
+      <img :src="finalResult[showTypeIdx].image" class="col-12 px-0 pb-3" data-toggle="modal" data-target="#imgModal" style="cursor: pointer;" />
+      <!-- Quête / Motivation -->
+       <div class="row align-items-center">
+         <div class="offset-2 col-8 text-center h5" :style="{color: questColor[currentQuestName]}" >Motivation: [[currentQuest.title]]</div>
+         <div class="col-2">
+           <a class="btn btn-block btn-secondary text-muted btn-sm" style="font-size: small; background: #00000033;" data-toggle="collapse" href="#collapseMotivation" role="button" aria-expanded="false" aria-controls="collapseMotivation">+</a>
+         </div>
+       </div>
+      <div class="collapse" id="collapseMotivation">
+        <p class="text-center" style="color:white;"><em>[[currentQuest.tagline]]</em></p>
+        <p>[[currentQuest.description]]</p>
+        <p class="mb-0">Archétypes:</p>
+        <ul>
+          <li v-for="a in finalResult.filter(r => r.quest == currentQuestName).map(r => r.title)" :key="a" class="mb-0">[[a]]</li>
+        </ul>
+      </div>
+      <hr />
+      <!-- Liste des archétypes -->
+      <div class="col-12 offset-0 row no-gutters">
+        <div class="col-12 row align-items-center py-1" v-for="(r,k) in finalResult" :key="k" :style="{'background': k == showTypeIdx ? '#ffffff11' : ''}">
+          <div class="col-5 text-right lbl" @click="showTypeIdx=k" :style="{color: questColor[r.quest], cursor: 'pointer'}">[[ r.title.split(" / ")[k % 2] ]]</div>
+          <div class="col-7">
+            <div class="progress" style="height: 1.3rem;">
+              <div class="progress-bar" role="progressbar"
+                  :style="{color: '#343a40', backgroundColor: questColor[r.quest], width: (10 + r.ratio*90)+'%'}">[[ (r.value ?? 0) ]]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Navigation-->
+  <div class="col-12 row no-gutters align-items-center justify-content-center">
+    <div class="col-2 p-1">
+      <a class="text-center btn px-0 btn-block btn-secondary" :class="{'disabled': questionNumber == 0}" @click="questionNumber = 0" >«««</a>
+    </div>
+    <div class="col-2 p-1">
+      <a class="text-center px-0 btn-block btn btn-secondary" :class="{'disabled': questionNumber == 0}" @click="questionNumber = Math.max(0, questionNumber - 1)">«</a>
+    </div>
+    <div class="text-center col-4">
+      <span v-if="!showResult">[[questionNumber + 1]] / [[quiz.questions.length]]</span>
+      <span v-else>Résultats</span>
+    </div>
+    <div class="col-2 p-1">
+      <a class="text-center px-0 btn-block btn btn-secondary" :class="{'disabled': questionNumber >= quiz.questions.length - 1  || !currentAnswer}" @click="questionNumber = Math.min(questionNumber + 1, quiz.questions.length)" v-if="questionNumber < quiz.questions.length - 1  && currentAnswer">»</a>
+    </div>
+    <div class="col-2 p-1">
+      <a class="text-center px-0 btn-block btn btn-primary btn-cyan" v-if="!finished && questionNumber < answers.length" @click="questionNumber = answers.length">»»»</a>
+      <a class="text-center px-0 btn-block btn btn-primary btn-cyan" v-if="finished && !showResult" @click="questionNumber = quiz.questions.length">Résultats</a>
+    </div>
+    
+  </div>
+  <!-- Progress bar -->
+  <div class="col-12 p-0">
+    <div class="progress max">
+      <div class="progress-bar" role="progressbar"
+          :style="progressStyle"></div>
+    </div>
+  </div>
+</div>
+<!-- Progression -->
+<div class="row p-2 align-items-center text-muted"  style="font-size: small;" v-if="answers.length">
+  <div class="col-12 col-sm-7">
+    Ta progression est sauvegardée dans ton navigateur. Tu peux quitter cette page et y revenir pour continuer.
+  </div>
+  <div class="col-12 col-sm-5 text-right pb-2">
+    <a class="btn btn-secondary bg-dark text-muted btn-sm p-2" @click="showRemoveAlert = true" v-if="!showRemoveAlert">Effacer et recommencer</a>
+  </div>
+  <div class="col-12 alert bg-dark text-muted fade show row" role="alert" v-if="showRemoveAlert">
+    <div class="h5">Attention</div>
+    <div class="pb-2">Es-tu sûr·e de vouloir supprimer ta progression ? Tes [[ answers.length]] réponses seront effacées.</div>
+    <a class="col-5 btn btn-secondary btn-sm p-2" @click="answers = []; questionNumber = 0; showRemoveAlert= false">Oui, supprimer</a>
+    <div class="col"></div>
+    <a class="col-5 btn btn-secondary btn-sm p-2" @click="showRemoveAlert=false">Non, garder</a>
+  </div>
+</div>
+<!-- Image modal -->
+<div class="modal fade p-0" tabindex="-1" id="imgModal" >
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 99%;">
+      <div class="modal-body p-1">
+        <div class="modal-content">
+        <img :src="finalResult[showTypeIdx].image" class="col-12 p-0" />
+        </div>
+      </div>
+  </div>
+</div>
+
+</div>
+
+<div hidden>
+  <h2>Contenu du quiz sans javascript:</h2>
+  <h3>Questions:</h3>
+  
+  {{ range .Page.Params.quiz.questions  }}
+  <p>
+    {{ .text | markdownify }}
+    <ul>
+    {{ range .answers }}
+      <li>{{ .title }} ({{.value}}) {{ .comment | markdownify }}</li>
+    {{ end }}
+    </ul>
+    {{ .posttext | markdownify }}
+  </p>
+  {{ end }}
+
+  <h3>Résultats:</h3>
+  {{ range .Page.Params.quiz.results  }}
+  <h4>{{ .title }}</h4>
+  <p>
+    {{ .description }}
+  </p>
+  {{ end }}
+</div>
+
+<style>
+  #quiz blockquote {
+    background: #4b4c58;
+    border-left: 10px solid #ffd400;
+    margin: 0 0 1em 0;
+    padding: 1em 1em;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  #quiz blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  #quiz blockquote p {
+    display: inline;
+    font-size: larger;
+    margin-left: 0;
+  }
+  #quiz .results blockquote p { font-size: medium; }
+  #quiz .progress.max {
+    background-color: #343a40;
+    border-radius: 0;
+    height: 0.5rem;
+  }
+  #quiz .max .progress-bar {
+    background-color: #f14ec3;
+  }
+  .btn-cyan {
+    background-color: #00ffdd;
+    color: #212227!important;
+  }
+  .btn-cyan:hover {
+    color: #00ffdd!important;
+    background-color: #00ffdd!important;
+    border-color: #00ffdd!important;
+  }
+  #quiz .questions .btn {
+    white-space: break-spaces;
+  }
+  #quiz .lbl { color: #fff; }
+  #quiz .lbl:hover { color: #f14ec3; }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://unpkg.com/@vueuse/shared"></script>
+<script src="https://unpkg.com/@vueuse/core"></script>
+
+<script>
+const { createApp, ref, computed } = Vue
+
+createApp({
+  delimiters: ["[[", "]]"],
+  data() {
+
+    const quiz = {{ .Page.Params.quiz | jsonify | safeJS }}
+    
+    // Attribuer des IDs aux questions
+    let i = 0
+    quiz.questions.forEach(q => q.id = i++)
+
+    if (quiz.randomizequestions) {
+      quiz.questions = quiz.questions
+        .map(v => ({v, sort: Math.random()}))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({v}) => v)
+    }
+    if (quiz.randomizeanswers) {
+      quiz.questions.forEach(q => {
+        q.answers = q.answers
+          .map(v => ({v, sort: Math.random()}))
+          .sort((a, b) => a.sort - b.sort)
+          .map(({v}) => v)
+      })
+    }
+
+    //const answers = ref([]) // keeping track of answers
+    const answers = window.VueUse.useLocalStorage("quiz-archetype", [])
+    const finalscore = ref() // final score
+    const isQuiz = ref() // true means this is a quiz and finalscore is a number
+    const questionNumber = ref(0) // question number we're at
+    const showTypeIdx = ref(0)
+    const showRemoveAlert = ref(false)
+
+    const answersOptions = computed(() => {
+      var n = quiz.nAnswers ?? 5
+      var r = []
+      if (n % 2 != 0) r.push(0)
+      let i = 1
+      while(r.length < n){
+        r.push(i)
+        r.push(-i)
+        i++
+      }
+      r.sort((a, b) => b - a)
+      return r
+    })
+
+    const currentQuestion = computed(() => quiz.questions[questionNumber.value])
+    const currentAnswer = computed(() => answers.value.find(a => a.id == currentQuestion.value?.id))
+    const currentQuestName = computed(() => finalResult.value[showTypeIdx.value].quest)
+    const currentQuest = computed(() => quiz.quests[currentQuestName.value])
+
+    // Est-ce qu'on recharge une session ?
+    if (answers.value.length) {
+      // On trie les questions pour mettre celles qui ont été répondues en premier
+      quiz.questions = quiz.questions
+        .sort((a, b) => {
+          let has_a = answers.value.findIndex(ans => ans.id == b.id)
+          let has_b = answers.value.findIndex(ans => ans.id == a.id)
+          if (has_a == -1) has_a = 1000
+          if (has_b == -1) has_b = 1000
+          return has_b - has_a
+        })
+      
+      // On commence à la première question pas répondue
+      questionNumber.value = answers.value.length
+    }
+
+    const result = computed(() => {
+      var r = {}
+      answers.value.forEach(a => {
+        if (a.type in r) r[a.type] += a.value
+        else r[a.type] = a.value
+      })
+      return r
+    })
+
+    function map_range(value, low1, high1, low2, high2) {
+        return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+    }
+
+    const finalResult = computed(() => {
+      var r = []
+      var vals = Object.values(result.value)
+      var min_v = Math.min(...vals)
+      var max_v = Math.max(...vals)
+      Object.keys(quiz.results).forEach(arch => r.push({
+        ...quiz.results[arch],
+        value: result.value[arch] ?? 0,
+        ratio: map_range(result.value[arch] ?? 0, min_v, max_v, 0, 1)
+      }))
+      r.sort((a, b) => b.value - a.value)
+      return r
+    })
+
+    const questColor = {
+      "liberté": "#F4B41Aff", 
+      "courage": "#FF6B6Bff",
+      "appartenance": "#4DABF7ff",
+      "stabilité": "#51CF66ff",
+    }
+
+    const validate = (a) => {
+      // Keeping track of answers
+      var _answer = {
+        id: currentQuestion.value.id,
+        type: currentQuestion.value.value,
+        value: a
+      }
+      let has_answer = answers.value.find(a => a.id == currentQuestion.value.id)
+      if (has_answer)
+        // Changing value
+        has_answer.value = a
+      else
+        // Adding value
+        answers.value.push(_answer)
+
+      questionNumber.value += 1
+    }
+
+    const progressStyle = computed(() => {
+      progress = questionNumber.value  / quiz.questions.length * 100
+      return `width: ${progress}%`
+    })
+
+    const finished = computed(() => answers.value.length == (quiz.questions.length))
+    const md = (t) => marked.parse(t || "")
+    const showResult = computed(() => questionNumber.value >= quiz.questions.length)
+
+    return {
+      questionNumber,
+      currentQuestion,
+      currentAnswer,
+      currentQuest,
+      currentQuestName,
+      questColor,
+      answersOptions,
+      quiz,
+      validate,
+      progressStyle,
+      showTypeIdx,
+      finished,
+      md,
+      finalscore,
+      isQuiz,
+      answers,
+      result,
+      finalResult,
+      showRemoveAlert,
+      showResult
+    }
+  }
+}).mount('#quiz')
+</script>

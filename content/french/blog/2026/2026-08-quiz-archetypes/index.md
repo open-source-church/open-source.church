@@ -491,10 +491,11 @@ Il y a 12 archétypes. Chaque archétype propose une description, des **forces**
 
 Les archétypes sont réunis en 4 grandes **Motivations** fondamentales:
 
-- **La Stabilité:** protéger et construire des fondations
-- **L'Appartenance:** aimer, créer des liens, et célébrer la joie d'être ensemble
-- **Le Courage:** agir, et transformer le monde
-- **La Liberté:** explorer, comprendre et créer
+- **<span style="color: #51CF66ff">La Stabilité:</span>** protéger et construire des fondations
+- **<span style="color: #4DABF7ff">L'Appartenance:</span>** aimer, créer des liens, et célébrer la joie d'être ensemble
+- **<span style="color: #FF6B6Bff">Le Courage:</span>** agir, et transformer le monde
+- **<span style="color: #F4B41Aff">La Liberté:</span>** explorer, comprendre et créer
+
 
 Prends quelques instants, réponds avec sincérité (comment tu _es_ plutôt que comment tu _aimerais être_). L'objectif est de révéler tes motivations profondes, tes peurs et tes aspirations.
 

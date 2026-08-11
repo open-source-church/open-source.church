@@ -3,7 +3,6 @@ title: '[Test] Quel Archétype guide ton récit intérieur ?'
 author: 'Daemarys'
 date: 2026-08-10T08:17:11+01:00
 image: '2026-quiz-archetypes-featured.jpg'
-draft: true
 categories:
   - Quiz
 type: post

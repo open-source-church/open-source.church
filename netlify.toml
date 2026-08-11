@@ -3,7 +3,7 @@
   command = "bash build.sh"
   
 [build.environment]
-  HUGO_VERSION = "0.154.2"
+  HUGO_VERSION = "0.161.1"
   PYTHON_VERSION = "3.10"
 
 [context.branch-deploy]

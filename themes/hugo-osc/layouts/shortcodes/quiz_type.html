@@ -41,8 +41,8 @@
       <hr />
       <!-- Liste des archétypes -->
       <div class="col-12 offset-0 row no-gutters">
-        <div class="col-12 row align-items-center py-1" v-for="(r,k) in finalResult" :key="k" :style="{'background': k == showTypeIdx ? '#ffffff11' : ''}">
-          <div class="col-5 text-right lbl" @click="showTypeIdx=k" :style="{color: questColor[r.quest], cursor: 'pointer'}">[[ r.title.split(" / ")[k % 2] ]]</div>
+        <div class="col-12 row align-items-center py-1" v-for="(r,k) in finalResult" :key="k" :style="{'background': k == showTypeIdx ? '#ffffff11' : '', cursor: 'pointer'}" @click="showTypeIdx=k" >
+          <div class="col-5 text-right lbl" :style="{color: questColor[r.quest]}">[[ r.title.split(" / ")[k % 2] ]]</div>
           <div class="col-7">
             <div class="progress" style="height: 1.3rem;">
               <div class="progress-bar" role="progressbar"
@@ -50,9 +50,11 @@
             </div>
           </div>
         </div>
+        <div class="col-12 text-center text-muted pt-2" style="font-size: small;">Clique sur les archétypes pour lire leurs descriptions.</div>
       </div>
     </div>
   </div>
+
   <!-- Navigation-->
   <div class="col-12 row no-gutters align-items-center justify-content-center">
     <div class="col-2 p-1">
@@ -93,7 +95,7 @@
   <div class="col-12 alert bg-dark text-muted fade show row" role="alert" v-if="showRemoveAlert">
     <div class="h5">Attention</div>
     <div class="pb-2">Es-tu sûr·e de vouloir supprimer ta progression ? Tes [[ answers.length]] réponses seront effacées.</div>
-    <a class="col-5 btn btn-secondary btn-sm p-2" @click="answers = []; questionNumber = 0; showRemoveAlert= false">Oui, supprimer</a>
+    <a class="col-5 btn btn-secondary btn-sm p-2" @click="reset">Oui, supprimer</a>
     <div class="col"></div>
     <a class="col-5 btn btn-secondary btn-sm p-2" @click="showRemoveAlert=false">Non, garder</a>
   </div>
@@ -241,6 +243,13 @@ createApp({
     const currentQuestName = computed(() => finalResult.value[showTypeIdx.value].quest)
     const currentQuest = computed(() => quiz.quests[currentQuestName.value])
 
+    const reset = () => {
+      answers.value = []
+      questionNumber.value = 0
+      showRemoveAlert.value = false
+      showTypeIdx.value = 0
+    }
+
     // Est-ce qu'on recharge une session ?
     if (answers.value.length) {
       // On trie les questions pour mettre celles qui ont été répondues en premier
@@ -338,7 +347,8 @@ createApp({
       result,
       finalResult,
       showRemoveAlert,
-      showResult
+      showResult,
+      reset
     }
   }
 }).mount('#quiz')

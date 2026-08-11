@@ -512,16 +512,16 @@ Prêt(e) à commencer l'exploration ?
 #### Échelle de réponses
 
 <div class="row pb-4">
-<div class="col-2 text-center"><strong>- -</strong></div>
-<div class="col-10">Pas du tout d'accord / Ne me correspond pas du tout</div>
-<div class="col-2 text-center"><strong>-</strong></div>
-<div class="col-10">Plutôt pas d'accord / Correspond peu  </div>
-<div class="col-2 text-center"><strong>=</strong></div>
-<div class="col-10">Neutre / Indécis / Correspond moyennement</div>
+<div class="col-2 text-center"><strong>+++</strong></div>
+<div class="col-10">Tout à fait d'accord / Correspond parfaitement</div>
 <div class="col-2 text-center"><strong>+</strong></div>
 <div class="col-10">Plutôt d'accord / Correspond assez</div>
-<div class="col-2 text-center"><strong>++</strong></div>
-<div class="col-10">Tout à fait d'accord / Correspond parfaitement</div>
+<div class="col-2 text-center"><strong>=</strong></div>
+<div class="col-10">Neutre / Indécis / Correspond moyennement</div>
+<div class="col-2 text-center"><strong>-</strong></div>
+<div class="col-10">Plutôt pas d'accord / Correspond peu  </div>
+<div class="col-2 text-center"><strong>- - -</strong></div>
+<div class="col-10">Pas du tout d'accord / Ne me correspond pas du tout</div>
 </div>
 
 ---

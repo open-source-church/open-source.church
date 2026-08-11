@@ -7,7 +7,7 @@ categories:
   - Quiz
 type: post
 tags: ['Quiz', 'Archetypes']
-summary: 'Dix questions pour savoir enfin quel RPG tu es.'
+summary: "Héros, Sage, Rebelle ou Soignant ? Fais le test pour découvrir l'archétype qui résonne en toi aujourd'hui. Un outil d'introspection pour explorer ses motivations profondes (Stabilité, Appartenance, Courage, Liberté), sans jamais se laisser enfermer dans une case."
 quiz:
   title: ''
   nAnswers: 5

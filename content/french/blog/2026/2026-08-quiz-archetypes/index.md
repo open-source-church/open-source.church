@@ -539,7 +539,7 @@ Ce quiz ne sort pas de nulle part. Il s'appuie sur une riche lignée de réflexi
 
 - Notre adaptation : Pour que ce modèle résonne mieux avec notre communauté, Dama l'a légèrement adapté. Par exemple, dans le modèle classique, il existe un archétype appelé "L'Orphelin" ou "Monsieur Tout-le-monde" (qui cherche à s'intégrer sans faire de vagues). Nous avons choisi de rééquilibrer les énergies de soutien en scindant l'archétype traditionnel de l'Aidant en deux figures distinctes : le Protecteur (qui défend et offre un rempart face au danger) et le Soignant (qui guérit et écoute avec empathie). De plus, les termes sont chaque fois proposés au masculin et au féminin, mais il peut-être intéressant de voir ce que chaque "genre" évoque en moi.
 
-_Note: plusieurs IAG ont été utilisées dans l'élaboration de ce quiz, notamment des images, mais aussi certains textes et queqtions. Aucune n'a été blessée. Nous ne pouvons malheureusement pas en dire autant de leur impact._
+_Note: plusieurs IAG ont été utilisées dans l'élaboration de ce quiz, notamment des images, mais aussi certains textes et questions. Aucune n'a été blessée. Nous ne pouvons malheureusement pas en dire autant de leur impact._
 
 ## 2. Le pouvoir de ton "Aile" (Ton archétype secondaire)
 
@@ -562,7 +562,7 @@ Voici quelques pistes pour transformer ton résultat en outil pratique :
 
 - **Explore tes zones d'ombre (Les Défis):** Regarde attentivement la colonne "Ses Défis" sur ta fiche de résultat. Si tu es un Souverain, sois vigilant(e) à ta "difficulté à déléguer" ou à ton "contrôle excessif". Si tu es Rebelle, questionne ta tendance à "refuser la conformité" par pur principe ou à agir de "manière impulsive". C'est souvent sous stress que l'archétype bascule dans ses travers.
 
-- **Joue sur la complémentarité:** Nous avons besoin de tous les archétypes pour faire tourner un projet ou une communauté. Un Créateur déborde d'imagination, mais il aura cruellement besoin d'un Souverain pour structurer son projet. Viens partager tes résultats sur notre Discord ! Découvrir les archétypes de tes amis ou collaborateurs permet de mieux comprendre vos dynamiques, vos frictions et comment vous pouvez vous compléter.
+- **Joue sur la complémentarité:** Nous avons besoin de tous les archétypes pour faire tourner un projet ou une communauté. Un Créateur déborde d'imagination, mais il aura cruellement besoin d'une Souveraine pour structurer son projet. Découvrir les archétypes de ton entourage (proches, collaborateur·trices) permet de mieux comprendre vos dynamiques, vos frictions et comment vous pouvez vous compléter. Et pour vivre la complémentarité, viens partager tes résultats sur [Discord](https://discord.open-source.church) !
 
 - **"Invoque" les autres archétypes:** Rappelle-toi que tu n'es pas enfermé(e) dans une case. Ton archétype est ta "zone de confort", mais tu possèdes les 11 autres en toi. Tu as besoin de réconforter un proche ? Invoque consciemment l'énergie du Soignant. Tu dois faire face à une injustice ? Laisse ton Rebelle prendre le volant pour un instant.
 

@@ -67,7 +67,7 @@ quiz:
       value: 'innocent'
     - text: 'Je trouve souvent plus de satisfaction dans les joies simples que dans les grandes réussites matérielles.'
       value: 'innocent'
-    - text: "Préserver ma pureté d'intention et ma foi en l'avenir est un moteur essentiel dans ma vie."
+    - text: 'Agir avec sincérité et garder espoir en un avenir meilleur est un moteur essentiel dans ma vie.'
       value: 'innocent'
     - text: "On me reproche parfois une certaine naïveté ou un excès d'optimisme face aux réalités du monde."
       value: 'innocent'
@@ -284,7 +284,7 @@ quiz:
       value: 'createur'
     - text: "Mon perfectionnisme m'empêche parfois de finaliser mes projets, car j'estime qu'ils ne sont jamais 'assez bien'."
       value: 'createur'
-    - text: "J'ai tellement peur d'être banal(e) ou de m'ennuyer que je me disperse souvent dans trop de projets à la fois."
+    - text: "J'ai tellement de choses qui bouillonnent en moi que je me disperse souvent dans trop de projets à la fois."
       value: 'createur'
 
     # - text: "Je me sens vide si je ne crée rien d'unique et de nouveau."
@@ -458,9 +458,11 @@ quiz:
 
 Depuis des millénaires, les mêmes grands modèles de personnages traversent nos mythes, nos légendes et nos films préférés. Du héros téméraire au sage réfléchi, en passant par le rebelle insoumis, ces modèles universels — théorisés par le psychiatre Carl Jung sous le nom d'archétypes — résonnent profondément en nous.
 
-## Mais soyons honnêtes dès le départ
+<div class="text-muted pb-4"><em>Ce quiz a été crée par Daemarys, et mis en forme par Théologeek.</em></div>
 
-Lorsque Daemarys a partagé la première version de ce quiz [sur notre serveur Discord](https://discord.com/channels/538111138932719617/1519410839990308864/1526937194160193637), les réactions ont été vives et partagées. Si certains y ont vu un outil d'introspection intéressant, d'autres ont, à juste titre, soulevé certaines critiques, notamment:
+## Soyons honnêtes dès le départ
+
+Lorsque Dæmarys a partagé la première version de ce quiz [sur notre serveur Discord](https://discord.com/channels/538111138932719617/1519410839990308864/1526937194160193637), les réactions ont été vives et partagées. Si certains y ont vu un outil d'introspection intéressant, d'autres ont, à juste titre, soulevé certaines critiques, notamment:
 
 - C'est de la psychologie de comptoir
 - [Effet Barnum !](https://fr.wikipedia.org/wiki/Effet_Barnum)
@@ -495,7 +497,6 @@ Les archétypes sont réunis en 4 grandes **Motivations** fondamentales:
 - **<span style="color: #4DABF7ff">L'Appartenance:</span>** aimer, créer des liens, et célébrer la joie d'être ensemble
 - **<span style="color: #FF6B6Bff">Le Courage:</span>** agir, et transformer le monde
 - **<span style="color: #F4B41Aff">La Liberté:</span>** explorer, comprendre et créer
-
 
 Prends quelques instants, réponds avec sincérité (comment tu _es_ plutôt que comment tu _aimerais être_). L'objectif est de révéler tes motivations profondes, tes peurs et tes aspirations.
 
@@ -538,7 +539,7 @@ Ce quiz ne sort pas de nulle part. Il s'appuie sur une riche lignée de réflexi
 
 - La structure (Carol S. Pearson & Margaret Mark) : Le modèle précis des 12 archétypes répartis en 4 grandes motivations (Stabilité, Appartenance, Courage, Liberté) vient de leurs travaux, très utilisés aujourd'hui dans l'analyse de récits et le développement personnel.
 
-- Notre adaptation : Pour que ce modèle résonne mieux avec notre communauté, Dama l'a légèrement adapté. Par exemple, dans le modèle classique, il existe un archétype appelé "L'Orphelin" ou "Monsieur Tout-le-monde" (qui cherche à s'intégrer sans faire de vagues). Nous avons choisi de rééquilibrer les énergies de soutien en scindant l'archétype traditionnel de l'Aidant en deux figures distinctes : le Protecteur (qui défend et offre un rempart face au danger) et le Soignant (qui guérit et écoute avec empathie). De plus, les termes sont chaque fois proposés au masculin et au féminin, mais il peut-être intéressant de voir ce que chaque "genre" évoque en moi.
+- Notre adaptation : Pour que ce modèle résonne mieux avec notre communauté, Dæmarys l'a légèrement adapté. Par exemple, dans le modèle classique, il existe un archétype appelé "L'Orphelin" ou "Monsieur Tout-le-monde" (qui cherche à s'intégrer sans faire de vagues). Dæmarys a choisit de rééquilibrer les énergies de soutien en scindant l'archétype traditionnel de l'Aidant en deux figures distinctes : le Protecteur (qui défend et offre un rempart face au danger) et le Soignant (qui guérit et écoute avec empathie). De plus, les termes sont chaque fois proposés au masculin et au féminin, mais il peut-être intéressant de voir ce que chaque "genre" évoque en moi.
 
 _Note: plusieurs IAG ont été utilisées dans l'élaboration de ce quiz, notamment des images, mais aussi certains textes et questions. Aucune n'a été blessée. Nous ne pouvons malheureusement pas en dire autant de leur impact._
 

@@ -12,7 +12,7 @@
     <div class="h3 text-center" style="min-height: 7rem;">[[currentQuestion.text]]</div>
     <!-- Options -->
     <div v-for="a in answersOptions" 
-      :class="['col-12', 'm-0', 'align-items-center', 'pb-2', 'text-center']" >
+      :class="['col-12', 'm-0', 'align-items-center', 'pb-2', 'text-center']" :key="`${a}-${questionNumber}`"> 
         <a class="btn btn-block" :class="currentAnswer && currentAnswer.value == a ? 'text-white btn-success' : 'btn-primary'" @click="validate(a)">[[(a < 0 ? '-' : a > 0 ? '+' : '=').repeat(Math.abs(a) || 1)]]</a>
     </div>
   </div>

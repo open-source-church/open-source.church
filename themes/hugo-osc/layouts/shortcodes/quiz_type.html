@@ -301,6 +301,9 @@ createApp({
     }
 
     const validate = (a) => {
+      setTimeout(() => activeValidation(a), 200)
+    }
+    const activeValidation = (a) => {
       // Keeping track of answers
       var _answer = {
         id: currentQuestion.value.id,

@@ -4,10 +4,6 @@
 
 <h3 v-if="quiz.title" id="quizztitle">[[ quiz.title ]]</h3>
 <!-- Quiz -->
-<a class="w-100 text-center btn btn-primary btn-cyan" @click="questionNumber = quiz.questions.length" v-if="true">
- <span>! Fin !</span>
-</a>
-
 <div class="card bg-dark rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
   <!-- Questions -->
   <div class="card-body row no-gutters questions" v-if="!showResult">
@@ -16,7 +12,7 @@
     <div class="h3 text-center" style="min-height: 7rem;">[[currentQuestion.text]]</div>
     <!-- Options -->
     <div v-for="a in answersOptions" 
-      :class="['col-12', 'm-0', 'align-items-center', 'pb-2', 'text-center']" >
+      :class="['col-12', 'm-0', 'align-items-center', 'pb-2', 'text-center']" :key="`${a}-${questionNumber}`"> 
         <a class="btn btn-block" :class="currentAnswer && currentAnswer.value == a ? 'text-white btn-success' : 'btn-primary'" @click="validate(a)">[[(a < 0 ? '-' : a > 0 ? '+' : '=').repeat(Math.abs(a) || 1)]]</a>
     </div>
   </div>
@@ -45,18 +41,20 @@
       <hr />
       <!-- Liste des archétypes -->
       <div class="col-12 offset-0 row no-gutters">
-        <div class="col-12 row align-items-center py-1" v-for="(r,k) in finalResult" :key="k" :style="{'background': k == showTypeIdx ? '#ffffff11' : ''}">
-          <div class="col-5 text-right lbl" @click="showTypeIdx=k" :style="{color: questColor[r.quest], cursor: 'pointer'}">[[ r.title.split(" / ")[k % 2] ]]</div>
+        <div class="col-12 row align-items-center py-1" v-for="(r,k) in finalResult" :key="k" :style="{'background': k == showTypeIdx ? '#ffffff11' : '', cursor: 'pointer'}" @click="showTypeIdx=k" >
+          <div class="col-5 text-right lbl" :style="{color: questColor[r.quest]}">[[ r.title.split(" / ")[k % 2] ]]</div>
           <div class="col-7">
             <div class="progress" style="height: 1.3rem;">
               <div class="progress-bar" role="progressbar"
-                  :style="{color: '#343a40', backgroundColor: questColor[r.quest], width: (10 + r.ratio*90)+'%'}">[[ (r.value ?? 0) ]]</div>
+                  :style="{color: '#343a40', backgroundColor: questColor[r.quest], width: (10 + r.ratio*90)+'%'}">[[ (Math.round((r.value ?? 0) * 10) / 10) ]]</div>
             </div>
           </div>
         </div>
+        <div class="col-12 text-center text-muted pt-2" style="font-size: small;">Clique sur les archétypes pour lire leurs descriptions.</div>
       </div>
     </div>
   </div>
+
   <!-- Navigation-->
   <div class="col-12 row no-gutters align-items-center justify-content-center">
     <div class="col-2 p-1">
@@ -97,7 +95,7 @@
   <div class="col-12 alert bg-dark text-muted fade show row" role="alert" v-if="showRemoveAlert">
     <div class="h5">Attention</div>
     <div class="pb-2">Es-tu sûr·e de vouloir supprimer ta progression ? Tes [[ answers.length]] réponses seront effacées.</div>
-    <a class="col-5 btn btn-secondary btn-sm p-2" @click="answers = []; questionNumber = 0; showRemoveAlert= false">Oui, supprimer</a>
+    <a class="col-5 btn btn-secondary btn-sm p-2" @click="reset">Oui, supprimer</a>
     <div class="col"></div>
     <a class="col-5 btn btn-secondary btn-sm p-2" @click="showRemoveAlert=false">Non, garder</a>
   </div>
@@ -232,8 +230,8 @@ createApp({
       if (n % 2 != 0) r.push(0)
       let i = 1
       while(r.length < n){
-        r.push(i)
-        r.push(-i)
+        r.push(i ** 1.6)
+        r.push(-(i ** 1.6))
         i++
       }
       r.sort((a, b) => b - a)
@@ -244,6 +242,13 @@ createApp({
     const currentAnswer = computed(() => answers.value.find(a => a.id == currentQuestion.value?.id))
     const currentQuestName = computed(() => finalResult.value[showTypeIdx.value].quest)
     const currentQuest = computed(() => quiz.quests[currentQuestName.value])
+
+    const reset = () => {
+      answers.value = []
+      questionNumber.value = 0
+      showRemoveAlert.value = false
+      showTypeIdx.value = 0
+    }
 
     // Est-ce qu'on recharge une session ?
     if (answers.value.length) {
@@ -296,6 +301,9 @@ createApp({
     }
 
     const validate = (a) => {
+      setTimeout(() => activeValidation(a), 200)
+    }
+    const activeValidation = (a) => {
       // Keeping track of answers
       var _answer = {
         id: currentQuestion.value.id,
@@ -342,7 +350,8 @@ createApp({
       result,
       finalResult,
       showRemoveAlert,
-      showResult
+      showResult,
+      reset
     }
   }
 }).mount('#quiz')
